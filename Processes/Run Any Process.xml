@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<ESBMessagePipelineStorage xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Id>71414c10-b3c7-45f1-b405-ec0939d9bc4c</Id>
+  <Version>30de150e-4e72-4c2e-8f05-3ff9971fd0ec</Version>
+  <Name>Run Any Process</Name>
+  <Description />
+  <IsSystemObject>false</IsSystemObject>
+  <Category>General</Category>
+  <IsEncrypted>true</IsEncrypted>
+  <Path>Debugging</Path>
+  <PipelineBlob>&lt;ESBMessagePipeline xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.neuronesb.com/pipelines/"&gt;&lt;Category&gt;General&lt;/Category&gt;&lt;Description i:nil="true" /&gt;&lt;GlobalProperties xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" /&gt;&lt;Name&gt;Run Any Process&lt;/Name&gt;&lt;Properties xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" /&gt;&lt;ReferencedAssemblies xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" /&gt;&lt;Steps&gt;&lt;ESBMessagePipelineStep xmlns:d3p1="http://schemas.neuronesb.com/pipelines/esb/" i:type="d3p1:EsbMessagePipelineExecutionPipelineStep"&gt;&lt;Bindings xmlns:d4p1="http://schemas.datacontract.org/2004/07/Neuron.ComponentModel" /&gt;&lt;BreakPoint&gt;Disable&lt;/BreakPoint&gt;&lt;Disable&gt;false&lt;/Disable&gt;&lt;Name&gt;PipelineExecution&lt;/Name&gt;&lt;Uniquename&gt;a3a74d9e-090d-409a-9941-b67ae9a9a92c&lt;/Uniquename&gt;&lt;d3p1:FileName i:nil="true" /&gt;&lt;d3p1:PipelineName&gt;Enrich_ERP_Goods_Issue&lt;/d3p1:PipelineName&gt;&lt;/ESBMessagePipelineStep&gt;&lt;/Steps&gt;&lt;/ESBMessagePipeline&gt;</PipelineBlob>
+</ESBMessagePipelineStorage>

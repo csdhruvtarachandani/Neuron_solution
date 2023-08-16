@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<n1:MaterialMasterResponse xmlns:n1="http://NeoPLM.com/EnterpriseIntegration">
+	<n1:TransactionID>{0}</n1:TransactionID>
+	<n1:SourceSystemID>{1}</n1:SourceSystemID>
+	<n1:PlantCodeID>{2}</n1:PlantCodeID>
+	<n1:MaterialMasterID>{3}</n1:MaterialMasterID>
+	<n1:NeoPLMMaterialMasterUID>{4}</n1:NeoPLMMaterialMasterUID>
+	<n1:NeoPLMMaterialMasterType>{5}</n1:NeoPLMMaterialMasterType>
+</n1:MaterialMasterResponse>

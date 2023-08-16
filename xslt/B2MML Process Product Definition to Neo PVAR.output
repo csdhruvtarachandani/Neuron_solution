@@ -1,0 +1,20 @@
+﻿<NeoPlmProductionVersionApprovalRequest xmlns:ns="http://www.mesa.org/xml/B2MML-V0600" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:local="urn:local">
+  <TransactionID>0000001164902472</TransactionID>
+  <SourceSystemID>SAPP01</SourceSystemID>
+  <DestinationSystemID>SAP_PI</DestinationSystemID>
+  <TransactionDateTime>2022-04-06T12:20:15Z</TransactionDateTime>
+  <ProductionVersion>
+    <ProductionVersionID>H086218030|M024</ProductionVersionID>
+    <Description>OSP1 163.0 Prazosin Hydrochloride</Description>
+    <MaterialNumber>H086218030</MaterialNumber>
+    <BillOfMaterialID>H086218030|36</BillOfMaterialID>
+    <RecipeID>50366670|1</RecipeID>
+    <PlantID>IE14</PlantID>
+    <SiteFacilityUID />
+    <ERPPlantCodeUID />
+    <LocalMaterialSpecificationUID />
+    <MinProductionQuantity>       163.000</MinProductionQuantity>
+    <MaxProductionQuantity>       163.000</MaxProductionQuantity>
+    <LongText>OSP1 163.0 PRAZOSIN HYDROCHLORIDE</LongText>
+  </ProductionVersion>
+</NeoPlmProductionVersionApprovalRequest>

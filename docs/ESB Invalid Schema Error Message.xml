@@ -1,0 +1,13 @@
+﻿<ns1:ESBError xmlns:ns1="Http:/NeoPLM.com/ESBError" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="Http:/NeoPLM.com/ESBError ESBErrors.xsd">
+	<ns1:ErrorType>InvalidSchema</ns1:ErrorType>
+	<ns1:EndpointAddress>{0}</ns1:EndpointAddress>
+	<ns1:ESBAction>{1}</ns1:ESBAction>
+	<ns1:ESBTopic>{2}</ns1:ESBTopic>
+	<ns1:SourceSystemID>{3}</ns1:SourceSystemID>
+	<ns1:PlantID>{4}</ns1:PlantID>
+	<ns1:TransactionID>{5}</ns1:TransactionID>
+	<ns1:MessageDate>{6}</ns1:MessageDate>
+	<ns1:ErrorCode>{7}</ns1:ErrorCode>
+	<ns1:ErrorMessage>{8}</ns1:ErrorMessage>
+	<ns1:OriginalMessage>{9}</ns1:OriginalMessage>
+</ns1:ESBError>

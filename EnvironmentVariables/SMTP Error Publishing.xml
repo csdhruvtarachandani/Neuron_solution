@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<NeuronVariable xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Id>ed3f1337-ae97-480b-ba25-b1faa9aeaa76</Id>
+  <Version>946ea3a1-9489-4f76-80dd-15e9af3a8843</Version>
+  <BusinessFlows />
+  <Description>This parameter is a switch to enable / disable the email notifications of errors to interested parties.  Set to "True" to enable, "False" to disable.</Description>
+  <Name>SMTP Error Publishing</Name>
+  <Group>General</Group>
+  <IsSystemObject>false</IsSystemObject>
+  <IsPrivate>false</IsPrivate>
+  <Mask>false</Mask>
+</NeuronVariable>

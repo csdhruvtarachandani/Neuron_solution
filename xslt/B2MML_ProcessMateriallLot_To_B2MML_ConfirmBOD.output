@@ -1,0 +1,33 @@
+﻿<ConfirmBOD xmlns="http://www.mesa.org/xml/B2MML-V0600" xmlns:Extended="http://www.mesa.org/xml/B2MML-V0600-AllExtensions" xmlns:ns="http://www.mesa.org/xml/B2MML-V0600" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:fn="http://www.w3.org/2005/xpath-functions"><ApplicationArea><Sender><LogicalID>Neo PLM</LogicalID></Sender><Receiver><LogicalID>1234</LogicalID></Receiver><CreationDateTime>1999-05-31T13:20:00.000-05:00</CreationDateTime></ApplicationArea><DataArea><Confirm><OriginalApplicationArea>
+    <Sender>
+      <LogicalID>1234</LogicalID>
+      <ComponentID>normalizedString</ComponentID>
+      <TaskID>normalizedString</TaskID>
+      <ReferenceID>123456789</ReferenceID>
+      <ConfirmationCode>Always</ConfirmationCode>
+      <AuthorizationID>normalizedString</AuthorizationID>
+    </Sender>
+    <Receiver>
+      <LogicalID>Neo PLM</LogicalID>
+      <ComponentID>normalizedString</ComponentID>
+      <ID>normalizedString</ID>
+    </Receiver>
+    <CreationDateTime>1999-05-31T13:20:00.000-05:00</CreationDateTime>
+    <BODID>normalizedString</BODID>
+  </OriginalApplicationArea><ResponseCriteria><ResponseExpression actionCode="Accepted" /></ResponseCriteria></Confirm><BOD><OriginalApplicationArea>
+    <Sender>
+      <LogicalID>1234</LogicalID>
+      <ComponentID>normalizedString</ComponentID>
+      <TaskID>normalizedString</TaskID>
+      <ReferenceID>123456789</ReferenceID>
+      <ConfirmationCode>Always</ConfirmationCode>
+      <AuthorizationID>normalizedString</AuthorizationID>
+    </Sender>
+    <Receiver>
+      <LogicalID>Neo PLM</LogicalID>
+      <ComponentID>normalizedString</ComponentID>
+      <ID>normalizedString</ID>
+    </Receiver>
+    <CreationDateTime>1999-05-31T13:20:00.000-05:00</CreationDateTime>
+    <BODID>normalizedString</BODID>
+  </OriginalApplicationArea></BOD></DataArea></ConfirmBOD>

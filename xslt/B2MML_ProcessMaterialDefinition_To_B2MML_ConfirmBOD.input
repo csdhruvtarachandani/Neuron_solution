@@ -1,0 +1,69 @@
+﻿<b2m:ProcessMaterialDefinition releaseID="V6.00" xmlns:b2m="http://www.mesa.org/xml/B2MML-V0600">
+	<b2m:ApplicationArea>
+		<b2m:Sender>
+			<b2m:LogicalID>Europe2</b2m:LogicalID>
+			<b2m:ReferenceID>${Properties#TransactionID}</b2m:ReferenceID>
+		</b2m:Sender>
+		<b2m:Receiver>
+			<b2m:LogicalID>NeoPLM</b2m:LogicalID>
+		</b2m:Receiver>
+		<b2m:CreationDateTime>2016-10-25T00:09:00Z</b2m:CreationDateTime>
+	</b2m:ApplicationArea>
+	<b2m:DataArea>
+		<b2m:Process acknowledgeCode="Always">
+			<b2m:ActionCriteria>
+				<b2m:ActionExpression actionCode="Accepted" />
+			</b2m:ActionCriteria>
+		</b2m:Process>
+	     <b2m:MaterialDefinition>
+			<b2m:ID>50000</b2m:ID>
+			<b2m:Description>This is a Description of a Material</b2m:Description>
+			<b2m:HierarchyScope>
+				<b2m:EquipmentID>BEP7</b2m:EquipmentID>
+				<b2m:EquipmentElementLevel>Site</b2m:EquipmentElementLevel>
+			</b2m:HierarchyScope>
+			<b2m:MaterialDefinitionProperty>
+				<b2m:ID>MaterialType</b2m:ID>
+				<b2m:Value>
+					<b2m:ValueString>Pipe</b2m:ValueString>
+				</b2m:Value>
+			</b2m:MaterialDefinitionProperty>
+			<b2m:MaterialDefinitionProperty>
+				<b2m:ID>InventoryUOM</b2m:ID>
+				<b2m:Value>
+					<b2m:ValueString>Kg</b2m:ValueString>
+				</b2m:Value>
+			</b2m:MaterialDefinitionProperty>
+			<b2m:MaterialDefinitionProperty>
+				<b2m:ID>FirstEffectiveDate</b2m:ID>
+				<b2m:Value>
+					<b2m:ValueString>2016-11-01T00:00:00Z</b2m:ValueString>
+				</b2m:Value>
+			</b2m:MaterialDefinitionProperty>
+			<b2m:MaterialDefinitionProperty>
+				<b2m:ID>LastEffectiveDate</b2m:ID>
+				<b2m:Value>
+					<b2m:ValueString>2016-12-01T00:00:00Z</b2m:ValueString>
+				</b2m:Value>
+			</b2m:MaterialDefinitionProperty>
+			<b2m:MaterialDefinitionProperty>
+				<b2m:ID>Density</b2m:ID>
+				<b2m:Value>
+					<b2m:ValueString>1.1</b2m:ValueString>
+				</b2m:Value>
+			</b2m:MaterialDefinitionProperty>
+			<b2m:MaterialDefinitionProperty>
+				<b2m:ID>GlobalMaterialSpecificationID</b2m:ID>
+				<b2m:Value>
+					<b2m:ValueString>GS30000</b2m:ValueString>
+				</b2m:Value>
+			</b2m:MaterialDefinitionProperty>
+			<b2m:MaterialDefinitionProperty>
+				<b2m:ID>GlobalMaterialSpecificationDescription</b2m:ID>
+				<b2m:Value>
+					<b2m:ValueString>This is a GS Description</b2m:ValueString>
+				</b2m:Value>
+			</b2m:MaterialDefinitionProperty>
+		</b2m:MaterialDefinition>
+	</b2m:DataArea>
+</b2m:ProcessMaterialDefinition>

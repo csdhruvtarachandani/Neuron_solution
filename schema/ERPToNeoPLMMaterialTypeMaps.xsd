@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2017 sp2 (http://www.altova.com) by Thomas McCarthy (Neo PLM, Inc.) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" elementFormDefault="qualified" attributeFormDefault="unqualified" vc:minVersion="1.1">
+	<xs:element name="ERPToNeoPLMMaterialTypeMaps">
+		<xs:annotation>
+			<xs:documentation>An element to describe a collection of ERPToNeoPLMMaterialTypeMaps</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence maxOccurs="unbounded">
+				<xs:element name="ERPToNeoPLMMaterialTypeMap" type="ERPToNeoPLMMaterialTypeMap"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:complexType name="ERPToNeoPLMMaterialTypeMap">
+		<xs:annotation>
+			<xs:documentation>A complex type to define a ERPToNeoPLMMaterialTypeMap</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="SourceSystemID" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>The Source System ID supplied by the integration message.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="PlantID" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>The ERP Plant ID supplied by the integration message.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ERPMaterialType" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>The ERP Material Type supplied by the integration message.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="NeoPLMMaterialType" type="NeoPLMMaterialType">
+				<xs:annotation>
+					<xs:documentation>The resultant Neo PLM Material Type </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="NeoPLMMaterialType">
+		<xs:annotation>
+			<xs:documentation>A simple type to describe the available Neo PLM Material Types.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Consumable"/>
+			<xs:enumeration value="LocalMaterialSpecification"/>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

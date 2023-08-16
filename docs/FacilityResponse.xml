@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="UTF-16"?>
+<ns1:FacilityResponse xmlns:ns1="http://NeoPLM.com/EnterpriseIntegration">
+	<ns1:TransactionID>{0}</ns1:TransactionID>
+	<ns1:SourceSystemID>{1}</ns1:SourceSystemID>
+	<ns1:PlantCodeID>{2}</ns1:PlantCodeID>
+	<ns1:FacilityUID>{3}</ns1:FacilityUID>
+</ns1:FacilityResponse>

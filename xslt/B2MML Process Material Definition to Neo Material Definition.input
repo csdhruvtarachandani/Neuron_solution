@@ -1,0 +1,74 @@
+﻿<ProcessMaterialDefinition releaseID="B2MML-V0600" xmlns="http://www.mesa.org/xml/B2MML-V0600" xmlns:ns="http://www.mesa.org/xml/B2MML-V0600" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:fn="http://www.w3.org/2005/xpath-functions">
+  <ApplicationArea>
+    <Sender>
+      <LogicalID>1234</LogicalID>
+      <ReferenceID>0000001165302288</ReferenceID>
+      <ConfirmationCode>Never</ConfirmationCode>
+    </Sender>
+    <Receiver>
+      <LogicalID>SAP_PI</LogicalID>
+    </Receiver>
+    <CreationDateTime>2022-04-07T12:30:41Z</CreationDateTime>
+  </ApplicationArea>
+  <DataArea>
+    <Process acknowledgeCode="Always" />
+    <MaterialDefinition>
+      <ID>R000012825</ID>
+      <Description languageID="EN">PF-07328614-01 (PF-07321332 STEP 4 RSM)</Description>
+      <HierarchyScope>
+        <EquipmentID>BEP7</EquipmentID>
+        <EquipmentElementLevel>WorkCell</EquipmentElementLevel>
+      </HierarchyScope>
+      <MaterialDefinitionProperty>
+        <ID>IsDeprecated</ID>
+        <Description>Material Deprecated</Description>
+        <Value>
+          <ValueString>true</ValueString>
+        </Value>
+      </MaterialDefinitionProperty>
+      <MaterialDefinitionProperty>
+        <ID>MaterialType</ID>
+        <Description>Item Raw Material</Description>
+        <Value>
+          <ValueString>ZRAW</ValueString>
+        </Value>
+      </MaterialDefinitionProperty>
+      <MaterialDefinitionProperty>
+        <ID>InventoryUOM</ID>
+        <Value>
+          <ValueString>KG</ValueString>
+        </Value>
+      </MaterialDefinitionProperty>
+      <MaterialDefinitionProperty>
+        <ID>FirstEffectiveDate</ID>
+        <Value>
+          <ValueString>2021-04-21T00:00:00Z</ValueString>
+        </Value>
+      </MaterialDefinitionProperty>
+      <MaterialDefinitionProperty>
+        <ID>LastEffectiveDate</ID>
+        <Value>
+          <ValueString>2022-04-07T00:00:00Z</ValueString>
+        </Value>
+      </MaterialDefinitionProperty>
+      <MaterialDefinitionProperty>
+        <ID>GlobalMaterialSpecificationID</ID>
+        <Value>
+          <ValueString>GS30000</ValueString>
+        </Value>
+      </MaterialDefinitionProperty>
+      <MaterialDefinitionProperty>
+        <ID>GlobalMaterialSpecificationDescription</ID>
+        <Value>
+          <ValueString>This is a GS Description</ValueString>
+        </Value>
+      </MaterialDefinitionProperty>
+      <MaterialDefinitionProperty>
+        <ID>Density</ID>
+        <Value>
+          <ValueString>1.1</ValueString>
+        </Value>
+      </MaterialDefinitionProperty>
+    </MaterialDefinition>
+  </DataArea>
+</ProcessMaterialDefinition>

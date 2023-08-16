@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<ESBMessagePipelineStorage xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Id>0eeef74c-5db6-4cd4-9538-56aafc4a1a60</Id>
+  <Version>988376a8-1ed6-47a0-be36-5ef550ef09eb</Version>
+  <BusinessFlows />
+  <Description />
+  <Name>Kafka Test</Name>
+  <IsSystemObject>false</IsSystemObject>
+  <IsPrivate>false</IsPrivate>
+  <Category>General</Category>
+  <IsEncrypted>true</IsEncrypted>
+  <Path>Kafka Test</Path>
+  <PipelineBlob>&lt;ESBMessagePipeline xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.neuronesb.com/pipelines/"&gt;&lt;Category&gt;General&lt;/Category&gt;&lt;Description i:nil="true" /&gt;&lt;GlobalProperties xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" /&gt;&lt;Name&gt;Kafka Test&lt;/Name&gt;&lt;Properties xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" /&gt;&lt;ReferencedAssemblies xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" /&gt;&lt;Steps&gt;&lt;ESBMessagePipelineStep xmlns:d3p1="http://schemas.neuronesb.com/pipelines/esb/" i:type="d3p1:EsbMessageCSharpCodePipelineStep"&gt;&lt;Bindings xmlns:d4p1="http://schemas.datacontract.org/2004/07/Neuron.ComponentModel" /&gt;&lt;BreakPoint&gt;Disable&lt;/BreakPoint&gt;&lt;Disable&gt;false&lt;/Disable&gt;&lt;Id&gt;1bc9174e-3cd9-4765-b140-fafd72923ff1&lt;/Id&gt;&lt;Name&gt;Trace Properties&lt;/Name&gt;&lt;Uniquename /&gt;&lt;BreakPointLines xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" /&gt;&lt;Code&gt;context.Instance.TraceInformation("KAFKA INPUT MESSAGE : " + context.Data.Text);
+
+//var properties = context.Data.GetProperties("kafka");
+
+//foreach( var property in properties){
+//	context.Instance.TraceInformation(" NAME in kafka : " + property.Name + ". VALUE : " + property.Value);
+//}
+
+string topicName = "";
+
+topicName = context.Data.GetProperty("kafka", "KafkaTopic").ToString();
+
+context.Properties.Add("KafkaTopic", topicName);&lt;/Code&gt;&lt;ReferencedAssemblies xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays"&gt;&lt;d4p1:string&gt;Neuron&lt;/d4p1:string&gt;&lt;d4p1:string&gt;Neuron.Pipelines&lt;/d4p1:string&gt;&lt;d4p1:string&gt;Neuron.Esb&lt;/d4p1:string&gt;&lt;d4p1:string&gt;System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d4p1:string&gt;&lt;d4p1:string&gt;System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d4p1:string&gt;&lt;d4p1:string&gt;System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d4p1:string&gt;&lt;d4p1:string&gt;System.Xml.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d4p1:string&gt;&lt;d4p1:string&gt;System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d4p1:string&gt;&lt;d4p1:string&gt;System.Data.DataSetExtensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d4p1:string&gt;&lt;d4p1:string&gt;System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d4p1:string&gt;&lt;d4p1:string&gt;System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d4p1:string&gt;&lt;d4p1:string&gt;Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed&lt;/d4p1:string&gt;&lt;d4p1:string&gt;Microsoft.CSharp, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&lt;/d4p1:string&gt;&lt;/ReferencedAssemblies&gt;&lt;TypeName&gt;Type863b996bb1a4a479a8245bb842d72f&lt;/TypeName&gt;&lt;/ESBMessagePipelineStep&gt;&lt;ESBMessagePipelineStep xmlns:d3p1="http://schemas.neuronesb.com/pipelines/esb/" i:type="d3p1:ExecuteAdapterPipelineStep"&gt;&lt;Bindings xmlns:d4p1="http://schemas.datacontract.org/2004/07/Neuron.ComponentModel" /&gt;&lt;BreakPoint&gt;Disable&lt;/BreakPoint&gt;&lt;Disable&gt;false&lt;/Disable&gt;&lt;Id&gt;5f1ca990-a1cb-4545-8168-4bde1b4d6e78&lt;/Id&gt;&lt;Name&gt;Execute Adapter&lt;/Name&gt;&lt;Uniquename /&gt;&lt;d3p1:AdapterName&gt;File Save Endpoint Kafka&lt;/d3p1:AdapterName&gt;&lt;d3p1:AdapterPoolTimeout&gt;PT1M&lt;/d3p1:AdapterPoolTimeout&gt;&lt;d3p1:MaxAdapterInstances&gt;100&lt;/d3p1:MaxAdapterInstances&gt;&lt;d3p1:Timeout&gt;PT1M&lt;/d3p1:Timeout&gt;&lt;/ESBMessagePipelineStep&gt;&lt;ESBMessagePipelineStep xmlns:d3p1="http://schemas.neuronesb.com/pipelines/esb/" i:type="d3p1:EsbMessagePipelineExecutionPipelineStep"&gt;&lt;Bindings xmlns:d4p1="http://schemas.datacontract.org/2004/07/Neuron.ComponentModel" /&gt;&lt;BreakPoint&gt;Disable&lt;/BreakPoint&gt;&lt;Disable&gt;false&lt;/Disable&gt;&lt;Id&gt;7cb4947d-3d7d-4c5c-a87e-f0d1cb3525c1&lt;/Id&gt;&lt;Name&gt;Process Input Message&lt;/Name&gt;&lt;Uniquename /&gt;&lt;d3p1:FileName i:nil="true" /&gt;&lt;d3p1:MaxInstances&gt;100&lt;/d3p1:MaxInstances&gt;&lt;d3p1:PipelineName&gt;ProcessInputMessage&lt;/d3p1:PipelineName&gt;&lt;d3p1:PoolTimeout&gt;PT1M&lt;/d3p1:PoolTimeout&gt;&lt;/ESBMessagePipelineStep&gt;&lt;/Steps&gt;&lt;/ESBMessagePipeline&gt;</PipelineBlob>
+  <IsProcessFlow>false</IsProcessFlow>
+</ESBMessagePipelineStorage>

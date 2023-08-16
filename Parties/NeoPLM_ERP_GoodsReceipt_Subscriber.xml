@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<ESBSubscriber xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Id>16dc2085-db7c-4f18-8cf4-cfc97f1c97a4</Id>
+  <Version>8be0e906-a6b9-42a6-ad27-019e07cf3ba9</Version>
+  <BusinessFlows />
+  <Description>A publisher / subscriber to receive ERP Goods Receipt messages, perform business level validations on them, and to create the corresponding business objects in the Neo PLM History database, associated with a production facility.  Note that upon successful completion of the attached business process, the transaction should be considered complete.</Description>
+  <Name>NeoPLM_ERP_GoodsReceipt_Subscriber</Name>
+  <Group>General</Group>
+  <IsSystemObject>false</IsSystemObject>
+  <IsPrivate>false</IsPrivate>
+  <Bindings />
+  <SubscriberId>NeoPLM_ERP_GoodsReceipt_Subscriber</SubscriberId>
+  <ClientGroup>General</ClientGroup>
+  <Zone>Enterprise</Zone>
+  <Enabled>true</Enabled>
+  <Subscriptions>
+    <Subscription>
+      <TopicName>Enrich_ERP_GoodsReceipt</TopicName>
+      <CanRead>true</CanRead>
+      <CanWrite>false</CanWrite>
+      <SubscriptionType>Topic</SubscriptionType>
+    </Subscription>
+    <Subscription>
+      <TopicName>ESBError</TopicName>
+      <CanRead>false</CanRead>
+      <CanWrite>true</CanWrite>
+      <SubscriptionType>Topic</SubscriptionType>
+    </Subscription>
+    <Subscription>
+      <TopicName>EmailNotification</TopicName>
+      <CanRead>false</CanRead>
+      <CanWrite>true</CanWrite>
+      <SubscriptionType>Topic</SubscriptionType>
+    </Subscription>
+  </Subscriptions>
+  <ACL />
+  <Anonymous>true</Anonymous>
+  <AllowMultipleInstances>true</AllowMultipleInstances>
+  <MessagePipelines />
+  <LogActivity>false</LogActivity>
+  <UseUniqueWmiCounterName>false</UseUniqueWmiCounterName>
+</ESBSubscriber>

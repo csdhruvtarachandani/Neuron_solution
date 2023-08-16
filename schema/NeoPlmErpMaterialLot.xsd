@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-16"?>
+<xs:schema xmlns="http://neoplm.erp.materiallot" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://neoplm.erp.materiallot">
+	<xs:element name="NeoPlmErpMaterialLot">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="SourceSystemID" minOccurs="1" maxOccurs="1">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:maxLength value="64"/>
+							<xs:minLength value="1"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="TransactionDateTime" minOccurs="1" maxOccurs="1">
+					<xs:simpleType>
+						<xs:restriction base="xs:dateTime"/>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="TransactionID" minOccurs="1" maxOccurs="1">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:minLength value="1"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="ReferencedLotHandlerOption" minOccurs="0">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:enumeration value="ReplaceReference"/>
+							<xs:enumeration value="AddReference"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="MaterialLots" minOccurs="1" maxOccurs="1">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="MaterialLot" minOccurs="1" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="LastUpdateDateTime" minOccurs="1" maxOccurs="1">
+											<xs:simpleType>
+												<xs:restriction base="xs:dateTime"/>
+											</xs:simpleType>
+										</xs:element>
+										<xs:element name="PlantID" minOccurs="1" maxOccurs="1">
+											<xs:simpleType>
+												<xs:restriction base="xs:string">
+													<xs:maxLength value="64"/>
+													<xs:minLength value="1"/>
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+										<xs:element name="MaterialID" minOccurs="1" maxOccurs="1">
+											<xs:simpleType>
+												<xs:restriction base="xs:string">
+													<xs:maxLength value="128"/>
+													<xs:minLength value="1"/>
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+										<xs:element name="MaterialLotID" minOccurs="1" maxOccurs="1">
+											<xs:simpleType>
+												<xs:restriction base="xs:string">
+													<xs:maxLength value="128"/>
+													<xs:minLength value="1"/>
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+										<xs:element name="StatusCode" minOccurs="1" maxOccurs="1">
+											<xs:simpleType>
+												<xs:restriction base="xs:string">
+													<xs:maxLength value="64"/>
+													<xs:minLength value="1"/>
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+										<xs:element name="StatusDescription" minOccurs="0" maxOccurs="1">
+											<xs:simpleType>
+												<xs:restriction base="xs:string">
+													<xs:maxLength value="256"/>
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+                                        <xs:element name="RevaluationDateUtc" minOccurs="0" maxOccurs="1" type="xs:string">				
+										</xs:element>
+										<xs:element name="Potency" minOccurs="0" maxOccurs="1">
+											<xs:simpleType>
+												<xs:restriction base="xs:float"/>
+											</xs:simpleType>
+										</xs:element>
+										<xs:element name="PotencyUOM" minOccurs="0" maxOccurs="1">
+											<xs:simpleType>
+												<xs:restriction base="xs:string">
+													<xs:maxLength value="64"/>
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+										<xs:element name="SupplierID" minOccurs="0" maxOccurs="1">
+											<xs:simpleType>
+												<xs:restriction base="xs:string">
+													<xs:maxLength value="64"/>
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+										<xs:element name="SupplierName" minOccurs="0" maxOccurs="1">
+											<xs:simpleType>
+												<xs:restriction base="xs:string">
+													<xs:maxLength value="64"/>
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+										<xs:element name="SupplierLotID" minOccurs="0" maxOccurs="1">
+											<xs:simpleType>
+												<xs:restriction base="xs:string">
+													<xs:maxLength value="128"/>
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+										<xs:element name="ReferencedLots" minOccurs="0" maxOccurs="1">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="ReferencedLot" minOccurs="1" maxOccurs="unbounded">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element name="SourceSystemID" minOccurs="1" maxOccurs="1">
+																	<xs:simpleType>
+																		<xs:restriction base="xs:string">
+																			<xs:maxLength value="64"/>
+																			<xs:minLength value="1"/>
+																		</xs:restriction>
+																	</xs:simpleType>
+																</xs:element>
+																<xs:element name="PlantID" minOccurs="1" maxOccurs="1">
+																	<xs:simpleType>
+																		<xs:restriction base="xs:string">
+																			<xs:maxLength value="64"/>
+																			<xs:minLength value="1"/>
+																		</xs:restriction>
+																	</xs:simpleType>
+																</xs:element>
+																<xs:element name="MaterialID" minOccurs="1" maxOccurs="1">
+																	<xs:simpleType>
+																		<xs:restriction base="xs:string">
+																			<xs:maxLength value="128"/>
+																			<xs:minLength value="1"/>
+																		</xs:restriction>
+																	</xs:simpleType>
+																</xs:element>
+																<xs:element name="MaterialLotID" minOccurs="1" maxOccurs="1">
+																	<xs:simpleType>
+																		<xs:restriction base="xs:string">
+																			<xs:maxLength value="128"/>
+																			<xs:minLength value="1"/>
+																		</xs:restriction>
+																	</xs:simpleType>
+																</xs:element>
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="Enrichment" minOccurs="0" maxOccurs="1">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="FacilityUID" type="xs:string" minOccurs="1" maxOccurs="1"/>
+													<xs:element name="MaterialMasterUID" type="xs:string" minOccurs="1" maxOccurs="1"/>
+													<xs:element name="MaterialLotUID" type="xs:string" minOccurs="1" maxOccurs="1"/>
+													<xs:element name="EngineeringUnitUID" type="xs:string" minOccurs="1" maxOccurs="1"/>
+													<xs:element name="StatusUID" type="xs:string" minOccurs="1" maxOccurs="1"/>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

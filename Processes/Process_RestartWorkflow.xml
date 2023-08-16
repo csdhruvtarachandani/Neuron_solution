@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<ESBMessagePipelineStorage xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Id>4f1d2eca-4d3a-42b4-b7de-d1f68155c8be</Id>
+  <Version>7d10e3b4-71d5-4502-9003-88d007697168</Version>
+  <BusinessFlows />
+  <Description />
+  <Name>Process_RestartWorkflow</Name>
+  <IsSystemObject>false</IsSystemObject>
+  <IsPrivate>false</IsPrivate>
+  <Category>General</Category>
+  <IsEncrypted>true</IsEncrypted>
+  <Path>SubProcesses</Path>
+  <PipelineBlob>&lt;ESBMessagePipeline xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.neuronesb.com/pipelines/"&gt;&lt;Category&gt;General&lt;/Category&gt;&lt;Description i:nil="true" /&gt;&lt;GlobalProperties xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" /&gt;&lt;Name&gt;Process_RestartWorkflow&lt;/Name&gt;&lt;Properties xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" /&gt;&lt;ReferencedAssemblies xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" /&gt;&lt;Steps&gt;&lt;ESBMessagePipelineStep xmlns:d3p1="http://schemas.neuronesb.com/pipelines/esb/" i:type="d3p1:EsbMessageCSharpCodePipelineStep"&gt;&lt;Bindings xmlns:d4p1="http://schemas.datacontract.org/2004/07/Neuron.ComponentModel" /&gt;&lt;BreakPoint&gt;Disable&lt;/BreakPoint&gt;&lt;Disable&gt;false&lt;/Disable&gt;&lt;Id&gt;2f8bdc05-7da5-4417-a17f-b41e331f0faf&lt;/Id&gt;&lt;Name&gt;Set Action&lt;/Name&gt;&lt;Uniquename /&gt;&lt;BreakPointLines xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" /&gt;&lt;Code&gt;context.Instance.TraceInformation("Start of restart workflow set action");
+string machineName = context.Data.Header.Machine;
+string instanceName = context.Configuration.InstanceName;
+//if(context.Data.Http != null &amp;amp;&amp;amp; context.Data.Http.Query != null)
+//{
+//	context.Instance.TraceInformation("Count for keys: " + context.Data.Http.Query.Count);
+//	foreach(var keyVal in context.Data.Http.Query) {
+//		context.Instance.TraceInformation("Key :" + keyVal.Key + " Val :" + keyVal.Value);
+//	}
+//}
+//else
+//{
+//	context.Instance.TraceInformation("Count for keys is null!! ");
+//}
+string workflowInstanceId = context.Data.Http.Query["WorkflowInstanceId"];
+string workflowEndpointId = context.Data.Http.Query["workflowEndpointId"];
+string operationType= "Restart";
+
+string url = "http://localhost:51002/neuronesb/api/v1/Activity/";
+var jsonMessageTemplate = context.Configuration.TextDocs["RestartWorkflowMessageTemplate"].Text;
+//jsonMessageTemplate = "{" + jsonMessageTemplate + "}";
+String json_request = String.Format(jsonMessageTemplate, machineName, instanceName,
+workflowInstanceId, workflowEndpointId, operationType);
+context.Instance.TraceInformation(json_request);
+
+context.Data.FromString(json_request);
+context.Data.SetProperty("Addressing", "To", url);
+context.Data.LocalPath = "DoWorkflowOperation/";
+context.Data.Http.Method = "POST";
+context.Data.Http.Headers.ContentType = "application/json";
+context.Data.Http.Query.Clear();
+
+//TEST SOURCE ID. REMOVE LATER
+context.Data.Header.SourceId = "B2MML_ERP_Publisher";
+context.Instance.TraceInformation("End of restart workflow set action");&lt;/Code&gt;&lt;ReferencedAssemblies xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays"&gt;&lt;d4p1:string&gt;Neuron&lt;/d4p1:string&gt;&lt;d4p1:string&gt;Neuron.Pipelines&lt;/d4p1:string&gt;&lt;d4p1:string&gt;Neuron.Esb&lt;/d4p1:string&gt;&lt;d4p1:string&gt;System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d4p1:string&gt;&lt;d4p1:string&gt;System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d4p1:string&gt;&lt;d4p1:string&gt;System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d4p1:string&gt;&lt;d4p1:string&gt;System.Xml.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d4p1:string&gt;&lt;d4p1:string&gt;System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d4p1:string&gt;&lt;d4p1:string&gt;System.Data.DataSetExtensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d4p1:string&gt;&lt;d4p1:string&gt;System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d4p1:string&gt;&lt;d4p1:string&gt;System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d4p1:string&gt;&lt;d4p1:string&gt;Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed&lt;/d4p1:string&gt;&lt;d4p1:string&gt;Microsoft.CSharp, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&lt;/d4p1:string&gt;&lt;/ReferencedAssemblies&gt;&lt;TypeName&gt;Type7d88b64c3c24cc59a3ecd40a3289dd&lt;/TypeName&gt;&lt;/ESBMessagePipelineStep&gt;&lt;ESBMessagePipelineStep xmlns:d3p1="http://schemas.neuronesb.com/pipelines/esb/" i:type="d3p1:EsbMessageServiceEndpointPipelineStep"&gt;&lt;Bindings xmlns:d4p1="http://schemas.datacontract.org/2004/07/Neuron.ComponentModel" /&gt;&lt;BreakPoint&gt;Disable&lt;/BreakPoint&gt;&lt;Disable&gt;false&lt;/Disable&gt;&lt;Id&gt;1620ac5f-008c-496c-8b0f-aa040b8e797d&lt;/Id&gt;&lt;Name&gt;Service Endpoint&lt;/Name&gt;&lt;Uniquename /&gt;&lt;d3p1:Category&gt;General&lt;/d3p1:Category&gt;&lt;d3p1:Description&gt;This service is used to Retry the Workflows.&lt;/d3p1:Description&gt;&lt;d3p1:MaxServiceInstances&gt;100&lt;/d3p1:MaxServiceInstances&gt;&lt;d3p1:MessagePattern&gt;Request-Reply&lt;/d3p1:MessagePattern&gt;&lt;d3p1:Policy /&gt;&lt;d3p1:ServiceBinding&gt;REST&lt;/d3p1:ServiceBinding&gt;&lt;d3p1:ServiceConnector&gt;NeoPLM Restart Workflow Service Endpoint&lt;/d3p1:ServiceConnector&gt;&lt;d3p1:ServiceId&gt;4c515157-ac01-43f8-8937-1b8582d44a25&lt;/d3p1:ServiceId&gt;&lt;d3p1:ServicePoolTimeout&gt;PT1M&lt;/d3p1:ServicePoolTimeout&gt;&lt;d3p1:ServiceUrl&gt;http://DummyURL&lt;/d3p1:ServiceUrl&gt;&lt;d3p1:ThrowExceptionOnFault&gt;false&lt;/d3p1:ThrowExceptionOnFault&gt;&lt;/ESBMessagePipelineStep&gt;&lt;ESBMessagePipelineStep xmlns:d3p1="http://schemas.neuronesb.com/pipelines/esb/" i:type="d3p1:EsbMessageCSharpCodePipelineStep"&gt;&lt;Bindings xmlns:d4p1="http://schemas.datacontract.org/2004/07/Neuron.ComponentModel" /&gt;&lt;BreakPoint&gt;Disable&lt;/BreakPoint&gt;&lt;Disable&gt;false&lt;/Disable&gt;&lt;Id&gt;4ce31746-111f-4e21-8583-fa465e59a667&lt;/Id&gt;&lt;Name&gt;Parse Response&lt;/Name&gt;&lt;Uniquename /&gt;&lt;BreakPointLines xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" /&gt;&lt;Code&gt;////Handle any errors that have occurred
+if(context.Data.Http.StatusCode.Value.ToString() == "OK")
+{
+	string messageDetail = context.Data.Text;
+	context.Instance.TraceInformation("Workflow restart request process response : " + messageDetail);
+}
+else
+{
+	context.Instance.TraceInformation("Workflow restart request process resulted in error!");
+}&lt;/Code&gt;&lt;ReferencedAssemblies xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays"&gt;&lt;d4p1:string&gt;Neuron&lt;/d4p1:string&gt;&lt;d4p1:string&gt;Neuron.Pipelines&lt;/d4p1:string&gt;&lt;d4p1:string&gt;Neuron.Esb&lt;/d4p1:string&gt;&lt;d4p1:string&gt;System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d4p1:string&gt;&lt;d4p1:string&gt;System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d4p1:string&gt;&lt;d4p1:string&gt;System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d4p1:string&gt;&lt;d4p1:string&gt;System.Xml.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d4p1:string&gt;&lt;d4p1:string&gt;System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d4p1:string&gt;&lt;d4p1:string&gt;System.Data.DataSetExtensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d4p1:string&gt;&lt;d4p1:string&gt;System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d4p1:string&gt;&lt;d4p1:string&gt;System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d4p1:string&gt;&lt;d4p1:string&gt;Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed&lt;/d4p1:string&gt;&lt;d4p1:string&gt;Microsoft.CSharp, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&lt;/d4p1:string&gt;&lt;/ReferencedAssemblies&gt;&lt;TypeName&gt;Typed3f1b5a893346f6bab118b7ea9f7db&lt;/TypeName&gt;&lt;/ESBMessagePipelineStep&gt;&lt;/Steps&gt;&lt;/ESBMessagePipeline&gt;</PipelineBlob>
+  <IsProcessFlow>false</IsProcessFlow>
+</ESBMessagePipelineStorage>

@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<NeuronVariable xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Id>9de11344-52f0-4805-9002-5e6613085e82</Id>
+  <Version>76a450eb-0961-42c4-aa42-9b3a60b541e3</Version>
+  <BusinessFlows />
+  <Description>This parameter is the authorized user on the SMTP (email) server.  Only used if anonymous logon is disabled.</Description>
+  <Name>SmtpUserAccount</Name>
+  <Group>General</Group>
+  <IsSystemObject>false</IsSystemObject>
+  <IsPrivate>false</IsPrivate>
+  <Mask>false</Mask>
+</NeuronVariable>

@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CheckBOMQuantityRequest>
+	<PVID>{0}</PVID>
+	<LineNumber>{1}</LineNumber>
+	<Quantity>{2}</Quantity>
+	<OriginalMessage>{3}</OriginalMessage>
+</CheckBOMQuantityRequest>

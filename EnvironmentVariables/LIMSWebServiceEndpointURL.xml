@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<NeuronVariable xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Id>b80150b0-5222-4a50-942d-936750cebd01</Id>
+  <Version>df5dbee4-c0aa-4c19-ab81-2172b6a1fce3</Version>
+  <BusinessFlows />
+  <Description>This is the web service address for the LIMS subsystem web service.  It allows the service address, including servers, ports and service name to be changed on a customer / deployment basis.</Description>
+  <Name>LIMSWebServiceEndpointURL</Name>
+  <Group>General</Group>
+  <IsSystemObject>false</IsSystemObject>
+  <IsPrivate>false</IsPrivate>
+  <Mask>false</Mask>
+</NeuronVariable>

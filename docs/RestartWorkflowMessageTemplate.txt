@@ -1,0 +1,7 @@
+﻿{{
+  "machineName": "{0}",
+  "instanceName": "{1}",
+  "workflowInstanceId": "{2}",
+  "workflowEndpointId": "{3}",
+  "operationType": "{4}"
+}}

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ns0:NeoPlmErpGoodsIssue xmlns:ns0="http://NeoPLM.NeoPlmErpGoodsIssue" xmlns:ns="http://www.mesa.org/xml/B2MML-V0600" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:fn="http://www.w3.org/2005/xpath-functions">
+  <SourceSystemID>SAPPQ1</SourceSystemID>
+  <TransactionDateTime>2022-06-17T05:31:21Z</TransactionDateTime>
+  <TransactionID>18486924</TransactionID>
+  <GoodsIssues>
+    <GoodsIssue>
+      <PlantID>IE14</PlantID>
+      <SourceTransactionID>18486924</SourceTransactionID>
+      <MESTransactionDateTime>2015-10-02T15:19:00.000Z</MESTransactionDateTime>
+      <MESOrderID>GF4610</MESOrderID>
+      <ERPOrderID>GF4610</ERPOrderID>
+      <ERPOrderMaterialID>H078812082</ERPOrderMaterialID>
+      <ERPBatchID>VT001271</ERPBatchID>
+      <ERPProductionVersionID>TP03</ERPProductionVersionID>
+      <ERPOperationID>0030</ERPOperationID>
+      <ERPResourceID>0</ERPResourceID>
+      <BOMLineNumber>0040</BOMLineNumber>
+      <MaterialID>H078812082</MaterialID>
+      <MaterialLotID>FM9909</MaterialLotID>
+      <TransactionType>GI</TransactionType>
+      <BatchStatus>Q</BatchStatus>
+      <Quantity>1.500</Quantity>
+      <QuantityUOM>KG</QuantityUOM>
+      <PerformedBy>healyg</PerformedBy>
+      <PerformedByDate>2022-06-17T09:31:21Z</PerformedByDate>
+      <RequestType>WD</RequestType>
+    </GoodsIssue>
+  </GoodsIssues>
+</ns0:NeoPlmErpGoodsIssue>

@@ -1,0 +1,16 @@
+﻿{
+	"UID" : "{0}",
+	"LabTestHistoryUID" : "{1}",
+	"SourceRecordUniqueId" : "{2}",
+	"TestResultId" : "{3}",
+	"TestResultDescription" : "{4}",
+	"TestResultStatus" : "{5}",
+	"EnteredResult" : "{6}",
+	"DisplayResult" : "{7}",
+	"TestResultEngineeringUnitLabel" : "{8}",
+	"ExpectedResult" : "{9}",
+	"TestResultInstanceNumber" : "{10}",
+	"IsFinalResult" : "{11}",
+	"ResultDateTimeUtc" : "{12}",
+	"AdditionalData" : "{13}"
+}

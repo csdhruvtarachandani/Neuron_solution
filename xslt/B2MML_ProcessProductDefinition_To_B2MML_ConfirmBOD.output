@@ -1,0 +1,14 @@
+﻿<ConfirmBOD xmlns="http://www.mesa.org/xml/B2MML-V0600" xmlns:Extended="http://www.mesa.org/xml/B2MML-V0600-AllExtensions" xmlns:ns="http://www.mesa.org/xml/B2MML-V0600" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:fn="http://www.w3.org/2005/xpath-functions">
+  <ApplicationArea>
+    <Sender />
+    <Receiver />
+  </ApplicationArea>
+  <DataArea>
+    <Confirm>
+      <ResponseCriteria>
+        <ResponseExpression actionCode="Accepted" />
+      </ResponseCriteria>
+    </Confirm>
+    <BOD />
+  </DataArea>
+</ConfirmBOD>

@@ -1,0 +1,35 @@
+﻿<ns0:NeoPlmErpMaterialLot xmlns:ns0="http://NeoPLM.ERP.MaterialLot" xmlns:ns="http://www.mesa.org/xml/B2MML-V0600" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:fn="http://www.w3.org/2005/xpath-functions">
+  <SourceSystemID>SAPP01</SourceSystemID>
+  <TransactionDateTime>2022-04-08T07:06:48Z</TransactionDateTime>
+  <TransactionID>0000001165607044</TransactionID>
+  <MaterialLots>
+    <MaterialLot>
+      <LastUpdateDateTime>1999-05-31T13:20:00.000-05:00</LastUpdateDateTime>
+      <PlantID>IE14</PlantID>
+      <MaterialID>R21324800</MaterialID>
+      <MaterialLotID>2001542818</MaterialLotID>
+      <StatusCode>RSTR|Q|R</StatusCode>
+      <StatusDescription>RSTR</StatusDescription>
+      <Potency>0</Potency>
+      <PotencyUOM></PotencyUOM>
+      <SupplierID></SupplierID>
+      <SupplierName></SupplierName>
+      <SupplierLotID>LTXU 935005/8</SupplierLotID>
+      <ReferencedLots>
+        <ReferencedLot>
+          <SourceSystemID>SAPP01</SourceSystemID>
+          <PlantID>IE14</PlantID>
+          <MaterialID>R21324800</MaterialID>
+          <MaterialLotID>2001542818</MaterialLotID>
+        </ReferencedLot>
+      </ReferencedLots>
+      <Enrichment>
+        <FacilityUID />
+        <MaterialMasterUID />
+        <MaterialLotUID />
+        <EngineeringUnitUID />
+        <StatusUID />
+      </Enrichment>
+    </MaterialLot>
+  </MaterialLots>
+</ns0:NeoPlmErpMaterialLot>

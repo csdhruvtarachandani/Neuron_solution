@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ns0:NeoPlmErpGoodsReceipt xmlns:ns0="http://NeoPLM.NeoPlmErpGoodsReceipt" xmlns:ns="http://www.mesa.org/xml/B2MML-V0600" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:fn="http://www.w3.org/2005/xpath-functions">
+  <SourceSystemID>SAPPQ1</SourceSystemID>
+  <TransactionDateTime>2022-06-17T06:15:54Z</TransactionDateTime>
+  <TransactionID>18508124</TransactionID>
+  <GoodsReceipts>
+    <GoodsReceipt>
+      <PlantID>IE14</PlantID>
+      <SourceTransactionID>18508124</SourceTransactionID>
+      <MESTransactionDateTime>2015-10-02T15:19:00.000Z</MESTransactionDateTime>
+      <MESOrderID>GF0095</MESOrderID>
+      <ERPOrderID>GF0095</ERPOrderID>
+      <ERPOrderMaterialID>H077917010</ERPOrderMaterialID>
+      <ERPBatchID>2900</ERPBatchID>
+      <ERPProductionVersionID>TP03</ERPProductionVersionID>
+      <ERPOperationID>0030</ERPOperationID>
+      <ERPResourceID>0</ERPResourceID>
+      <MaterialID>H077917010</MaterialID>
+      <MaterialLotID>GF0095</MaterialLotID>
+      <TransactionType>GR</TransactionType>
+      <BatchStatus>Q</BatchStatus>
+      <Quantity>154.400</Quantity>
+      <QuantityUOM>KG</QuantityUOM>
+      <PerformedBy>onagle</PerformedBy>
+      <PerformedByDate>2022-06-17T10:15:54Z</PerformedByDate>
+      <RequestType>PACKOUT</RequestType>
+    </GoodsReceipt>
+  </GoodsReceipts>
+</ns0:NeoPlmErpGoodsReceipt>

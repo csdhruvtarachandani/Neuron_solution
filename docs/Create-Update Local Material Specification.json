@@ -1,0 +1,13 @@
+﻿{
+ "UID": "{0}",
+ "ExternalSystemUID": "{1}",
+ "ExternalSystemLogicalPlantId": "{2}",
+ "SourceSystemValue": "{3}",
+ "MaterialName": "{4}",
+ "InventoryUnitOfMeasure": "{5}",
+ "MaterialType" : "{6}",
+ "EffectiveStartDateUtc" : "{7}",
+ "EffectiveEndDateUtc" : "{8}",
+ "ExternalSystemLogicalPlantGroupType": {9},
+ "AdditionalData" : "{10}"
+}

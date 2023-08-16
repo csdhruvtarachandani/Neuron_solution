@@ -1,0 +1,11 @@
+﻿{
+	"UID" : "{0}",
+	"SourceRecordUniqueId" : "{1}",
+    "MaterialLotUID" : "{2}",
+    "TestTemplateId" : "{3}",
+    "TestTemplateVersion" : "{4}",
+    "TestTemplateDescription" : "{5}",
+    "TestTemplateType" : "{6}",
+    "AdditionalData" : "{7}",
+    "LastModifiedUtc" : "{8}"
+}

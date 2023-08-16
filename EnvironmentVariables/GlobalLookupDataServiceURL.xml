@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<NeuronVariable xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Id>4057be2a-c13a-458a-9f9b-47388b1cc702</Id>
+  <Version>c7cfe312-607f-49a5-8e37-c79a2d550ca1</Version>
+  <BusinessFlows />
+  <Description>The root server / port address for the Neo Global Integration Service, all service names / method names will be supplied by each interface.</Description>
+  <Name>GlobalLookupDataServiceURL</Name>
+  <Group>General</Group>
+  <IsSystemObject>false</IsSystemObject>
+  <IsPrivate>false</IsPrivate>
+  <Mask>false</Mask>
+</NeuronVariable>

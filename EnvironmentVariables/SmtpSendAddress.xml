@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<NeuronVariable xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Id>9ced8511-7c27-482d-96bd-0599995de8db</Id>
+  <Version>78f19a61-024d-4062-920f-3a11d00c290f</Version>
+  <BusinessFlows />
+  <Description>This parameter contains the email address of the user who sends email error notifications.</Description>
+  <Name>SmtpSendAddress</Name>
+  <Group>General</Group>
+  <IsSystemObject>false</IsSystemObject>
+  <IsPrivate>false</IsPrivate>
+  <Mask>false</Mask>
+</NeuronVariable>

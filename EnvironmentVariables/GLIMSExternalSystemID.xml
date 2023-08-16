@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<NeuronVariable xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Id>4009a7a6-92f1-4f88-9688-a755eedb2a00</Id>
+  <Version>1602e222-6246-494d-973c-d0be0ae62ef1</Version>
+  <BusinessFlows />
+  <Description>This value will be used as the External System ID for every LIMS Message processed by Neuron.</Description>
+  <Name>GLIMSExternalSystemID</Name>
+  <Group>General</Group>
+  <IsSystemObject>false</IsSystemObject>
+  <IsPrivate>false</IsPrivate>
+  <Mask>false</Mask>
+</NeuronVariable>

@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<NeuronVariable xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Id>267775de-4d6c-4384-a0b2-389de92dfc86</Id>
+  <Version>5155d67b-045b-4a95-a533-6df48a5407b3</Version>
+  <BusinessFlows />
+  <Description>Polling Interval (in Seconds) between calls to Database to check Unit Histories to send Order Step Completion.</Description>
+  <Name>OSC_PollingInterval</Name>
+  <Group>General</Group>
+  <IsSystemObject>false</IsSystemObject>
+  <IsPrivate>false</IsPrivate>
+  <Mask>false</Mask>
+</NeuronVariable>

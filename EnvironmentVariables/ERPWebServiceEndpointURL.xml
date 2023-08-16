@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<NeuronVariable xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Id>b2b19aac-6ac1-4404-b0e5-ea7d1d111c9b</Id>
+  <Version>6ad601a9-73da-4874-a222-fe1759ca60cf</Version>
+  <BusinessFlows />
+  <Description>This is the web service address for the ERP subsystem web service.  It allows the service address, including servers, ports and service name to be changed on a customer / deployment basis.</Description>
+  <Name>ERPWebServiceEndpointURL</Name>
+  <Group>General</Group>
+  <IsSystemObject>false</IsSystemObject>
+  <IsPrivate>false</IsPrivate>
+  <Mask>false</Mask>
+</NeuronVariable>

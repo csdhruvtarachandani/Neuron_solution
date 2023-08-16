@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<NeuronVariable xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Id>63e5adb9-c2c2-4120-aa3f-264cebc15daa</Id>
+  <Version>6afae117-b6a2-4450-b4d3-e39cfc385f06</Version>
+  <BusinessFlows />
+  <Description>This parameter is a switch to enable / disable the persistence of all accepted messages to a file system location.  It is used in conjuction with the Accepted Messages Directory parameter.  Set to "True" to enable, "False" to disable.</Description>
+  <Name>SaveAcceptedMessagesToDisk</Name>
+  <Group>General</Group>
+  <IsSystemObject>false</IsSystemObject>
+  <IsPrivate>false</IsPrivate>
+  <Mask>false</Mask>
+</NeuronVariable>

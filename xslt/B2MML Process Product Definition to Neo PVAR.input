@@ -1,0 +1,49 @@
+﻿<ProcessProductDefinition releaseID="B2MML-V0600" xmlns="http://www.mesa.org/xml/B2MML-V0600" xmlns:ns="http://www.mesa.org/xml/B2MML-V0600" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:local="urn:local">
+	<ApplicationArea>
+		<Sender>
+			<LogicalID>SAPP01</LogicalID>
+			<ReferenceID>0000001164902472</ReferenceID>
+		</Sender>
+		<Receiver>
+			<LogicalID>SAP_PI</LogicalID>
+		</Receiver>
+		<CreationDateTime>2022-04-06T12:20:15Z</CreationDateTime>
+	</ApplicationArea>
+	<DataArea>
+		<Process acknowledgeCode="Always" />
+		<ProductDefinition>
+			<ID>H086218030|M024</ID>
+			<Description>OSP1 163.0 Prazosin Hydrochloride</Description>
+			<HierarchyScope>
+				<EquipmentID>IE14</EquipmentID>
+				<EquipmentElementLevel>Site</EquipmentElementLevel>
+			</HierarchyScope>
+			<BillOfMaterialsID>H086218030|36</BillOfMaterialsID>
+			<BillOfResourcesID>50366670|1</BillOfResourcesID>
+			<ProductSegment>
+				<ID>Dummy</ID>
+				<Parameter>
+					<ID>MinProductionQuantity</ID>
+					<Value>
+						<ValueString>       163.000</ValueString>
+					</Value>
+				</Parameter>
+				<Parameter>
+					<ID>MaxProductionQuantity</ID>
+					<Value>
+						<ValueString>       163.000</ValueString>
+					</Value>
+				</Parameter>
+				<Parameter>
+					<ID>LongText</ID>
+					<Value>
+						<ValueString>OSP1 163.0 PRAZOSIN HYDROCHLORIDE</ValueString>
+					</Value>
+				</Parameter>
+				<MaterialSpecification>
+					<MaterialDefinitionID>H086218030</MaterialDefinitionID>
+				</MaterialSpecification>
+			</ProductSegment>
+		</ProductDefinition>
+	</DataArea>
+</ProcessProductDefinition>

@@ -1,0 +1,18 @@
+﻿{
+  "UID": "{0}",
+  "SiteFacilityUID": "{1}",
+  "ERPPlantCodeUID": "{2}",
+  "LocalMaterialSpecificationUID": "{3}",
+  "MaterialLotUID": "{4}",
+  "ERPPlannedOrderUID": "{5}",
+  "ProcessOrderId": "{6}",
+  "ProductionVersionId": "{7}",
+  "AdditionalData": "{8}",
+  "StartTimeUtc": "{9}",
+  "EndTimeUtc": "{10}",
+  "SourceRecordLastModifiedUtc": "{11}",
+  "LastModifiedUtc": "{12}",
+  "QuantityEngineeringUnitLabel": "{13}",
+  "QuantityToProduce": "{14}",
+  "QuantityEngineeringUnitUID": "{15}"
+}

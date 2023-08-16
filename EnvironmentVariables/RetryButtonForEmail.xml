@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<NeuronVariable xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Id>0cc52137-3183-4237-9325-6a0a714c9e69</Id>
+  <Version>211520da-9832-494f-b169-2efa69281266</Version>
+  <BusinessFlows />
+  <Description>This variable is used to toggle the Retry Button in Error Emails which is used to Retry the WorkFlows. Set 'True' to Enable the Retry Button or set 'False' to Disable the Retry Button.</Description>
+  <Name>RetryButtonForEmail</Name>
+  <Group>General</Group>
+  <IsSystemObject>false</IsSystemObject>
+  <IsPrivate>false</IsPrivate>
+  <Mask>false</Mask>
+</NeuronVariable>

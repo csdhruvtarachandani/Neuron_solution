@@ -1,0 +1,1174 @@
+﻿<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" xmlns:ns1="http://NeoPLM.com/EnterpriseIntegration" xmlns:ns2="http://microsoft.com/wsdl/types/" targetNamespace="http://NeoPLM.com/EnterpriseIntegration" elementFormDefault="qualified" attributeFormDefault="unqualified" vc:minVersion="1.1">
+	<!--Facility UID Lookup Schemas-->
+	<xs:import namespace="http://microsoft.com/wsdl/types/" schemaLocation="guid.xsd"/>
+	<xs:complexType name="FacilityRequestType">
+		<xs:annotation>
+			<xs:documentation>A complex type to represent the input message to the GetFacilityUID Neuron Process.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="TransactionID">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="SourceSystemID">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="PlantCodeID">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="EmptyGuidIsAllowed" type="xs:boolean"/>
+			<xs:element name="OriginalMessage">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="FacilityResponseType">
+		<xs:annotation>
+			<xs:documentation>A complex type to represent the output message from the Get Facility UID Neuron Process.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="TransactionID">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="SourceSystemID">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="PlantCodeID">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="FacilityUID" type="ns2:guid"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="FacilityRequest" type="ns1:FacilityRequestType">
+		<xs:annotation>
+			<xs:documentation>An element to represent the input message to the Get Facility UID Neuron Process.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="FacilityResponse" type="ns1:FacilityResponseType">
+		<xs:annotation>
+			<xs:documentation>An element to represent the output message from the Get Facility UID Neuron Process.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--PlantCode UID Lookup Schemas-->
+	<xs:complexType name="PlantCodeRequestType">
+		<xs:annotation>
+			<xs:documentation>A complex type to represent the input message to the Get Plant Code UID Neuron Process. </xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="TransactionID">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="NeoPLMFacilityUID">
+				<xs:simpleType>
+					<xs:restriction base="ns2:guid">
+						<xs:minLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="PlantCodeID">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="EmptyGuidIsAllowed" type="xs:boolean"/>
+			<xs:element name="OriginalMessage">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="PlantCodeResponseType">
+		<xs:annotation>
+			<xs:documentation>A complex type to represent the output message from the Get Plant Code UID Neuron Process</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="TransactionID">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="NeoPLMFacilityUID">
+				<xs:simpleType>
+					<xs:restriction base="ns2:guid">
+						<xs:minLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="PlantCodeID">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="NeoPLMPlantCodeUID">
+				<xs:simpleType>
+					<xs:restriction base="ns2:guid">
+						<xs:minLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="PlantCodeRequest" type="ns1:PlantCodeRequestType">
+		<xs:annotation>
+			<xs:documentation>An element to represent the input message to the Get Plant Code UID Neuron Process</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="PlantCodeResponse" type="ns1:PlantCodeResponseType">
+		<xs:annotation>
+			<xs:documentation>An element to represent the output message from the Get Plant Code UID Neuron Process</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--Material Master UID Lookup Schemas-->
+	<xs:complexType name="MaterialMasterRequestType">
+		<xs:annotation>
+			<xs:documentation>A complex type to represent the input message to the Get Material Master UID Neuron Process.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="TransactionID">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="SourceSystemID">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="PlantCodeID">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="MaterialMasterID">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="EmptyGuidIsAllowed" type="xs:boolean"/>
+			<xs:element name="OriginalMessage">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="MaterialMasterResponseType">
+		<xs:annotation>
+			<xs:documentation>A complex type to represent the output message to the Get Material Master UID Neuron Process.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="TransactionID">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="SourceSystemID">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="PlantCodeID">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="MaterialMasterID">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="NeoPLMMaterialMasterUID" type="ns2:guid"/>
+			<xs:element name="NeoPLMMaterialMasterType" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="MaterialMasterRequest" type="ns1:MaterialMasterRequestType">
+		<xs:annotation>
+			<xs:documentation>An element to represent the input message to the Get Material Master UID Neuron Process.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="MaterialMasterResponse" type="ns1:MaterialMasterResponseType">
+		<xs:annotation>
+			<xs:documentation>An element to represent the output message from the Get Material Master UID Neuron Process.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--Material Lot UID Lookup Schemas-->
+	<xs:complexType name="MaterialLotRequestType">
+		<xs:annotation>
+			<xs:documentation>A complex type to represent the input message to the Get Material Master UID Neuron Process.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="TransactionID">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="NeoPLMPlantCodeUID" type="ns2:guid"/>
+			<xs:element name="NeoPLMMaterialMasterUID" type="ns2:guid"/>
+			<xs:element name="MaterialLotID">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="LocalServiceURI">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="EmptyGuidIsAllowed" type="xs:boolean"/>
+			<xs:element name="OriginalMessage">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="MaterialLotResponseType">
+		<xs:annotation>
+			<xs:documentation>A complex type to represent the output message from the Get Material Master UID Neuron Process.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="TransactionID">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="NeoPLMPlantCodeUID" type="ns2:guid"/>
+			<xs:element name="NeoPLMMaterialMasterUID" type="ns2:guid"/>
+			<xs:element name="NeoPLMMaterialLotUID" type="ns2:guid"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="MaterialLotRequest" type="ns1:MaterialLotRequestType">
+		<xs:annotation>
+			<xs:documentation>An element to represent the input message to the Get Material Master UID Neuron Process.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="MaterialLotResponse" type="ns1:MaterialLotResponseType">
+		<xs:annotation>
+			<xs:documentation>An element to represent the output message from the Get Material Master UID Neuron Process.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--Local Integration Service URI Schemas-->
+	<xs:complexType name="LocalServiceURIRequestType">
+		<xs:annotation>
+			<xs:documentation>A complex type to represent the input message to the Get Local Service URI Neuron Process</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="TransactionID">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="NeoPLMFacilityUID">
+				<xs:simpleType>
+					<xs:restriction base="ns2:guid">
+						<xs:minLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="OriginalMessage">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="LocalServiceURIResponseType">
+		<xs:annotation>
+			<xs:documentation>A compex type to represent the output message from the Get Local Service URI Neuron Process.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="TransactionID">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="NeoPLMFacilityUID" type="ns2:guid"/>
+			<xs:element name="LocalServiceURI">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="LocalServiceURIRequest" type="ns1:LocalServiceURIRequestType">
+		<xs:annotation>
+			<xs:documentation>An element to represent the input message to the Get Local Service URI Neuron Process.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="LocalServiceURIResponse" type="ns1:LocalServiceURIResponseType">
+		<xs:annotation>
+			<xs:documentation>An element to represent the output message from the Get Local Service URI Neuron Process</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--Material Lot Status Lookup Schemas-->
+	<xs:complexType name="MaterialLotStatusLookupRequestType">
+		<xs:annotation>
+			<xs:documentation>A complex type to represent the input message to the Get (Material Lot) Status UID Neuron Process.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="TransactionID">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="SourceSystemID">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="PlantCodeID">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="SourceSystemQualityStatusCode">
+				<xs:simpleType>
+					<xs:restriction base="xs:string"/>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="LookupFailureIsError" type="xs:boolean"/>
+			<xs:element name="OriginalMessage">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="MaterialLotStatusLookupResponseType">
+		<xs:annotation>
+			<xs:documentation>A complex type to represent the output message from the Get (Material Lot) Status UID Neuron Process.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="TransactionID">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="SourceSystemID">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="PlantCodeID">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="SourceSystemQualityStatusCode">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="NeoPLMStatus" type="xs:int"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="MaterialLotStatusLookupRequest" type="ns1:MaterialLotStatusLookupRequestType">
+		<xs:annotation>
+			<xs:documentation>An element to represent the input message to the Get (Material Lot) Status UID Neuron Process.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="MaterialLotStatusLookupResponse" type="ns1:MaterialLotStatusLookupResponseType">
+		<xs:annotation>
+			<xs:documentation>An element to represent the output message from the Get (Material Lot) Status UID Neuron Process</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--Engineering Unit UID Lookup Schemas-->
+	<xs:complexType name="EngineeringUnitLookupRequestType">
+		<xs:annotation>
+			<xs:documentation>A complex type to represent the input message to the Get Engineering Unit UID Neuron Process</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="TransactionID">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="SourceSystemID">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="UOMLabel">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="EmptyGuidIsAllowed" type="xs:boolean"/>
+			<xs:element name="OriginalMessage">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="EngineeringUnitLookupResponseType">
+		<xs:annotation>
+			<xs:documentation>A complex type to represent the output message from the Get Engineering Unit UID Neuron Process</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="TransactionID">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="SourceSystemID">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="UOMLabel">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="NeoPLMEngineeringUnitUID">
+				<xs:simpleType>
+					<xs:restriction base="ns2:guid">
+						<xs:minLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="EngineeringUnitLookupRequest" type="ns1:EngineeringUnitLookupRequestType">
+		<xs:annotation>
+			<xs:documentation>An element to represent the input message to the Get Engineering Unit UID Neuron Process</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="EngineeringUnitLookupResponse" type="ns1:EngineeringUnitLookupResponseType">
+		<xs:annotation>
+			<xs:documentation>An element to represent the output message from the Get Engineering Unit UID Neuron Process.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--Material Lot Ancestor Schemas-->
+	<xs:complexType name="MaterialLotAncestorRequestType">
+		<xs:annotation>
+			<xs:documentation>A complex type to represent the input message to the Get Material Lot Ancestors Neuron Process</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="TransactionID" type="xs:string"/>
+			<xs:element name="LocalServiceURI" type="xs:string"/>
+			<xs:element name="MaterialLotUID" type="ns2:guid"/>
+			<xs:element name="MaterialLotAncestorUID" type="ns2:guid"/>
+			<xs:element name="EmptyGuidIsAllowed" type="xs:boolean"/>
+			<xs:element name="OriginalMessage" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="MaterialLotAncestorResponseType">
+		<xs:annotation>
+			<xs:documentation>A complex type to represent the output message from the Get Material Lot Ancestors Neuron Process</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="UID">
+				<xs:simpleType>
+					<xs:restriction base="ns2:guid">
+						<xs:minLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="MaterialLotUID">
+				<xs:simpleType>
+					<xs:restriction base="ns2:guid">
+						<xs:minLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="MaterialLotAncestorUID">
+				<xs:simpleType>
+					<xs:restriction base="ns2:guid">
+						<xs:minLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="SiteFacilityUID">
+				<xs:simpleType>
+					<xs:restriction base="ns2:guid">
+						<xs:minLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="AdditionalData">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="MaterialLotAncestorRequest" type="ns1:MaterialLotAncestorRequestType">
+		<xs:annotation>
+			<xs:documentation>An element to represent the input message to Get Material Lot Ancestors Neuron Process.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="MaterialLotAncestorResponse" type="ns1:MaterialLotAncestorResponseType">
+		<xs:annotation>
+			<xs:documentation>An element to represent the output message to the Get Material Lot Ancestors Neuron Process</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--Execution Order Lookup Schemas-->
+	<xs:complexType name="ExecutionOrderRequestType">
+		<xs:annotation>
+			<xs:documentation>A complex type to represent the input message to the Get Order UID Neuron Process.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="NeoPLMPlantCodeUID">
+				<xs:simpleType>
+					<xs:restriction base="ns2:guid">
+						<xs:minLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="NeoPLMMaterialMasterUID">
+				<xs:simpleType>
+					<xs:restriction base="ns2:guid">
+						<xs:minLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="ExecutionOrderID">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="ExecutionOrderResponseType">
+		<xs:annotation>
+			<xs:documentation>A complex type to represent the output message from the Get Order UID Neuron Process.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="NeoPLMPlantCodeUID">
+				<xs:simpleType>
+					<xs:restriction base="ns2:guid">
+						<xs:minLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="NeoPLMMaterialMasterUID">
+				<xs:simpleType>
+					<xs:restriction base="ns2:guid">
+						<xs:minLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="ExecutionOrderID">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="NeoPLMExecutionOrderUID">
+				<xs:simpleType>
+					<xs:restriction base="ns2:guid">
+						<xs:minLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="ExecutionOrderRequest" type="ns1:ExecutionOrderRequestType">
+		<xs:annotation>
+			<xs:documentation>An element to represent the input message to the Get Order UID Neuron Process.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="ExecutionOrderResponse" type="ns1:ExecutionOrderResponseType">
+		<xs:annotation>
+			<xs:documentation>An element to represent the output message from the Get Order UID Neuron Process.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--Lab History Lookup Schemas-->
+	<xs:complexType name="LabHistoryRequestType">
+		<xs:annotation>
+			<xs:documentation>A complex type to represent the input message to the Get Lab History UID Neuron Process.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="SourceRecordUniqueID">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="LabHistoryResponseType">
+		<xs:annotation>
+			<xs:documentation>A complex type to represent the output message from the Get Lab History UID Neuron Process.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="SourceRecordUniqueID">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="NeoPLMLabHistoryUID">
+				<xs:simpleType>
+					<xs:restriction base="ns2:guid">
+						<xs:minLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="LabHistoryRequest">
+		<xs:annotation>
+			<xs:documentation>An element to represent the input message to the Get Lab History UID Neuron Process.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="ns1:LabHistoryRequestType"/>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="LabHistoryResponse" type="ns1:LabHistoryResponseType">
+		<xs:annotation>
+			<xs:documentation>An element to represent the output message from the Get Lab History UID Neuron Process.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--Date Time Validation Schemas-->
+	<xs:complexType name="DateTimeValidationRequestType">
+		<xs:annotation>
+			<xs:documentation>A complex type to contain a request to validate a Date Time value is properly specified.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="TransactionID" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>The Transaction ID on the original Message.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="SourceSystemID" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>The Source System ID on the original Message</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="PlantCodeID" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>The Plant Code ID on the original Message</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="DateTimeMeaning" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>The meaning of the date time in the original message context.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="DateTime" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>The date time value to be validated.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="OriginalMessage" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>The original message, used for  error message reporting.  </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="DateTimeValidationRequest" type="ns1:DateTimeValidationRequestType">
+		<xs:annotation>
+			<xs:documentation>An elemment to contain a request to validate a Date Time value is properly specified.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--LocalMaterialSpecifications-->
+	<xs:complexType name="LocalMaterialSpecificationRequestType">
+		<xs:annotation>
+			<xs:documentation>A complex Type to contain a request to create / update a Local Material Specification</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="SourceSystemUID" type="ns2:guid"/>
+			<xs:element name="PlantCodeID" type="xs:string"/>
+			<xs:element name="MaterialID" type="xs:string"/>
+			<xs:element name="NeoMaterialType" type="xs:string"/>
+			<xs:element name="MaterialDescription" type="xs:string"/>
+			<xs:element name="InventoryUnitofMeasure" type="xs:string"/>
+			<xs:element name="MaterialType" type="xs:string"/>
+			<xs:element name="EffectiveStartDateUTC" type="xs:dateTime"/>
+			<xs:element name="EffectiveEndDateUTC" type="xs:dateTime"/>
+			<xs:element name="AdditionalData" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="LocalMaterialSpecificationRequest" type="ns1:LocalMaterialSpecificationRequestType">
+		<xs:annotation>
+			<xs:documentation>An Element to contain a request to create / update a Local Material Specification</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--External System Lookup Schemas-->
+	<xs:complexType name="ExternalSystemRequestType">
+		<xs:annotation>
+			<xs:documentation>A complex Type to contain a request to get an External System UID</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="TransactionID" type="xs:string"/>
+			<xs:element name="SourceSystemID" type="xs:string"/>
+			<xs:element name="EmptyGuidIsAllowed" type="xs:boolean"/>
+			<xs:element name="OriginalMessage" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="ExternalSystemResponseType">
+		<xs:annotation>
+			<xs:documentation>A complex Type to contain a response to get an External System UID</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="TransactionID" type="xs:string"/>
+			<xs:element name="SourceSystemID" type="xs:string"/>
+			<xs:element name="SourceSystemUID" type="ns2:guid"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="ExternalSystemRequest" type="ns1:ExternalSystemRequestType">
+		<xs:annotation>
+			<xs:documentation>An element to contain a request to get an ExternalSystemUID</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="ExternalSystemResponse" type="ns1:ExternalSystemResponseType">
+		<xs:annotation>
+			<xs:documentation>An Element to contain a response to get and External System UID</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--Material Lots-->
+	<xs:complexType name="MaterialLotSaveRequestType">
+		<xs:annotation>
+			<xs:documentation>A complex type to represent a Neo PLM Material Lot</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="TransactionType">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="Create"/>
+						<xs:enumeration value="Update"/>
+						<xs:enumeration value="Create/Update"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="LocalServiceURI" type="xs:string"/>
+			<xs:element name="LotCode" type="xs:string"/>
+			<xs:element name="SiteFacilityUID" type="ns2:guid"/>
+			<xs:element name="FacilityERPPlantCodeUID" type="ns2:guid"/>
+			<xs:element name="MaterialEntityUID" type="ns2:guid"/>
+			<xs:element name="MaterialReferenceType" type="xs:integer"/>
+			<xs:element name="ExternalStatus" type="xs:string"/>
+			<xs:element name="ExternalStatusDescription" type="xs:string"/>
+			<xs:element name="LotStatusType" type="xs:integer"/>
+			<xs:element name="Potency" type="xs:double"/>
+			<xs:element name="SourcePotencyEngineeringUnitLabel" type="xs:string"/>
+			<xs:element name="PotencyEngineeringUnitUID" type="ns2:guid"/>
+			<xs:element name="SupplierID" type="xs:string"/>
+			<xs:element name="SupplierName" type="xs:string"/>
+			<xs:element name="SupplierLotID" type="xs:string"/>
+			<xs:element name="LastModifiedUTC" type="xs:string"/>
+			<xs:element name="SourceRecordLastModifiedUTC" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="MaterialLotSaveRequest" type="ns1:MaterialLotSaveRequestType">
+		<xs:annotation>
+			<xs:documentation>An element to represent a Neo PLM Material Lot</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--Material Lot Ancestor Maps-->
+	<xs:complexType name="MaterialLotAncestorMapSaveRequestType">
+		<xs:annotation>
+			<xs:documentation>A complex type to represent a Neo PLM Material Lot Ancestor Map</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="TransactionType">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="Create"/>
+						<xs:enumeration value="Update"/>
+						<xs:enumeration value="Create/Update"/>
+						<xs:enumeration value="Delete"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="LocalServiceURI" type="xs:string"/>
+			<xs:element name="MaterialLotUID" type="ns2:guid"/>
+			<xs:element name="MaterialLotAncestorUID" type="ns2:guid"/>
+			<xs:element name="SiteFacilityUID" type="ns2:guid"/>
+			<xs:element name="AdditionalData" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="MaterialLotAncestorMapSaveRequest" type="ns1:MaterialLotAncestorMapSaveRequestType">
+		<xs:annotation>
+			<xs:documentation>An Element to represent a Neo PLM Material Lot Ancestor Map</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--Lab History-->
+	<xs:complexType name="LabHistorySaveRequestType">
+		<xs:annotation>
+			<xs:documentation>A complex type to represent a Neo PLM Lab History</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="TransactionType">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="Create"/>
+						<xs:enumeration value="Update"/>
+						<xs:enumeration value="Create/Update"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="LocalServiceURI" type="xs:string"/>
+			<xs:element name="SourceRecordUniqueID" type="xs:string"/>
+			<xs:element name="MaterialLotUID" type="ns2:guid"/>
+			<xs:element name="TestTemplateID" type="xs:string"/>
+			<xs:element name="TestTemplateVersion" type="xs:string"/>
+			<xs:element name="TestTemplateDescription" type="xs:string"/>
+			<xs:element name="TestTemplateType" type="xs:string"/>
+			<xs:element name="AdditionalData" type="xs:string"/>
+			<xs:element name="LastModifiedUTC" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="LabHistorySaveRequest" type="ns1:LabHistorySaveRequestType">
+		<xs:annotation>
+			<xs:documentation>An element to represent a Neo PLM Lab History</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--Lab Sample History-->
+	<xs:complexType name="LabSampleHistorySaveRequestType">
+		<xs:annotation>
+			<xs:documentation>A complex type to represent a Neo PLM Lab Sample History</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="TransactionType">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="Create"/>
+						<xs:enumeration value="Update"/>
+						<xs:enumeration value="Create/Update"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="LocalServiceURI" type="xs:string"/>
+			<xs:element name="LabHistoryUID" type="ns2:guid"/>
+			<xs:element name="SourceRecordUniqueID" type="xs:string"/>
+			<xs:element name="SampleID" type="xs:string"/>
+			<xs:element name="ControlPointID" type="xs:string"/>
+			<xs:element name="ControlPointDescription" type="xs:string"/>
+			<xs:element name="AdditionalData" type="xs:string"/>
+			<xs:element name="DateCompletedUtc" type="xs:string"/>
+			<xs:element name="SampleStatus" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="LabSampleHistorySaveRequest" type="ns1:LabSampleHistorySaveRequestType">
+		<xs:annotation>
+			<xs:documentation>An element to represent a Neo PLM Lab Sample History</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--Lab Test History-->
+	<xs:complexType name="LabTestHistorySaveRequestType">
+		<xs:annotation>
+			<xs:documentation>A complex type to represent a Neo PLM Lab Test History</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="TransactionType">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="Create"/>
+						<xs:enumeration value="Update"/>
+						<xs:enumeration value="Create/Update"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="LocalServiceURI" type="xs:string"/>
+			<xs:element name="LabSampleHistoryUID" type="ns2:guid"/>
+			<xs:element name="SourceRecordUniqueID" type="xs:string"/>
+			<xs:element name="TestID" type="xs:string"/>
+			<xs:element name="TestDescription" type="xs:string"/>
+			<xs:element name="TestMethodID" type="xs:string"/>
+			<xs:element name="TestMethodVersion" type="xs:string"/>
+			<xs:element name="TestMethodDescription" type="xs:string"/>
+			<xs:element name="TestIsOptional" type="xs:boolean"/>
+			<xs:element name="TestStatus" type="xs:string"/>
+			<xs:element name="AdditionalData" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="LabTestHistorySaveRequest" type="ns1:LabTestHistorySaveRequestType">
+		<xs:annotation>
+			<xs:documentation>An element to represent a Neo PLM Lab Test History</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--Lab Result History-->
+	<xs:complexType name="LabResultHistorySaveRequestType">
+		<xs:annotation>
+			<xs:documentation>A complex type to represent a Neo PLM Result History</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="TransactionType">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="Create"/>
+						<xs:enumeration value="Update"/>
+						<xs:enumeration value="Create/Update"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="LocalServiceURI" type="xs:string"/>
+			<xs:element name="LabTestHistoryUID" type="ns2:guid"/>
+			<xs:element name="SourceRecordUniqueID" type="xs:string"/>
+			<xs:element name="TestResultID" type="xs:string"/>
+			<xs:element name="TestResultDescription" type="xs:string"/>
+			<xs:element name="TestResultStatus" type="xs:string"/>
+			<xs:element name="EnteredResult" type="xs:string"/>
+			<xs:element name="DisplayResult" type="xs:string"/>
+			<xs:element name="TestResultEngineeringLabel" type="xs:string"/>
+			<xs:element name="ExpectedResult" type="xs:string"/>
+			<xs:element name="TestResultInstanceNumber" type="xs:integer"/>
+			<xs:element name="IsFinalResult" type="xs:string"/>
+			<xs:element name="ResultDataTimeUTC" type="xs:string"/>
+			<xs:element name="AdditionalData" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="LabResultHistorySaveRequest" type="ns1:LabResultHistorySaveRequestType">
+		<xs:annotation>
+			<xs:documentation>An element to represent a Neo PLM Lab Result History</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--Execution Order-->
+	<xs:complexType name="ExecutionOrderSaveRequestType">
+		<xs:annotation>
+			<xs:documentation>A complex type to represent an Execution Order</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="TransactionType">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="Create"/>
+						<xs:enumeration value="Update"/>
+						<xs:enumeration value="Create/Update"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="LocalServiceURI" type="xs:string"/>
+			<xs:element name="SiteFacilityUID" type="ns2:guid"/>
+			<xs:element name="ERPPlantCodeUID" type="ns2:guid"/>
+			<xs:element name="LocalMaterialSpecificationUID" type="ns2:guid"/>
+			<xs:element name="MaterialLotUID" type="ns2:guid"/>
+			<xs:element name="ERPPlannedOrderUID" type="ns2:guid"/>
+			<xs:element name="ProcessOrderID" type="xs:string"/>
+			<xs:element name="ProductionVersionID" type="xs:string"/>
+			<xs:element name="AdditionalData" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="ExecutionOrderSaveRequest" type="ns1:ExecutionOrderSaveRequestType">
+		<xs:annotation>
+			<xs:documentation>An elemeent to represent an Execution Order</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--Goods Issue-->
+	<xs:complexType name="GoodsIssueSaveRequestType">
+		<xs:annotation>
+			<xs:documentation>A complex type to represent a Goods Issue</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="TransactionType">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="Create"/>
+						<xs:enumeration value="Update"/>
+						<xs:enumeration value="Create/Update"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="LocalServiceURI" type="xs:string"/>
+			<xs:element name="ERPExecutionOrderUID" type="ns2:guid"/>
+			<xs:element name="MaterialEntityUID" type="ns2:guid"/>
+			<xs:element name="MaterialReferenceType" type="xs:integer"/>
+			<xs:element name="MaterialLotUID" type="ns2:guid"/>
+			<xs:element name="SourceRecordUniqueID" type="xs:string"/>
+			<xs:element name="SourceRecordTimestampUTC" type="xs:dateTime"/>
+			<xs:element name="SourceContainerID" type="xs:string"/>
+			<xs:element name="BOMItemLineNumber" type="xs:string"/>
+			<xs:element name="WorkCenterID" type="xs:string"/>
+			<xs:element name="EquipmentID" type="xs:string"/>
+			<xs:element name="PhaseID" type="xs:string"/>
+			<xs:element name="GoodsIssueType" type="xs:integer"/>
+			<xs:element name="Quantity" type="xs:double"/>
+			<xs:element name="QuantityEngineeringUnitLabel" type="xs:string"/>
+			<xs:element name="QuantityEngineeringUnitUID" type="ns2:guid"/>
+			<xs:element name="PerformedBy" type="xs:string"/>
+			<xs:element name="PerformedByTimeStampUTC" type="xs:dateTime"/>
+			<xs:element name="VerifiedBy" type="xs:string"/>
+			<xs:element name="VerifiedByTimeStampUTC" type="xs:dateTime"/>
+			<xs:element name="AdditionalData" type="xs:string"/>
+			<xs:element name="LastModifiedUTC" type="xs:dateTime"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="GoodsIssueSaveRequest" type="ns1:GoodsIssueSaveRequestType">
+		<xs:annotation>
+			<xs:documentation>An element to represent a Goods Issue</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--Goods Receipt-->
+	<xs:complexType name="GoodsReceiptSaveRequestType">
+		<xs:annotation>
+			<xs:documentation>A complex type to represent a Goods Receipt</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="TransactionType">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="Create"/>
+						<xs:enumeration value="Update"/>
+						<xs:enumeration value="Create/Update"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="LocalServiceURI" type="xs:string"/>
+			<xs:element name="ERPExecutionOrderUID" type="ns2:guid"/>
+			<xs:element name="MaterialEntityUID" type="ns2:guid"/>
+			<xs:element name="MaterialReferenceType" type="xs:integer"/>
+			<xs:element name="MaterialLotUID" type="ns2:guid"/>
+			<xs:element name="SourceRecordUniqueID" type="xs:string"/>
+			<xs:element name="SourceRecordTimestampUTC" type="xs:dateTime"/>
+			<xs:element name="DestinationContainerID" type="xs:string"/>
+			<xs:element name="BOMItemLineNumber" type="xs:string"/>
+			<xs:element name="WorkCenterID" type="xs:string"/>
+			<xs:element name="EquipmentID" type="xs:string"/>
+			<xs:element name="PhaseID" type="xs:string"/>
+			<xs:element name="GoodsReceiptType" type="xs:integer"/>
+			<xs:element name="Quantity" type="xs:double"/>
+			<xs:element name="QuantityEngineeringUnitLabel" type="xs:string"/>
+			<xs:element name="QuantityEngineeringUnitUID" type="ns2:guid"/>
+			<xs:element name="PerformedBy" type="xs:string"/>
+			<xs:element name="PerformedByTimeStampUTC" type="xs:dateTime"/>
+			<xs:element name="VerifiedBy" type="xs:string"/>
+			<xs:element name="VerifiedByTimeStampUTC" type="xs:dateTime"/>
+			<xs:element name="AdditionalData" type="xs:string"/>
+			<xs:element name="LastModifiedUTC" type="xs:dateTime"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="GoodsReceiptSaveRequest" type="ns1:GoodsReceiptSaveRequestType">
+		<xs:annotation>
+			<xs:documentation>An element to represent a Goods Receipt</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--GetMaterialUIDComposite-->
+	<xs:complexType name="GetMaterialUIDCompositeRequestType">
+		<xs:annotation>
+			<xs:documentation>A complex type to retrieve all Material Related Guids in one go.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="TransactionID" type="xs:string"/>
+			<xs:element name="SourceSystemID" type="xs:string"/>
+			<xs:element name="PlantID" type="xs:string"/>
+			<xs:element name="MaterialID" type="xs:string"/>
+			<xs:element name="EmptyGuidsAreAllowed" type="xs:boolean"/>
+			<xs:element name="OriginalMessage" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="GetMaterialUIDCompositeRequest" type="ns1:GetMaterialUIDCompositeRequestType">
+		<xs:annotation>
+			<xs:documentation>An element to retrieve all Material Related Guids in one go</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+</xs:schema>

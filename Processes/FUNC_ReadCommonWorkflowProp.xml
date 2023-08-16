@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<ESBMessagePipelineStorage xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Id>afdf3fb6-3de2-4330-a85d-a375b2acdf82</Id>
+  <Version>6c4fe176-3796-454c-b5ff-abc888ac3252</Version>
+  <BusinessFlows />
+  <Description />
+  <Name>FUNC_ReadCommonWorkflowProp</Name>
+  <IsSystemObject>false</IsSystemObject>
+  <IsPrivate>false</IsPrivate>
+  <Category>General</Category>
+  <IsEncrypted>true</IsEncrypted>
+  <Path>Functions</Path>
+  <PipelineBlob>&lt;ESBMessagePipeline xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.neuronesb.com/pipelines/"&gt;&lt;Category&gt;General&lt;/Category&gt;&lt;Description i:nil="true" /&gt;&lt;GlobalProperties xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" /&gt;&lt;Name&gt;FUNC_ReadCommonWorkflowProp&lt;/Name&gt;&lt;Properties xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" /&gt;&lt;ReferencedAssemblies xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" /&gt;&lt;Steps&gt;&lt;ESBMessagePipelineStep xmlns:d3p1="http://schemas.neuronesb.com/pipelines/esb/" i:type="d3p1:EsbMessageCSharpCodePipelineStep"&gt;&lt;Bindings xmlns:d4p1="http://schemas.datacontract.org/2004/07/Neuron.ComponentModel" /&gt;&lt;BreakPoint&gt;Disable&lt;/BreakPoint&gt;&lt;Disable&gt;false&lt;/Disable&gt;&lt;Id&gt;2ed8dba8-caef-4574-9f30-9cdf7a3e4617&lt;/Id&gt;&lt;Name&gt;ReadCommonWorkflowProp&lt;/Name&gt;&lt;Uniquename /&gt;&lt;BreakPointLines xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" /&gt;&lt;Code&gt;context.Instance.TraceInformation("Start of FUNC_ReadCommonWorkflowProp");
+//Save original message in case we need it later
+context.Properties.Add("OrigMsg", context.Data.Clone(true));
+context.Properties.Add("ErrorMessage", "");
+context.Properties.Add("ErrorType", "");
+context.Properties.Add("PipelineMessage", "");
+context.Properties.Add("ErrorTypeID", ""); 
+context.Properties.Add("ErrorFlag", "");
+context.Properties.Add("ErrorParameter", "");
+
+String prefix ="workflow";
+//Init and load transaction values
+String propName = "ProcessTitle";
+context.Properties.Add(propName, context.Data.GetProperty(prefix, propName));
+
+//current workflow perent information..
+propName = "WorkflowInstanceId";
+context.Properties.Add(propName, context.Data.GetProperty(prefix, propName));
+
+propName = "WorkflowEndpointId";
+context.Properties.Add(propName, context.Data.GetProperty(prefix, propName));
+propName = "ChildWorkflow";
+context.Properties.Add(propName, context.Data.GetProperty(prefix, propName));
+
+propName = "LocalServiceURI";
+context.Properties.Add(propName, context.Data.GetProperty(prefix, propName));
+
+propName = "FilePath";
+context.Properties.Add(propName, context.Data.GetProperty(prefix, propName));
+
+//Set the Current item
+context.Instance.TraceInformation("Original item Message");
+String currentMessageText = context.Data.Text;
+context.Instance.TraceInformation(currentMessageText);
+System.Xml.XmlDocument xmlDocument = context.Data.ToXmlDocument();
+System.Xml.XmlNode currentMessageItem = xmlDocument.FirstChild;
+foreach(System.Xml.XmlNode node in currentMessageItem.ChildNodes) 
+{ 
+	context.Instance.TraceInformation(node.Name);
+	context.Instance.TraceInformation(node.InnerText);
+}
+context.Properties.Add("CurrentProcessItem", currentMessageItem);
+context.Properties.Add("CurrentProcessItemXml", currentMessageText);
+
+context.Instance.TraceInformation("End of FUNC_ReadCommonWorkflowProp");
+&lt;/Code&gt;&lt;ReferencedAssemblies xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays"&gt;&lt;d4p1:string&gt;Neuron&lt;/d4p1:string&gt;&lt;d4p1:string&gt;Neuron.Pipelines&lt;/d4p1:string&gt;&lt;d4p1:string&gt;Neuron.Esb&lt;/d4p1:string&gt;&lt;d4p1:string&gt;System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d4p1:string&gt;&lt;d4p1:string&gt;System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d4p1:string&gt;&lt;d4p1:string&gt;System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d4p1:string&gt;&lt;d4p1:string&gt;System.Xml.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d4p1:string&gt;&lt;d4p1:string&gt;System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d4p1:string&gt;&lt;d4p1:string&gt;System.Data.DataSetExtensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d4p1:string&gt;&lt;d4p1:string&gt;System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d4p1:string&gt;&lt;d4p1:string&gt;System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d4p1:string&gt;&lt;/ReferencedAssemblies&gt;&lt;TypeName&gt;Type1c320943fda4937bafcbdac5f0a55f&lt;/TypeName&gt;&lt;/ESBMessagePipelineStep&gt;&lt;/Steps&gt;&lt;/ESBMessagePipeline&gt;</PipelineBlob>
+  <IsProcessFlow>false</IsProcessFlow>
+</ESBMessagePipelineStorage>

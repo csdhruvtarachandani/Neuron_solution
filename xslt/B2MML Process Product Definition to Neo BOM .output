@@ -1,0 +1,95 @@
+﻿<NeoPlmBillOfMaterial xmlns:ns="http://www.mesa.org/xml/B2MML-V0600" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:fn="http://www.w3.org/2005/xpath-functions">
+  <SourceSystemID>SAPP01</SourceSystemID>
+  <TransactionDateTime>2022-04-06T11:55:10Z</TransactionDateTime>
+  <TransactionID>0000001164899839</TransactionID>
+  <DestinationSystemID>SAP_PI</DestinationSystemID>
+  <BillOfMaterial>
+    <MaterialNumber>H086218030</MaterialNumber>
+    <PlantID>IE14</PlantID>
+    <BOMAlternateNumber>36</BOMAlternateNumber>
+    <ReferenceQuantity>       163.000</ReferenceQuantity>
+    <QuantityUOM>KG</QuantityUOM>
+    <BOMDescription>OSP1 163.0 Prazosin Hydrochloride</BOMDescription>
+    <BOMUsage>1</BOMUsage>
+    <ValidFromDate>20220206</ValidFromDate>
+    <Deprecated></Deprecated>
+    <BillOfMaterialItems>
+      <BillOfMaterialItem>
+        <BOMItemNumber>0010</BOMItemNumber>
+        <MaterialNumber>R21323560</MaterialNumber>
+        <BOMItemCategory>L</BOMItemCategory>
+        <LocalMaterialSpecificationUID />
+        <QuantityEngineeringUnitUID />
+        <RecipeQuantity>      2684.000</RecipeQuantity>
+        <UnitOfMeasure>LTR</UnitOfMeasure>
+        <AlternateGroupID></AlternateGroupID>
+        <LotSizeIndependentFlag></LotSizeIndependentFlag>
+        <AlterItemUsageProbability> 0</AlterItemUsageProbability>
+        <IsBulkMaterial></IsBulkMaterial>
+        <IsCoProduct></IsCoProduct>
+        <BOMExtension>
+          <WeighingType>0</WeighingType>
+          <WeightMaterialType></WeightMaterialType>
+          <CompensatorFixedRatioValue>0.000</CompensatorFixedRatioValue>
+          <DefaultTolerance>0</DefaultTolerance>
+          <UpperTolerencePct>0.000</UpperTolerencePct>
+          <LowerTolerencePct>0.000</LowerTolerencePct>
+          <NumberOfBatches></NumberOfBatches>
+          <LinkedBOMItemNumber>0000</LinkedBOMItemNumber>
+          <BatchWeightConstant></BatchWeightConstant>
+          <PrimaryPotency>      0.000</PrimaryPotency>
+          <PrimaryPotencyUOM></PrimaryPotencyUOM>
+          <SecondaryPotency>      0.000</SecondaryPotency>
+          <SecondaryPotencyUOM></SecondaryPotencyUOM>
+          <PrimaryPotencyUpperLimit>0.000</PrimaryPotencyUpperLimit>
+          <PrimaryPotencyLowerLimit>0.000</PrimaryPotencyLowerLimit>
+          <PrimaryPotencyCaculated>0.000</PrimaryPotencyCaculated>
+          <PrimaryPotencyCalculatedUOM></PrimaryPotencyCalculatedUOM>
+          <SecondaryPotencyUpperLimit>0.000</SecondaryPotencyUpperLimit>
+          <SecondaryPotencyLowerLimit>0.000</SecondaryPotencyLowerLimit>
+          <SecondaryPotencyCalculated>0.000</SecondaryPotencyCalculated>
+          <SecondaryPotencyCalculatedUOM></SecondaryPotencyCalculatedUOM>
+          <PhantomBOMMember></PhantomBOMMember>
+        </BOMExtension>
+      </BillOfMaterialItem>
+      <BillOfMaterialItem>
+        <BOMItemNumber>0020</BOMItemNumber>
+        <MaterialNumber>R21322340</MaterialNumber>
+        <BOMItemCategory>L</BOMItemCategory>
+        <LocalMaterialSpecificationUID />
+        <QuantityEngineeringUnitUID />
+        <RecipeQuantity>        14.000</RecipeQuantity>
+        <UnitOfMeasure>LTR</UnitOfMeasure>
+        <AlternateGroupID></AlternateGroupID>
+        <LotSizeIndependentFlag></LotSizeIndependentFlag>
+        <AlterItemUsageProbability> 0</AlterItemUsageProbability>
+        <IsBulkMaterial></IsBulkMaterial>
+        <IsCoProduct></IsCoProduct>
+        <BOMExtension>
+          <WeighingType>0</WeighingType>
+          <WeightMaterialType></WeightMaterialType>
+          <CompensatorFixedRatioValue>0.000</CompensatorFixedRatioValue>
+          <DefaultTolerance>0</DefaultTolerance>
+          <UpperTolerencePct>0.000</UpperTolerencePct>
+          <LowerTolerencePct>0.000</LowerTolerencePct>
+          <NumberOfBatches></NumberOfBatches>
+          <LinkedBOMItemNumber>0000</LinkedBOMItemNumber>
+          <BatchWeightConstant></BatchWeightConstant>
+          <PrimaryPotency>      0.000</PrimaryPotency>
+          <PrimaryPotencyUOM></PrimaryPotencyUOM>
+          <SecondaryPotency>      0.000</SecondaryPotency>
+          <SecondaryPotencyUOM></SecondaryPotencyUOM>
+          <PrimaryPotencyUpperLimit>0.000</PrimaryPotencyUpperLimit>
+          <PrimaryPotencyLowerLimit>0.000</PrimaryPotencyLowerLimit>
+          <PrimaryPotencyCaculated>0.000</PrimaryPotencyCaculated>
+          <PrimaryPotencyCalculatedUOM></PrimaryPotencyCalculatedUOM>
+          <SecondaryPotencyUpperLimit>0.000</SecondaryPotencyUpperLimit>
+          <SecondaryPotencyLowerLimit>0.000</SecondaryPotencyLowerLimit>
+          <SecondaryPotencyCalculated>0.000</SecondaryPotencyCalculated>
+          <SecondaryPotencyCalculatedUOM></SecondaryPotencyCalculatedUOM>
+          <PhantomBOMMember></PhantomBOMMember>
+        </BOMExtension>
+      </BillOfMaterialItem>
+    </BillOfMaterialItems>
+  </BillOfMaterial>
+</NeoPlmBillOfMaterial>

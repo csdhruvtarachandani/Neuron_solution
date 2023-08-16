@@ -1,0 +1,17 @@
+﻿<ProcessProductDefinition>
+  <DataArea>
+    <Process acknowledgeCode="Always" />
+    <ProductDefinition>
+      <ID>1235|M025</ID>
+      <HierarchyScope>
+        <EquipmentID />
+        <EquipmentElementLevel>Site</EquipmentElementLevel>
+      </HierarchyScope>
+      <ProductSegment>
+        <MaterialSpecification>
+          <MaterialDefinitionID>1234</MaterialDefinitionID>
+        </MaterialSpecification>
+      </ProductSegment>
+    </ProductDefinition>
+  </DataArea>
+</ProcessProductDefinition>

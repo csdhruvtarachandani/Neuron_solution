@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<ESBAdapter xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Id>638a165a-b638-4863-9d84-3bf274db1727</Id>
+  <Version>23c5a371-7ec5-4252-b5c0-957f0cb13e93</Version>
+  <Name>MSMQ Adapter</Name>
+  <Description />
+  <Group>General</Group>
+  <IsSystemObject>false</IsSystemObject>
+  <AdapterType>Net</AdapterType>
+  <Zone>Enterprise</Zone>
+  <BindingAssembly>Neuron.Esb.Adapters.MsmqAdapter.dll</BindingAssembly>
+  <BindingClass>Neuron.Esb.Adapters.MsmqAdapter</BindingClass>
+  <AdapterName>MSMQ Adapter</AdapterName>
+</ESBAdapter>

@@ -1,0 +1,19 @@
+﻿<ConfirmBOD xmlns="http://www.mesa.org/xml/B2MML-V0600" xmlns:Extended="http://www.mesa.org/xml/B2MML-V0600-AllExtensions"><ApplicationArea><Sender><LogicalID>NeoPLM</LogicalID></Sender><Receiver><LogicalID>Europe2</LogicalID></Receiver><CreationDateTime>2016-10-25T00:09:00Z</CreationDateTime></ApplicationArea><DataArea><Confirm><OriginalApplicationArea>
+		<b2m:Sender xmlns:b2m="http://www.mesa.org/xml/B2MML-V0600">
+			<b2m:LogicalID>Europe2</b2m:LogicalID>
+			<b2m:ReferenceID>${Properties#TransactionID}</b2m:ReferenceID>
+		</b2m:Sender>
+		<b2m:Receiver xmlns:b2m="http://www.mesa.org/xml/B2MML-V0600">
+			<b2m:LogicalID>NeoPLM</b2m:LogicalID>
+		</b2m:Receiver>
+		<b2m:CreationDateTime xmlns:b2m="http://www.mesa.org/xml/B2MML-V0600">2016-10-25T00:09:00Z</b2m:CreationDateTime>
+	</OriginalApplicationArea><ResponseCriteria><ResponseExpression actionCode="Accepted" /></ResponseCriteria></Confirm><BOD><OriginalApplicationArea>
+		<b2m:Sender xmlns:b2m="http://www.mesa.org/xml/B2MML-V0600">
+			<b2m:LogicalID>Europe2</b2m:LogicalID>
+			<b2m:ReferenceID>${Properties#TransactionID}</b2m:ReferenceID>
+		</b2m:Sender>
+		<b2m:Receiver xmlns:b2m="http://www.mesa.org/xml/B2MML-V0600">
+			<b2m:LogicalID>NeoPLM</b2m:LogicalID>
+		</b2m:Receiver>
+		<b2m:CreationDateTime xmlns:b2m="http://www.mesa.org/xml/B2MML-V0600">2016-10-25T00:09:00Z</b2m:CreationDateTime>
+	</OriginalApplicationArea></BOD></DataArea></ConfirmBOD>

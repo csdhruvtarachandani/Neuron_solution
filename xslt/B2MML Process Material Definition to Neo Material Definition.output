@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-16"?>
+<NeoLocalMaterialSpecificationOrConsumableCollection xmlns="http://NeoPLM.com/Integration/Materials" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <MessageHeader>
+    <SourceSystemID>1234</SourceSystemID>
+    <DestinationSystemID>SAP_PI</DestinationSystemID>
+    <TransactionID>0000001165302288</TransactionID>
+    <TransactionDateTime>2022-04-07T12:30:41Z</TransactionDateTime>
+  </MessageHeader>
+  <NeoLocalMaterialSpecifications>
+    <NeoLocalMaterialSpecification>
+      <PlantCodeID>BEP7</PlantCodeID>
+      <MaterialID>R000012825</MaterialID>
+      <Description>PF-07328614-01 (PF-07321332 STEP 4 RSM)</Description>
+      <InventoryUnitofMeasure>KG</InventoryUnitofMeasure>
+      <IsDeprecated>true</IsDeprecated>
+      <MaterialType>ZRAW</MaterialType>
+      <EffectivityStartDate>2021-04-21T00:00:00Z</EffectivityStartDate>
+      <EffectivityEndDate>2022-04-07T00:00:00Z</EffectivityEndDate>
+      <NeoGlobalMaterialSpecificationID>GS30000</NeoGlobalMaterialSpecificationID>
+      <NeoPLMGlobalSpecificationDescription>This is a GS Description</NeoPLMGlobalSpecificationDescription>
+      <Parameter>
+        <Name>Density</Name>
+        <ValueDouble>1.1</ValueDouble>
+      </Parameter>
+    </NeoLocalMaterialSpecification>
+  </NeoLocalMaterialSpecifications>
+</NeoLocalMaterialSpecificationOrConsumableCollection>

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<ESBServicePolicy xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Id>9479e110-2698-4808-8327-5d0a3cd02e6a</Id>
+  <Version>a093f963-4d1f-419b-9b44-f315c3d7d55c</Version>
+  <BusinessFlows />
+  <Description>This policy is used by any Client Connector Processes.  Currently it is use by the B2MML ERP Endpoint and the B2MML LIMS Endpoint.</Description>
+  <Name>Client Connector Policy</Name>
+  <Group>General</Group>
+  <IsSystemObject>false</IsSystemObject>
+  <RequestReplyTimeout>60</RequestReplyTimeout>
+  <RetryCount>1</RetryCount>
+  <RetryInterval>1</RetryInterval>
+  <OnErrorAuditToDatabase>false</OnErrorAuditToDatabase>
+  <OnErrorAuditToFile>false</OnErrorAuditToFile>
+  <OnErrorRepublishMessage>false</OnErrorRepublishMessage>
+  <OnErrorRollback>false</OnErrorRollback>
+  <RepublishTopic />
+  <AlwaysAvailable>true</AlwaysAvailable>
+  <InlcudeAsExceptions>true</InlcudeAsExceptions>
+  <StartAndStopAdapterAccordingToAvailability>true</StartAndStopAdapterAccordingToAvailability>
+  <HttpStatusCodes />
+  <DoNotApplyPolicyIfFaultContract>false</DoNotApplyPolicyIfFaultContract>
+  <RollbackMessageExpirationSeconds>300</RollbackMessageExpirationSeconds>
+  <RollbackDelaySeconds>60</RollbackDelaySeconds>
+  <AuditDirectoryLocation />
+  <SoapFaultDescription />
+</ESBServicePolicy>

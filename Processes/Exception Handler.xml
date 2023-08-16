@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<ESBMessagePipelineStorage xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Id>036276bf-208b-43f7-a6c0-d3ad1bc7bf9c</Id>
+  <Version>538b6835-eab3-42eb-9fe3-0f30afa776eb</Version>
+  <BusinessFlows />
+  <Description />
+  <Name>Exception Handler</Name>
+  <IsSystemObject>false</IsSystemObject>
+  <IsPrivate>false</IsPrivate>
+  <Category>General</Category>
+  <IsEncrypted>true</IsEncrypted>
+  <Path>New Data Enhancement Functions</Path>
+  <PipelineBlob>&lt;ESBMessagePipeline xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.neuronesb.com/pipelines/"&gt;&lt;Category&gt;General&lt;/Category&gt;&lt;Description i:nil="true" /&gt;&lt;GlobalProperties xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" /&gt;&lt;Name&gt;Exception Handler&lt;/Name&gt;&lt;Properties xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" /&gt;&lt;ReferencedAssemblies xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" /&gt;&lt;Steps&gt;&lt;ESBMessagePipelineStep xmlns:d3p1="http://schemas.neuronesb.com/pipelines/esb/" i:type="d3p1:EsbMessageCSharpCodePipelineStep"&gt;&lt;Bindings xmlns:d4p1="http://schemas.datacontract.org/2004/07/Neuron.ComponentModel" /&gt;&lt;BreakPoint&gt;Disable&lt;/BreakPoint&gt;&lt;Disable&gt;false&lt;/Disable&gt;&lt;Id&gt;ff87d3a2-5dec-476d-a281-d0629c6b8d03&lt;/Id&gt;&lt;Name&gt;Trace the Available Information on the Exception&lt;/Name&gt;&lt;Uniquename /&gt;&lt;BreakPointLines xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" /&gt;&lt;Code&gt;PipelineException parentEx = (PipelineException) context.Properties["PipelineException"];
+
+System.Exception baseException = parentEx.GetBaseException();
+
+context.Instance.TraceError ("******************** Message Error ******************************");
+context.Instance.TraceError ("Parent Base Exception: " + baseException.ToString());
+context.Instance.TraceError ("Parent Base Exception Type: " + baseException.GetType().ToString());
+context.Instance.TraceError ("Parent Base Exception Message: " + baseException.Message.ToString());
+
+context.Instance.TraceError ("Parent Line Number: " + parentEx.LineNumber.ToString());
+context.Instance.TraceError ("Parent Message: " + parentEx.Message.ToString());
+context.Instance.TraceError ("Parent Pipe Line: " + parentEx.Pipeline.ToString());
+context.Instance.TraceError ("Parent Pipe Line Step: " + parentEx.PipelineStep.ToString());
+
+if (parentEx.StackTrace != null)
+{
+	context.Instance.TraceError ("Parent Stack Trace: " + parentEx.StackTrace.ToString());
+}
+
+if (parentEx.InnerException != null)
+{
+	context.Instance.TraceError ("Inner Exception Message: " + parentEx.InnerException.Message.ToString());
+}&lt;/Code&gt;&lt;ReferencedAssemblies xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays"&gt;&lt;d4p1:string&gt;Neuron&lt;/d4p1:string&gt;&lt;d4p1:string&gt;Neuron.Pipelines&lt;/d4p1:string&gt;&lt;d4p1:string&gt;Neuron.Esb&lt;/d4p1:string&gt;&lt;d4p1:string&gt;System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d4p1:string&gt;&lt;d4p1:string&gt;System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d4p1:string&gt;&lt;d4p1:string&gt;System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d4p1:string&gt;&lt;d4p1:string&gt;System.Xml.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d4p1:string&gt;&lt;d4p1:string&gt;System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d4p1:string&gt;&lt;d4p1:string&gt;System.Data.DataSetExtensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d4p1:string&gt;&lt;d4p1:string&gt;System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d4p1:string&gt;&lt;d4p1:string&gt;System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d4p1:string&gt;&lt;d4p1:string&gt;Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed&lt;/d4p1:string&gt;&lt;d4p1:string&gt;Microsoft.CSharp, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&lt;/d4p1:string&gt;&lt;/ReferencedAssemblies&gt;&lt;TypeName&gt;Type704279b027f4124a01e147e3dd82da&lt;/TypeName&gt;&lt;/ESBMessagePipelineStep&gt;&lt;ESBMessagePipelineStep xmlns:d3p1="http://schemas.neuronesb.com/pipelines/esb/" i:type="d3p1:EsbMessageCSharpCodePipelineStep"&gt;&lt;Bindings xmlns:d4p1="http://schemas.datacontract.org/2004/07/Neuron.ComponentModel" /&gt;&lt;BreakPoint&gt;Disable&lt;/BreakPoint&gt;&lt;Disable&gt;false&lt;/Disable&gt;&lt;Id&gt;4cfe0bd3-9f4d-41ac-a351-97cdbba3b096&lt;/Id&gt;&lt;Name&gt;Create System Error&lt;/Name&gt;&lt;Uniquename /&gt;&lt;BreakPointLines xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" /&gt;&lt;Code&gt;PipelineException parentEx = (PipelineException) context.Properties["PipelineException"];
+
+System.Exception baseException = parentEx.GetBaseException();
+
+string errorMessage = "System Error: ";
+
+errorMessage = errorMessage + "\tParent Base Exception: " + baseException.ToString() + "\r\n\r\n";
+errorMessage = errorMessage + "\tParent Base Exception Type: " + baseException.GetType().ToString() + "\r\n\r\n";
+errorMessage = errorMessage + "\tParent Base Exception Message: " + baseException.Message.ToString() + "\r\n\r\n";
+
+errorMessage = errorMessage + "\tParent Line Number: " + parentEx.LineNumber.ToString() + "\r\n\r\n";
+errorMessage = errorMessage + "\tParent Message: " + parentEx.Message.ToString() + "\r\n\r\n";
+errorMessage = errorMessage + "\tParent Pipe Line: " + parentEx.Pipeline.ToString() + "\r\n\r\n";
+errorMessage = errorMessage + "\tParent Pipe Line Step: " + parentEx.PipelineStep.ToString() + "\r\n\r\n";
+errorMessage = errorMessage + "\tParent Stack Trace: " + parentEx.StackTrace.ToString() + "\r\n\r\n";
+
+errorMessage = errorMessage + "\tInner Exception Message: " + parentEx.InnerException.Message.ToString() + "\r\n\r\n";
+
+errorMessage = System.Net.WebUtility.HtmlEncode (errorMessage);
+
+// Get the data together to send the Business Error Message
+string endpointAddress = context.Data.Header.To;
+string eSBAction = context.Data.Header.Action;
+string eSBTopic = context.Data.Header.Topic;
+
+eSBTopic = eSBTopic.Replace("Enrich_", "") + "-Errors";
+string sourceSystemID = ""; 
+string plantID = "";
+string transactionID = context.Properties["OriginalMessageID"].ToString();
+string messageDate = context.Data.Header.Created.ToString("yyyy-MM-ddTHH:mm:ssZ");
+string errorCode = "1000";
+string errorParameter = "System Error has no specific parameters. Please check the above message for detailed description of error.";
+string originalMessage = System.Net.WebUtility.HtmlEncode (context.Properties ["OrigMsg"].ToString());
+
+// Get the business error template
+string errorTemplate = context.Configuration.XmlDocs["ESB System Error Message"].Xml;
+
+string eSBErrorMessage = string.Format(errorTemplate, endpointAddress, eSBAction, eSBTopic, sourceSystemID, plantID, transactionID, messageDate, errorCode, errorMessage, originalMessage);
+
+context.Instance.TraceInformation ("System Error: " + eSBErrorMessage);
+
+//Set Values for Error Properties
+context.Properties["ErrorMessage"] = eSBErrorMessage;
+context.Properties["ErrorTypeID"] = errorCode;
+context.Properties["ErrorParameter"] = errorParameter;
+
+context.Data.Text = eSBErrorMessage;
+
+context.Data.SetProperty ("NeoPLM", "BaseException", baseException.GetType().ToString());
+context.Data.SetProperty ("NeoPLM", "BaseExceptionMessage", baseException.Message.ToString());&lt;/Code&gt;&lt;ReferencedAssemblies xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays"&gt;&lt;d4p1:string&gt;Neuron&lt;/d4p1:string&gt;&lt;d4p1:string&gt;Neuron.Pipelines&lt;/d4p1:string&gt;&lt;d4p1:string&gt;Neuron.Esb&lt;/d4p1:string&gt;&lt;d4p1:string&gt;System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d4p1:string&gt;&lt;d4p1:string&gt;System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d4p1:string&gt;&lt;d4p1:string&gt;System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d4p1:string&gt;&lt;d4p1:string&gt;System.Xml.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d4p1:string&gt;&lt;d4p1:string&gt;System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d4p1:string&gt;&lt;d4p1:string&gt;System.Data.DataSetExtensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d4p1:string&gt;&lt;d4p1:string&gt;System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d4p1:string&gt;&lt;d4p1:string&gt;System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d4p1:string&gt;&lt;d4p1:string&gt;Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed&lt;/d4p1:string&gt;&lt;d4p1:string&gt;Microsoft.CSharp, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&lt;/d4p1:string&gt;&lt;/ReferencedAssemblies&gt;&lt;TypeName&gt;Type11624a5a2154ce58811e380fbf8048&lt;/TypeName&gt;&lt;/ESBMessagePipelineStep&gt;&lt;ESBMessagePipelineStep xmlns:d3p1="http://schemas.neuronesb.com/pipelines/esb/" i:type="d3p1:EsbMessagePublishPipelineStep"&gt;&lt;Bindings xmlns:d4p1="http://schemas.datacontract.org/2004/07/Neuron.ComponentModel" /&gt;&lt;BreakPoint&gt;Disable&lt;/BreakPoint&gt;&lt;Disable&gt;true&lt;/Disable&gt;&lt;Id&gt;6197ac4f-fb9c-4416-bbae-bdb0deb24256&lt;/Id&gt;&lt;Name&gt;Publish&lt;/Name&gt;&lt;Uniquename /&gt;&lt;d3p1:Semantic&gt;Multicast&lt;/d3p1:Semantic&gt;&lt;d3p1:Timeout&gt;0&lt;/d3p1:Timeout&gt;&lt;d3p1:TopicSelector i:type="d3p1:ESBMessageConstTopicSelector"&gt;&lt;d3p1:Topic&gt;ESBError&lt;/d3p1:Topic&gt;&lt;/d3p1:TopicSelector&gt;&lt;/ESBMessagePipelineStep&gt;&lt;ESBMessagePipelineStep xmlns:d3p1="http://schemas.neuronesb.com/pipelines/esb/" i:type="d3p1:EsbMessagePipelineExecutionPipelineStep"&gt;&lt;Bindings xmlns:d4p1="http://schemas.datacontract.org/2004/07/Neuron.ComponentModel" /&gt;&lt;BreakPoint&gt;Disable&lt;/BreakPoint&gt;&lt;Disable&gt;false&lt;/Disable&gt;&lt;Id&gt;780f91d7-a2bf-4ab5-8a06-ac4235df662b&lt;/Id&gt;&lt;Name&gt;ODBC Logging&lt;/Name&gt;&lt;Uniquename /&gt;&lt;d3p1:FileName i:nil="true" /&gt;&lt;d3p1:MaxInstances&gt;100&lt;/d3p1:MaxInstances&gt;&lt;d3p1:PipelineName&gt;ODBC Business Error Publisher&lt;/d3p1:PipelineName&gt;&lt;d3p1:PoolTimeout&gt;PT1M&lt;/d3p1:PoolTimeout&gt;&lt;/ESBMessagePipelineStep&gt;&lt;ESBMessagePipelineStep xmlns:d3p1="http://schemas.neuronesb.com/pipelines/esb/" i:type="d3p1:EsbMessagePipelineExecutionPipelineStep"&gt;&lt;Bindings xmlns:d4p1="http://schemas.datacontract.org/2004/07/Neuron.ComponentModel" /&gt;&lt;BreakPoint&gt;Disable&lt;/BreakPoint&gt;&lt;Disable&gt;false&lt;/Disable&gt;&lt;Id&gt;199342e8-5bb8-4f57-bf77-f013f319b329&lt;/Id&gt;&lt;Name&gt;Execute Process&lt;/Name&gt;&lt;Uniquename /&gt;&lt;d3p1:FileName i:nil="true" /&gt;&lt;d3p1:MaxInstances&gt;100&lt;/d3p1:MaxInstances&gt;&lt;d3p1:PipelineName&gt;SetWorkflowErrorProperties&lt;/d3p1:PipelineName&gt;&lt;d3p1:PoolTimeout&gt;PT1M&lt;/d3p1:PoolTimeout&gt;&lt;/ESBMessagePipelineStep&gt;&lt;ESBMessagePipelineStep i:type="DecisionPipelineStepOfESBMessagexAPWb1W4"&gt;&lt;Bindings xmlns:d4p1="http://schemas.datacontract.org/2004/07/Neuron.ComponentModel" /&gt;&lt;BreakPoint&gt;Disable&lt;/BreakPoint&gt;&lt;Disable&gt;false&lt;/Disable&gt;&lt;Id&gt;2cbf0ff8-4735-4d94-a09e-bc6d3e90d686&lt;/Id&gt;&lt;Name&gt;Decision&lt;/Name&gt;&lt;Uniquename /&gt;&lt;Branches&gt;&lt;BranchOfESBMessagexAPWb1W4&gt;&lt;BreakPoint&gt;Disable&lt;/BreakPoint&gt;&lt;Condition i:type="CodeBranchConditionOfESBMessagexAPWb1W4"&gt;&lt;Code&gt;if (context.Data.GetProperty("NeoPLM", "BaseException") == "System.Exception" &amp;amp;&amp;amp;
+	context.Data.GetProperty("NeoPLM", "BaseExceptionMessage").ToString().Contains("The REST Service call returned an HTTP Status Code '400' that violates the established service policy"))
+	return false;
+else
+	return true;&lt;/Code&gt;&lt;ReferencedAssemblies xmlns:d7p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays"&gt;&lt;d7p1:string&gt;Neuron&lt;/d7p1:string&gt;&lt;d7p1:string&gt;Neuron.Pipelines&lt;/d7p1:string&gt;&lt;d7p1:string&gt;Neuron.Esb&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.Xml.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.Data.DataSetExtensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed&lt;/d7p1:string&gt;&lt;d7p1:string&gt;Microsoft.CSharp, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&lt;/d7p1:string&gt;&lt;/ReferencedAssemblies&gt;&lt;/Condition&gt;&lt;Disable&gt;false&lt;/Disable&gt;&lt;EndJoined&gt;false&lt;/EndJoined&gt;&lt;Name&gt;Retry&lt;/Name&gt;&lt;Steps&gt;&lt;Bindings xmlns:d7p1="http://schemas.datacontract.org/2004/07/Neuron.ComponentModel" /&gt;&lt;BreakPoint&gt;Disable&lt;/BreakPoint&gt;&lt;Disable&gt;false&lt;/Disable&gt;&lt;Id&gt;0fa7efb3-dcc4-455b-b103-3280058fa760&lt;/Id&gt;&lt;Name&gt;Group&lt;/Name&gt;&lt;Uniquename /&gt;&lt;Children&gt;&lt;ESBMessagePipelineStep xmlns:d8p1="http://schemas.neuronesb.com/pipelines/esb/" i:type="d8p1:EsbMessageCSharpCodePipelineStep"&gt;&lt;Bindings xmlns:d9p1="http://schemas.datacontract.org/2004/07/Neuron.ComponentModel" /&gt;&lt;BreakPoint&gt;Disable&lt;/BreakPoint&gt;&lt;Disable&gt;false&lt;/Disable&gt;&lt;Id&gt;40762c48-3e97-40c2-a751-32c5032012fe&lt;/Id&gt;&lt;Name&gt;Restore Original Message&lt;/Name&gt;&lt;Uniquename /&gt;&lt;BreakPointLines xmlns:d9p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" /&gt;&lt;Code&gt;context.Data.Text = context.Properties["OrigMsg"].ToString();&lt;/Code&gt;&lt;ReferencedAssemblies xmlns:d9p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays"&gt;&lt;d9p1:string&gt;Neuron&lt;/d9p1:string&gt;&lt;d9p1:string&gt;Neuron.Pipelines&lt;/d9p1:string&gt;&lt;d9p1:string&gt;Neuron.Esb&lt;/d9p1:string&gt;&lt;d9p1:string&gt;System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d9p1:string&gt;&lt;d9p1:string&gt;System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d9p1:string&gt;&lt;d9p1:string&gt;System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d9p1:string&gt;&lt;d9p1:string&gt;System.Xml.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d9p1:string&gt;&lt;d9p1:string&gt;System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d9p1:string&gt;&lt;d9p1:string&gt;System.Data.DataSetExtensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d9p1:string&gt;&lt;d9p1:string&gt;System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d9p1:string&gt;&lt;d9p1:string&gt;System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d9p1:string&gt;&lt;d9p1:string&gt;Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed&lt;/d9p1:string&gt;&lt;d9p1:string&gt;Microsoft.CSharp, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&lt;/d9p1:string&gt;&lt;/ReferencedAssemblies&gt;&lt;TypeName&gt;Typef9cd77511fc43cb9ebfe37750d0bf5&lt;/TypeName&gt;&lt;/ESBMessagePipelineStep&gt;&lt;ESBMessagePipelineStep i:type="RethrowPipelineStepOfESBMessagexAPWb1W4"&gt;&lt;Bindings xmlns:d9p1="http://schemas.datacontract.org/2004/07/Neuron.ComponentModel" /&gt;&lt;BreakPoint&gt;Disable&lt;/BreakPoint&gt;&lt;Disable&gt;true&lt;/Disable&gt;&lt;Id&gt;949bf6fe-35ab-4aa4-8156-2a7f3ca648ba&lt;/Id&gt;&lt;Name&gt;Rethrow&lt;/Name&gt;&lt;Uniquename /&gt;&lt;/ESBMessagePipelineStep&gt;&lt;/Children&gt;&lt;/Steps&gt;&lt;/BranchOfESBMessagexAPWb1W4&gt;&lt;BranchOfESBMessagexAPWb1W4&gt;&lt;BreakPoint&gt;Disable&lt;/BreakPoint&gt;&lt;Condition i:type="AlwaysBranchConditionOfESBMessagexAPWb1W4" /&gt;&lt;Disable&gt;false&lt;/Disable&gt;&lt;EndJoined&gt;false&lt;/EndJoined&gt;&lt;Name&gt;Abandon Message&lt;/Name&gt;&lt;Steps&gt;&lt;Bindings xmlns:d7p1="http://schemas.datacontract.org/2004/07/Neuron.ComponentModel" /&gt;&lt;BreakPoint&gt;Disable&lt;/BreakPoint&gt;&lt;Disable&gt;false&lt;/Disable&gt;&lt;Id&gt;fb112021-dcae-4a4d-b48a-4b67ce865aaf&lt;/Id&gt;&lt;Name&gt;Group&lt;/Name&gt;&lt;Uniquename /&gt;&lt;Children /&gt;&lt;/Steps&gt;&lt;/BranchOfESBMessagexAPWb1W4&gt;&lt;/Branches&gt;&lt;/ESBMessagePipelineStep&gt;&lt;/Steps&gt;&lt;/ESBMessagePipeline&gt;</PipelineBlob>
+  <IsProcessFlow>false</IsProcessFlow>
+</ESBMessagePipelineStorage>

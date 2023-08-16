@@ -1,0 +1,33 @@
+﻿<ConfirmBOD xmlns="http://www.mesa.org/xml/B2MML-V0600" xmlns:Extended="http://www.mesa.org/xml/B2MML-V0600-AllExtensions" xmlns:ns="http://www.mesa.org/xml/B2MML-V0600" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:fn="http://www.w3.org/2005/xpath-functions"><ApplicationArea><Sender><LogicalID>normalizedString</LogicalID></Sender><Receiver><LogicalID>1234</LogicalID></Receiver><CreationDateTime>2001-12-17T09:30:47Z</CreationDateTime></ApplicationArea><DataArea><Confirm><OriginalApplicationArea>
+    <Sender>
+      <LogicalID>1234</LogicalID>
+      <ComponentID>normalizedString</ComponentID>
+      <TaskID>normalizedString</TaskID>
+      <ReferenceID>normalizedString</ReferenceID>
+      <ConfirmationCode>Never</ConfirmationCode>
+      <AuthorizationID>normalizedString</AuthorizationID>
+    </Sender>
+    <Receiver>
+      <LogicalID>normalizedString</LogicalID>
+      <ComponentID>normalizedString</ComponentID>
+      <ID>normalizedString</ID>
+    </Receiver>
+    <CreationDateTime>2001-12-17T09:30:47Z</CreationDateTime>
+    <BODID>normalizedString</BODID>
+  </OriginalApplicationArea><ResponseCriteria><ResponseExpression actionCode="Accepted" /></ResponseCriteria></Confirm><BOD><OriginalApplicationArea>
+    <Sender>
+      <LogicalID>1234</LogicalID>
+      <ComponentID>normalizedString</ComponentID>
+      <TaskID>normalizedString</TaskID>
+      <ReferenceID>normalizedString</ReferenceID>
+      <ConfirmationCode>Never</ConfirmationCode>
+      <AuthorizationID>normalizedString</AuthorizationID>
+    </Sender>
+    <Receiver>
+      <LogicalID>normalizedString</LogicalID>
+      <ComponentID>normalizedString</ComponentID>
+      <ID>normalizedString</ID>
+    </Receiver>
+    <CreationDateTime>2001-12-17T09:30:47Z</CreationDateTime>
+    <BODID>normalizedString</BODID>
+  </OriginalApplicationArea></BOD></DataArea></ConfirmBOD>

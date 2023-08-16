@@ -1,0 +1,7 @@
+﻿{
+  "UID" : "{0}",
+  "MaterialLotUID" : "{1}",
+  "MaterialLotAncestorUID" : "{2}",
+  "SiteFacilityUID" : "{3}",
+  "AdditionalData" : "{4}"
+}

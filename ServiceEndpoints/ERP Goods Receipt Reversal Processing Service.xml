@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<ESBService xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Id>0ba8850e-ebf6-4ead-a31c-9839eb4fd5f5</Id>
+  <Version>de30274e-655e-4d04-ae28-60b09ebfc909</Version>
+  <BusinessFlows />
+  <Description>This service is configured as a service connector and is responsible for reading Goods Receipt Reversal Messages, from the proper topic and processing them into Neo PLM.  Note that the configured service endpoint is never activated, rather all of the business logic is managed in the business process attached to the related subscriber.  That is why this is a bogus service.</Description>
+  <Name>ERP Goods Receipt Reversal Processing Service</Name>
+  <Group>General</Group>
+  <IsSystemObject>false</IsSystemObject>
+  <IsPrivate>false</IsPrivate>
+  <Bindings />
+  <Topic />
+  <Pattern>1</Pattern>
+  <Properties />
+  <MessagingPattern>Request-Reply</MessagingPattern>
+  <ProxySettings>
+    <HostConfigType>Default</HostConfigType>
+    <CredentialConfigType>NotSpecified</CredentialConfigType>
+    <Credential>&lt;Default&gt;</Credential>
+    <Host />
+    <Port>0</Port>
+    <BypassLocalAddress>false</BypassLocalAddress>
+  </ProxySettings>
+  <Zone>Enterprise</Zone>
+  <Enabled>false</Enabled>
+  <ServiceName>ERP Goods Receipt Reversal Processing Service</ServiceName>
+  <ServiceGroup>General</ServiceGroup>
+  <Binding>REST</Binding>
+  <AvailabilityGroupId>Neuron ESB Default Host</AvailabilityGroupId>
+  <Behavior />
+  <KeepAlive>true</KeepAlive>
+  <HostNameComparisonModeIsExact>false</HostNameComparisonModeIsExact>
+  <TransactionType>None</TransactionType>
+  <MaxMessageSize>1000000</MaxMessageSize>
+  <ReliableMessaging>false</ReliableMessaging>
+  <ConfigFile />
+  <InboundPolling>false</InboundPolling>
+  <OptimizeForLargeMessages>false</OptimizeForLargeMessages>
+  <RawBody>true</RawBody>
+  <ServiceThrottles>
+    <MaxConcurrentCalls>208</MaxConcurrentCalls>
+    <MaxConcurrentInstances>1008</MaxConcurrentInstances>
+    <MaxConcurrentSessions>800</MaxConcurrentSessions>
+  </ServiceThrottles>
+  <CertificateValidationMode>None</CertificateValidationMode>
+  <CertificateRevocationMode>NoCheck</CertificateRevocationMode>
+  <NegotiateServiceCredential>true</NegotiateServiceCredential>
+  <EstablishSecurityContext>true</EstablishSecurityContext>
+  <Contract />
+  <Security>None</Security>
+  <ServiceIdentityType>None</ServiceIdentityType>
+  <ServicePrincipal />
+  <ServiceType>Business</ServiceType>
+  <ClientCredentialtype>Certificate</ClientCredentialtype>
+  <Impersonation>false</Impersonation>
+  <RelayAccessToken>true</RelayAccessToken>
+  <ClientConnectorId>c3fea138-b9c7-4b2c-bc92-f2c06821b898</ClientConnectorId>
+  <ClientUrl />
+  <RouteClientTraffic>false</RouteClientTraffic>
+  <ClientTopic>Enrich_ERP_GoodsIssues</ClientTopic>
+  <UpdateMetadata>true</UpdateMetadata>
+  <UseHttps>false</UseHttps>
+  <EnableClientMetadataHttpEndpoint>false</EnableClientMetadataHttpEndpoint>
+  <EnableClientMetadataHttpsEndpoint>false</EnableClientMetadataHttpsEndpoint>
+  <ClientSubscriberId>B2MML_ERP_Publisher</ClientSubscriberId>
+  <CaptureHeaders>false</CaptureHeaders>
+  <CaptureHTTPHeaders>false</CaptureHTTPHeaders>
+  <HttpConnectionLimit>100</HttpConnectionLimit>
+  <EnableCors>false</EnableCors>
+  <ClientCertName />
+  <ACL />
+  <AccessUrl>http://BogusServer/</AccessUrl>
+  <RouteServiceTraffic>false</RouteServiceTraffic>
+  <RestoreHeaders>true</RestoreHeaders>
+  <RestoreHTTPHeaders>false</RestoreHTTPHeaders>
+  <ServiceTopic />
+  <ServiceSubscriberId />
+  <ReuseServiceConnection>true</ReuseServiceConnection>
+  <ServerCertName />
+  <ServicePolicy>Message Processing Process Policy</ServicePolicy>
+  <FailoverAddresses />
+  <FarmSingleInstance>true</FarmSingleInstance>
+  <ProcessList />
+  <ProcessMode>Messaging</ProcessMode>
+  <ServiceRoutes />
+  <ServiceProcessMode>true</ServiceProcessMode>
+  <ServiceServiceRateEnable>false</ServiceServiceRateEnable>
+  <ClientServiceRateEnable>false</ClientServiceRateEnable>
+</ESBService>

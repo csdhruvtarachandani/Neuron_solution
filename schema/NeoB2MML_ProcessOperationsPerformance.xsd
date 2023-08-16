@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-16"?>
+<xs:schema xmlns="http://www.mesa.org/xml/B2MML-V0600" targetNamespace="http://www.mesa.org/xml/B2MML-V0600" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="ProcessOperationsPerformance">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="ApplicationArea">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Sender">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="LogicalID" type="xs:string" />
+                    <xs:element name="ReferenceID" type="xs:string" />
+                    <xs:element name="ConfirmationCode" type="xs:string" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Receiver">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="LogicalID" type="xs:string" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="CreationDateTime" type="xs:string" />
+              <xs:element name="BODID" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DataArea">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Process">
+                <xs:complexType>
+                  <xs:attribute name="acknowledgeCode" type="xs:string" />
+                </xs:complexType>
+              </xs:element>
+              <xs:element minOccurs="1" maxOccurs="unbounded" name="OperationsPerformance">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="ID" type="xs:string" />
+                    <xs:element name="HierarchyScope">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="EquipmentID" type="xs:string" />
+                          <xs:element name="EquipmentElementLevel" type="xs:string" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="OperationsResponse">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="ID" type="xs:string" />
+                          <xs:element name="OperationsRequestID" type="xs:string" />
+                          <xs:element name="OperationsDefinitionID" type="xs:string" />
+                          <xs:element name="SegmentResponse">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="ID" type="xs:string" />
+                                <xs:element name="HierarchyScope">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="EquipmentID" type="xs:string" />
+                                      <xs:element name="EquipmentElementLevel" type="xs:string" />
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="MaterialActual">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="MaterialDefinitionID" type="xs:string" />
+                                      <xs:element name="MaterialLotID" type="xs:string" />
+                                      <xs:element name="Quantity">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="QuantityString" type="xs:string" />
+                                            <xs:element name="UnitOfMeasure" type="xs:string" />
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element minOccurs="1" maxOccurs="unbounded" name="MaterialActualProperty">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="ID" type="xs:string" />
+                                            <xs:element name="Description" type="xs:string" />
+                                            <xs:element name="Value">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="ValueString" type="xs:string" />
+                                                  <xs:element name="DataType" type="xs:string" />
+                                                  <xs:element name="UnitOfMeasure" type="xs:string" />
+                                                  <xs:element name="Key" type="xs:string" />
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="releaseID" type="xs:string" />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

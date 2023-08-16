@@ -1,0 +1,34 @@
+﻿<!-- edited with XMLSpy v2017 sp2 (x64) (http://www.altova.com) by Thomas McCarthy (Neo PLM, Inc.) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" xmlns:ns1="Http:/NeoPLM.com/ESBError" targetNamespace="Http:/NeoPLM.com/ESBError" elementFormDefault="qualified" attributeFormDefault="unqualified" vc:minVersion="1.1">
+	<xs:element name="ESBMessageArrivalNotification" type="ns1:MessageArrivalNotificationType">
+		<xs:annotation>
+			<xs:documentation>An Element to describe an ESB Message Arrival Notification</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="ESBMessageArrivalNotifications">
+		<xs:annotation>
+			<xs:documentation>An Element to describe a collection of ESB Message Arrival Notifications</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence maxOccurs="unbounded">
+				<xs:element name="ESBMessageArrivalNotification" type="ns1:MessageArrivalNotificationType"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:complexType name="MessageArrivalNotificationType">
+		<xs:annotation>
+			<xs:documentation>A complexType to describe an ESB Message Arrival Notification Message</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="EndpointAddress" type="xs:string"/>
+			<xs:element name="ESBAction" type="xs:string"/>
+			<xs:element name="ESBTopic" type="xs:string"/>
+			<xs:element name="SourceSystemID" type="xs:string"/>
+			<xs:element name="PlantID" type="xs:string"/>
+			<xs:element name="TransactionID" type="xs:string"/>
+			<xs:element name="MessageDate" type="xs:string"/>
+			<xs:element name="OriginalMessage" type="xs:string"/>
+			<xs:element name="SuccessMessage" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

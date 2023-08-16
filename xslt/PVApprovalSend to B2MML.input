@@ -1,0 +1,19 @@
+﻿<ProductionVersion>
+	<UID>6d311cf6-a668-43ca-ade4-e880459e8083</UID>
+	<ProductionVersionID>1235|M025</ProductionVersionID>
+	<Description>OSP1 163.0 Prazosin Hydrochloride</Description>
+	<SiteFacilityUID>d6684796-a438-4279-9585-65fe1ce9dde6</SiteFacilityUID>
+	<ERPPlantCodeUID>ce01581f-47bc-452e-8e2b-3c18b229cbee</ERPPlantCodeUID>
+	<LocalMaterialSpecificationUID>36a90986-7200-4c71-8680-93093ae590ce</LocalMaterialSpecificationUID>
+	<ProductionQuantity>0</ProductionQuantity>
+	<MinProductionQuantity>163</MinProductionQuantity>
+	<MaxProductionQuantity>163</MaxProductionQuantity>
+	<QuantityEngineeringUnitUID>cab455d4-1062-4ad3-840c-c020c01fb3f8</QuantityEngineeringUnitUID>
+	<ERPBillOfMaterialID>1234|36</ERPBillOfMaterialID>
+	<ERPRecipeID>50366670|1</ERPRecipeID>
+	<IsApproved>true</IsApproved>
+	<AdditionalData>OSP1 163.0 PRAZOSIN HYDROCHLORIDE</AdditionalData>
+	<LastModifiedUtc>2023-04-18 07:12:46.8570000</LastModifiedUtc>
+	<IsApprovalSent>0</IsApprovalSent>
+	<ItemCode>1234</ItemCode>
+</ProductionVersion>

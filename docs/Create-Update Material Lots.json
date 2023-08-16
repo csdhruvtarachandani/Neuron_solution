@@ -1,0 +1,20 @@
+﻿{
+  "UID": "{0}",
+  "LotCode": "{1}",
+  "SiteFacilityUID": "{2}",
+  "FacilityERPPlantCodeUID": "{3}",
+  "MaterialEntityUID": "{4}",
+  "MaterialReferenceType": "{5}",
+  "ExternalStatus": "{6}",
+  "ExternalStatusDescription": "{7}",
+  "LotStatusType": "{8}",
+  "Potency": "{9}",
+  "SourcePotencyEngineeringUnitLabel": "{10}",
+  "PotencyEngineeringUnitUID": "{11}",
+  "SupplierID": "{12}",
+  "SupplierName": "{13}",
+  "SupplierLotID": "{14}",
+  "LastModifiedUTC": "{15}",
+  "SourceRecordLastModifiedUTC": "{16}",
+  "RevaluationDateUtc": "{17}" 
+}

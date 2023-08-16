@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CreateUpdateBOMRequest xmlns:n1="http://NeoPLM.com/EnterpriseIntegration">
+	<UID>{0}</UID>
+	<BillOfMaterialID>{1}</BillOfMaterialID>
+	<OriginalMessage>{2}</OriginalMessage>
+</CreateUpdateBOMRequest>

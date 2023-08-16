@@ -1,0 +1,25 @@
+﻿<ns1:GoodsIssueSaveRequest xmlns:ns1="http://NeoPLM.com/EnterpriseIntegration">
+	<ns1:TransactionType>{0}</ns1:TransactionType>
+	<ns1:LocalServiceURI>{1}</ns1:LocalServiceURI>
+	<ns1:ERPExecutionOrderUID>{2}</ns1:ERPExecutionOrderUID>
+	<ns1:MaterialEntityUID>{3}</ns1:MaterialEntityUID>
+	<ns1:MaterialReferenceType>{4}</ns1:MaterialReferenceType>
+	<ns1:MaterialLotUID>{5}</ns1:MaterialLotUID>
+	<ns1:SourceRecordUniqueID>{6}</ns1:SourceRecordUniqueID>
+	<ns1:SourceRecordTimestampUTC>{7}</ns1:SourceRecordTimestampUTC>
+	<ns1:SourceContainerID>{8}</ns1:SourceContainerID>
+	<ns1:BOMItemLineNumber>{9}</ns1:BOMItemLineNumber>
+	<ns1:WorkCenterID>{10}</ns1:WorkCenterID>
+	<ns1:EquipmentID>{11}</ns1:EquipmentID>
+	<ns1:PhaseID>{12}</ns1:PhaseID>
+	<ns1:GoodsIssueType>{13}</ns1:GoodsIssueType>
+	<ns1:Quantity>{14}</ns1:Quantity>
+	<ns1:QuantityEngineeringUnitLabel>{15}</ns1:QuantityEngineeringUnitLabel>
+	<ns1:QuantityEngineeringUnitUID>{16}</ns1:QuantityEngineeringUnitUID>
+	<ns1:PerformedBy>{17}</ns1:PerformedBy>
+	<ns1:PerformedByTimeStampUTC>{18}</ns1:PerformedByTimeStampUTC>
+	<ns1:VerifiedBy>{19}</ns1:VerifiedBy>
+	<ns1:VerifiedByTimeStampUTC>{20}</ns1:VerifiedByTimeStampUTC>
+	<ns1:AdditionalData>{21}</ns1:AdditionalData>
+	<ns1:LastModifiedUTC>{22}</ns1:LastModifiedUTC>
+</ns1:GoodsIssueSaveRequest>

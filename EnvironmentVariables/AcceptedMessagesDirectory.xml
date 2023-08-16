@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<NeuronVariable xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Id>49804f87-c4ea-47f2-a9be-94a9fe0405ee</Id>
+  <Version>9f6de591-a067-4fec-8563-bcc704841bd6</Version>
+  <BusinessFlows />
+  <Description>If the SaveAcceptedMessagesToDisk parameter is set to "True", all valid messages, those that are accepted from a schema perspective, will be saved to this file system location.</Description>
+  <Name>AcceptedMessagesDirectory</Name>
+  <Group>General</Group>
+  <IsSystemObject>false</IsSystemObject>
+  <IsPrivate>false</IsPrivate>
+  <Mask>false</Mask>
+</NeuronVariable>

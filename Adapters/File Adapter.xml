@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<ESBAdapter xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Id>e6ac7efe-f538-4b19-afa7-83c3952e1bd4</Id>
+  <Version>535c5874-e3bb-4080-8723-f0d957a63a0e</Version>
+  <Name>File Adapter</Name>
+  <Description />
+  <Group>General</Group>
+  <IsSystemObject>false</IsSystemObject>
+  <AdapterType>Net</AdapterType>
+  <Zone>Enterprise</Zone>
+  <BindingAssembly>Neuron.Esb.Adapters.FileAdapter.dll</BindingAssembly>
+  <BindingClass>Neuron.Esb.Adapters.FileAdapter</BindingClass>
+  <AdapterName>File Adapter</AdapterName>
+</ESBAdapter>

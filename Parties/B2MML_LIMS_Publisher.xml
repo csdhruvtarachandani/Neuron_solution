@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<ESBSubscriber xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Id>e051c650-274a-4c12-87a7-76926eb5fc1b</Id>
+  <Version>fb2aa48b-7353-401e-8044-3965c142094d</Version>
+  <BusinessFlows />
+  <Description>A Publisher to transfer inbound messages from the LIMS facing web service, perform basic schema validation checks on the messages, and assuming they are successful to route them to the appropriate message specific topics.</Description>
+  <Name>B2MML_LIMS_Publisher</Name>
+  <Group>General</Group>
+  <IsSystemObject>false</IsSystemObject>
+  <IsPrivate>false</IsPrivate>
+  <Bindings />
+  <SubscriberId>B2MML_LIMS_Publisher</SubscriberId>
+  <ClientGroup>General</ClientGroup>
+  <Zone>Enterprise</Zone>
+  <Enabled>true</Enabled>
+  <Subscriptions>
+    <Subscription>
+      <TopicName>Enrich_LIMS_MaterialLot</TopicName>
+      <CanRead>false</CanRead>
+      <CanWrite>true</CanWrite>
+      <SubscriptionType>Topic</SubscriptionType>
+    </Subscription>
+    <Subscription>
+      <TopicName>SaveRawOutputFile</TopicName>
+      <CanRead>false</CanRead>
+      <CanWrite>true</CanWrite>
+      <SubscriptionType>Topic</SubscriptionType>
+    </Subscription>
+    <Subscription>
+      <TopicName>ESBError</TopicName>
+      <CanRead>false</CanRead>
+      <CanWrite>true</CanWrite>
+      <SubscriptionType>Topic</SubscriptionType>
+    </Subscription>
+  </Subscriptions>
+  <ACL />
+  <Anonymous>true</Anonymous>
+  <AllowMultipleInstances>true</AllowMultipleInstances>
+  <MessagePipelines>
+    <ClientPipelineItem>
+      <Id>cc79390f-6deb-4735-955e-1bb125f37b2f</Id>
+      <Version>e02e717a-7599-435f-be50-b4b918b2c3e3</Version>
+      <BusinessFlows />
+      <Description />
+      <Name>VETO_B2MML_LIMS_Material_Lot</Name>
+      <IsSystemObject>false</IsSystemObject>
+      <IsPrivate>false</IsPrivate>
+      <ApplyOnPublish>true</ApplyOnPublish>
+      <ApplyOnReceive>false</ApplyOnReceive>
+      <PipelineConditions>
+        <Id>64d87693-4210-4cda-a11e-7fe085a52143</Id>
+        <Version>4d02fddb-634f-44c4-aae8-9f231758a4bb</Version>
+        <BusinessFlows />
+        <Description />
+        <IsSystemObject>false</IsSystemObject>
+        <IsPrivate>false</IsPrivate>
+        <Condition>
+          <Conditions>
+            <ConditionElement>
+              <PrefixOperator>None</PrefixOperator>
+              <Expression1>Action</Expression1>
+              <NotOperator>false</NotOperator>
+              <RelationalOperator>TextEqualsIgnoreCase</RelationalOperator>
+              <Expression2>LIMSMaterialLot</Expression2>
+              <SuffixOperator>None</SuffixOperator>
+              <LogicalOperator>End</LogicalOperator>
+            </ConditionElement>
+          </Conditions>
+        </Condition>
+      </PipelineConditions>
+    </ClientPipelineItem>
+  </MessagePipelines>
+  <LogActivity>false</LogActivity>
+  <UseUniqueWmiCounterName>false</UseUniqueWmiCounterName>
+</ESBSubscriber>

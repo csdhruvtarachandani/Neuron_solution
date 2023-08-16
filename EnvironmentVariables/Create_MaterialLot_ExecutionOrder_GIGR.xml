@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<NeuronVariable xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Id>c1f8dec1-ad63-4230-ace6-b7b7f1af1623</Id>
+  <Version>60563b70-352a-4af8-80d3-6c1876cf50e6</Version>
+  <BusinessFlows />
+  <Description>This variable's value is used to determine if MaterialLot or ExecutionOrder should be created Automatically for GoodsIssue/GoodsReceipt Processes. Set 'True' to create MaterialLot and ExecutionOrder or set 'False' to avoid creation of both.</Description>
+  <Name>Create_MaterialLot_ExecutionOrder_GIGR</Name>
+  <Group>General</Group>
+  <IsSystemObject>false</IsSystemObject>
+  <IsPrivate>false</IsPrivate>
+  <Mask>false</Mask>
+</NeuronVariable>

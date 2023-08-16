@@ -1,0 +1,98 @@
+﻿<NeoPlmRecipe xmlns:ns="http://www.mesa.org/xml/B2MML-V0600" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:local="urn:local">
+  <SourceSystemID>SAPP01</SourceSystemID>
+  <TransactionDateTime>2022-04-06T12:10:04Z</TransactionDateTime>
+  <TransactionID>0000001164902983</TransactionID>
+  <DestinationSystemID>SAP_PI</DestinationSystemID>
+  <Recipe>
+    <RecipeID>50366670|1</RecipeID>
+    <RecipeDescription>OSP1 163.0 Prazosin Hydrochloride</RecipeDescription>
+    <PlantID>IE14</PlantID>
+    <MaterialNumber>H086218030</MaterialNumber>
+    <QuantityEngineeringUnitUID />
+    <UnitOfMeasure>KG</UnitOfMeasure>
+    <RecipeLowerLimitQuantity>0.000</RecipeLowerLimitQuantity>
+    <RecipeUpperLimitQuantity>99999999.000</RecipeUpperLimitQuantity>
+    <RecipeOperations>
+      <RecipeOperation>
+        <OperationNumber>0010</OperationNumber>
+        <SuperiorOperationNumber></SuperiorOperationNumber>
+        <PrimaryResourceHumanID>QUALITY</PrimaryResourceHumanID>
+        <OperationDescription>Quality cost</OperationDescription>
+        <PrimaryResourceSAPID>10005511</PrimaryResourceSAPID>
+        <ControlKey>PI01</ControlKey>
+        <RecipeBaseQuantity>163.000</RecipeBaseQuantity>
+        <AlternateResources>
+          <AlternateResource>
+            <AlternateResourceSAPID>10005511</AlternateResourceSAPID>
+            <AlternateResourceHumanID>QUALITY</AlternateResourceHumanID>
+          </AlternateResource>
+        </AlternateResources>
+        <BillOfMaterialItems />
+      </RecipeOperation>
+      <RecipeOperation>
+        <OperationNumber>0020</OperationNumber>
+        <SuperiorOperationNumber>0010</SuperiorOperationNumber>
+        <PrimaryResourceHumanID>QUALITY</PrimaryResourceHumanID>
+        <OperationDescription>Quality cost</OperationDescription>
+        <PrimaryResourceSAPID>10005511</PrimaryResourceSAPID>
+        <ControlKey>PI01</ControlKey>
+        <RecipeBaseQuantity>163.000</RecipeBaseQuantity>
+        <AlternateResources>
+          <AlternateResource>
+            <AlternateResourceSAPID></AlternateResourceSAPID>
+            <AlternateResourceHumanID></AlternateResourceHumanID>
+          </AlternateResource>
+        </AlternateResources>
+        <BillOfMaterialItems />
+      </RecipeOperation>
+      <RecipeOperation>
+        <OperationNumber>0030</OperationNumber>
+        <SuperiorOperationNumber></SuperiorOperationNumber>
+        <PrimaryResourceHumanID>PRAZAPI</PrimaryResourceHumanID>
+        <OperationDescription>Setup&amp;Cleanup cost</OperationDescription>
+        <PrimaryResourceSAPID>10005508</PrimaryResourceSAPID>
+        <ControlKey>PI01</ControlKey>
+        <RecipeBaseQuantity>163.000</RecipeBaseQuantity>
+        <AlternateResources>
+          <AlternateResource>
+            <AlternateResourceSAPID>10005508</AlternateResourceSAPID>
+            <AlternateResourceHumanID>PRAZAPI</AlternateResourceHumanID>
+          </AlternateResource>
+        </AlternateResources>
+        <BillOfMaterialItems />
+      </RecipeOperation>
+      <RecipeOperation>
+        <OperationNumber>0040</OperationNumber>
+        <SuperiorOperationNumber>0030</SuperiorOperationNumber>
+        <PrimaryResourceHumanID>PRAZAPI</PrimaryResourceHumanID>
+        <OperationDescription>Setup&amp;Cleanup cost</OperationDescription>
+        <PrimaryResourceSAPID>10005508</PrimaryResourceSAPID>
+        <ControlKey>PI01</ControlKey>
+        <RecipeBaseQuantity>163.000</RecipeBaseQuantity>
+        <AlternateResources>
+          <AlternateResource>
+            <AlternateResourceSAPID></AlternateResourceSAPID>
+            <AlternateResourceHumanID></AlternateResourceHumanID>
+          </AlternateResource>
+        </AlternateResources>
+        <BillOfMaterialItems />
+      </RecipeOperation>
+      <RecipeOperation>
+        <OperationNumber>0050</OperationNumber>
+        <SuperiorOperationNumber></SuperiorOperationNumber>
+        <PrimaryResourceHumanID>DC-312</PrimaryResourceHumanID>
+        <OperationDescription>Operation 0050 (Reactor 'A' (DC-312) Op)</OperationDescription>
+        <PrimaryResourceSAPID>10005302</PrimaryResourceSAPID>
+        <ControlKey>ZZ06</ControlKey>
+        <RecipeBaseQuantity>163.000</RecipeBaseQuantity>
+        <AlternateResources>
+          <AlternateResource>
+            <AlternateResourceSAPID>10005302</AlternateResourceSAPID>
+            <AlternateResourceHumanID>DC-312</AlternateResourceHumanID>
+          </AlternateResource>
+        </AlternateResources>
+        <BillOfMaterialItems />
+      </RecipeOperation>
+    </RecipeOperations>
+  </Recipe>
+</NeoPlmRecipe>

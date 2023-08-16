@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<ESBServicePolicy xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Id>2a006e17-f933-406a-af0d-5cc020a31047</Id>
+  <Version>2b8c5b99-a3a3-4ca2-a420-899ed65eda0d</Version>
+  <BusinessFlows />
+  <Description>This policy is used by any message Processing Service.  The only relevant tab here is the Failure Actions Tab, particularly the MSMQ Retry portion, and the message failure portion.</Description>
+  <Name>Message Processing Process Policy</Name>
+  <Group>General</Group>
+  <IsSystemObject>false</IsSystemObject>
+  <RequestReplyTimeout>60</RequestReplyTimeout>
+  <RetryCount>1</RetryCount>
+  <RetryInterval>1</RetryInterval>
+  <OnErrorAuditToDatabase>false</OnErrorAuditToDatabase>
+  <OnErrorAuditToFile>true</OnErrorAuditToFile>
+  <OnErrorRepublishMessage>false</OnErrorRepublishMessage>
+  <OnErrorRollback>false</OnErrorRollback>
+  <RepublishTopic />
+  <AlwaysAvailable>true</AlwaysAvailable>
+  <InlcudeAsExceptions>false</InlcudeAsExceptions>
+  <StartAndStopAdapterAccordingToAvailability>true</StartAndStopAdapterAccordingToAvailability>
+  <HttpStatusCodes />
+  <DoNotApplyPolicyIfFaultContract>false</DoNotApplyPolicyIfFaultContract>
+  <RollbackMessageExpirationSeconds>300</RollbackMessageExpirationSeconds>
+  <RollbackDelaySeconds>60</RollbackDelaySeconds>
+  <AuditDirectoryLocation>C:\FailedMessages</AuditDirectoryLocation>
+  <SoapFaultDescription />
+</ESBServicePolicy>

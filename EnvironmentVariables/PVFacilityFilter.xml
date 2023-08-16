@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<NeuronVariable xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Id>49384bc7-727b-44b1-9cb3-9a1c1613ebb7</Id>
+  <Version>1ac7ee52-9704-460e-86ca-2c2938e421ca</Version>
+  <BusinessFlows />
+  <Description>This is a semi colon delimited list of Production Version Facility Filters.</Description>
+  <Name>PVFacilityFilter</Name>
+  <Group>General</Group>
+  <IsSystemObject>false</IsSystemObject>
+  <IsPrivate>false</IsPrivate>
+  <Mask>false</Mask>
+</NeuronVariable>

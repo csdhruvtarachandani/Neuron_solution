@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LocalDBRequest>
+	<BOMID>{0}</BOMID>
+	<RecipeID>{1}</RecipeID>
+	<PVARID>{2}</PVARID>
+	<Message>{3}</Message>
+</LocalDBRequest>

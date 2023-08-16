@@ -1,0 +1,1 @@
+﻿<ns0:NeoPlmErpGoodsIssueReversal xmlns:ns0="http://NeoPLM.NeoPlmErpGoodsIssueReversal" xmlns:ns="http://www.mesa.org/xml/B2MML-V0600" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:fn="http://www.w3.org/2005/xpath-functions"><SourceSystemID /><TransactionDateTime /><TransactionID /><GoodsIssueReversals /></ns0:NeoPlmErpGoodsIssueReversal>

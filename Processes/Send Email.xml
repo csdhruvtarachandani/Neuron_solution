@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<ESBMessagePipelineStorage xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Id>26584967-df26-486a-9212-eea8a286f6d6</Id>
+  <Version>38d4b2dd-6649-463c-8ef1-87c3d9cce3cd</Version>
+  <Name>Send Email</Name>
+  <Description />
+  <IsSystemObject>false</IsSystemObject>
+  <Category>General</Category>
+  <IsEncrypted>true</IsEncrypted>
+  <Path>Debugging</Path>
+  <PipelineBlob>&lt;ESBMessagePipeline xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.neuronesb.com/pipelines/"&gt;&lt;Category&gt;General&lt;/Category&gt;&lt;Description i:nil="true" /&gt;&lt;GlobalProperties xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" /&gt;&lt;Name&gt;Send Email&lt;/Name&gt;&lt;Properties xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" /&gt;&lt;ReferencedAssemblies xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" /&gt;&lt;Steps&gt;&lt;ESBMessagePipelineStep xmlns:d3p1="http://schemas.neuronesb.com/pipelines/esb/" i:type="d3p1:EsbMessageCSharpCodePipelineStep"&gt;&lt;Bindings xmlns:d4p1="http://schemas.datacontract.org/2004/07/Neuron.ComponentModel" /&gt;&lt;BreakPoint&gt;Disable&lt;/BreakPoint&gt;&lt;Disable&gt;false&lt;/Disable&gt;&lt;Name&gt;Create Email&lt;/Name&gt;&lt;Uniquename /&gt;&lt;BreakPointLines xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" /&gt;&lt;Code&gt;//var type = context.Data.GetProperty(string.Empty,"Type");
+//var neoEntityName = context.Data.GetProperty(string.Empty,"NeoEntityName");
+
+//var emailList = context.EnvironmentVariables[string.Format("{0}.Review EmailList",neoEntityName)];
+var emailList = "thomas.mccarthy@neoplm.com";
+var emailSender = "thomas.mccarthy@neoplm.com";
+var sourceMessageID = "12345678910";
+var creationDate = System.DateTime.UtcNow.ToString();
+var origin = "Enrich ERP Material Lot";
+var emailSubject = string.Format("An Error Has Occurred in Neo PLM : {0} in {1}", origin, sourceMessageID);
+
+var body = new System.Text.StringBuilder();
+body.AppendLine(string.Format("ID: {0}",sourceMessageID));
+body.AppendLine(string.Format("MessageDelivered: {0}",creationDate));
+body.AppendLine(string.Format("Error Description: {0}", "An error has occurred while trying to lookup the Facility UID."));
+
+context.Instance.TraceInformation(string.Format("Sending email '{2}' from {0} to {1}",emailSender,emailList,emailSubject));
+context.Data.SetProperty("smtp", "To", emailList);
+context.Data.SetProperty("smtp", "From", emailSender);
+context.Data.SetProperty("smtp", "Subject", emailSubject);
+context.Data.SetProperty("smtp", "Body", body.ToString());
+context.Data.SetProperty("smtp", "BodyAsAttachment", true.ToString());
+context.Data.SetProperty("smtp", "FileName", string.Format("{0}.txt","NeoError"));
+
+context.Data.Header.SourceId = "B2MML_ERP_Publisher";&lt;/Code&gt;&lt;ReferencedAssemblies xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays"&gt;&lt;d4p1:string&gt;Neuron&lt;/d4p1:string&gt;&lt;d4p1:string&gt;Neuron.Pipelines&lt;/d4p1:string&gt;&lt;d4p1:string&gt;Neuron.Esb&lt;/d4p1:string&gt;&lt;d4p1:string&gt;System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d4p1:string&gt;&lt;d4p1:string&gt;System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d4p1:string&gt;&lt;d4p1:string&gt;System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d4p1:string&gt;&lt;d4p1:string&gt;System.Xml.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d4p1:string&gt;&lt;d4p1:string&gt;System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d4p1:string&gt;&lt;d4p1:string&gt;System.Data.DataSetExtensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d4p1:string&gt;&lt;d4p1:string&gt;System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d4p1:string&gt;&lt;d4p1:string&gt;System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d4p1:string&gt;&lt;/ReferencedAssemblies&gt;&lt;TypeName&gt;Type27803a7f60b4c3991ff5504dd4dfc0&lt;/TypeName&gt;&lt;/ESBMessagePipelineStep&gt;&lt;ESBMessagePipelineStep xmlns:d3p1="http://schemas.neuronesb.com/pipelines/esb/" i:type="d3p1:EsbMessagePublishPipelineStep"&gt;&lt;Bindings xmlns:d4p1="http://schemas.datacontract.org/2004/07/Neuron.ComponentModel" /&gt;&lt;BreakPoint&gt;Disable&lt;/BreakPoint&gt;&lt;Disable&gt;false&lt;/Disable&gt;&lt;Name&gt;Publish&lt;/Name&gt;&lt;Uniquename /&gt;&lt;d3p1:Semantic&gt;Multicast&lt;/d3p1:Semantic&gt;&lt;d3p1:TopicSelector i:type="d3p1:ESBMessageConstTopicSelector"&gt;&lt;d3p1:Topic&gt;EmailNotification&lt;/d3p1:Topic&gt;&lt;/d3p1:TopicSelector&gt;&lt;d3p1:_timeout&gt;60&lt;/d3p1:_timeout&gt;&lt;/ESBMessagePipelineStep&gt;&lt;/Steps&gt;&lt;/ESBMessagePipeline&gt;</PipelineBlob>
+</ESBMessagePipelineStorage>

@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<ESBSubscriber xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Id>54f26309-3b45-41ca-ba60-60786ee9d715</Id>
+  <Version>54e420ca-f8af-4129-a7ba-de9eaa88c3bf</Version>
+  <BusinessFlows />
+  <Description>A subscriber to transform an error message, typically originating from a business process, and representing a persistent system error, into an email and sending it to interested parties.</Description>
+  <Name>SMTP System Error Handler</Name>
+  <Group>General</Group>
+  <IsSystemObject>false</IsSystemObject>
+  <IsPrivate>false</IsPrivate>
+  <Bindings />
+  <SubscriberId>SMTP System Error Handler</SubscriberId>
+  <ClientGroup>General</ClientGroup>
+  <Zone>Enterprise</Zone>
+  <Enabled>false</Enabled>
+  <Subscriptions>
+    <Subscription>
+      <TopicName>ESBError</TopicName>
+      <CanRead>true</CanRead>
+      <CanWrite>false</CanWrite>
+      <SubscriptionType>Topic</SubscriptionType>
+    </Subscription>
+  </Subscriptions>
+  <ACL />
+  <Anonymous>true</Anonymous>
+  <AllowMultipleInstances>true</AllowMultipleInstances>
+  <MessagePipelines>
+    <ClientPipelineItem>
+      <Id>cbe7795a-3005-424c-beaf-609893143afb</Id>
+      <Version>40a30d98-0871-4222-ac03-e77d53b0d542</Version>
+      <BusinessFlows />
+      <Description />
+      <Name>SMTP System Error Publisher</Name>
+      <IsSystemObject>false</IsSystemObject>
+      <IsPrivate>false</IsPrivate>
+      <ApplyOnPublish>false</ApplyOnPublish>
+      <ApplyOnReceive>true</ApplyOnReceive>
+      <PipelineConditions>
+        <Id>5ef0ce8d-b1ae-4afb-957f-efdd74059eed</Id>
+        <Version>44f4dd97-5e37-4d38-8b59-cb7928ef00b5</Version>
+        <BusinessFlows />
+        <Description />
+        <IsSystemObject>false</IsSystemObject>
+        <IsPrivate>false</IsPrivate>
+        <Condition />
+      </PipelineConditions>
+    </ClientPipelineItem>
+  </MessagePipelines>
+  <LogActivity>false</LogActivity>
+  <UseUniqueWmiCounterName>false</UseUniqueWmiCounterName>
+</ESBSubscriber>

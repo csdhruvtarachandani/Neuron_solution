@@ -1,0 +1,12 @@
+﻿<n1:LabSampleHistorySaveRequest xmlns:n1="http://NeoPLM.com/EnterpriseIntegration">
+	<n1:TransactionType>{0}</n1:TransactionType>
+	<n1:LocalServiceURI>{1}</n1:LocalServiceURI>
+	<n1:LabHistoryUID>{2}</n1:LabHistoryUID>
+	<n1:SourceRecordUniqueID>{3}</n1:SourceRecordUniqueID>
+	<n1:SampleID>{4}</n1:SampleID>
+	<n1:ControlPointID>{5}</n1:ControlPointID>
+	<n1:ControlPointDescription>{6}</n1:ControlPointDescription>
+	<n1:AdditionalData>{7}</n1:AdditionalData>
+	<n1:DateCompletedUtc>{8}</n1:DateCompletedUtc>
+	<n1:SampleStatus>{9}</n1:SampleStatus>
+</n1:LabSampleHistorySaveRequest>

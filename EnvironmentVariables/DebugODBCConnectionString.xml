@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<NeuronVariable xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Id>8101f83d-047f-4de9-9ed3-ab7724552859</Id>
+  <Version>c88d635c-2c91-4e78-929c-3509d3f8cd19</Version>
+  <BusinessFlows />
+  <Description>This is an ODBC configuration string that can be used to record all business data issues to a sql database, to support automated testing.  This is used internally by NeoPLM, and is not required in a production environment.  This is used in conjunction with the ODBC Error Publishing parameter.</Description>
+  <Name>DebugODBCConnectionString</Name>
+  <Group>General</Group>
+  <IsSystemObject>false</IsSystemObject>
+  <IsPrivate>false</IsPrivate>
+  <Mask>false</Mask>
+</NeuronVariable>

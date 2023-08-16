@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<ESBAdapter xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Id>eaf79e9a-d4b3-459b-b6c5-8d9642e66f88</Id>
+  <Version>bead140d-fd44-4026-8640-b2267cfaae8b</Version>
+  <Name>SMTP_Adapter</Name>
+  <Description />
+  <Group>General</Group>
+  <IsSystemObject>false</IsSystemObject>
+  <AdapterType>Net</AdapterType>
+  <Zone>Enterprise</Zone>
+  <BindingAssembly>Neuron.Esb.Adapters.SmtpAdapter.dll</BindingAssembly>
+  <BindingClass>Neuron.Esb.Adapters.SmtpAdapter</BindingClass>
+  <AdapterName>Smtp Adapter</AdapterName>
+</ESBAdapter>

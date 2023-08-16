@@ -1,0 +1,11 @@
+﻿{
+	"UID" : "{0}",
+	"LabHistoryUID" : "{1}",
+	"SourceRecordUniqueId" : "{2}",
+	"SampleId" : "{3}",
+	"ControlPointId" : "{4}",
+	"ControlPointDescription" : "{5}",
+	"AdditionalData" : "{6}",
+	"DateCompletedUtc" : "{7}",
+	"SampleStatus" : "{8}"
+}

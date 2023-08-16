@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<NeuronVariable xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Id>3ac54643-095a-4e7f-92b3-d97a76cf44cf</Id>
+  <Version>e9b4fa39-1806-4458-8df2-1d4b49abc43c</Version>
+  <BusinessFlows />
+  <Description>This is a semi colon delimited list of email addresses that is used to send emails to administrative users, if the Neo PLM services or database is down for maintainance.</Description>
+  <Name>DefaultAdminEmailAddressString</Name>
+  <Group>General</Group>
+  <IsSystemObject>false</IsSystemObject>
+  <IsPrivate>false</IsPrivate>
+  <Mask>false</Mask>
+</NeuronVariable>

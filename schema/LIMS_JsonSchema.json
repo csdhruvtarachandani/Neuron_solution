@@ -1,0 +1,209 @@
+﻿{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "type": "object",
+  "properties": {
+    "LOTSITENAME": {
+      "type": ["string", "null"]
+    },
+    "SOURCESYSTEMTXID": {
+      "type": ["string", "null"]
+    },
+    "SAMPLEID": {
+      "type": ["number", "null"]
+    },
+    "SAMPLEDBY": {
+      "type": ["string", "null"]
+    },
+    "ISOUTOFSPEC": {
+      "type": ["string", "null"]
+    },
+    "PROTOCOLNAME": {
+      "type": ["string", "null"]
+    },
+    "SAMPLECONDITION": {
+      "type": ["string", "null"]
+    },
+    "VERIFIEDBY": {
+      "type": ["string", "null"]
+    },
+    "RESULTTEXTVALUE": {
+      "type": ["string", "null"]
+    },
+    "RESULTNUMBERVALUE": {
+      "type": ["number", "null"]
+    },
+    "MATERIALTYPE": {
+      "type": ["string", "null"]
+    },
+    "STANDARDTESTPROCEDURE": {
+      "type": ["string", "null"]
+    },
+    "DATESAMPLETAKEN": {
+      "type": ["string", "null"],
+      "format": "date-time"
+    },
+    "SPECIFICATIONTYPEGENERATION": {
+      "type": ["string", "null"]
+    },
+    "INSPECTIONTYPE": {
+      "type": ["string", "null"]
+    },
+    "DISPOSITIONUSER": {
+      "type": ["string", "null"]
+    },
+    "SAMPLEREVIEWEDBY": {
+      "type": ["string", "null"]
+    },
+    "DATECOMPLETED": {
+      "type": ["string", "null"],
+      "format": "date-time"
+    },
+    "SAMPLEPOINT": {
+      "type": ["string", "null"]
+    },
+    "LOGGEDBY": {
+      "type": ["string", "null"]
+    },
+    "LABTESTINGTEMPLATEID": {
+      "type": ["string", "null"]
+    },
+    "RESULTCONDITION": {
+      "type": ["string", "null"]
+    },
+    "CONDITION": {
+      "type": ["string", "null"]
+    },
+    "PRODUCTIONORDERTYPE": {
+      "type": ["string", "null"]
+    },
+    "TASKSOURCESYSTEMTXID": {
+      "type": ["number", "null"]
+    },
+    "SAMPLELABINVESTIGATIONNUMBER": {
+      "type": ["string", "null"]
+    },
+    "NAME": {
+      "type": ["string", "null"]
+    },
+    "SAPPLANTCODE": {
+      "type": ["string", "null"]
+    },
+    "STATUS": {
+      "type": ["string", "null"]
+    },
+    "LASTMODIFIEDINEXTERNALSYSTEM": {
+      "type": ["string", "null"],
+      "format": "date-time"
+    },
+    "TASKLABINVESTIGATIONNUMBER": {
+      "type": ["string", "null"]
+    },
+    "LABTESTDESCRIPTION": {
+      "type": ["string", "null"]
+    },
+    "STUDY": {
+      "type": ["string", "null"]
+    },
+    "LABTASKLASTMODIFIED": {
+      "type": ["string", "null"],
+      "format": "date-time"
+    },
+    "DESCRIPTION": {
+      "type": ["string", "null"]
+    },
+    "SAMPLESTATUS": {
+      "type": ["string", "null"]
+    },
+    "LOTGROUPNAME": {
+      "type": ["string", "null"]
+    },
+    "TASKSTATUS": {
+      "type": ["string", "null"]
+    },
+    "RESULTNUMBERVALUEPRECISION": {
+      "type": ["number", "null"]
+    },
+    "SAMPLEREVIEWEDON": {
+      "type": ["string", "null"]
+    },
+    "RESULTLASTMODIFIED": {
+      "type": ["string", "null"],
+      "format": "date-time"
+    },
+    "LOTDISPOSITION": {
+      "type": ["string", "null"]
+    },
+    "CONTROLPOINT": {
+      "type": ["string", "null"]
+    },
+    "LABSAMPLELASTMODIFIED": {
+      "type": ["string", "null"],
+      "format": "date-time"
+    },
+    "DATECREATEDINEXTERNALSYSTEM": {
+      "type": ["string", "null"],
+      "format": "date-time"
+    },
+    "SAMPLESOURCESYSTEMTXID": {
+      "type": ["number", "null"]
+    },
+    "LABSAMPLEDESCRIPTION": {
+      "type": ["string", "null"]
+    },
+    "RESULTSOURCESYSTEMTXID": {
+      "type": ["number", "null"]
+    },
+    "TASKCONDITION": {
+      "type": ["string", "null"]
+    },
+    "BATCHNAME": {
+      "type": ["string", "null"]
+    },
+    "RESULTENTEREDON": {
+      "type": ["string", "null"],
+      "format": "date-time"
+    },
+    "DISPOSITIONDATE": {
+      "type": ["string", "null"]
+    },
+    "SPECIFICATIONTEXT": {
+      "type": ["string", "null"]
+    },
+    "INSPECTIONLOTORIGIN": {
+      "type": ["string", "null"]
+    },
+    "RESULTENGINEERINGUNITLABEL": {
+      "type": ["string", "null"]
+    },
+    "RESULTSTATUS": {
+      "type": ["string", "null"]
+    },
+    "REPORT": {
+      "type": ["string", "null"]
+    },
+    "ISRETEST": {
+      "type": ["string", "null"]
+    },
+    "RESULTENTEREDBY": {
+      "type": ["string", "null"]
+    },
+    "QILOTNUMBER": {
+      "type": ["string", "null"]
+    },
+    "SPECIFICATIONTYPE": {
+      "type": ["string", "null"]
+    },
+	"RESULTFORMATTEDVALUE": {
+		"type": ["string", "null"]
+	},
+	"TESTREPORTEDNAME": {
+		"type": ["string", "null"]
+	},
+	"SAPMATERIALNAME": {
+		"type": ["string", "null"]
+	}
+  },
+  "required": [
+    "SOURCESYSTEMTXID"
+  ]
+}

@@ -1,0 +1,464 @@
+<?xml version="1.0"?>
+<ESBSubscriber xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Id>95dd404d-234e-4773-8294-9853c194a392</Id>
+  <Version>76787813-81b3-4284-a6c5-2eed9dccff05</Version>
+  <BusinessFlows />
+  <Description>A Publisher to transfer inbound messages from the ERP facing web service, perform basic schema validation, using the mapped VETO processes, and assuming the messages are successful to route them to the appropriate message specific topics.</Description>
+  <Name>B2MML_ERP_Publisher</Name>
+  <Group>General</Group>
+  <IsSystemObject>false</IsSystemObject>
+  <IsPrivate>false</IsPrivate>
+  <Bindings />
+  <SubscriberId>B2MML_ERP_Publisher</SubscriberId>
+  <ClientGroup>General</ClientGroup>
+  <Zone>Enterprise</Zone>
+  <Enabled>true</Enabled>
+  <Subscriptions>
+    <Subscription>
+      <TopicName>Enrich_ERP_BOM</TopicName>
+      <CanRead>false</CanRead>
+      <CanWrite>true</CanWrite>
+      <SubscriptionType>Topic</SubscriptionType>
+    </Subscription>
+    <Subscription>
+      <TopicName>Enrich_ERP_GoodsIssueReversal</TopicName>
+      <CanRead>false</CanRead>
+      <CanWrite>true</CanWrite>
+      <SubscriptionType>Topic</SubscriptionType>
+    </Subscription>
+    <Subscription>
+      <TopicName>Enrich_ERP_GoodsIssues</TopicName>
+      <CanRead>false</CanRead>
+      <CanWrite>true</CanWrite>
+      <SubscriptionType>Topic</SubscriptionType>
+    </Subscription>
+    <Subscription>
+      <TopicName>Enrich_ERP_GoodsReceipt</TopicName>
+      <CanRead>false</CanRead>
+      <CanWrite>true</CanWrite>
+      <SubscriptionType>Topic</SubscriptionType>
+    </Subscription>
+    <Subscription>
+      <TopicName>Enrich_ERP_GoodsReceiptReversal</TopicName>
+      <CanRead>false</CanRead>
+      <CanWrite>true</CanWrite>
+      <SubscriptionType>Topic</SubscriptionType>
+    </Subscription>
+    <Subscription>
+      <TopicName>Enrich_ERP_MaterialDefinition</TopicName>
+      <CanRead>false</CanRead>
+      <CanWrite>true</CanWrite>
+      <SubscriptionType>Topic</SubscriptionType>
+    </Subscription>
+    <Subscription>
+      <TopicName>Enrich_ERP_MaterialLot</TopicName>
+      <CanRead>false</CanRead>
+      <CanWrite>true</CanWrite>
+      <SubscriptionType>Topic</SubscriptionType>
+    </Subscription>
+    <Subscription>
+      <TopicName>Enrich_ERP_PVAR</TopicName>
+      <CanRead>false</CanRead>
+      <CanWrite>true</CanWrite>
+      <SubscriptionType>Topic</SubscriptionType>
+    </Subscription>
+    <Subscription>
+      <TopicName>Enrich_ERP_Recipe</TopicName>
+      <CanRead>false</CanRead>
+      <CanWrite>true</CanWrite>
+      <SubscriptionType>Topic</SubscriptionType>
+    </Subscription>
+    <Subscription>
+      <TopicName>ESBError</TopicName>
+      <CanRead>false</CanRead>
+      <CanWrite>true</CanWrite>
+      <SubscriptionType>Topic</SubscriptionType>
+    </Subscription>
+    <Subscription>
+      <TopicName>MessageArrivalNotification</TopicName>
+      <CanRead>false</CanRead>
+      <CanWrite>true</CanWrite>
+      <SubscriptionType>Topic</SubscriptionType>
+    </Subscription>
+    <Subscription>
+      <TopicName>SaveRawOutputFile</TopicName>
+      <CanRead>false</CanRead>
+      <CanWrite>true</CanWrite>
+      <SubscriptionType>Topic</SubscriptionType>
+    </Subscription>
+    <Subscription>
+      <TopicName>Enrich_ERP_ProcessOrder</TopicName>
+      <CanRead>false</CanRead>
+      <CanWrite>true</CanWrite>
+      <SubscriptionType>Topic</SubscriptionType>
+    </Subscription>
+  </Subscriptions>
+  <ACL />
+  <Anonymous>true</Anonymous>
+  <AllowMultipleInstances>true</AllowMultipleInstances>
+  <MessagePipelines>
+    <ClientPipelineItem>
+      <Id>b6ce3ff3-4183-4864-a749-74dae15c458b</Id>
+      <Version>0090e3ee-0507-4884-acaf-1e61fe943db2</Version>
+      <BusinessFlows />
+      <Description />
+      <Name>VETO_B2MML_ERP_Material_Lot</Name>
+      <IsSystemObject>false</IsSystemObject>
+      <IsPrivate>false</IsPrivate>
+      <ApplyOnPublish>true</ApplyOnPublish>
+      <ApplyOnReceive>false</ApplyOnReceive>
+      <PipelineConditions>
+        <Id>4a8f5e5d-abd2-4741-8f2f-8166ee60d611</Id>
+        <Version>b6a799ee-27de-41ee-80f3-b7c8750edd11</Version>
+        <BusinessFlows />
+        <Description />
+        <IsSystemObject>false</IsSystemObject>
+        <IsPrivate>false</IsPrivate>
+        <Condition>
+          <Conditions>
+            <ConditionElement>
+              <PrefixOperator>None</PrefixOperator>
+              <Expression1>Action</Expression1>
+              <NotOperator>false</NotOperator>
+              <RelationalOperator>TextEquals</RelationalOperator>
+              <Expression2>ProcessMaterialLot</Expression2>
+              <SuffixOperator>None</SuffixOperator>
+              <LogicalOperator>And</LogicalOperator>
+            </ConditionElement>
+            <ConditionElement>
+              <PrefixOperator>None</PrefixOperator>
+              <Expression1>Topic</Expression1>
+              <NotOperator>false</NotOperator>
+              <RelationalOperator>TextEquals</RelationalOperator>
+              <Expression2>Enrich_ERP_MaterialLot</Expression2>
+              <SuffixOperator>None</SuffixOperator>
+              <LogicalOperator>End</LogicalOperator>
+            </ConditionElement>
+          </Conditions>
+        </Condition>
+      </PipelineConditions>
+    </ClientPipelineItem>
+    <ClientPipelineItem>
+      <Id>04da5097-c2e7-4b49-b8e1-31185850fa93</Id>
+      <Version>01d30da5-78ef-42ce-a592-322189710dd8</Version>
+      <BusinessFlows />
+      <Description />
+      <Name>VETO_B2MML_ProcessOperationsPerformance</Name>
+      <IsSystemObject>false</IsSystemObject>
+      <IsPrivate>false</IsPrivate>
+      <ApplyOnPublish>true</ApplyOnPublish>
+      <ApplyOnReceive>false</ApplyOnReceive>
+      <PipelineConditions>
+        <Id>03df9274-0239-4af6-bf62-8c468ef5ddc9</Id>
+        <Version>3f50a1a3-ec70-4980-902b-95cd46fa3d32</Version>
+        <BusinessFlows />
+        <Description />
+        <IsSystemObject>false</IsSystemObject>
+        <IsPrivate>false</IsPrivate>
+        <Condition>
+          <Conditions>
+            <ConditionElement>
+              <PrefixOperator>None</PrefixOperator>
+              <Expression1>Action</Expression1>
+              <NotOperator>false</NotOperator>
+              <RelationalOperator>TextEquals</RelationalOperator>
+              <Expression2>ProcessOperationsPerformance</Expression2>
+              <SuffixOperator>None</SuffixOperator>
+              <LogicalOperator>End</LogicalOperator>
+            </ConditionElement>
+          </Conditions>
+        </Condition>
+      </PipelineConditions>
+    </ClientPipelineItem>
+    <ClientPipelineItem>
+      <Id>88b53014-fd26-431a-ad8e-5e8655bda909</Id>
+      <Version>123fd501-659c-4c48-a473-554a20291021</Version>
+      <BusinessFlows />
+      <Description />
+      <Name>VETO_B2MML_ERP_Material_Definition</Name>
+      <IsSystemObject>false</IsSystemObject>
+      <IsPrivate>false</IsPrivate>
+      <ApplyOnPublish>true</ApplyOnPublish>
+      <ApplyOnReceive>false</ApplyOnReceive>
+      <PipelineConditions>
+        <Id>c9ce48bf-1bde-439f-ab7f-975e098ad720</Id>
+        <Version>bbb05d7b-93cd-4ae8-b0b5-83b84a507c36</Version>
+        <BusinessFlows />
+        <Description />
+        <IsSystemObject>false</IsSystemObject>
+        <IsPrivate>false</IsPrivate>
+        <Condition>
+          <Conditions>
+            <ConditionElement>
+              <PrefixOperator>None</PrefixOperator>
+              <Expression1>Action</Expression1>
+              <NotOperator>false</NotOperator>
+              <RelationalOperator>TextEquals</RelationalOperator>
+              <Expression2>ProcessMaterialDefinition</Expression2>
+              <SuffixOperator>None</SuffixOperator>
+              <LogicalOperator>End</LogicalOperator>
+            </ConditionElement>
+          </Conditions>
+        </Condition>
+      </PipelineConditions>
+    </ClientPipelineItem>
+    <ClientPipelineItem>
+      <Id>04480033-30d1-4a84-900c-0a6d3960309f</Id>
+      <Version>3e4867f1-155a-4913-892d-1f64bc530ec6</Version>
+      <BusinessFlows />
+      <Description />
+      <Name>IDOC_B2MML_Material_Lot</Name>
+      <IsSystemObject>false</IsSystemObject>
+      <IsPrivate>false</IsPrivate>
+      <ApplyOnPublish>true</ApplyOnPublish>
+      <ApplyOnReceive>false</ApplyOnReceive>
+      <PipelineConditions>
+        <Id>e8edd94b-8273-426d-8478-ff3e4e91fd0f</Id>
+        <Version>9d521914-5457-4ce7-8bd7-f5e2f126ebd0</Version>
+        <BusinessFlows />
+        <Description />
+        <IsSystemObject>false</IsSystemObject>
+        <IsPrivate>false</IsPrivate>
+        <Condition>
+          <Conditions>
+            <ConditionElement>
+              <PrefixOperator>None</PrefixOperator>
+              <Expression1>Action</Expression1>
+              <NotOperator>false</NotOperator>
+              <RelationalOperator>TextEqualsIgnoreCase</RelationalOperator>
+              <Expression2>IdocMaterialLot</Expression2>
+              <SuffixOperator>None</SuffixOperator>
+              <LogicalOperator>End</LogicalOperator>
+            </ConditionElement>
+          </Conditions>
+        </Condition>
+      </PipelineConditions>
+    </ClientPipelineItem>
+    <ClientPipelineItem>
+      <Id>1d364e31-a578-48c9-89f3-73e87110b765</Id>
+      <Version>d1523b29-0bf6-4786-a7b6-67eb6428d55c</Version>
+      <BusinessFlows />
+      <Description />
+      <Name>IDOC_B2MML_Goods_Issue</Name>
+      <IsSystemObject>false</IsSystemObject>
+      <IsPrivate>false</IsPrivate>
+      <ApplyOnPublish>true</ApplyOnPublish>
+      <ApplyOnReceive>false</ApplyOnReceive>
+      <PipelineConditions>
+        <Id>a01dd290-3a71-4198-ad34-2264c7ca74d8</Id>
+        <Version>a7d4cad6-f50a-4980-89b5-3e1079961188</Version>
+        <BusinessFlows />
+        <Description />
+        <IsSystemObject>false</IsSystemObject>
+        <IsPrivate>false</IsPrivate>
+        <Condition>
+          <Conditions>
+            <ConditionElement>
+              <PrefixOperator>None</PrefixOperator>
+              <Expression1>Action</Expression1>
+              <NotOperator>false</NotOperator>
+              <RelationalOperator>TextEqualsIgnoreCase</RelationalOperator>
+              <Expression2>IdocGoodsIssue</Expression2>
+              <SuffixOperator>None</SuffixOperator>
+              <LogicalOperator>End</LogicalOperator>
+            </ConditionElement>
+          </Conditions>
+        </Condition>
+      </PipelineConditions>
+    </ClientPipelineItem>
+    <ClientPipelineItem>
+      <Id>c1d607ab-33e3-478f-b732-b6767aac321d</Id>
+      <Version>50244c1e-ebd3-4056-93df-b40e3f3f2448</Version>
+      <BusinessFlows />
+      <Description />
+      <Name>IDOC_B2MML_Goods_Receipt</Name>
+      <IsSystemObject>false</IsSystemObject>
+      <IsPrivate>false</IsPrivate>
+      <ApplyOnPublish>true</ApplyOnPublish>
+      <ApplyOnReceive>false</ApplyOnReceive>
+      <PipelineConditions>
+        <Id>c05187f1-b57d-45d1-a7b6-8e1735a8dd3e</Id>
+        <Version>d7866e68-d3b4-4393-be4a-97e0fe32f912</Version>
+        <BusinessFlows />
+        <Description />
+        <IsSystemObject>false</IsSystemObject>
+        <IsPrivate>false</IsPrivate>
+        <Condition>
+          <Conditions>
+            <ConditionElement>
+              <PrefixOperator>None</PrefixOperator>
+              <Expression1>Action</Expression1>
+              <NotOperator>false</NotOperator>
+              <RelationalOperator>TextEqualsIgnoreCase</RelationalOperator>
+              <Expression2>IdocGoodsReceipt</Expression2>
+              <SuffixOperator>None</SuffixOperator>
+              <LogicalOperator>End</LogicalOperator>
+            </ConditionElement>
+          </Conditions>
+        </Condition>
+      </PipelineConditions>
+    </ClientPipelineItem>
+    <ClientPipelineItem>
+      <Id>63b53d16-547e-4674-9540-911a44238096</Id>
+      <Version>6f6ae320-fcda-497d-abe1-a4fd55d7f97c</Version>
+      <BusinessFlows />
+      <Description />
+      <Name>IDOC_B2MML_Material_Definition</Name>
+      <IsSystemObject>false</IsSystemObject>
+      <IsPrivate>false</IsPrivate>
+      <ApplyOnPublish>true</ApplyOnPublish>
+      <ApplyOnReceive>false</ApplyOnReceive>
+      <PipelineConditions>
+        <Id>e4baf9e5-cb02-43a9-a593-9cc85b394b62</Id>
+        <Version>c9481560-74a2-473b-9366-d519834f6f9c</Version>
+        <BusinessFlows />
+        <Description />
+        <IsSystemObject>false</IsSystemObject>
+        <IsPrivate>false</IsPrivate>
+        <Condition>
+          <Conditions>
+            <ConditionElement>
+              <PrefixOperator>None</PrefixOperator>
+              <Expression1>Action</Expression1>
+              <NotOperator>false</NotOperator>
+              <RelationalOperator>TextEqualsIgnoreCase</RelationalOperator>
+              <Expression2>IdocMaterialDefinition</Expression2>
+              <SuffixOperator>None</SuffixOperator>
+              <LogicalOperator>End</LogicalOperator>
+            </ConditionElement>
+          </Conditions>
+        </Condition>
+      </PipelineConditions>
+    </ClientPipelineItem>
+    <ClientPipelineItem>
+      <Id>ed3d3289-ddf9-4b7d-9841-a3cb97aa8203</Id>
+      <Version>503af67c-96a1-4580-8ade-da42ce2f369a</Version>
+      <BusinessFlows />
+      <Description />
+      <Name>VETO_B2MML_ERP_BOM</Name>
+      <IsSystemObject>false</IsSystemObject>
+      <IsPrivate>false</IsPrivate>
+      <ApplyOnPublish>true</ApplyOnPublish>
+      <ApplyOnReceive>false</ApplyOnReceive>
+      <PipelineConditions>
+        <Id>2ee75f50-3b89-4325-aabd-f832f49e9c9b</Id>
+        <Version>9b61a340-8d18-493a-83e4-847a9ff8cdcc</Version>
+        <BusinessFlows />
+        <Description />
+        <IsSystemObject>false</IsSystemObject>
+        <IsPrivate>false</IsPrivate>
+        <Condition>
+          <Conditions>
+            <ConditionElement>
+              <PrefixOperator>None</PrefixOperator>
+              <Expression1>Action</Expression1>
+              <NotOperator>false</NotOperator>
+              <RelationalOperator>TextEqualsIgnoreCase</RelationalOperator>
+              <Expression2>ProcessProductDefinition</Expression2>
+              <SuffixOperator>None</SuffixOperator>
+              <LogicalOperator>End</LogicalOperator>
+            </ConditionElement>
+          </Conditions>
+        </Condition>
+      </PipelineConditions>
+    </ClientPipelineItem>
+    <ClientPipelineItem>
+      <Id>265d9dd4-65f4-4853-bac8-510fe440fd69</Id>
+      <Version>626c931e-00e6-46fc-b89a-34e4c1f25f96</Version>
+      <BusinessFlows />
+      <Description />
+      <Name>VETO_B2MML_ERP_Recipe</Name>
+      <IsSystemObject>false</IsSystemObject>
+      <IsPrivate>false</IsPrivate>
+      <ApplyOnPublish>true</ApplyOnPublish>
+      <ApplyOnReceive>false</ApplyOnReceive>
+      <PipelineConditions>
+        <Id>5a8db56f-306e-41b8-8fbe-7a10567f3f8c</Id>
+        <Version>6dbe3e2a-884a-429a-ab21-d5a8d7eadbba</Version>
+        <BusinessFlows />
+        <Description />
+        <IsSystemObject>false</IsSystemObject>
+        <IsPrivate>false</IsPrivate>
+        <Condition>
+          <Conditions>
+            <ConditionElement>
+              <PrefixOperator>None</PrefixOperator>
+              <Expression1>Action</Expression1>
+              <NotOperator>false</NotOperator>
+              <RelationalOperator>TextEqualsIgnoreCase</RelationalOperator>
+              <Expression2>ProcessProductDefinition</Expression2>
+              <SuffixOperator>None</SuffixOperator>
+              <LogicalOperator>End</LogicalOperator>
+            </ConditionElement>
+          </Conditions>
+        </Condition>
+      </PipelineConditions>
+    </ClientPipelineItem>
+    <ClientPipelineItem>
+      <Id>81a57569-067c-4f76-a93a-8485445f5289</Id>
+      <Version>44a5c5e4-087f-4eff-a2e6-b4d51ffe935c</Version>
+      <BusinessFlows />
+      <Description />
+      <Name>IDOC_B2MML_BOM</Name>
+      <IsSystemObject>false</IsSystemObject>
+      <IsPrivate>false</IsPrivate>
+      <ApplyOnPublish>true</ApplyOnPublish>
+      <ApplyOnReceive>false</ApplyOnReceive>
+      <PipelineConditions>
+        <Id>5748061e-08cc-452e-9fee-5ee6fcdbae3b</Id>
+        <Version>c745c439-bb1a-49d3-8304-8f3fbb5dee07</Version>
+        <BusinessFlows />
+        <Description />
+        <IsSystemObject>false</IsSystemObject>
+        <IsPrivate>false</IsPrivate>
+        <Condition>
+          <Conditions>
+            <ConditionElement>
+              <PrefixOperator>None</PrefixOperator>
+              <Expression1>Action</Expression1>
+              <NotOperator>false</NotOperator>
+              <RelationalOperator>TextEqualsIgnoreCase</RelationalOperator>
+              <Expression2>IdocBOM</Expression2>
+              <SuffixOperator>None</SuffixOperator>
+              <LogicalOperator>End</LogicalOperator>
+            </ConditionElement>
+          </Conditions>
+        </Condition>
+      </PipelineConditions>
+    </ClientPipelineItem>
+    <ClientPipelineItem>
+      <Id>906da84a-0d0b-4d15-a1cb-0d5c695dd50c</Id>
+      <Version>62ccf6ee-fd77-40f5-93e6-53defe9450e2</Version>
+      <BusinessFlows />
+      <Description />
+      <Name>IDOC_B2MML_Recipe</Name>
+      <IsSystemObject>false</IsSystemObject>
+      <IsPrivate>false</IsPrivate>
+      <ApplyOnPublish>true</ApplyOnPublish>
+      <ApplyOnReceive>false</ApplyOnReceive>
+      <PipelineConditions>
+        <Id>0b0809d5-33ae-444a-ae12-62a20548344b</Id>
+        <Version>5323487f-b956-4453-9de6-46955c337c54</Version>
+        <BusinessFlows />
+        <Description />
+        <IsSystemObject>false</IsSystemObject>
+        <IsPrivate>false</IsPrivate>
+        <Condition>
+          <Conditions>
+            <ConditionElement>
+              <PrefixOperator>None</PrefixOperator>
+              <Expression1>Action</Expression1>
+              <NotOperator>false</NotOperator>
+              <RelationalOperator>TextEqualsIgnoreCase</RelationalOperator>
+              <Expression2>IdocRecipe</Expression2>
+              <SuffixOperator>None</SuffixOperator>
+              <LogicalOperator>End</LogicalOperator>
+            </ConditionElement>
+          </Conditions>
+        </Condition>
+      </PipelineConditions>
+    </ClientPipelineItem>
+  </MessagePipelines>
+  <LogActivity>false</LogActivity>
+  <UseUniqueWmiCounterName>false</UseUniqueWmiCounterName>
+</ESBSubscriber>

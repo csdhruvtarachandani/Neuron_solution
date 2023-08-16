@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<ESBService xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Id>1c3bf1cd-7267-4d44-82a3-f104babefaf5</Id>
+  <Version>3cffbbfe-56cb-4379-8d53-3c404b9aa74e</Version>
+  <BusinessFlows />
+  <Description>This service is configured as a service connector and is responsible for reading Goods Issue Messages, from the proper topic and processing them into Neo PLM.  Note that the configured service endpoint is never activated, rather all of the business logic is managed in the business process attached to the related subscriber.  That is why this is a bogus service.</Description>
+  <Name>ERP Goods Issue Processing Service</Name>
+  <Group>General</Group>
+  <IsSystemObject>false</IsSystemObject>
+  <IsPrivate>false</IsPrivate>
+  <Bindings />
+  <Topic />
+  <Pattern>1</Pattern>
+  <Properties />
+  <MessagingPattern>Request-Reply</MessagingPattern>
+  <ProxySettings>
+    <HostConfigType>Default</HostConfigType>
+    <CredentialConfigType>NotSpecified</CredentialConfigType>
+    <Credential>&lt;Default&gt;</Credential>
+    <Host />
+    <Port>0</Port>
+    <BypassLocalAddress>false</BypassLocalAddress>
+  </ProxySettings>
+  <Zone>Enterprise</Zone>
+  <Enabled>false</Enabled>
+  <ServiceName>ERP Goods Issue Processing Service</ServiceName>
+  <ServiceGroup>General</ServiceGroup>
+  <Binding>REST</Binding>
+  <AvailabilityGroupId>Neuron ESB Default Host</AvailabilityGroupId>
+  <Behavior />
+  <KeepAlive>true</KeepAlive>
+  <HostNameComparisonModeIsExact>false</HostNameComparisonModeIsExact>
+  <TransactionType>None</TransactionType>
+  <MaxMessageSize>1000000</MaxMessageSize>
+  <ReliableMessaging>false</ReliableMessaging>
+  <ConfigFile />
+  <InboundPolling>false</InboundPolling>
+  <OptimizeForLargeMessages>false</OptimizeForLargeMessages>
+  <RawBody>true</RawBody>
+  <ServiceThrottles>
+    <MaxConcurrentCalls>208</MaxConcurrentCalls>
+    <MaxConcurrentInstances>1008</MaxConcurrentInstances>
+    <MaxConcurrentSessions>800</MaxConcurrentSessions>
+  </ServiceThrottles>
+  <CertificateValidationMode>None</CertificateValidationMode>
+  <CertificateRevocationMode>NoCheck</CertificateRevocationMode>
+  <NegotiateServiceCredential>true</NegotiateServiceCredential>
+  <EstablishSecurityContext>true</EstablishSecurityContext>
+  <Contract />
+  <Security>None</Security>
+  <ServiceIdentityType>None</ServiceIdentityType>
+  <ServicePrincipal />
+  <ServiceType>Business</ServiceType>
+  <ClientCredentialtype>Certificate</ClientCredentialtype>
+  <Impersonation>false</Impersonation>
+  <RelayAccessToken>true</RelayAccessToken>
+  <ClientConnectorId>cc185ef1-a5b2-4b06-9090-79191a6ee94c</ClientConnectorId>
+  <ClientUrl />
+  <RouteClientTraffic>false</RouteClientTraffic>
+  <ClientTopic>Enrich_ERP_GoodsIssues</ClientTopic>
+  <UpdateMetadata>true</UpdateMetadata>
+  <UseHttps>false</UseHttps>
+  <EnableClientMetadataHttpEndpoint>false</EnableClientMetadataHttpEndpoint>
+  <EnableClientMetadataHttpsEndpoint>false</EnableClientMetadataHttpsEndpoint>
+  <ClientSubscriberId>B2MML_ERP_Publisher</ClientSubscriberId>
+  <CaptureHeaders>false</CaptureHeaders>
+  <CaptureHTTPHeaders>false</CaptureHTTPHeaders>
+  <HttpConnectionLimit>100</HttpConnectionLimit>
+  <EnableCors>false</EnableCors>
+  <ClientCertName />
+  <ACL />
+  <AccessUrl>http://BogusServer/</AccessUrl>
+  <RouteServiceTraffic>false</RouteServiceTraffic>
+  <RestoreHeaders>false</RestoreHeaders>
+  <RestoreHTTPHeaders>false</RestoreHTTPHeaders>
+  <ServiceTopic />
+  <ServiceSubscriberId />
+  <ReuseServiceConnection>true</ReuseServiceConnection>
+  <ServerCertName />
+  <ServicePolicy>Message Processing Process Policy</ServicePolicy>
+  <FailoverAddresses />
+  <FarmSingleInstance>true</FarmSingleInstance>
+  <ProcessList />
+  <ProcessMode>Messaging</ProcessMode>
+  <ServiceRoutes />
+  <ServiceProcessMode>true</ServiceProcessMode>
+  <ServiceServiceRateEnable>false</ServiceServiceRateEnable>
+  <ClientServiceRateEnable>false</ClientServiceRateEnable>
+</ESBService>

@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<NeuronVariable xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Id>8c612cff-7f85-4a35-af18-8dee5914b807</Id>
+  <Version>60a1a84a-d0c2-42a8-b84f-a4ba9bb362d3</Version>
+  <BusinessFlows />
+  <Description>This parameter is a switch to enable / disable the ODBC logging of Business Data Errors.  This is not used at a customer site, but is used internally by Neo PLM.  Set to "True" to enable, "False" to disable.</Description>
+  <Name>ODBC Error Publishing</Name>
+  <Group>General</Group>
+  <IsSystemObject>false</IsSystemObject>
+  <IsPrivate>false</IsPrivate>
+  <Mask>false</Mask>
+</NeuronVariable>

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-16"?>
+<n1:FacilityRequest xmlns:n1="http://NeoPLM.com/EnterpriseIntegration">
+	<n1:TransactionID>{0}</n1:TransactionID>
+	<n1:SourceSystemID>{1}</n1:SourceSystemID>
+	<n1:PlantCodeID>{2}</n1:PlantCodeID>
+	<n1:EmptyGuidIsAllowed>{3}</n1:EmptyGuidIsAllowed>
+	<n1:OriginalMessage>{4}</n1:OriginalMessage>
+</n1:FacilityRequest>

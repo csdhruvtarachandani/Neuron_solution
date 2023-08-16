@@ -1,0 +1,313 @@
+﻿<?xml version="1.0" encoding="utf-16"?>
+<xs:schema xmlns="http://NeoPLM.LIMS.MaterialLot" targetNamespace="http://NeoPLM.LIMS.MaterialLot" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="NeoPlmLimsMaterialLot">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="0" maxOccurs="1" name="ErpSourceSystemID">
+					<xs:simpleType>
+						<xs:restriction base="xs:string" />
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="LimsSourceSystemID" type="xs:string" />
+				<xs:element minOccurs="0" maxOccurs="1" name="TransactionDateTime">
+					<xs:simpleType>
+						<xs:restriction base="xs:dateTime" />
+					</xs:simpleType>
+				</xs:element>
+				<xs:element minOccurs="0" maxOccurs="1" name="TransactionID">
+					<xs:simpleType>
+						<xs:restriction base="xs:string" />
+					</xs:simpleType>
+				</xs:element>
+				<xs:element minOccurs="0" maxOccurs="1" name="NeoPLMLabHistories">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element minOccurs="0" maxOccurs="unbounded" name="NeoPLMLabHistory">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element minOccurs="1" maxOccurs="1" name="PlantID">
+											<xs:simpleType>
+												<xs:restriction base="xs:string">
+													<xs:minLength value="1" />
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+										<xs:element minOccurs="1" maxOccurs="1" name="MaterialID">
+											<xs:simpleType>
+												<xs:restriction base="xs:string">
+													<xs:minLength value="1" />
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+										<xs:element minOccurs="1" maxOccurs="1" name="MaterialLotID">
+											<xs:simpleType>
+												<xs:restriction base="xs:string">
+													<xs:minLength value="1" />
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+										<xs:element minOccurs="0" maxOccurs="1" name="InspectionLotID">
+											<xs:simpleType>
+												<xs:restriction base="xs:string">
+													<xs:minLength value="0" />
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+										<xs:element minOccurs="0" maxOccurs="1" name="TestTemplateID">
+											<xs:simpleType>
+												<xs:restriction base="xs:string">
+													<xs:minLength value="0" />
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+										<xs:element minOccurs="0" maxOccurs="1" name="SampleStatus">
+											<xs:simpleType>
+												<xs:restriction base="xs:string">
+													<xs:minLength value="0" />
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+										<xs:element minOccurs="0" maxOccurs="1" name="LabSampleLastModified">
+											<xs:simpleType>
+												<xs:restriction base="xs:string">
+													<xs:minLength value="0" />
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+										<xs:element minOccurs="0" maxOccurs="1" name="TestTemplateDescription">
+											<xs:simpleType>
+												<xs:restriction base="xs:string" />
+											</xs:simpleType>
+										</xs:element>
+										<xs:element minOccurs="0" maxOccurs="1" name="TestTemplateType">
+											<xs:simpleType>
+												<xs:restriction base="xs:string">
+													<xs:minLength value="0" />
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+										<xs:element minOccurs="0" maxOccurs="1" name="TestTemplateVersion">
+											<xs:simpleType>
+												<xs:restriction base="xs:string">
+													<xs:minLength value="0" />
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+										<xs:element name="LabSampleHistories">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element minOccurs="0" maxOccurs="unbounded" name="LabSampleHistory">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element minOccurs="0" maxOccurs="1" name="SampleID">
+																	<xs:simpleType>
+																		<xs:restriction base="xs:string">
+																			<xs:minLength value="0" />
+																		</xs:restriction>
+																	</xs:simpleType>
+																</xs:element>
+																<xs:element minOccurs="0" maxOccurs="1" name="ControlPointID">
+																	<xs:simpleType>
+																		<xs:restriction base="xs:string">
+																			<xs:minLength value="0" />
+																		</xs:restriction>
+																	</xs:simpleType>
+																</xs:element>
+																<xs:element minOccurs="0" maxOccurs="1" name="ControlPointDescription">
+																	<xs:simpleType>
+																		<xs:restriction base="xs:string">
+																			<xs:minLength value="0" />
+																		</xs:restriction>
+																	</xs:simpleType>
+																</xs:element>
+																<xs:element minOccurs="0" maxOccurs="1" name="LabTestHistories">
+																	<xs:complexType>
+																		<xs:sequence>
+																			<xs:element minOccurs="0" maxOccurs="unbounded" name="LabTestHistory">
+																				<xs:complexType>
+																					<xs:sequence>
+																						<xs:element minOccurs="0" maxOccurs="1" name="TestID">
+																							<xs:simpleType>
+																								<xs:restriction base="xs:string">
+																									<xs:minLength value="0" />
+																								</xs:restriction>
+																							</xs:simpleType>
+																						</xs:element>
+																						<xs:element minOccurs="0" maxOccurs="1" name="TestDescription">
+																							<xs:simpleType>
+																								<xs:restriction base="xs:string">
+																									<xs:minLength value="1" />
+																								</xs:restriction>
+																							</xs:simpleType>
+																						</xs:element>
+																						<xs:element minOccurs="0" maxOccurs="1" name="TestMethodID">
+																							<xs:simpleType>
+																								<xs:restriction base="xs:string">
+																									<xs:minLength value="1" />
+																								</xs:restriction>
+																							</xs:simpleType>
+																						</xs:element>
+																						<xs:element minOccurs="0" maxOccurs="1" name="TestStatus">
+																							<xs:simpleType>
+																								<xs:restriction base="xs:string">
+																									<xs:minLength value="0" />
+																								</xs:restriction>
+																							</xs:simpleType>
+																						</xs:element>
+																						<xs:element minOccurs="0" maxOccurs="1" name="TestMethodVersion">
+																							<xs:simpleType>
+																								<xs:restriction base="xs:string" />
+																							</xs:simpleType>
+																						</xs:element>
+																						<xs:element minOccurs="0" maxOccurs="1" name="TestMethodDescription">
+																							<xs:simpleType>
+																								<xs:restriction base="xs:string">
+																									<xs:minLength value="1" />
+																								</xs:restriction>
+																							</xs:simpleType>
+																						</xs:element>
+																						<xs:element minOccurs="0" maxOccurs="1" name="TestIsOptional">
+																							<xs:simpleType>
+																								<xs:restriction base="xs:boolean" />
+																							</xs:simpleType>
+																						</xs:element>
+																						<xs:element minOccurs="0" maxOccurs="1" name="LabResultHistories">
+																							<xs:complexType>
+																								<xs:sequence>
+																									<xs:element minOccurs="0" maxOccurs="unbounded" name="LabResultHistory">
+																										<xs:complexType>
+																											<xs:sequence>
+																												<xs:element minOccurs="0" maxOccurs="1" name="TestResultID">
+																													<xs:simpleType>
+																														<xs:restriction base="xs:string">
+																															<xs:minLength value="1" />
+																														</xs:restriction>
+																													</xs:simpleType>
+																												</xs:element>
+																												<xs:element minOccurs="0" maxOccurs="1" name="ExpectedResult">
+																													<xs:simpleType>
+																														<xs:restriction base="xs:string">
+																															<xs:minLength value="0" />
+																														</xs:restriction>
+																													</xs:simpleType>
+																												</xs:element>
+																												<xs:element minOccurs="1" maxOccurs="1" name="EnteredResult">
+																													<xs:simpleType>
+																														<xs:restriction base="xs:string">
+																															<xs:minLength value="1" />
+																														</xs:restriction>
+																													</xs:simpleType>
+																												</xs:element>
+																												<xs:element minOccurs="0" maxOccurs="1" name="TestResultDescription">
+																													<xs:simpleType>
+																														<xs:restriction base="xs:string">
+																															<xs:minLength value="1" />
+																														</xs:restriction>
+																													</xs:simpleType>
+																												</xs:element>
+																												<xs:element minOccurs="0" maxOccurs="1" name="TestResultStatus">
+																							<xs:simpleType>
+																								<xs:restriction base="xs:string" />
+																							</xs:simpleType>
+																						</xs:element>
+																												<xs:element minOccurs="0" maxOccurs="1" name="EnteredResultOperator">
+																													<xs:simpleType>
+																														<xs:restriction base="xs:string">
+																															<xs:minLength value="1" />
+																															<xs:enumeration value="E" />
+																															<xs:enumeration value="LE" />
+																															<xs:enumeration value="LT" />
+																															<xs:enumeration value="GE" />
+																															<xs:enumeration value="GT" />
+																														</xs:restriction>
+																													</xs:simpleType>
+																												</xs:element>
+																												<xs:element minOccurs="0" maxOccurs="1" name="DisplayResult">
+																													<xs:simpleType>
+																														<xs:restriction base="xs:string">
+																															<xs:minLength value="1" />
+																														</xs:restriction>
+																													</xs:simpleType>
+																												</xs:element>
+																												<xs:element minOccurs="0" maxOccurs="1" name="DisplayResultOperator">
+																													<xs:simpleType>
+																														<xs:restriction base="xs:string">
+																															<xs:minLength value="1" />
+																															<xs:enumeration value="E" />
+																															<xs:enumeration value="LE" />
+																															<xs:enumeration value="LT" />
+																															<xs:enumeration value="GE" />
+																															<xs:enumeration value="GT" />
+																														</xs:restriction>
+																													</xs:simpleType>
+																												</xs:element>
+																												<xs:element minOccurs="0" maxOccurs="1" name="EnteredResultUOM">
+																													<xs:simpleType>
+																														<xs:restriction base="xs:string" />
+																													</xs:simpleType>
+																												</xs:element>
+																												<xs:element minOccurs="0" maxOccurs="1" name="TestResultInstanceNumber">
+																													<xs:simpleType>
+																														<xs:restriction base="xs:int" />
+																													</xs:simpleType>
+																												</xs:element>
+																												<xs:element minOccurs="0" maxOccurs="1" name="IsFinalResult">
+																													<xs:simpleType>
+																														<xs:restriction base="xs:boolean" />
+																													</xs:simpleType>
+																												</xs:element>
+																												<xs:element minOccurs="0" maxOccurs="1" name="ResultDateTime">
+																													<xs:simpleType>
+																														<xs:restriction base="xs:dateTime" />
+																													</xs:simpleType>
+																												</xs:element>
+																												<xs:element minOccurs="0" maxOccurs="1" name="Operator1">
+																													<xs:simpleType>
+																														<xs:restriction base="xs:string">
+																															<xs:enumeration value="E" />
+																															<xs:enumeration value="LE" />
+																															<xs:enumeration value="LT" />
+																															<xs:enumeration value="GE" />
+																															<xs:enumeration value="GT" />
+																														</xs:restriction>
+																													</xs:simpleType>
+																												</xs:element>
+																												<xs:element minOccurs="0" maxOccurs="1" name="Operator2">
+																													<xs:simpleType>
+																														<xs:restriction base="xs:string">
+																															<xs:enumeration value="E" />
+																															<xs:enumeration value="LE" />
+																															<xs:enumeration value="LT" />
+																															<xs:enumeration value="GE" />
+																															<xs:enumeration value="GT" />
+																														</xs:restriction>
+																													</xs:simpleType>
+																												</xs:element>
+																											</xs:sequence>
+																										</xs:complexType>
+																									</xs:element>
+																								</xs:sequence>
+																							</xs:complexType>
+																						</xs:element>
+																					</xs:sequence>
+																				</xs:complexType>
+																			</xs:element>
+																		</xs:sequence>
+																	</xs:complexType>
+																</xs:element>
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

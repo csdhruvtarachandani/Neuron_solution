@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<NeuronVariable xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Id>9f4bcd4c-e3fb-47a1-9d80-eed6908e17e1</Id>
+  <Version>a520d2a4-2d9a-41d8-8424-fd7236c82209</Version>
+  <BusinessFlows />
+  <Description>Polling Interval (in Seconds) between calls to Database to check if any ProductionVerison is Approved.</Description>
+  <Name>PVAS_PollingInterval</Name>
+  <Group>General</Group>
+  <IsSystemObject>false</IsSystemObject>
+  <IsPrivate>false</IsPrivate>
+  <Mask>false</Mask>
+</NeuronVariable>

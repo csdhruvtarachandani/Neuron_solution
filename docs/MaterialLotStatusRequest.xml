@@ -1,0 +1,8 @@
+﻿<ns1:MaterialLotStatusLookupRequest xmlns:ns1="http://NeoPLM.com/EnterpriseIntegration" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://NeoPLM.com/EnterpriseIntegration EnterpriseHelper.xsd">
+	<ns1:TransactionID>{0}</ns1:TransactionID>
+	<ns1:SourceSystemID>{1}</ns1:SourceSystemID>
+	<ns1:PlantCodeID>{2}</ns1:PlantCodeID>
+	<ns1:SourceSystemQualityStatusCode>{3}</ns1:SourceSystemQualityStatusCode>
+	<ns1:LookupFailureIsError>{4}</ns1:LookupFailureIsError>
+	<ns1:OriginalMessage>{5}</ns1:OriginalMessage>
+</ns1:MaterialLotStatusLookupRequest>

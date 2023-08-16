@@ -1,0 +1,7 @@
+﻿<ProductionVersionApprovalMessage xmlns="http://Pfizer.com/SAP-Manufacturing">
+  <ProductionVersion>
+    <ProductionVersionNumber>1235|M025</ProductionVersionNumber>
+    <MaterialNumber>1234</MaterialNumber>
+    <SAPPlant />
+  </ProductionVersion>
+</ProductionVersionApprovalMessage>

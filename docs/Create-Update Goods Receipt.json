@@ -1,0 +1,25 @@
+﻿{
+  "UID" : "{0}",
+  "ERPExecutionOrderUID" : "{1}",
+  "MaterialEntityUID" : "{2}",
+  "MaterialReferenceType" : {3},
+  "MaterialLotUID" : "{4}",
+  "SourceRecordUniqueId" : "{5}",
+  "SourceRecordTimestampUtc" : "{6}",
+  "DestinationContainerId" : "{7}",
+  "BOMItemLineNumber" : {8},
+  "WorkCenterId" : "{9}",
+  "EquipmentId" : "{10}",
+  "PhaseId" : "{11}",
+  "GoodsReceiptType" : {12},
+  "Quantity" : {13},
+  "QuantityEngineeringUnitLabel" : "{14}",
+  "QuantityEngineeringUnitUID" : "{15}",
+  "PerformedBy" : "{16}",
+  "PerformedByTimestampUtc" : "{17}",
+  "VerifiedBy" : "{18}",
+  "VerifiedByTimestampUtc" : "{19}",
+  "AdditionalData" : "{20}",
+  "LastModifiedUtc" : "{21}"
+
+}

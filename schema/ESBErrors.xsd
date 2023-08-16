@@ -1,0 +1,43 @@
+﻿<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" xmlns:ns1="Http:/NeoPLM.com/ESBError" targetNamespace="Http:/NeoPLM.com/ESBError" elementFormDefault="qualified" attributeFormDefault="unqualified" vc:minVersion="1.1">
+	<xs:element name="ESBError" type="ns1:ESBErrorType">
+		<xs:annotation>
+			<xs:documentation>An Element to describe an ESB Error</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="ESBErrors">
+		<xs:annotation>
+			<xs:documentation>An Element to describe a collection of ESB Errors</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence maxOccurs="unbounded">
+				<xs:element name="ESBError" type="ns1:ESBErrorType" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:complexType name="ESBErrorType">
+		<xs:annotation>
+			<xs:documentation>A complexType to describe an ESB Error Message</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="ErrorType">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="BusinessData" />
+						<xs:enumeration value="SystemError" />
+						<xs:enumeration value="InvalidSchema" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="EndpointAddress" type="xs:string" />
+			<xs:element name="ESBAction" type="xs:string" />
+			<xs:element name="ESBTopic" type="xs:string" />
+			<xs:element name="SourceSystemID" type="xs:string" />
+			<xs:element name="PlantID" type="xs:string" />
+			<xs:element name="TransactionID" type="xs:string" />
+			<xs:element name="MessageDate" type="xs:string" />
+			<xs:element name="ErrorCode" type="xs:string" />
+			<xs:element name="ErrorMessage" type="xs:string" />
+			<xs:element name="OriginalMessage" type="xs:string" />
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

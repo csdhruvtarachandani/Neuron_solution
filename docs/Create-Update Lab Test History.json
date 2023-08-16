@@ -1,0 +1,13 @@
+﻿{
+	"UID" : "{0}",
+	"LabSampleHistoryUID" : "{1}",
+	"SourceRecordUniqueId" : "{2}",
+	"TestId" : "{3}",
+	"TestDescription" : "{4}",
+	"TestMethodId" : "{5}",
+	"TestMethodVersion" : "{6}",
+	"TestMethodDescription" : "{7}",
+	"TestIsOptional" : "{8}",
+	"TestStatus" : "{9}",
+	"AdditionalData" : "{10}"
+}

@@ -1,0 +1,25 @@
+﻿<n1:GoodsReceiptSaveRequest xmlns:n1="http://NeoPLM.com/EnterpriseIntegration">
+	<n1:TransactionType>{0}</n1:TransactionType>
+	<n1:LocalServiceURI>{1}</n1:LocalServiceURI>
+	<n1:ERPExecutionOrderUID>{2}</n1:ERPExecutionOrderUID>
+	<n1:MaterialEntityUID>{3}</n1:MaterialEntityUID>
+	<n1:MaterialReferenceType>{4}</n1:MaterialReferenceType>
+	<n1:MaterialLotUID>{5}</n1:MaterialLotUID>
+	<n1:SourceRecordUniqueID>{6}</n1:SourceRecordUniqueID>
+	<n1:SourceRecordTimestampUTC>{7}</n1:SourceRecordTimestampUTC>
+	<n1:DestinationContainerID>{8}</n1:DestinationContainerID>
+	<n1:BOMItemLineNumber>{9}</n1:BOMItemLineNumber>
+	<n1:WorkCenterID>{10}</n1:WorkCenterID>
+	<n1:EquipmentID>{11}</n1:EquipmentID>
+	<n1:PhaseID>{12}</n1:PhaseID>
+	<n1:GoodsReceiptType>{13}</n1:GoodsReceiptType>
+	<n1:Quantity>{14}</n1:Quantity>
+	<n1:QuantityEngineeringUnitLabel>{15}</n1:QuantityEngineeringUnitLabel>
+	<n1:QuantityEngineeringUnitUID>{16}</n1:QuantityEngineeringUnitUID>
+	<n1:PerformedBy>{17}</n1:PerformedBy>
+	<n1:PerformedByTimeStampUTC>{18}</n1:PerformedByTimeStampUTC>
+	<n1:VerifiedBy>{19}</n1:VerifiedBy>
+	<n1:VerifiedByTimeStampUTC>{20}</n1:VerifiedByTimeStampUTC>
+	<n1:AdditionalData>{21}</n1:AdditionalData>
+	<n1:LastModifiedUTC>{22}</n1:LastModifiedUTC>
+</n1:GoodsReceiptSaveRequest>

@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ReferencedLot>
+	<SourceSystemID>{0}</SourceSystemID>
+	<PlantID>{1}</PlantID>
+	<MaterialID>{2}</MaterialID>
+	<MaterialLotID>{3}</MaterialLotID>
+</ReferencedLot>

@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<ESBSubscriber xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Id>4df94269-8636-4a8c-9950-6804b07b6c89</Id>
+  <Version>fbcafb8c-5141-4fbc-b13b-76e333cc416d</Version>
+  <BusinessFlows />
+  <Description>A subscriber to transform an error message, typically originating from a business process, and representing a data error, into an email to be sent to interested parties.</Description>
+  <Name>SMTP Business Data Error Handler</Name>
+  <Group>General</Group>
+  <IsSystemObject>false</IsSystemObject>
+  <IsPrivate>false</IsPrivate>
+  <Bindings />
+  <SubscriberId>SMTP Business Data Error Handler</SubscriberId>
+  <ClientGroup>General</ClientGroup>
+  <Zone>Enterprise</Zone>
+  <Enabled>false</Enabled>
+  <Subscriptions>
+    <Subscription>
+      <TopicName>ESBError</TopicName>
+      <CanRead>true</CanRead>
+      <CanWrite>false</CanWrite>
+      <SubscriptionType>Topic</SubscriptionType>
+    </Subscription>
+  </Subscriptions>
+  <ACL />
+  <Anonymous>true</Anonymous>
+  <AllowMultipleInstances>true</AllowMultipleInstances>
+  <MessagePipelines>
+    <ClientPipelineItem>
+      <Id>1daa8468-8640-4e0a-8b87-90f018155503</Id>
+      <Version>bc99cce1-33ea-402b-bcab-0984694fab04</Version>
+      <BusinessFlows />
+      <Description />
+      <Name>SMTP Business Error Publisher</Name>
+      <IsSystemObject>false</IsSystemObject>
+      <IsPrivate>false</IsPrivate>
+      <ApplyOnPublish>false</ApplyOnPublish>
+      <ApplyOnReceive>true</ApplyOnReceive>
+      <PipelineConditions>
+        <Id>368b4e36-4510-4916-847b-aff49852fe84</Id>
+        <Version>5dcaa3f2-d627-459a-b887-c64668efe8f6</Version>
+        <BusinessFlows />
+        <Description />
+        <IsSystemObject>false</IsSystemObject>
+        <IsPrivate>false</IsPrivate>
+        <Condition />
+      </PipelineConditions>
+    </ClientPipelineItem>
+  </MessagePipelines>
+  <LogActivity>false</LogActivity>
+  <UseUniqueWmiCounterName>false</UseUniqueWmiCounterName>
+</ESBSubscriber>
