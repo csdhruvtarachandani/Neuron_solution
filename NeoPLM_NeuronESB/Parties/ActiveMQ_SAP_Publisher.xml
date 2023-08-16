@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<ESBSubscriber xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Id>be6319df-6711-48a7-bada-575c181261d9</Id>
+  <Version>b771e0f1-9692-4db2-ab07-54e89fcdec79</Version>
+  <BusinessFlows />
+  <Description>A Publisher to transfer outbound messages from Neuron after performing basic validation, to the respective ActiveMQ queue.</Description>
+  <Name>ActiveMQ_SAP_Publisher</Name>
+  <Group>General</Group>
+  <IsSystemObject>false</IsSystemObject>
+  <IsPrivate>false</IsPrivate>
+  <Bindings />
+  <SubscriberId>ActiveMQ_SAP_Publisher</SubscriberId>
+  <ClientGroup>General</ClientGroup>
+  <Zone>Enterprise</Zone>
+  <Enabled>true</Enabled>
+  <Subscriptions>
+    <Subscription>
+      <TopicName>ActiceMQ.SAP</TopicName>
+      <CanRead>false</CanRead>
+      <CanWrite>true</CanWrite>
+      <SubscriptionType>Topic</SubscriptionType>
+    </Subscription>
+  </Subscriptions>
+  <ACL />
+  <Anonymous>true</Anonymous>
+  <AllowMultipleInstances>true</AllowMultipleInstances>
+  <LogActivity>false</LogActivity>
+  <UseUniqueWmiCounterName>false</UseUniqueWmiCounterName>
+</ESBSubscriber>

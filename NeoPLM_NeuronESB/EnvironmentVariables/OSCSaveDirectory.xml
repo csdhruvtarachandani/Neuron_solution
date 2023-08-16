@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<NeuronVariable xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Id>05ee2e37-2c0e-4d16-b370-935c3abfaba5</Id>
+  <Version>cbf9fb3f-ff1a-4a11-9c5c-a4a2ce1c0606</Version>
+  <BusinessFlows />
+  <Description>This parameter contains the file system location that can be used to submit Order Step Completion messages, in Neo Native format, into the interface.  This may be used in either a testing scenario, or perhaps to recover from a failure scenario.</Description>
+  <Name>OSCSaveDirectory</Name>
+  <Group>General</Group>
+  <IsSystemObject>false</IsSystemObject>
+  <IsPrivate>false</IsPrivate>
+  <Mask>false</Mask>
+</NeuronVariable>

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<ESBDatabase xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Id>024b06ee-05db-4a56-88f8-1c3c44fc64f8</Id>
+  <Version>7a624178-cd51-4397-9886-f74fc5df3a8a</Version>
+  <BusinessFlows />
+  <Description>This database is used by NeuronESB for it's internal functioning.</Description>
+  <Name>DESKTOP-HR5RFGS\SQLEXPRESS01.NEURON_ESB_DEV_RNG</Name>
+  <IsSystemObject>false</IsSystemObject>
+  <IsPrivate>false</IsPrivate>
+  <Bindings />
+  <UseNeuronDbImage>false</UseNeuronDbImage>
+  <BypassChecks>false</BypassChecks>
+  <UseAlternateSettings>false</UseAlternateSettings>
+  <DbContainerHostPort>0</DbContainerHostPort>
+  <DbContainerHostname>amraesp00000217.amer.pfizer.com</DbContainerHostname>
+  <ContainerConnectionString>Data Source=amraesp00000217.amer.pfizer.com,0;Initial Catalog=NEURON_ESB_DEV_RNG;Integrated Security=False;User ID=neuron;Password=neuron</ContainerConnectionString>
+  <CatalogName>NEURON_ESB_DEV_RNG</CatalogName>
+  <ConnectionString>Am2YsNyjEG2zEN+N2494WHFpdXFa3hlHn8tjOhsNQ7tmxnxNfZDq8fYDaP6Qp+z2xKw11X22YZ9C0mQN+8LHW5bi4K5yiUou+ePcJYDF8HsPSd62Ph02wb0vsLw+vAsRW2igixrvJWtjiXIFibNFfA/+oIVpT5jnVxmZgjAcJyqOi44vv1MIoIak5tqWssbQ</ConnectionString>
+  <Zone>(All Zones)</Zone>
+  <DatabaseType>SQLServer</DatabaseType>
+</ESBDatabase>

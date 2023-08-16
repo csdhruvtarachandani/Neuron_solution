@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<NeuronVariable xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Id>cadd477a-2570-4815-9981-2b7cb2802dac</Id>
+  <Version>48557817-66ed-4c40-9f9c-638f1fe782bd</Version>
+  <BusinessFlows />
+  <Description>This parameter contains the Lot Status which is used when Lot Status from the Material Lot / GI / GR IDOCs is not recognised by Neo.</Description>
+  <Name>UnMappedMaterialLotStatus</Name>
+  <Group>General</Group>
+  <IsSystemObject>false</IsSystemObject>
+  <IsPrivate>false</IsPrivate>
+  <Mask>false</Mask>
+</NeuronVariable>

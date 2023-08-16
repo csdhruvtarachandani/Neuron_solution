@@ -1,7 +1,0 @@
-﻿<BatchUnitHistory OrderID="{0}">
-	<SourceEventID>df759dbf-f75a-4eb0-848e-97cc6b11e6f3</SourceEventID>
-	<ModelUnitUID>b166e802-67f7-4816-af70-616d3dcba73a</ModelUnitUID>
-	<UnitName>DC_726</UnitName>
-	<UTCStartTime>{1}</UTCStartTime>
-	<UTCEndTime>{2}</UTCEndTime>
-</BatchUnitHistory>

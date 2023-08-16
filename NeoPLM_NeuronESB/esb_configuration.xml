@@ -1,0 +1,2916 @@
+<?xml version="1.0"?>
+<ESBConfiguration xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Version>2310</Version>
+  <EnvironmentName>NEOPLM_NeuronESB_Pfizer_07282023 - Configured</EnvironmentName>
+  <NeuronBuildVersion>3.7.5.571</NeuronBuildVersion>
+  <ApplicationName>Dev</ApplicationName>
+  <ApplicationId>0de8bb4a-6447-4cae-9c25-260ff5dd53aa</ApplicationId>
+  <ZoneName>Enterprise</ZoneName>
+  <ChangeList>
+    <Additions />
+    <Revisions>
+      <string>Edit,*,XML Schema,EnterpriseHelper</string>
+    </Revisions>
+    <Deletions />
+    <LastModifiedBy />
+    <LastModifiedDate>2023-08-16T07:31:29.6462102Z</LastModifiedDate>
+    <Comments />
+  </ChangeList>
+  <NeuronEnvironmentVariables />
+  <ProcessFolders>
+    <item>
+      <key>
+        <string>VETO</string>
+      </key>
+      <value>
+        <ProcessFolder>
+          <Name>VETO</Name>
+          <Children />
+        </ProcessFolder>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>Debugging</string>
+      </key>
+      <value>
+        <ProcessFolder>
+          <Name>Debugging</Name>
+          <Children />
+        </ProcessFolder>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>Main Processes</string>
+      </key>
+      <value>
+        <ProcessFolder>
+          <Name>Main Processes</Name>
+          <Children />
+        </ProcessFolder>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>Error Handlers</string>
+      </key>
+      <value>
+        <ProcessFolder>
+          <Name>Error Handlers</Name>
+          <Children />
+        </ProcessFolder>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>New Data Enhancement Functions</string>
+      </key>
+      <value>
+        <ProcessFolder>
+          <Name>New Data Enhancement Functions</Name>
+          <Children />
+        </ProcessFolder>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>Main Workflows</string>
+      </key>
+      <value>
+        <ProcessFolder>
+          <Name>Main Workflows</Name>
+          <Children />
+        </ProcessFolder>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>SubProcesses</string>
+      </key>
+      <value>
+        <ProcessFolder>
+          <Name>SubProcesses</Name>
+          <Children />
+        </ProcessFolder>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>Functions</string>
+      </key>
+      <value>
+        <ProcessFolder>
+          <Name>Functions</Name>
+          <Children />
+        </ProcessFolder>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>IDOC</string>
+      </key>
+      <value>
+        <ProcessFolder>
+          <Name>IDOC</Name>
+          <Children />
+        </ProcessFolder>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>Kafka Test</string>
+      </key>
+      <value>
+        <ProcessFolder>
+          <Name>Kafka Test</Name>
+          <Children />
+        </ProcessFolder>
+      </value>
+    </item>
+  </ProcessFolders>
+  <DataMapperPort>8585</DataMapperPort>
+  <InstanceName />
+  <Zones />
+  <Topics />
+  <Subscribers />
+  <Services />
+  <WorkflowDefinitions />
+  <WorkflowHosts />
+  <AvailabilityGroups />
+  <OAuthProviders />
+  <ESBMessagePipelines />
+  <Schemas>
+    <item>
+      <key>
+        <string>NeoPlmErpMaterialLot</string>
+      </key>
+      <value>
+        <ESBSchema>
+          <Id>7a492088-888a-450c-af28-cf3f5ab7fdb8</Id>
+          <Version>32a5cdae-b42a-40c5-99b2-71f2f17cf483</Version>
+          <BusinessFlows />
+          <Description>Schema to describe a Neo PLM ERP Material Lot Transaction</Description>
+          <Name>NeoPlmErpMaterialLot</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <ValidateWithService>false</ValidateWithService>
+          <Storing>false</Storing>
+          <ShortName>NeoPlmErpMaterialLot</ShortName>
+          <FullName>http://tempuri.org/Schema1</FullName>
+          <Xsd />
+          <ServiceAddress />
+          <SchemaVersion>1.0</SchemaVersion>
+          <SourceUri />
+          <TargetNamespace>http://NeoPLM.ERP.MaterialLot</TargetNamespace>
+        </ESBSchema>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>NeoB2MML_ProcessMaterialLot</string>
+      </key>
+      <value>
+        <ESBSchema>
+          <Id>6662d304-050e-4f08-96c5-a9122dbde909</Id>
+          <Version>181a847a-a1ff-4d13-b6bc-c844870e4db9</Version>
+          <BusinessFlows />
+          <Description>Neo PLM's custom version of the B2MML Process Material Lot Schema</Description>
+          <Name>NeoB2MML_ProcessMaterialLot</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <ValidateWithService>false</ValidateWithService>
+          <Storing>false</Storing>
+          <ShortName>NeoB2MML_ProcessMaterialLot</ShortName>
+          <FullName>http://tempuri.org/Schema1</FullName>
+          <Xsd />
+          <ServiceAddress />
+          <SchemaVersion>1.0</SchemaVersion>
+          <SourceUri />
+          <TargetNamespace>http://www.mesa.org/xml/B2MML-V0600</TargetNamespace>
+        </ESBSchema>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>NeoB2MML_ProcessOperationsPerformance</string>
+      </key>
+      <value>
+        <ESBSchema>
+          <Id>185d3559-efca-4677-81eb-c5b89f3aba9b</Id>
+          <Version>52aa667c-c032-49e0-96ee-0d894fa8d403</Version>
+          <BusinessFlows />
+          <Description>Neo PLM's custom version of the B2MML Process Operations Performance Schema</Description>
+          <Name>NeoB2MML_ProcessOperationsPerformance</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <ValidateWithService>false</ValidateWithService>
+          <Storing>false</Storing>
+          <ShortName>NeoB2MML_ProcessOperationsPerformance</ShortName>
+          <FullName>http://tempuri.org/Schema1</FullName>
+          <Xsd />
+          <ServiceAddress />
+          <SchemaVersion>1.0</SchemaVersion>
+          <SourceUri />
+          <TargetNamespace>http://www.mesa.org/xml/B2MML-V0600</TargetNamespace>
+        </ESBSchema>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>B2MML-V0600-Material</string>
+      </key>
+      <value>
+        <ESBSchema>
+          <Id>1289f9f2-198f-4a24-9d7c-bc06b21c9919</Id>
+          <Version>0008b517-00c9-404f-bcd7-012cf8d4b492</Version>
+          <BusinessFlows />
+          <Description>B2MML-V0600-Material.xsd</Description>
+          <Name>B2MML-V0600-Material</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <ValidateWithService>false</ValidateWithService>
+          <Storing>false</Storing>
+          <ShortName>B2MML-V0600-Material</ShortName>
+          <FullName>http://tempuri.org/Schema1</FullName>
+          <Xsd />
+          <ServiceAddress />
+          <SchemaVersion>1.0</SchemaVersion>
+          <SourceUri />
+          <TargetNamespace>http://www.mesa.org/xml/B2MML-V0600</TargetNamespace>
+        </ESBSchema>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>B2MML-V0600-OperationsPerformance</string>
+      </key>
+      <value>
+        <ESBSchema>
+          <Id>58ceb66e-eba4-48a8-864b-a874f3784618</Id>
+          <Version>d29ad144-1787-46d9-96c1-5f3eeaeff537</Version>
+          <BusinessFlows />
+          <Description>B2MML-V0600-OperationsPerformance.xsd</Description>
+          <Name>B2MML-V0600-OperationsPerformance</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <ValidateWithService>false</ValidateWithService>
+          <Storing>false</Storing>
+          <ShortName>B2MML-V0600-OperationsPerformance</ShortName>
+          <FullName>http://tempuri.org/Schema1</FullName>
+          <Xsd />
+          <ServiceAddress />
+          <SchemaVersion>1.0</SchemaVersion>
+          <SourceUri>file:///C:/Neo Integration/Documents/ISA 95/Schema/B2MML-V0600-OperationsPerformance.xsd</SourceUri>
+          <TargetNamespace>http://www.mesa.org/xml/B2MML-V0600</TargetNamespace>
+        </ESBSchema>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>NeoPlmErpGoodsIssue</string>
+      </key>
+      <value>
+        <ESBSchema>
+          <Id>bc3c4be9-b1ce-41c3-800c-987cfda7c3d1</Id>
+          <Version>78cd317a-63fe-4da3-bf8c-9ab18cfe4c50</Version>
+          <BusinessFlows />
+          <Description>Schema to Describe a Neo PLM Goods Issue Transaction</Description>
+          <Name>NeoPlmErpGoodsIssue</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <ValidateWithService>false</ValidateWithService>
+          <Storing>false</Storing>
+          <ShortName>NeoPlmErpGoodsIssue</ShortName>
+          <FullName>http://tempuri.org/Schema1</FullName>
+          <Xsd />
+          <ServiceAddress />
+          <SchemaVersion>1.0</SchemaVersion>
+          <SourceUri />
+          <TargetNamespace>http://NeoPLM.NeoPlmErpGoodsIssue</TargetNamespace>
+        </ESBSchema>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>NeoPlmErpGoodsIssueReversal</string>
+      </key>
+      <value>
+        <ESBSchema>
+          <Id>553d17a0-bf0c-4e52-83a3-a7044a3534e2</Id>
+          <Version>6e2eadba-6a53-48af-b2f7-d79451c9f585</Version>
+          <BusinessFlows />
+          <Description>Schema to describe a Neo PLM Goods Issue Reversal Transaction</Description>
+          <Name>NeoPlmErpGoodsIssueReversal</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <ValidateWithService>false</ValidateWithService>
+          <Storing>false</Storing>
+          <ShortName>NeoPlmErpGoodsIssueReversal</ShortName>
+          <FullName>http://tempuri.org/Schema1</FullName>
+          <Xsd />
+          <ServiceAddress />
+          <SchemaVersion>1.0</SchemaVersion>
+          <SourceUri />
+          <TargetNamespace />
+        </ESBSchema>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>NeoPlmErpGoodsReceipt</string>
+      </key>
+      <value>
+        <ESBSchema>
+          <Id>7b3d3a1b-47a8-4be7-920f-626849709a37</Id>
+          <Version>b24ce44b-48d2-48be-9694-c94635174985</Version>
+          <BusinessFlows />
+          <Description>Schema to describe a Neo PLM Goods Receipt Transaction</Description>
+          <Name>NeoPlmErpGoodsReceipt</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <ValidateWithService>false</ValidateWithService>
+          <Storing>false</Storing>
+          <ShortName>NeoPlmErpGoodsReceipt</ShortName>
+          <FullName>http://tempuri.org/Schema1</FullName>
+          <Xsd />
+          <ServiceAddress />
+          <SchemaVersion>1.0</SchemaVersion>
+          <SourceUri />
+          <TargetNamespace />
+        </ESBSchema>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>NeoPlmErpGoodsReceiptReversal</string>
+      </key>
+      <value>
+        <ESBSchema>
+          <Id>d450a311-9c66-41aa-9070-a6002ab398e4</Id>
+          <Version>cd1a1977-7420-4629-a3c3-7d24e6f75e03</Version>
+          <BusinessFlows />
+          <Description>Schema to describe a Neo PLM Goods Receipt Reversal Transaction</Description>
+          <Name>NeoPlmErpGoodsReceiptReversal</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <ValidateWithService>false</ValidateWithService>
+          <Storing>false</Storing>
+          <ShortName>NeoPlmErpGoodsReceiptReversal</ShortName>
+          <FullName>http://tempuri.org/Schema1</FullName>
+          <Xsd />
+          <ServiceAddress />
+          <SchemaVersion>1.0</SchemaVersion>
+          <SourceUri />
+          <TargetNamespace />
+        </ESBSchema>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>NeoPlmLimsMaterialLot</string>
+      </key>
+      <value>
+        <ESBSchema>
+          <Id>89d99422-a975-4e62-a005-20f2b44fc26d</Id>
+          <Version>28454d40-f515-4708-8dea-6862e6b1887f</Version>
+          <BusinessFlows />
+          <Description>Schema to describe a Neo PLM LIMS Material Lot Transaction</Description>
+          <Name>NeoPlmLimsMaterialLot</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <ValidateWithService>false</ValidateWithService>
+          <Storing>false</Storing>
+          <ShortName>NeoPlmLimsMaterialLot</ShortName>
+          <FullName>http://tempuri.org/Schema1</FullName>
+          <Xsd />
+          <ServiceAddress />
+          <SchemaVersion>1.0</SchemaVersion>
+          <SourceUri />
+          <TargetNamespace />
+        </ESBSchema>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>BatchML-V0600-BatchInformationExtensions.xsd</string>
+      </key>
+      <value>
+        <ESBSchema>
+          <Id>5bac6216-2427-411e-a678-a53f2b7aa280</Id>
+          <Version>a13174e0-98fe-47e5-a845-1217edeb81a7</Version>
+          <BusinessFlows />
+          <Description>BatchML-V0600-BatchInformationExtensions.xsd</Description>
+          <Name>BatchML-V0600-BatchInformationExtensions.xsd</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <ValidateWithService>false</ValidateWithService>
+          <Storing>false</Storing>
+          <ShortName>BatchML-V0600-BatchInformationExtensions.xsd</ShortName>
+          <FullName>http://tempuri.org/Schema1</FullName>
+          <Xsd />
+          <ServiceAddress />
+          <SchemaVersion>1.0</SchemaVersion>
+          <SourceUri>file:///C:/Users/TMcCarthy/Desktop/flattened/BatchML-V0600-BatchInformationExtensions.xsd</SourceUri>
+          <TargetNamespace>http://www.mesa.org/xml/B2MML-V0600-AllExtensions</TargetNamespace>
+        </ESBSchema>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>AllSchemas.xsd</string>
+      </key>
+      <value>
+        <ESBSchema>
+          <Id>d28fda71-8cc2-43bb-bb37-c0f74051c24a</Id>
+          <Version>e5ec8045-fea6-4800-8436-76cffb81bc2a</Version>
+          <BusinessFlows />
+          <Description>AllSchemas.xsd</Description>
+          <Name>AllSchemas.xsd</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <ValidateWithService>false</ValidateWithService>
+          <Storing>false</Storing>
+          <ShortName>AllSchemas.xsd</ShortName>
+          <FullName>http://tempuri.org/Schema1</FullName>
+          <Xsd />
+          <ServiceAddress />
+          <SchemaVersion>1.0</SchemaVersion>
+          <SourceUri>file:///C:/Users/TMcCarthy/Desktop/flattened/AllSchemas.xsd</SourceUri>
+          <TargetNamespace>http://www.mesa.org/xml/B2MML-V0600</TargetNamespace>
+        </ESBSchema>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>NeoPLMERPMaterialDefinition</string>
+      </key>
+      <value>
+        <ESBSchema>
+          <Id>08863db1-c229-4500-bd72-f4d0b3a4c6e5</Id>
+          <Version>6d1702ce-7c38-412f-848f-a1b5255d47bb</Version>
+          <BusinessFlows />
+          <Description>Schema to describe a Neo PLM Local Material Specification / Consumable</Description>
+          <Name>NeoPLMERPMaterialDefinition</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <ValidateWithService>false</ValidateWithService>
+          <Storing>false</Storing>
+          <ShortName>NeoPLMERPMaterialDefinition</ShortName>
+          <FullName>http://tempuri.org/Schema1</FullName>
+          <Xsd />
+          <ServiceAddress />
+          <SchemaVersion>1.0</SchemaVersion>
+          <SourceUri />
+          <TargetNamespace />
+        </ESBSchema>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>ESBErrors</string>
+      </key>
+      <value>
+        <ESBSchema>
+          <Id>31d26768-d3b0-4160-a0f9-989fe670ecd3</Id>
+          <Version>2cb23fa3-d06e-40ac-b1f8-88085c0ba499</Version>
+          <BusinessFlows />
+          <Description>An XML Schema to Publish Errors to a variety of Handler on the ESB Bus.</Description>
+          <Name>ESBErrors</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <ValidateWithService>false</ValidateWithService>
+          <Storing>false</Storing>
+          <ShortName>ESBErrors</ShortName>
+          <FullName>http://tempuri.org/Schema1</FullName>
+          <Xsd />
+          <ServiceAddress />
+          <SchemaVersion>1.0</SchemaVersion>
+          <SourceUri />
+          <TargetNamespace />
+        </ESBSchema>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>EnterpriseHelper</string>
+      </key>
+      <value>
+        <ESBSchema>
+          <Id>b1c7b045-9f1d-453e-a0ce-12d4fa3d7649</Id>
+          <Version>d5c54525-3550-400f-89ea-d5f73751ab3c</Version>
+          <BusinessFlows />
+          <Description>NeoPLM Internal Helper Function Schemas</Description>
+          <Name>EnterpriseHelper</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <ValidateWithService>false</ValidateWithService>
+          <Storing>false</Storing>
+          <ShortName>EnterpriseHelper</ShortName>
+          <FullName>http://tempuri.org/Schema1</FullName>
+          <Xsd />
+          <ServiceAddress />
+          <SchemaVersion>1.0</SchemaVersion>
+          <SourceUri />
+          <TargetNamespace />
+        </ESBSchema>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>Guid</string>
+      </key>
+      <value>
+        <ESBSchema>
+          <Id>8d47c62f-be7f-4026-a47c-0c887769522b</Id>
+          <Version>3bb8adb8-c5f7-4819-84c7-cab22e9e8142</Version>
+          <BusinessFlows />
+          <Description>Microsoft's Schema for a Guid</Description>
+          <Name>Guid</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <ValidateWithService>false</ValidateWithService>
+          <Storing>false</Storing>
+          <ShortName>Guid</ShortName>
+          <FullName>http://tempuri.org/Schema1</FullName>
+          <Xsd />
+          <ServiceAddress />
+          <SchemaVersion>1.0</SchemaVersion>
+          <SourceUri />
+          <TargetNamespace />
+        </ESBSchema>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>MessageArrivalNotification</string>
+      </key>
+      <value>
+        <ESBSchema>
+          <Id>f56864f0-059b-4d3d-abed-f41d4c2f8369</Id>
+          <Version>c01d32aa-0e1d-489b-8965-cea774ac7dfa</Version>
+          <BusinessFlows />
+          <Description>Schema to describe a Message Arrival Notification Message.</Description>
+          <Name>MessageArrivalNotification</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <ValidateWithService>false</ValidateWithService>
+          <Storing>false</Storing>
+          <ShortName>MessageArrivalNotification</ShortName>
+          <FullName>http://tempuri.org/Schema1</FullName>
+          <Xsd />
+          <ServiceAddress />
+          <SchemaVersion>1.0</SchemaVersion>
+          <SourceUri />
+          <TargetNamespace />
+        </ESBSchema>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>ERPToNeoPLMMaterialTypeMaps</string>
+      </key>
+      <value>
+        <ESBSchema>
+          <Id>d891c986-1da8-4d63-b6de-1746989592af</Id>
+          <Version>a7bae2de-0278-4434-aceb-501f3fdbc1eb</Version>
+          <BusinessFlows />
+          <Description>A schema to capture maps between an ERP system and the Neo PLM System.</Description>
+          <Name>ERPToNeoPLMMaterialTypeMaps</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <ValidateWithService>false</ValidateWithService>
+          <Storing>false</Storing>
+          <ShortName>ERPToNeoPLMMaterialTypeMaps</ShortName>
+          <FullName>http://tempuri.org/Schema1</FullName>
+          <Xsd />
+          <ServiceAddress />
+          <SchemaVersion>1.0</SchemaVersion>
+          <SourceUri />
+          <TargetNamespace />
+        </ESBSchema>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>NeoPlmErpBOM</string>
+      </key>
+      <value>
+        <ESBSchema>
+          <Id>ad044c24-9158-441d-a9f9-8084ea50b160</Id>
+          <Version>32a5cdae-b42a-40c5-99b2-71f2f17cf483</Version>
+          <BusinessFlows />
+          <Description>Schema to describe a Neo PLM ERP BOM Transaction</Description>
+          <Name>NeoPlmErpBOM</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <ValidateWithService>false</ValidateWithService>
+          <Storing>false</Storing>
+          <ShortName>NeoPlmErpBOM</ShortName>
+          <FullName>http://tempuri.org/Schema1</FullName>
+          <Xsd />
+          <ServiceAddress />
+          <SchemaVersion>1.0</SchemaVersion>
+          <SourceUri />
+          <TargetNamespace>http://NeoPLM.ERP.BillOfMaterial</TargetNamespace>
+        </ESBSchema>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>NeoPlmErpRecipe</string>
+      </key>
+      <value>
+        <ESBSchema>
+          <Id>8e9962c4-65ca-44a0-b750-34c07fa31f99</Id>
+          <Version>32a5cdae-b42a-40c5-99b2-71f2f17cf483</Version>
+          <BusinessFlows />
+          <Description>Schema to describe a Neo PLM ERP Recipe Transaction</Description>
+          <Name>NeoPlmErpRecipe</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <ValidateWithService>false</ValidateWithService>
+          <Storing>false</Storing>
+          <ShortName>NeoPlmErpRecipe</ShortName>
+          <FullName>http://tempuri.org/Schema1</FullName>
+          <Xsd />
+          <ServiceAddress />
+          <SchemaVersion>1.0</SchemaVersion>
+          <SourceUri />
+          <TargetNamespace>http://NeoPLM.ERP.Recipe</TargetNamespace>
+        </ESBSchema>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>NeoPlmErpProductionVersionApprovalRequest</string>
+      </key>
+      <value>
+        <ESBSchema>
+          <Id>9300b43b-16bc-4c5f-952f-1baf99a0ac24</Id>
+          <Version>32a5cdae-b42a-40c5-99b2-71f2f17cf483</Version>
+          <BusinessFlows />
+          <Description>Schema to describe a Neo PLM ERP PVAR Transaction</Description>
+          <Name>NeoPlmErpProductionVersionApprovalRequest</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <ValidateWithService>false</ValidateWithService>
+          <Storing>false</Storing>
+          <ShortName>NeoPlmErpProductionVersionApprovalRequest</ShortName>
+          <FullName>http://tempuri.org/Schema1</FullName>
+          <Xsd />
+          <ServiceAddress />
+          <SchemaVersion>1.0</SchemaVersion>
+          <SourceUri />
+          <TargetNamespace>http://NeoPLM.ERP.PVAR</TargetNamespace>
+        </ESBSchema>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>NeoPlmErpProcessOrder</string>
+      </key>
+      <value>
+        <ESBSchema>
+          <Id>349984f2-dcef-43c7-a8d0-280ca855d0e3</Id>
+          <Version>32a5cdae-b42a-40c5-99b2-71f2f17cf483</Version>
+          <BusinessFlows />
+          <Description>Schema to describe a Neo PLM ERP ProcessOrder Transaction</Description>
+          <Name>NeoPlmErpProcessOrder</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <ValidateWithService>false</ValidateWithService>
+          <Storing>false</Storing>
+          <ShortName>NeoPlmErpProcessOrder</ShortName>
+          <FullName>http://tempuri.org/Schema1</FullName>
+          <Xsd />
+          <ServiceAddress />
+          <SchemaVersion>1.0</SchemaVersion>
+          <SourceUri />
+          <TargetNamespace>http://NeoPLM.ERP.ProcessOrder</TargetNamespace>
+        </ESBSchema>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>ALL_IDOC_Schemas</string>
+      </key>
+      <value>
+        <ESBSchema>
+          <Id>da87c5b0-35f5-401f-a0c5-4d5b9d6ae93d</Id>
+          <Version>375972a5-0af9-4b80-9d3f-60acbf876f64</Version>
+          <BusinessFlows />
+          <Description>Contains Schemas for all of the IDOC Message Types.</Description>
+          <Name>ALL_IDOC_Schemas</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <ValidateWithService>false</ValidateWithService>
+          <Storing>false</Storing>
+          <ShortName>ALL_IDOC_Schemas</ShortName>
+          <FullName>http://tempuri.org/Schema1</FullName>
+          <Xsd />
+          <ServiceAddress />
+          <SchemaVersion>1.0</SchemaVersion>
+          <SourceUri />
+          <TargetNamespace />
+        </ESBSchema>
+      </value>
+    </item>
+  </Schemas>
+  <JsonSchemas>
+    <item>
+      <key>
+        <string>LIMS_JsonSchema</string>
+      </key>
+      <value>
+        <ESBJsonSchema>
+          <Id>d5aab5e3-d7fd-4764-a46b-37347c2c424d</Id>
+          <Version>77ca221d-ae88-4505-aabf-3d3092c9f302</Version>
+          <BusinessFlows />
+          <Description>Schema to Describe a Neo PLM LIMS Material Lot Transaction.</Description>
+          <Name>LIMS_JsonSchema</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <FullName>http://tempuri.org/JsonSchema1</FullName>
+          <Storing>false</Storing>
+          <ShortName>LIMS_JsonSchema</ShortName>
+          <Text />
+          <SchemaVersion>1.0</SchemaVersion>
+          <SourceUri />
+        </ESBJsonSchema>
+      </value>
+    </item>
+  </JsonSchemas>
+  <XmlDocs>
+    <item>
+      <key>
+        <string>B2MML_ConfirmBOD</string>
+      </key>
+      <value>
+        <ESBXmlDoc>
+          <Id>78304940-e782-4bb0-b1a8-923464a0a54f</Id>
+          <Version>824c7405-9d0f-4d3e-a661-2489dc933c1f</Version>
+          <BusinessFlows />
+          <Description>A template for Issuing a Confirm BOD Response Message</Description>
+          <Name>B2MML_ConfirmBOD</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <Storing>false</Storing>
+          <XmlVersion>1.0</XmlVersion>
+          <SourceUri />
+          <Xml />
+        </ESBXmlDoc>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>ESB Business Error Message</string>
+      </key>
+      <value>
+        <ESBXmlDoc>
+          <Id>0f22789a-cbfd-445c-8fd1-b72d6f2d689e</Id>
+          <Version>a5a23c5b-293a-4b5a-bb40-b40f5fe52dae</Version>
+          <BusinessFlows />
+          <Description>A template for generating an ESB Business Data Message on the ESB Bus</Description>
+          <Name>ESB Business Error Message</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <Storing>false</Storing>
+          <XmlVersion>1.0</XmlVersion>
+          <SourceUri />
+          <Xml />
+        </ESBXmlDoc>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>ESB System Error Message</string>
+      </key>
+      <value>
+        <ESBXmlDoc>
+          <Id>2457c12d-3e80-4bfd-a9fe-e14d0017258d</Id>
+          <Version>22fb31e1-bca8-496d-a1df-6bc33cecf251</Version>
+          <BusinessFlows />
+          <Description>A Template for generating an ESB System Data message on the ESB Bus.</Description>
+          <Name>ESB System Error Message</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <Storing>false</Storing>
+          <XmlVersion>1.0</XmlVersion>
+          <SourceUri />
+          <Xml />
+        </ESBXmlDoc>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>FacilityRequest</string>
+      </key>
+      <value>
+        <ESBXmlDoc>
+          <Id>6e1316e4-2729-4ff8-ac65-a223ec66013a</Id>
+          <Version>79033616-51d0-495d-8b03-d631490be24e</Version>
+          <BusinessFlows />
+          <Description>A template to represent a Facility Lookup Request message.</Description>
+          <Name>FacilityRequest</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <Storing>false</Storing>
+          <XmlVersion>1.0</XmlVersion>
+          <SourceUri />
+          <Xml />
+        </ESBXmlDoc>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>FacilityResponse</string>
+      </key>
+      <value>
+        <ESBXmlDoc>
+          <Id>a2a757ce-d679-46ad-9882-2fef09a3bed1</Id>
+          <Version>f77c885b-7367-45ef-b11e-cadcf776f4f4</Version>
+          <BusinessFlows />
+          <Description>A template to represent a Facility Lookup Response message.</Description>
+          <Name>FacilityResponse</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <Storing>false</Storing>
+          <XmlVersion>1.0</XmlVersion>
+          <SourceUri />
+          <Xml />
+        </ESBXmlDoc>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>PlantCodeResponse</string>
+      </key>
+      <value>
+        <ESBXmlDoc>
+          <Id>3ecda694-72fc-46bb-a04f-21ee42dfcd1f</Id>
+          <Version>3d721a7c-babe-41f6-86b6-5b928aa18bf0</Version>
+          <BusinessFlows />
+          <Description>A template to represent a plant code response message</Description>
+          <Name>PlantCodeResponse</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <Storing>false</Storing>
+          <XmlVersion>1.0</XmlVersion>
+          <SourceUri />
+          <Xml />
+        </ESBXmlDoc>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>PlantCodeRequest</string>
+      </key>
+      <value>
+        <ESBXmlDoc>
+          <Id>a42fbcd8-eef6-43a5-907e-341c6ea45938</Id>
+          <Version>17116a04-3971-4e17-9503-d61d37cae88a</Version>
+          <BusinessFlows />
+          <Description>A template to represent a plant code request message</Description>
+          <Name>PlantCodeRequest</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <Storing>false</Storing>
+          <XmlVersion>1.0</XmlVersion>
+          <SourceUri />
+          <Xml />
+        </ESBXmlDoc>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>EngineeringUnitRequest</string>
+      </key>
+      <value>
+        <ESBXmlDoc>
+          <Id>1f3cb260-97a9-45fb-9041-e5abe0c1feeb</Id>
+          <Version>f702c393-11a1-4cf0-b890-2bd33cef1926</Version>
+          <BusinessFlows />
+          <Description>A template to represent an Engineering Unit Request Message</Description>
+          <Name>EngineeringUnitRequest</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <Storing>false</Storing>
+          <XmlVersion>1.0</XmlVersion>
+          <SourceUri />
+          <Xml />
+        </ESBXmlDoc>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>EngineeringUnitResponse</string>
+      </key>
+      <value>
+        <ESBXmlDoc>
+          <Id>3bb9c9b3-1c37-4db6-b2bb-610bf8e91057</Id>
+          <Version>803b0d9e-e168-4993-af5b-c5d11493d385</Version>
+          <BusinessFlows />
+          <Description>A template to represent an Engineeering Unit Response Message</Description>
+          <Name>EngineeringUnitResponse</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <Storing>false</Storing>
+          <XmlVersion>1.0</XmlVersion>
+          <SourceUri />
+          <Xml />
+        </ESBXmlDoc>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>LocalServiceURIRequest</string>
+      </key>
+      <value>
+        <ESBXmlDoc>
+          <Id>e7190cb0-0972-4503-ba80-38fe7fceab93</Id>
+          <Version>5377f7d0-3c01-407e-9bcd-92ef9afbcc4e</Version>
+          <BusinessFlows />
+          <Description>A template to represent a local service URI Request Message</Description>
+          <Name>LocalServiceURIRequest</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <Storing>false</Storing>
+          <XmlVersion>1.0</XmlVersion>
+          <SourceUri />
+          <Xml />
+        </ESBXmlDoc>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>LocalServiceURIResponse</string>
+      </key>
+      <value>
+        <ESBXmlDoc>
+          <Id>ae95a3aa-bf60-44de-9faa-a31040467f69</Id>
+          <Version>9c2be003-747a-431f-9b1a-ef673814c191</Version>
+          <BusinessFlows />
+          <Description>A template to represent a local Service URI Response Message</Description>
+          <Name>LocalServiceURIResponse</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <Storing>false</Storing>
+          <XmlVersion>1.0</XmlVersion>
+          <SourceUri />
+          <Xml />
+        </ESBXmlDoc>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>MaterialItemRequest</string>
+      </key>
+      <value>
+        <ESBXmlDoc>
+          <Id>6d52c277-ccb1-4269-901f-8b48eb1ee813</Id>
+          <Version>d65bac63-552c-498d-ab4c-239ff34104cf</Version>
+          <BusinessFlows />
+          <Description>A template to represent a Material Item Request</Description>
+          <Name>MaterialItemRequest</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <Storing>false</Storing>
+          <XmlVersion>1.0</XmlVersion>
+          <SourceUri />
+          <Xml />
+        </ESBXmlDoc>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>MaterialItemResponse</string>
+      </key>
+      <value>
+        <ESBXmlDoc>
+          <Id>d0680f44-92c3-4132-b68e-b8e3decd4287</Id>
+          <Version>a0028c25-62b0-41ff-a0e3-ff78723b6b3d</Version>
+          <BusinessFlows />
+          <Description>A template to represent a Material Item Response</Description>
+          <Name>MaterialItemResponse</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <Storing>false</Storing>
+          <XmlVersion>1.0</XmlVersion>
+          <SourceUri />
+          <Xml />
+        </ESBXmlDoc>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>DateTimeValidationRequest</string>
+      </key>
+      <value>
+        <ESBXmlDoc>
+          <Id>38556cd6-d000-41ca-976f-351bc0f124d3</Id>
+          <Version>baa38460-0fff-47f8-9e9f-58a75e96fa0d</Version>
+          <BusinessFlows />
+          <Description>A template to represent a Date Time Validation Request</Description>
+          <Name>DateTimeValidationRequest</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <Storing>false</Storing>
+          <XmlVersion>1.0</XmlVersion>
+          <SourceUri />
+          <Xml />
+        </ESBXmlDoc>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>LocalMaterialSpecificationRequest</string>
+      </key>
+      <value>
+        <ESBXmlDoc>
+          <Id>42720efc-07c3-4c41-9c96-960b125b23a8</Id>
+          <Version>e7e332a8-99d3-4f5f-a2a5-0470134ba5f9</Version>
+          <BusinessFlows />
+          <Description>A template to create a Local Material Specification or a Consumable.</Description>
+          <Name>LocalMaterialSpecificationRequest</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <Storing>false</Storing>
+          <XmlVersion>1.0</XmlVersion>
+          <SourceUri />
+          <Xml />
+        </ESBXmlDoc>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>ExternalSystemRequest</string>
+      </key>
+      <value>
+        <ESBXmlDoc>
+          <Id>08bb0f6a-53ab-4178-9fa3-d910264df4c0</Id>
+          <Version>6461a4fc-9768-420c-a862-38d8fabbc7d0</Version>
+          <BusinessFlows />
+          <Description>A template to represent an External System Request</Description>
+          <Name>ExternalSystemRequest</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <Storing>false</Storing>
+          <XmlVersion>1.0</XmlVersion>
+          <SourceUri />
+          <Xml />
+        </ESBXmlDoc>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>ExternalSystemResponse</string>
+      </key>
+      <value>
+        <ESBXmlDoc>
+          <Id>f566fbb2-8d2a-4467-8818-6bf4a612972d</Id>
+          <Version>c760b58e-2497-4d10-9800-453e49c53166</Version>
+          <BusinessFlows />
+          <Description>A template to represent an External System Response</Description>
+          <Name>ExternalSystemResponse</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <Storing>false</Storing>
+          <XmlVersion>1.0</XmlVersion>
+          <SourceUri />
+          <Xml />
+        </ESBXmlDoc>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>MaterialLotSave</string>
+      </key>
+      <value>
+        <ESBXmlDoc>
+          <Id>820e0069-c904-4070-8bf6-ad5002a65969</Id>
+          <Version>cc4bced7-fb74-4543-a3d3-0675c060a569</Version>
+          <BusinessFlows />
+          <Description>A template to represent a material lot save</Description>
+          <Name>MaterialLotSave</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <Storing>false</Storing>
+          <XmlVersion>1.0</XmlVersion>
+          <SourceUri />
+          <Xml />
+        </ESBXmlDoc>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>LabHistorySaveRequest</string>
+      </key>
+      <value>
+        <ESBXmlDoc>
+          <Id>58b9f031-9ee0-4246-8031-aeaeb33fd558</Id>
+          <Version>b392f8f9-a464-4f2e-b69e-8dfbf37487ea</Version>
+          <BusinessFlows />
+          <Description>A template to represent a Lab Hstory Save Request</Description>
+          <Name>LabHistorySaveRequest</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <Storing>false</Storing>
+          <XmlVersion>1.0</XmlVersion>
+          <SourceUri />
+          <Xml />
+        </ESBXmlDoc>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>LabSampleHistorySaveRequest</string>
+      </key>
+      <value>
+        <ESBXmlDoc>
+          <Id>92498096-73e8-46f8-87b2-59d20ba6f301</Id>
+          <Version>d684ee41-0692-4723-8fc3-6fc34aef48bf</Version>
+          <BusinessFlows />
+          <Description>A template to represent a Lab Sample Save Request</Description>
+          <Name>LabSampleHistorySaveRequest</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <Storing>false</Storing>
+          <XmlVersion>1.0</XmlVersion>
+          <SourceUri />
+          <Xml />
+        </ESBXmlDoc>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>LabTestHistorySaveRequest</string>
+      </key>
+      <value>
+        <ESBXmlDoc>
+          <Id>66be684a-ef7f-4ed1-bf8f-70b2e9907b4d</Id>
+          <Version>926be81a-f4c0-4e20-a773-f068dbaa9c2a</Version>
+          <BusinessFlows />
+          <Description>A template to represent a Lab Test History Save Request
+</Description>
+          <Name>LabTestHistorySaveRequest</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <Storing>false</Storing>
+          <XmlVersion>1.0</XmlVersion>
+          <SourceUri />
+          <Xml />
+        </ESBXmlDoc>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>LabResultHistorySaveRequest</string>
+      </key>
+      <value>
+        <ESBXmlDoc>
+          <Id>58b924e5-6b03-4b0b-92cc-1b3e20dc61d7</Id>
+          <Version>7c5b49fa-048f-4042-b397-1dd879e7de4c</Version>
+          <BusinessFlows />
+          <Description>A template to represent a Lab Result History Save Request</Description>
+          <Name>LabResultHistorySaveRequest</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <Storing>false</Storing>
+          <XmlVersion>1.0</XmlVersion>
+          <SourceUri />
+          <Xml />
+        </ESBXmlDoc>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>MaterialLotAncestorMapSaveRequest</string>
+      </key>
+      <value>
+        <ESBXmlDoc>
+          <Id>bb77f8e1-6f0e-4a53-b3a7-1e8847d0d3e6</Id>
+          <Version>77dea865-727e-42cd-b6e6-ead02eed5174</Version>
+          <BusinessFlows />
+          <Description>A template to represent a Material Lot Ancestor Map Save Request
+</Description>
+          <Name>MaterialLotAncestorMapSaveRequest</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <Storing>false</Storing>
+          <XmlVersion>1.0</XmlVersion>
+          <SourceUri />
+          <Xml />
+        </ESBXmlDoc>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>ERPExecutionOrderSaveRequest</string>
+      </key>
+      <value>
+        <ESBXmlDoc>
+          <Id>0d1bbb29-41f5-4d45-bbc6-63a1bd5f5f4f</Id>
+          <Version>23c377e0-a581-4767-a536-9ccc25a4d260</Version>
+          <BusinessFlows />
+          <Description>A template to represent an ERP Execution Order Save Request</Description>
+          <Name>ERPExecutionOrderSaveRequest</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <Storing>false</Storing>
+          <XmlVersion>1.0</XmlVersion>
+          <SourceUri />
+          <Xml />
+        </ESBXmlDoc>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>GoodsIssueSaveRequest</string>
+      </key>
+      <value>
+        <ESBXmlDoc>
+          <Id>7768cbbf-176c-4999-8353-fa8455bb35e9</Id>
+          <Version>ba5d88cd-8bd9-42c3-ba17-12a18e94a445</Version>
+          <BusinessFlows />
+          <Description>A template to represent a Goods Issue Save Request
+</Description>
+          <Name>GoodsIssueSaveRequest</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <Storing>false</Storing>
+          <XmlVersion>1.0</XmlVersion>
+          <SourceUri />
+          <Xml />
+        </ESBXmlDoc>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>GoodsReceiptSaveRequest</string>
+      </key>
+      <value>
+        <ESBXmlDoc>
+          <Id>52f9730e-0470-4b28-a1cf-e9e57d7a92fc</Id>
+          <Version>e34937f2-167e-4251-a503-8a5ab57240b8</Version>
+          <BusinessFlows />
+          <Description>A tempate to represent a Goods Receipt Save Request</Description>
+          <Name>GoodsReceiptSaveRequest</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <Storing>false</Storing>
+          <XmlVersion>1.0</XmlVersion>
+          <SourceUri />
+          <Xml />
+        </ESBXmlDoc>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>MasterMasterCompositeRequest</string>
+      </key>
+      <value>
+        <ESBXmlDoc>
+          <Id>a6794490-1227-492f-84fd-7b8deb6dc056</Id>
+          <Version>3e6591fd-8340-478f-904f-860d15949e11</Version>
+          <BusinessFlows />
+          <Description>A template for resolving all Guids associated with Material Master in one shot</Description>
+          <Name>MasterMasterCompositeRequest</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <Storing>false</Storing>
+          <XmlVersion>1.0</XmlVersion>
+          <SourceUri />
+          <Xml />
+        </ESBXmlDoc>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>MaterialLotStatusRequest</string>
+      </key>
+      <value>
+        <ESBXmlDoc>
+          <Id>6864f5c8-334e-486c-add3-1cf05b3e486a</Id>
+          <Version>6a3a2af4-5fa2-4757-97bd-284b08131590</Version>
+          <BusinessFlows />
+          <Description>A template for resolving a material Lot Status
+</Description>
+          <Name>MaterialLotStatusRequest</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <Storing>false</Storing>
+          <XmlVersion>1.0</XmlVersion>
+          <SourceUri />
+          <Xml />
+        </ESBXmlDoc>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>MaterialLotStatusResponse</string>
+      </key>
+      <value>
+        <ESBXmlDoc>
+          <Id>ac8582ec-c5bf-49de-b82d-e331147e35aa</Id>
+          <Version>3c1169a7-d563-4b4e-b159-715940aadbc5</Version>
+          <BusinessFlows />
+          <Description>A template for a Material Lot Status Response</Description>
+          <Name>MaterialLotStatusResponse</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <Storing>false</Storing>
+          <XmlVersion>1.0</XmlVersion>
+          <SourceUri />
+          <Xml />
+        </ESBXmlDoc>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>MaterialLotAncestorRequest</string>
+      </key>
+      <value>
+        <ESBXmlDoc>
+          <Id>130dd790-be63-4a24-9149-6638e31c47a6</Id>
+          <Version>dd68f00e-26a8-415a-9c62-fbde5ad7bddf</Version>
+          <BusinessFlows />
+          <Description>A template to represent a Material Lot Ancestor Request</Description>
+          <Name>MaterialLotAncestorRequest</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <Storing>false</Storing>
+          <XmlVersion />
+          <SourceUri />
+          <Xml />
+        </ESBXmlDoc>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>MaterialLotAncestorResponse</string>
+      </key>
+      <value>
+        <ESBXmlDoc>
+          <Id>9ef01a77-6693-486d-981c-eb82599a2752</Id>
+          <Version>9da2c061-b4f4-457a-9452-474cf1d2c6eb</Version>
+          <BusinessFlows />
+          <Description>A template to represent a Material Lot Ancestor Response</Description>
+          <Name>MaterialLotAncestorResponse</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <Storing>false</Storing>
+          <XmlVersion>1.0</XmlVersion>
+          <SourceUri />
+          <Xml />
+        </ESBXmlDoc>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>ReferencedLotTemplate</string>
+      </key>
+      <value>
+        <ESBXmlDoc>
+          <Id>7a8f2740-224a-4896-9479-e78313ce5250</Id>
+          <Version>89652dcd-f7da-4c84-90aa-c953830c9862</Version>
+          <BusinessFlows />
+          <Description>A template to create a reference to an unknown referenced lot - Used in ERP Material Lot</Description>
+          <Name>ReferencedLotTemplate</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <Storing>false</Storing>
+          <XmlVersion>1.0</XmlVersion>
+          <SourceUri />
+          <Xml />
+        </ESBXmlDoc>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>GI Status Extra Data</string>
+      </key>
+      <value>
+        <ESBXmlDoc>
+          <Id>2afa751e-f28f-4e11-91df-0d95aeadcb2b</Id>
+          <Version>617cc1c0-bf3e-46e2-afbc-1c84e9d50ebe</Version>
+          <BusinessFlows />
+          <Description>A template for extra data associated with GI/GIR/GR/GRR Transactions</Description>
+          <Name>GI Status Extra Data</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <Storing>false</Storing>
+          <XmlVersion>1.0</XmlVersion>
+          <SourceUri />
+          <Xml />
+        </ESBXmlDoc>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>ESB Invalid Schema Error Message</string>
+      </key>
+      <value>
+        <ESBXmlDoc>
+          <Id>d0116468-da46-400d-a16b-defd37d9c18a</Id>
+          <Version>22fb31e1-bca8-496d-a1df-6bc33cecf251</Version>
+          <BusinessFlows />
+          <Description>A Template for generating an ESB Invalid Schema Data message on the ESB Bus.</Description>
+          <Name>ESB Invalid Schema Error Message</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <Storing>false</Storing>
+          <XmlVersion>1.0</XmlVersion>
+          <SourceUri />
+          <Xml />
+        </ESBXmlDoc>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>ESB Message Arrival Notification Message</string>
+      </key>
+      <value>
+        <ESBXmlDoc>
+          <Id>6dc86453-b372-453c-b3b3-1d9fdc02dbd3</Id>
+          <Version>21581d54-fb0d-4b38-8706-fc11c2fa0651</Version>
+          <BusinessFlows />
+          <Description>A template for generating an ESB Message Arrival Notification Message on the ESB Bus.</Description>
+          <Name>ESB Message Arrival Notification Message</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <Storing>false</Storing>
+          <XmlVersion>1.0</XmlVersion>
+          <SourceUri />
+          <Xml />
+        </ESBXmlDoc>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>ERPToNeoPLMMaterialTypeMaps</string>
+      </key>
+      <value>
+        <ESBXmlDoc>
+          <Id>9a4d5bae-ed33-4d75-876c-f60058d30ee1</Id>
+          <Version>4538d951-8ca3-4e4d-ad7f-55bda647eec8</Version>
+          <BusinessFlows />
+          <Description>This is an XML Document to capture the ERP to Neo PLM Material Type Maps, associated with a deployment of the Material Definition Interface.</Description>
+          <Name>ERPToNeoPLMMaterialTypeMaps</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <Storing>false</Storing>
+          <XmlVersion>1.0</XmlVersion>
+          <SourceUri />
+          <Xml />
+        </ESBXmlDoc>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>NewOrExistingBOMRequest</string>
+      </key>
+      <value>
+        <ESBXmlDoc>
+          <Id>c32ef5f2-f7b6-40c8-b202-5182bcb0914c</Id>
+          <Version>fb89818d-3988-486c-90c9-0e65de777072</Version>
+          <BusinessFlows />
+          <Description>A template to check the BOM individually.</Description>
+          <Name>NewOrExistingBOMRequest</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <Storing>false</Storing>
+          <XmlVersion>1.0</XmlVersion>
+          <SourceUri />
+          <Xml />
+        </ESBXmlDoc>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>CreateUpdateBOMRequest</string>
+      </key>
+      <value>
+        <ESBXmlDoc>
+          <Id>616e8738-73b5-41bd-bc1b-6acf00670b1e</Id>
+          <Version>7fa01e2d-0f5b-4c9c-a5d8-839d677f89b1</Version>
+          <BusinessFlows />
+          <Description>A template to represent Update BOM Request.</Description>
+          <Name>CreateUpdateBOMRequest</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <Storing>false</Storing>
+          <XmlVersion>1.0</XmlVersion>
+          <SourceUri />
+          <Xml />
+        </ESBXmlDoc>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>NewOrExistingRecipe</string>
+      </key>
+      <value>
+        <ESBXmlDoc>
+          <Id>1b29ad9a-f848-4ab3-ae94-d4ee63e2fd71</Id>
+          <Version>fb89818d-3988-486c-90c9-0e65de777072</Version>
+          <BusinessFlows />
+          <Description>A template to check the Recipe individually.</Description>
+          <Name>NewOrExistingRecipe</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <Storing>false</Storing>
+          <XmlVersion>1.0</XmlVersion>
+          <SourceUri />
+          <Xml />
+        </ESBXmlDoc>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>CheckPVBOMRecipe</string>
+      </key>
+      <value>
+        <ESBXmlDoc>
+          <Id>32f096c3-c609-4c89-9c37-078a6a282de2</Id>
+          <Version>8971538c-d291-4d78-9aa0-e63f4965ea0f</Version>
+          <BusinessFlows />
+          <Description>A template to represent the PV, BOM, Recipe Check Request.</Description>
+          <Name>CheckPVBOMRecipe</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <Storing>false</Storing>
+          <XmlVersion>1.0</XmlVersion>
+          <SourceUri />
+          <Xml />
+        </ESBXmlDoc>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>NewOrExistingPVAR</string>
+      </key>
+      <value>
+        <ESBXmlDoc>
+          <Id>3349e096-8194-400b-ba6d-6d05c760ed7e</Id>
+          <Version>fb89818d-3988-486c-90c9-0e65de777072</Version>
+          <BusinessFlows />
+          <Description>A template to check the PVAR individually.</Description>
+          <Name>NewOrExistingPVAR</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <Storing>false</Storing>
+          <XmlVersion>1.0</XmlVersion>
+          <SourceUri />
+          <Xml />
+        </ESBXmlDoc>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>BlendingRequest</string>
+      </key>
+      <value>
+        <ESBXmlDoc>
+          <Id>58249af9-61db-432d-b55f-439a6f7002a9</Id>
+          <Version>fb89818d-3988-486c-90c9-0e65de777072</Version>
+          <BusinessFlows />
+          <Description>A template to represent the Blending Request to combine PV, BOM, Recipe message.</Description>
+          <Name>BlendingRequest</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <Storing>false</Storing>
+          <XmlVersion>1.0</XmlVersion>
+          <SourceUri />
+          <Xml />
+        </ESBXmlDoc>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>ValidateBOMItem</string>
+      </key>
+      <value>
+        <ESBXmlDoc>
+          <Id>d52feb69-ab04-4731-8b7d-443a71e3b87f</Id>
+          <Version>d65bac63-552c-498d-ab4c-239ff34104cf</Version>
+          <BusinessFlows />
+          <Description>A template to represent a BOM Item Request</Description>
+          <Name>ValidateBOMItem</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <Storing>false</Storing>
+          <XmlVersion>1.0</XmlVersion>
+          <SourceUri />
+          <Xml />
+        </ESBXmlDoc>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>CheckBOMQuantity</string>
+      </key>
+      <value>
+        <ESBXmlDoc>
+          <Id>8b20dbe4-f3ad-457a-af74-c3bf9babd851</Id>
+          <Version>fb89818d-3988-486c-90c9-0e65de777072</Version>
+          <BusinessFlows />
+          <Description>A template to represent BOM Quantity Request message.</Description>
+          <Name>CheckBOMQuantity</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <Storing>false</Storing>
+          <XmlVersion>1.0</XmlVersion>
+          <SourceUri />
+          <Xml />
+        </ESBXmlDoc>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>CheckLocalPVRequest</string>
+      </key>
+      <value>
+        <ESBXmlDoc>
+          <Id>12aeac23-f9b7-406a-8c16-21bb80abd1c4</Id>
+          <Version>fb89818d-3988-486c-90c9-0e65de777072</Version>
+          <BusinessFlows />
+          <Description>A template to represent check Production Version Request message.</Description>
+          <Name>CheckLocalPVRequest</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <Storing>false</Storing>
+          <XmlVersion>1.0</XmlVersion>
+          <SourceUri />
+          <Xml />
+        </ESBXmlDoc>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>LocalMaterialUIDRequest</string>
+      </key>
+      <value>
+        <ESBXmlDoc>
+          <Id>6fa33245-1b5f-4668-980e-ccbf31d47c6a</Id>
+          <Version>3049afea-d50e-4cb7-9f9c-bf809a8cbcd6</Version>
+          <BusinessFlows />
+          <Description>A template to get the Local Material's UID.</Description>
+          <Name>LocalMaterialUIDRequest</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <Storing>false</Storing>
+          <XmlVersion>1.0</XmlVersion>
+          <SourceUri />
+          <Xml />
+        </ESBXmlDoc>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>BatchStatusRequest</string>
+      </key>
+      <value>
+        <ESBXmlDoc>
+          <Id>95efec7f-b926-44fd-8c23-2b5326b08838</Id>
+          <Version>4896601e-eae0-451b-a9db-bf27e8df1ff5</Version>
+          <BusinessFlows />
+          <Description>A template to represent Batch Status Request message.</Description>
+          <Name>BatchStatusRequest</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <Storing>false</Storing>
+          <XmlVersion>1.0</XmlVersion>
+          <SourceUri />
+          <Xml />
+        </ESBXmlDoc>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>MaterialDesignRequest</string>
+      </key>
+      <value>
+        <ESBXmlDoc>
+          <Id>d28f07b2-3a2f-4e5a-908e-9908969f9ccc</Id>
+          <Version>fd96f586-5bc0-497e-8f7a-621271d2fc6e</Version>
+          <BusinessFlows />
+          <Description>A template to represent Material Design Request.</Description>
+          <Name>MaterialDesignRequest</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <Storing>false</Storing>
+          <XmlVersion>1.0</XmlVersion>
+          <SourceUri />
+          <Xml />
+        </ESBXmlDoc>
+      </value>
+    </item>
+  </XmlDocs>
+  <TextDocs>
+    <item>
+      <key>
+        <string>ErrorItemDetailTemplate</string>
+      </key>
+      <value>
+        <ESBTextDoc>
+          <Id>2b95ab81-5505-4ab7-9dda-a088a4748524</Id>
+          <Version>a3f4c55e-404b-406b-8023-b0d958973230</Version>
+          <BusinessFlows />
+          <Description>A template to replace the Error Message token.</Description>
+          <Name>ErrorItemDetailTemplate</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <Storing>false</Storing>
+          <TextVersion>1.0</TextVersion>
+          <SourceUri />
+          <Text />
+        </ESBTextDoc>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>ErrorEmailTemplateWithItems</string>
+      </key>
+      <value>
+        <ESBTextDoc>
+          <Id>323c06da-f0ce-4c77-be6e-a685f7daa9d0</Id>
+          <Version>102b21a0-b4bc-4c89-a350-10c2ad3b6ac3</Version>
+          <BusinessFlows />
+          <Description>A template used to send the Error Emails.</Description>
+          <Name>ErrorEmailTemplateWithItems</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <Storing>false</Storing>
+          <TextVersion>1.0</TextVersion>
+          <SourceUri />
+          <Text />
+        </ESBTextDoc>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>RestartWorkflowMessageTemplate</string>
+      </key>
+      <value>
+        <ESBTextDoc>
+          <Id>3fd20e16-f42e-4a7a-b698-c8737d660759</Id>
+          <Version>bb826c50-a23f-438d-ab20-b321a31cb024</Version>
+          <BusinessFlows />
+          <Description>A template to which is used to save and pass the information required to restart workflow.</Description>
+          <Name>RestartWorkflowMessageTemplate</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <Storing>false</Storing>
+          <TextVersion>1.0</TextVersion>
+          <SourceUri />
+          <Text />
+        </ESBTextDoc>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>SchemaValidationTemplate</string>
+      </key>
+      <value>
+        <ESBTextDoc>
+          <Id>2b7a3a5f-a180-4d7e-a75d-ad19691c5f55</Id>
+          <Version>102b21a0-b4bc-4c89-a350-10c2ad3b6ac3</Version>
+          <BusinessFlows />
+          <Description>A template used to send Schema Error Emails.</Description>
+          <Name>SchemaValidationTemplate</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <Storing>false</Storing>
+          <TextVersion>1.0</TextVersion>
+          <SourceUri />
+          <Text />
+        </ESBTextDoc>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>SuccessReportTemplate</string>
+      </key>
+      <value>
+        <ESBTextDoc>
+          <Id>d69e575c-41c0-4be8-850c-b1f7c2e45c3b</Id>
+          <Version>ed66b278-8d75-4061-b92d-06807301803b</Version>
+          <BusinessFlows />
+          <Description>A template used to send the Success Emails.</Description>
+          <Name>SuccessReportTemplate</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <Storing>false</Storing>
+          <TextVersion>1.0</TextVersion>
+          <SourceUri />
+          <Text />
+        </ESBTextDoc>
+      </value>
+    </item>
+  </TextDocs>
+  <JsonDocs>
+    <item>
+      <key>
+        <string>Create-Update Local Material Specification</string>
+      </key>
+      <value>
+        <ESBJsonDoc>
+          <Id>e4b498b8-c85c-4408-94db-9fa536c966ab</Id>
+          <Version>4ba28b06-5b98-48bf-81d8-d86655a756ed</Version>
+          <BusinessFlows />
+          <Description>A template to Create - Update a Local Material Specification.</Description>
+          <Name>Create-Update Local Material Specification</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <Storing>false</Storing>
+          <JsonVersion>1.0</JsonVersion>
+          <SourceUri />
+          <HttpMethods />
+          <JsonFormatString />
+          <Text />
+        </ESBJsonDoc>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>Create-Update Material Lots</string>
+      </key>
+      <value>
+        <ESBJsonDoc>
+          <Id>4d3c19d1-676d-490a-9906-7025e53bfb6a</Id>
+          <Version>0c115083-52fd-45ab-8327-8f21aa83e59d</Version>
+          <BusinessFlows />
+          <Description>A template to Create - Update a Material Lot</Description>
+          <Name>Create-Update Material Lots</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <Storing>false</Storing>
+          <JsonVersion>1.0</JsonVersion>
+          <SourceUri />
+          <HttpMethods />
+          <JsonFormatString />
+          <Text />
+        </ESBJsonDoc>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>Create-Update Lab History</string>
+      </key>
+      <value>
+        <ESBJsonDoc>
+          <Id>21af8da0-7066-42a1-b26c-750c8e2bf794</Id>
+          <Version>9006f417-f280-41ba-92bf-8368b558bc9b</Version>
+          <BusinessFlows />
+          <Description>A template to Create / Update a Lab History</Description>
+          <Name>Create-Update Lab History</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <Storing>false</Storing>
+          <JsonVersion>1.0</JsonVersion>
+          <SourceUri />
+          <HttpMethods />
+          <JsonFormatString />
+          <Text />
+        </ESBJsonDoc>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>Create-Update Lab Sample History</string>
+      </key>
+      <value>
+        <ESBJsonDoc>
+          <Id>bcbc505d-2de8-4f88-8c96-8fa47df501e3</Id>
+          <Version>826922bc-a373-4626-b0d4-eb27ceb3e0f8</Version>
+          <BusinessFlows />
+          <Description>A template to Create / Update a Lab Sample History</Description>
+          <Name>Create-Update Lab Sample History</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <Storing>false</Storing>
+          <JsonVersion>1.0</JsonVersion>
+          <SourceUri />
+          <HttpMethods />
+          <JsonFormatString />
+          <Text />
+        </ESBJsonDoc>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>Create-Update Lab Test History</string>
+      </key>
+      <value>
+        <ESBJsonDoc>
+          <Id>2405b594-be94-4dea-99a3-2e7755b77c0c</Id>
+          <Version>9c1fb937-9cfd-42b4-bd88-4e9fa07c8dff</Version>
+          <BusinessFlows />
+          <Description>A tempalte to Create / Update a Lab Test History</Description>
+          <Name>Create-Update Lab Test History</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <Storing>false</Storing>
+          <JsonVersion>1.0</JsonVersion>
+          <SourceUri />
+          <HttpMethods />
+          <JsonFormatString />
+          <Text />
+        </ESBJsonDoc>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>Create-Update Lab Result History</string>
+      </key>
+      <value>
+        <ESBJsonDoc>
+          <Id>1ae6b82e-0d5f-4270-a263-5806a9643247</Id>
+          <Version>8065603c-0b50-473b-9403-b62621232476</Version>
+          <BusinessFlows />
+          <Description>A template to Create / Update a Lab Result History</Description>
+          <Name>Create-Update Lab Result History</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <Storing>false</Storing>
+          <JsonVersion>1.0</JsonVersion>
+          <SourceUri />
+          <HttpMethods />
+          <JsonFormatString />
+          <Text />
+        </ESBJsonDoc>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>Create - Delete Material Lot Ancestor Maps</string>
+      </key>
+      <value>
+        <ESBJsonDoc>
+          <Id>232e995a-bdcc-4970-a3e5-23044b34e0fd</Id>
+          <Version>15b4ab70-1436-445a-b9b2-9bbf70d86031</Version>
+          <BusinessFlows />
+          <Description>A template to Create / Delete a Material Lot Ancestor Map</Description>
+          <Name>Create - Delete Material Lot Ancestor Maps</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <Storing>false</Storing>
+          <JsonVersion>1.0</JsonVersion>
+          <SourceUri />
+          <HttpMethods />
+          <JsonFormatString />
+          <Text />
+        </ESBJsonDoc>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>Create-Update ERP Execution Order</string>
+      </key>
+      <value>
+        <ESBJsonDoc>
+          <Id>e4e70519-8103-4387-99d3-eca41ce2e9c7</Id>
+          <Version>bd69131e-c9ad-4c27-8c88-aa833b52d70a</Version>
+          <BusinessFlows />
+          <Description>A template to Create / Update an ERP Execution Order</Description>
+          <Name>Create-Update ERP Execution Order</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <Storing>false</Storing>
+          <JsonVersion>1.0</JsonVersion>
+          <SourceUri />
+          <HttpMethods />
+          <JsonFormatString />
+          <Text />
+        </ESBJsonDoc>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>Create-Update Goods Issue</string>
+      </key>
+      <value>
+        <ESBJsonDoc>
+          <Id>1631cf80-3851-49cb-aa73-471a1f9d441f</Id>
+          <Version>d0c01b00-5be8-4365-b224-c3326ebec71e</Version>
+          <BusinessFlows />
+          <Description>A template to Create / Update a Goods Issue</Description>
+          <Name>Create-Update Goods Issue</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <Storing>false</Storing>
+          <JsonVersion>1.0</JsonVersion>
+          <SourceUri />
+          <HttpMethods />
+          <JsonFormatString />
+          <Text />
+        </ESBJsonDoc>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>Create-Update Goods Receipt</string>
+      </key>
+      <value>
+        <ESBJsonDoc>
+          <Id>f9642758-8ee8-43cd-ba33-61b231085e4b</Id>
+          <Version>162f03e3-ca8e-4547-b25a-a5e56f1b6d06</Version>
+          <BusinessFlows />
+          <Description>A tempate to Create / Update a Goods Receipt
+</Description>
+          <Name>Create-Update Goods Receipt</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <Storing>false</Storing>
+          <JsonVersion>1.0</JsonVersion>
+          <SourceUri />
+          <HttpMethods />
+          <JsonFormatString />
+          <Text />
+        </ESBJsonDoc>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>Create-Update BOM</string>
+      </key>
+      <value>
+        <ESBJsonDoc>
+          <Id>6b9bb6ab-fe44-4d20-9269-d0343e5e22fa</Id>
+          <Version>73354f8e-9928-4ad8-bfa9-63511bce86f3</Version>
+          <BusinessFlows />
+          <Description>A template to Create / Update a Bill Of Material</Description>
+          <Name>Create-Update BOM</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <Storing>false</Storing>
+          <JsonVersion>1.0</JsonVersion>
+          <SourceUri />
+          <HttpMethods />
+          <JsonFormatString />
+          <Text />
+        </ESBJsonDoc>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>Create-Update Recipe</string>
+      </key>
+      <value>
+        <ESBJsonDoc>
+          <Id>7b8e2e75-a217-4105-8745-f2643995b8da</Id>
+          <Version>73354f8e-9928-4ad8-bfa9-63511bce86f3</Version>
+          <BusinessFlows />
+          <Description>A template to Create / Update a Recipe</Description>
+          <Name>Create-Update Recipe</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <Storing>false</Storing>
+          <JsonVersion>1.0</JsonVersion>
+          <SourceUri />
+          <HttpMethods />
+          <JsonFormatString />
+          <Text />
+        </ESBJsonDoc>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>Get_PVBOMRecipe</string>
+      </key>
+      <value>
+        <ESBJsonDoc>
+          <Id>b28b44af-b22d-4c24-999a-f8847d216a5f</Id>
+          <Version>73354f8e-9928-4ad8-bfa9-63511bce86f3</Version>
+          <BusinessFlows />
+          <Description>A template to get the PV, BOM, Recipe ID from API.</Description>
+          <Name>Get_PVBOMRecipe</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <Storing>false</Storing>
+          <JsonVersion>1.0</JsonVersion>
+          <SourceUri />
+          <HttpMethods />
+          <JsonFormatString />
+          <Text />
+        </ESBJsonDoc>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>Create-Update PVAR</string>
+      </key>
+      <value>
+        <ESBJsonDoc>
+          <Id>e4e373c1-f1c2-49a9-9a49-cc6e3b3a5bbe</Id>
+          <Version>73354f8e-9928-4ad8-bfa9-63511bce86f3</Version>
+          <BusinessFlows />
+          <Description>A template to Create / Update a Production Version</Description>
+          <Name>Create-Update PVAR</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <Storing>false</Storing>
+          <JsonVersion>1.0</JsonVersion>
+          <SourceUri />
+          <HttpMethods />
+          <JsonFormatString />
+          <Text />
+        </ESBJsonDoc>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>InsertToLocalDB</string>
+      </key>
+      <value>
+        <ESBJsonDoc>
+          <Id>fa768f1d-3a2f-4c68-a951-1b1d5efe3ceb</Id>
+          <Version>b2c89157-c79f-44e0-b08e-0a44390f0906</Version>
+          <BusinessFlows />
+          <Description>A template used to send the combined PV, BOM, Recipe data to the API.</Description>
+          <Name>InsertToLocalDB</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <Storing>false</Storing>
+          <JsonVersion>1.0</JsonVersion>
+          <SourceUri />
+          <HttpMethods />
+          <JsonFormatString />
+          <Text />
+        </ESBJsonDoc>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>Create-Update ProcessOrder Execution Order</string>
+      </key>
+      <value>
+        <ESBJsonDoc>
+          <Id>981e9dfd-414e-4ac9-9105-27095c754a8f</Id>
+          <Version>bd69131e-c9ad-4c27-8c88-aa833b52d70a</Version>
+          <BusinessFlows />
+          <Description>A template to Create / Update an ERP Execution Order</Description>
+          <Name>Create-Update ProcessOrder Execution Order</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <Storing>false</Storing>
+          <JsonVersion>1.0</JsonVersion>
+          <SourceUri />
+          <HttpMethods />
+          <JsonFormatString />
+          <Text />
+        </ESBJsonDoc>
+      </value>
+    </item>
+  </JsonDocs>
+  <SwaggerDocs />
+  <WsdlDocuments>
+    <item>
+      <key>
+        <string>B2MML_Material</string>
+      </key>
+      <value>
+        <ESBXmlDoc>
+          <Id>2e9b2947-6ead-45a4-b8b5-0b3625d3e2d5</Id>
+          <Version>8805f558-a076-498a-80f9-88310472ab6a</Version>
+          <BusinessFlows />
+          <Description>A WSDL for the Neo PLM B2MML ERP SOAP Web Service</Description>
+          <Name>B2MML_Material</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <Storing>false</Storing>
+          <XmlVersion>1.0</XmlVersion>
+          <SourceUri />
+          <Xml />
+        </ESBXmlDoc>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>B2MML_LIMS</string>
+      </key>
+      <value>
+        <ESBXmlDoc>
+          <Id>a048ac95-82a7-424a-9792-b1f525ef3c45</Id>
+          <Version>187cbb33-6971-4af8-bb1f-f50c8751a270</Version>
+          <BusinessFlows />
+          <Description>A WSDL for the Neo PLM B2MML SOAP web service</Description>
+          <Name>B2MML_LIMS</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <Storing>false</Storing>
+          <XmlVersion>1.0</XmlVersion>
+          <SourceUri />
+          <Xml />
+        </ESBXmlDoc>
+      </value>
+    </item>
+  </WsdlDocuments>
+  <Xslts>
+    <item>
+      <key>
+        <string>B2MML_ProcessMaterialLot_to_NeoERPMaterialLot</string>
+      </key>
+      <value>
+        <ESBXslt>
+          <Id>1c4160fb-df47-4555-9722-065c96528cac</Id>
+          <Version>73a7ce1e-fcb1-4c35-89ab-d9b8fff070df</Version>
+          <BusinessFlows />
+          <Description>Transforms from B2MML Process Material Lot to Neo's Native ERP Material Lot XML format.</Description>
+          <Name>B2MML_ProcessMaterialLot_to_NeoERPMaterialLot</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <Storing>false</Storing>
+          <Xslt />
+          <TestInput />
+          <TestOutput />
+        </ESBXslt>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>B2MML_ProcessOperationsPerformance_to_NeoPlmErpGoodsIssue</string>
+      </key>
+      <value>
+        <ESBXslt>
+          <Id>c99858f2-a8c5-4e0c-9750-c86147486e91</Id>
+          <Version>d8f69321-fedc-4b7f-af12-d47d2c69f4c5</Version>
+          <BusinessFlows />
+          <Description>Transforms from B2MML Process Operations Performance to Neo's Native ERP Goods Issue XML format.</Description>
+          <Name>B2MML_ProcessOperationsPerformance_to_NeoPlmErpGoodsIssue</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <Storing>false</Storing>
+          <Xslt />
+          <TestInput />
+          <TestOutput />
+        </ESBXslt>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>B2MML_ProcessMateriallLot_To_B2MML_ConfirmBOD</string>
+      </key>
+      <value>
+        <ESBXslt>
+          <Id>6ac2f07d-50ad-40be-b45c-7f724d4b9a6d</Id>
+          <Version>ea67e51f-71bf-4b91-a4bc-db31f35643eb</Version>
+          <BusinessFlows />
+          <Description>Transforms from B2MML Process Material Lot to Confirm BOD (The submission web service response message.</Description>
+          <Name>B2MML_ProcessMateriallLot_To_B2MML_ConfirmBOD</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <Storing>false</Storing>
+          <Xslt />
+          <TestInput />
+          <TestOutput />
+        </ESBXslt>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>B2MML_ProcessOperationsPerformance_To_B2MML_ConfirmBOD</string>
+      </key>
+      <value>
+        <ESBXslt>
+          <Id>6cd84807-bf86-40e1-a51a-14fdf7eb1cff</Id>
+          <Version>fdf109b9-5d65-4ace-9f3e-34233e2bb68f</Version>
+          <BusinessFlows />
+          <Description>Transforms from B2MML Operations Performance to Confirm BOD, the submission service response message.</Description>
+          <Name>B2MML_ProcessOperationsPerformance_To_B2MML_ConfirmBOD</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <Storing>false</Storing>
+          <Xslt />
+          <TestInput />
+          <TestOutput />
+        </ESBXslt>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>B2MML_ProcessOperationsPerformance_to_NeoPlmErpGoodsIssueReversal</string>
+      </key>
+      <value>
+        <ESBXslt>
+          <Id>83e1b8ee-1d7b-4a64-9f96-1818ca119834</Id>
+          <Version>4b2f81df-a978-453d-a877-82675426b578</Version>
+          <BusinessFlows />
+          <Description>Transforms from B2MML Process Operations Performance to an NeoPLM ERP Goods Issue Reversal Message.</Description>
+          <Name>B2MML_ProcessOperationsPerformance_to_NeoPlmErpGoodsIssueReversal</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <Storing>false</Storing>
+          <Xslt />
+          <TestInput />
+          <TestOutput />
+        </ESBXslt>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>B2MML_ProcessOperationsPerformance_to_NeoPlmErpGoodsReceipt</string>
+      </key>
+      <value>
+        <ESBXslt>
+          <Id>499664a3-91be-47a5-b8d3-5ee81b89d74b</Id>
+          <Version>eaef549d-072c-4b65-8868-61c9fe3c7a5b</Version>
+          <BusinessFlows />
+          <Description>Transforms from B2MML Process Operations Performance to a Neo PLM ERP Goods Receipt Message.</Description>
+          <Name>B2MML_ProcessOperationsPerformance_to_NeoPlmErpGoodsReceipt</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <Storing>false</Storing>
+          <Xslt />
+          <TestInput />
+          <TestOutput />
+        </ESBXslt>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>B2MML_ProcessOperationsPerformance_to_NeoPlmErpGoodsReceiptReversal</string>
+      </key>
+      <value>
+        <ESBXslt>
+          <Id>4fde1517-795c-44d3-b094-9c5722850c95</Id>
+          <Version>bbcfbe76-a102-43a4-a891-cbf73ff2d343</Version>
+          <BusinessFlows />
+          <Description>Transforms from B2MML Process Operations Performance to an Neo PLM Goods Receipt Reversal message.</Description>
+          <Name>B2MML_ProcessOperationsPerformance_to_NeoPlmErpGoodsReceiptReversal</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <Storing>false</Storing>
+          <Xslt />
+          <TestInput />
+          <TestOutput />
+        </ESBXslt>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>B2MML_ProcessMaterialLot_to_NeoLIMSMaterialLot</string>
+      </key>
+      <value>
+        <ESBXslt>
+          <Id>dc77db39-7765-449b-98fb-ff52fc7691b7</Id>
+          <Version>322133be-1e17-4a0e-b5dc-4ebcdb4fca13</Version>
+          <BusinessFlows />
+          <Description>Transforms from a Process Material Lot to a NeoPLM LIMS Transaction message.</Description>
+          <Name>B2MML_ProcessMaterialLot_to_NeoLIMSMaterialLot</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <Storing>false</Storing>
+          <Xslt />
+          <TestInput />
+          <TestOutput />
+        </ESBXslt>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>B2MML_ProcessMaterialDefinition_To_B2MML_ConfirmBOD</string>
+      </key>
+      <value>
+        <ESBXslt>
+          <Id>a1725022-e744-48d6-b230-49fea4dd8f8c</Id>
+          <Version>210ed757-6bef-40a5-8c6c-ae3a4641970a</Version>
+          <BusinessFlows />
+          <Description>Transforms from B2MML Process Material Definition to Confirm BOD the submission service response message.</Description>
+          <Name>B2MML_ProcessMaterialDefinition_To_B2MML_ConfirmBOD</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <Storing>false</Storing>
+          <Xslt />
+          <TestInput />
+          <TestOutput />
+        </ESBXslt>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>B2MML Process Material Definition to Neo Material Definition</string>
+      </key>
+      <value>
+        <ESBXslt>
+          <Id>4d993bc7-e850-43e9-95fe-07f4c40cb3da</Id>
+          <Version>a2c5f8af-9e4e-47f9-8a57-30efe96c26dd</Version>
+          <BusinessFlows />
+          <Description>Transforms a B2MML Process Material Definition to a Neo Local Material Specification Message.</Description>
+          <Name>B2MML Process Material Definition to Neo Material Definition</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <Storing>false</Storing>
+          <Xslt />
+          <TestInput />
+          <TestOutput />
+        </ESBXslt>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>IDOC to B2MML NeoPLM GoodsReceipt</string>
+      </key>
+      <value>
+        <ESBXslt>
+          <Id>a78d3fff-e757-4e69-be98-43beafaf80e3</Id>
+          <Version>b4817bec-5c6a-4bf8-af07-7dfe9813eb25</Version>
+          <BusinessFlows />
+          <Description>Transforms a SAP IDOC Goods Receipt to a B2MML Process Goods Receipt Message.</Description>
+          <Name>IDOC to B2MML NeoPLM GoodsReceipt</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <Storing>false</Storing>
+          <Xslt />
+          <TestInput />
+          <TestOutput />
+        </ESBXslt>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>IDOC to B2MML NeoPLM GoodsIssue</string>
+      </key>
+      <value>
+        <ESBXslt>
+          <Id>ae989ad0-4246-4166-a727-e9af7f3c0f74</Id>
+          <Version>bb7db7f5-552d-4b95-9eb6-bcc2ee2cd025</Version>
+          <BusinessFlows />
+          <Description>Transforms a SAP IDOC Goods Issue to a B2MML Process Goods Issue Message.</Description>
+          <Name>IDOC to B2MML NeoPLM GoodsIssue</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <Storing>false</Storing>
+          <Xslt />
+          <TestInput />
+          <TestOutput />
+        </ESBXslt>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>IDOC to B2MML NeoPLM MaterialLot</string>
+      </key>
+      <value>
+        <ESBXslt>
+          <Id>1653767d-ae87-48f7-93d0-ebffeb2a05a1</Id>
+          <Version>4ef28000-f244-4d53-8aaa-6a3674034466</Version>
+          <BusinessFlows />
+          <Description>Transforms a SAP IDOC Material Lot to a B2MML Process Material Lot Message.</Description>
+          <Name>IDOC to B2MML NeoPLM MaterialLot</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <Storing>false</Storing>
+          <Xslt />
+          <TestInput />
+          <TestOutput />
+        </ESBXslt>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>IDOC to B2MML NeoPLM MaterialDefinition</string>
+      </key>
+      <value>
+        <ESBXslt>
+          <Id>e67a9f6d-7cdb-4964-a773-f084471c1198</Id>
+          <Version>4ef28000-f244-4d53-8aaa-6a3674034466</Version>
+          <BusinessFlows />
+          <Description>Transforms a SAP IDOC Material Definition to a B2MML Process Material Definition Message.</Description>
+          <Name>IDOC to B2MML NeoPLM MaterialDefinition</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <Storing>false</Storing>
+          <Xslt />
+          <TestInput />
+          <TestOutput />
+        </ESBXslt>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>IDOC to B2MML NeoPLM LIMS MaterialLot</string>
+      </key>
+      <value>
+        <ESBXslt>
+          <Id>b10f8deb-fcd8-46ff-af7a-9005306ee628</Id>
+          <Version>810473b6-2e09-4bca-af41-9512c7ea438c</Version>
+          <BusinessFlows />
+          <Description>Transforms a GLIMS Message to a B2MML Process Material Lot Message.</Description>
+          <Name>IDOC to B2MML NeoPLM LIMS MaterialLot</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <Storing>false</Storing>
+          <Xslt />
+          <TestInput />
+          <TestOutput />
+        </ESBXslt>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>IDOC to B2MML NeoPLM Recipe</string>
+      </key>
+      <value>
+        <ESBXslt>
+          <Id>22df9ee8-f8ff-4876-bceb-b3b93bcc1e68</Id>
+          <Version>4ef28000-f244-4d53-8aaa-6a3674034466</Version>
+          <BusinessFlows />
+          <Description>Transforms a SAP IDOC Material Lot to a B2MML ProcessProductDefinition Message.</Description>
+          <Name>IDOC to B2MML NeoPLM Recipe</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <Storing>false</Storing>
+          <Xslt />
+          <TestInput />
+          <TestOutput />
+        </ESBXslt>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>IDOC to B2MML NeoPLM BOM</string>
+      </key>
+      <value>
+        <ESBXslt>
+          <Id>ee74254b-78f6-4d2e-b1ab-f95ba5ba19fc</Id>
+          <Version>4ef28000-f244-4d53-8aaa-6a3674034466</Version>
+          <BusinessFlows />
+          <Description>Transforms a SAP IDOC BOM to a B2MML ProcessProductDefinition Message.</Description>
+          <Name>IDOC to B2MML NeoPLM BOM</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <Storing>false</Storing>
+          <Xslt />
+          <TestInput />
+          <TestOutput />
+        </ESBXslt>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>IDOC to B2MML NeoPLM PVAR</string>
+      </key>
+      <value>
+        <ESBXslt>
+          <Id>09bf2f74-369a-4dbf-8c0b-0fdb5000f207</Id>
+          <Version>4ef28000-f244-4d53-8aaa-6a3674034466</Version>
+          <BusinessFlows />
+          <Description>Transforms a SAP IDOC PVAR to a B2MML ProcessProductDefinition Message.</Description>
+          <Name>IDOC to B2MML NeoPLM PVAR</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <Storing>false</Storing>
+          <Xslt />
+          <TestInput />
+          <TestOutput />
+        </ESBXslt>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>B2MML Process Product Definition to Neo BOM </string>
+      </key>
+      <value>
+        <ESBXslt>
+          <Id>e8a2de7e-6188-4c91-84c5-b8797bc5a2ac</Id>
+          <Version>a2c5f8af-9e4e-47f9-8a57-30efe96c26dd</Version>
+          <BusinessFlows />
+          <Description>Transforms a B2MML Process Product Definition BOM to a Neo Local BOM Message.</Description>
+          <Name>B2MML Process Product Definition to Neo BOM </Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <Storing>false</Storing>
+          <Xslt />
+          <TestInput />
+          <TestOutput />
+        </ESBXslt>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>B2MML Process Product Definition to Neo RECIPE</string>
+      </key>
+      <value>
+        <ESBXslt>
+          <Id>08ed9ffb-f804-4fea-979d-0ad0859d1b86</Id>
+          <Version>a2c5f8af-9e4e-47f9-8a57-30efe96c26dd</Version>
+          <BusinessFlows />
+          <Description>Transforms a B2MML Process Product Definition BOM to a Neo Local BOM Message.</Description>
+          <Name>B2MML Process Product Definition to Neo RECIPE</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <Storing>false</Storing>
+          <Xslt />
+          <TestInput />
+          <TestOutput />
+        </ESBXslt>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>B2MML Process Product Definition to Neo PVAR</string>
+      </key>
+      <value>
+        <ESBXslt>
+          <Id>570de4df-502a-4a00-9e51-9256ac28b860</Id>
+          <Version>a2c5f8af-9e4e-47f9-8a57-30efe96c26dd</Version>
+          <BusinessFlows />
+          <Description>Transforms a B2MML Process Product Definition BOM to a Neo Local BOM Message.</Description>
+          <Name>B2MML Process Product Definition to Neo PVAR</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <Storing>false</Storing>
+          <Xslt />
+          <TestInput />
+          <TestOutput />
+        </ESBXslt>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>B2MML_ProcessProductDefinition_To_B2MML_ConfirmBOD</string>
+      </key>
+      <value>
+        <ESBXslt>
+          <Id>35986f54-b64a-47d7-b812-311ee66304aa</Id>
+          <Version>ea67e51f-71bf-4b91-a4bc-db31f35643eb</Version>
+          <BusinessFlows />
+          <Description>Transforms from B2MML Process Material Lot to Confirm BOD (The submission web service response message.</Description>
+          <Name>B2MML_ProcessProductDefinition_To_B2MML_ConfirmBOD</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <Storing>false</Storing>
+          <Xslt />
+          <TestInput />
+          <TestOutput />
+        </ESBXslt>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>PVApprovalSend to B2MML</string>
+      </key>
+      <value>
+        <ESBXslt>
+          <Id>007e6340-602c-4620-889d-7d848e6e5110</Id>
+          <Version>4ef28000-f244-4d53-8aaa-6a3674034466</Version>
+          <BusinessFlows />
+          <Description>Transforms a SAP IDOC BOM to a B2MML ProcessProductDefinition Message.</Description>
+          <Name>PVApprovalSend to B2MML</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <Storing>false</Storing>
+          <Xslt />
+          <TestInput />
+          <TestOutput />
+        </ESBXslt>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>B2MML Process Product Definition to PVApprovalSend</string>
+      </key>
+      <value>
+        <ESBXslt>
+          <Id>af855c09-5dfc-46a0-98f0-fa0b4c6a5542</Id>
+          <Version>a2c5f8af-9e4e-47f9-8a57-30efe96c26dd</Version>
+          <BusinessFlows />
+          <Description>Transforms a B2MML Process Product Definition BOM to a Neo Local BOM Message.</Description>
+          <Name>B2MML Process Product Definition to PVApprovalSend</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <Storing>false</Storing>
+          <Xslt />
+          <TestInput />
+          <TestOutput />
+        </ESBXslt>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>IDOC to B2MML NeoPLM ProcessOrder</string>
+      </key>
+      <value>
+        <ESBXslt>
+          <Id>91ff8384-5f99-4646-85b0-02d302a1ba5c</Id>
+          <Version>4ef28000-f244-4d53-8aaa-6a3674034466</Version>
+          <BusinessFlows />
+          <Description>Transforms a SAP IDOC ProcessOrder to a B2MML ProcessProductDefinition Message.</Description>
+          <Name>IDOC to B2MML NeoPLM ProcessOrder</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <Storing>false</Storing>
+          <Xslt />
+          <TestInput />
+          <TestOutput />
+        </ESBXslt>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>B2MML Process Product Definition to Neo ProcessOrder</string>
+      </key>
+      <value>
+        <ESBXslt>
+          <Id>22fbd716-7b88-42c9-8bc9-909a1f77ae70</Id>
+          <Version>a2c5f8af-9e4e-47f9-8a57-30efe96c26dd</Version>
+          <BusinessFlows />
+          <Description>Transforms a B2MML Process Product Definition BOM to a Neo Local BOM Message.</Description>
+          <Name>B2MML Process Product Definition to Neo ProcessOrder</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <Storing>false</Storing>
+          <Xslt />
+          <TestInput />
+          <TestOutput />
+        </ESBXslt>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>Neo OrderStepCompletion To B2MML ProcessOperationsPerformance</string>
+      </key>
+      <value>
+        <ESBXslt>
+          <Id>014cc43a-7ddc-4993-ab98-8a01ea5ffe83</Id>
+          <Version>4e8a5a4a-f2dd-429a-9bb7-9d94909ab0db</Version>
+          <BusinessFlows />
+          <Description>Transforms a Neo Order Step Completion to a B2MML Process Operations Performance message.</Description>
+          <Name>Neo OrderStepCompletion To B2MML ProcessOperationsPerformance</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <Storing>false</Storing>
+          <Xslt />
+          <TestInput />
+          <TestOutput />
+        </ESBXslt>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>B2MML ProcessOperationsPerformance To IDOC OrderStepCompletion</string>
+      </key>
+      <value>
+        <ESBXslt>
+          <Id>fae53b5f-2a1a-47cc-87ae-379ba42fc7cf</Id>
+          <Version>2541f374-1dc0-43bc-9859-ef26aa783795</Version>
+          <BusinessFlows />
+          <Description>Transforms a B2MML Process Operations Performance (OSC) message to SAP IDOC Order Step Completion message.</Description>
+          <Name>B2MML ProcessOperationsPerformance To IDOC OrderStepCompletion</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <Storing>false</Storing>
+          <Xslt />
+          <TestInput />
+          <TestOutput />
+        </ESBXslt>
+      </value>
+    </item>
+  </Xslts>
+  <DataMappers />
+  <BusinessEvents />
+  <Deployments />
+  <MessagePatterns />
+  <Bridges />
+  <Databases />
+  <Keys />
+  <Workflows />
+  <Applications />
+  <BusinessFlows />
+  <Bindings />
+  <ServiceRoutingTables />
+  <Behaviors />
+  <Adapters />
+  <Credentials />
+  <ServicePolicies />
+  <AdapterPolicies />
+  <Endpoints />
+  <AccessControlLists />
+  <Administrators />
+  <IsEncrypted>false</IsEncrypted>
+</ESBConfiguration>

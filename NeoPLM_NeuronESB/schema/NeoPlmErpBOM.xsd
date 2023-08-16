@@ -1,0 +1,323 @@
+﻿<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="NeoPlmBillOfMaterial">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="SourceSystemID" minOccurs="1" maxOccurs="1">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:minLength value="1"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element name="TransactionDateTime" type="xs:dateTime" minOccurs="1" maxOccurs="1"/>
+                <xs:element name="TransactionID" minOccurs="1" maxOccurs="1">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:minLength value="1"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element name="DestinationSystemID" type="xs:string" minOccurs="0"/>
+                <xs:element name="BillOfMaterial" minOccurs="1" maxOccurs="1">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="MaterialNumber">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:minLength value="1"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="PlantID">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:minLength value="1"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="BOMAlternateNumber">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:minLength value="1"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="ReferenceQuantity">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:minLength value="1"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="QuantityUOM">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:minLength value="1"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="BOMDescription">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:minLength value="0"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="BOMUsage" minOccurs="0">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:minLength value="0"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="ValidFromDate">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="Deprecated" minOccurs="0">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:minLength value="0"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="BillOfMaterialItems" minOccurs="1" maxOccurs="1">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="BillOfMaterialItem" minOccurs="1" maxOccurs="unbounded">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="BOMItemNumber">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string">
+                                                                <xs:minLength value="1"/>
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                    <xs:element name="MaterialNumber">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string">
+                                                                <xs:minLength value="1"/>
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                    <xs:element name="BOMItemCategory">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string">
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                    <xs:element name="LocalMaterialSpecificationUID" minOccurs="1">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string">
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                    <xs:element name="QuantityEngineeringUnitUID" minOccurs="1">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string">
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+													<xs:element name="MaterialReferenceType">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string">
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                    <xs:element name="RecipeQuantity">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:double">
+                                                                <!-- <xs:minLength value="1"/> -->
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                    <xs:element name="UnitOfMeasure">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string">
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                    <xs:element name="AlternateGroupID">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string">
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                    <xs:element name="LotSizeIndependentFlag" minOccurs="0">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string">
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                    <xs:element name="AlterItemUsageProbability" minOccurs="0">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string">
+                                                                <xs:minLength value="1"/>
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                    <xs:element name="IsBulkMaterial" minOccurs="0">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string"/>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                    <xs:element name="IsCoProduct" minOccurs="0">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string">
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                    <xs:element name="BOMExtension" minOccurs="0" maxOccurs="1">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="WeighingType" minOccurs="0">
+                                                                    <xs:simpleType>
+                                                                        <xs:restriction base="xs:string">
+                                                                        </xs:restriction>
+                                                                    </xs:simpleType>
+                                                                </xs:element>
+                                                                <xs:element name="WeightMaterialType" minOccurs="0">
+                                                                    <xs:simpleType>
+                                                                        <xs:restriction base="xs:string">
+                                                                        </xs:restriction>
+                                                                    </xs:simpleType>
+                                                                </xs:element>
+                                                                <xs:element name="CompensatorFixedRatioValue" minOccurs="0">
+                                                                    <xs:simpleType>
+                                                                        <xs:restriction base="xs:string">
+                                                                        </xs:restriction>
+                                                                    </xs:simpleType>
+                                                                </xs:element>
+                                                                <xs:element name="DefaultTolerance" minOccurs="0">
+                                                                    <xs:simpleType>
+                                                                        <xs:restriction base="xs:string">
+                                                                        </xs:restriction>
+                                                                    </xs:simpleType>
+                                                                </xs:element>
+                                                                <xs:element name="UpperTolerencePct" minOccurs="0">
+                                                                    <xs:simpleType>
+                                                                        <xs:restriction base="xs:string">
+                                                                        </xs:restriction>
+                                                                    </xs:simpleType>
+                                                                </xs:element>
+                                                                <xs:element name="LowerTolerencePct" minOccurs="0">
+                                                                    <xs:simpleType>
+                                                                        <xs:restriction base="xs:string">
+                                                                        </xs:restriction>
+                                                                    </xs:simpleType>
+                                                                </xs:element>
+                                                                <xs:element name="NumberOfBatches" minOccurs="0">
+                                                                    <xs:simpleType>
+                                                                        <xs:restriction base="xs:string">
+                                                                        </xs:restriction>
+                                                                    </xs:simpleType>
+                                                                </xs:element>
+                                                                <xs:element name="LinkedBOMItemNumber" minOccurs="0">
+                                                                    <xs:simpleType>
+                                                                        <xs:restriction base="xs:string">
+                                                                        </xs:restriction>
+                                                                    </xs:simpleType>
+                                                                </xs:element>
+                                                                <xs:element name="BatchWeightConstant" minOccurs="0">
+                                                                    <xs:simpleType>
+                                                                        <xs:restriction base="xs:string">
+                                                                        </xs:restriction>
+                                                                    </xs:simpleType>
+                                                                </xs:element>
+                                                                <xs:element name="PrimaryPotency" minOccurs="0">
+                                                                    <xs:simpleType>
+                                                                        <xs:restriction base="xs:string">
+                                                                        </xs:restriction>
+                                                                    </xs:simpleType>
+                                                                </xs:element>
+                                                                <xs:element name="PrimaryPotencyUOM" minOccurs="0">
+                                                                    <xs:simpleType>
+                                                                        <xs:restriction base="xs:string">
+                                                                        </xs:restriction>
+                                                                    </xs:simpleType>
+                                                                </xs:element>
+                                                                <xs:element name="SecondaryPotency" minOccurs="0">
+                                                                    <xs:simpleType>
+                                                                        <xs:restriction base="xs:string">
+                                                                        </xs:restriction>
+                                                                    </xs:simpleType>
+                                                                </xs:element>
+                                                                <xs:element name="SecondaryPotencyUOM" minOccurs="0">
+                                                                    <xs:simpleType>
+                                                                        <xs:restriction base="xs:string">
+                                                                        </xs:restriction>
+                                                                    </xs:simpleType>
+                                                                </xs:element>
+                                                                <xs:element name="PrimaryPotencyUpperLimit" minOccurs="0">
+                                                                    <xs:simpleType>
+                                                                        <xs:restriction base="xs:string">
+                                                                        </xs:restriction>
+                                                                    </xs:simpleType>
+                                                                </xs:element>
+                                                                <xs:element name="PrimaryPotencyLowerLimit" minOccurs="0">
+                                                                    <xs:simpleType>
+                                                                        <xs:restriction base="xs:string">
+                                                                        </xs:restriction>
+                                                                    </xs:simpleType>
+                                                                </xs:element>
+                                                                <xs:element name="PrimaryPotencyCalculated" minOccurs="0">
+                                                                    <xs:simpleType>
+                                                                        <xs:restriction base="xs:string">
+                                                                        </xs:restriction>
+                                                                    </xs:simpleType>
+                                                                </xs:element>
+                                                                <xs:element name="PrimaryPotencyCalculatedUOM" minOccurs="0">
+                                                                    <xs:simpleType>
+                                                                        <xs:restriction base="xs:string">
+                                                                        </xs:restriction>
+                                                                    </xs:simpleType>
+                                                                </xs:element>
+                                                                <xs:element name="SecondaryPotencyUpperLimit" minOccurs="0">
+                                                                    <xs:simpleType>
+                                                                        <xs:restriction base="xs:string">
+                                                                        </xs:restriction>
+                                                                    </xs:simpleType>
+                                                                </xs:element>
+                                                                <xs:element name="SecondaryPotencyLowerLimit" minOccurs="0">
+                                                                    <xs:simpleType>
+                                                                        <xs:restriction base="xs:string">
+                                                                        </xs:restriction>
+                                                                    </xs:simpleType>
+                                                                </xs:element>
+                                                                <xs:element name="SecondaryPotencyCalculated" minOccurs="0">
+                                                                    <xs:simpleType>
+                                                                        <xs:restriction base="xs:string">
+                                                                        </xs:restriction>
+                                                                    </xs:simpleType>
+                                                                </xs:element>
+                                                                <xs:element name="SecondaryPotencyCalculatedUOM" minOccurs="0">
+                                                                    <xs:simpleType>
+                                                                        <xs:restriction base="xs:string">
+                                                                        </xs:restriction>
+                                                                    </xs:simpleType>
+                                                                </xs:element>
+                                                                <xs:element name="PhantomBOMMember" minOccurs="0">
+                                                                    <xs:simpleType>
+                                                                        <xs:restriction base="xs:string">
+                                                                        </xs:restriction>
+                                                                    </xs:simpleType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

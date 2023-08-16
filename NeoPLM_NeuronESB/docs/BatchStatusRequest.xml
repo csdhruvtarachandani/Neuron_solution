@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<BatchStatusRequest>
+	<ExecutionOrderUID>{0}</ExecutionOrderUID>
+	<LocalServiceURI>{1}</LocalServiceURI>
+	<OriginalMessage>{2}</OriginalMessage>
+</BatchStatusRequest>

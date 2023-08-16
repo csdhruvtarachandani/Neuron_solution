@@ -1,0 +1,109 @@
+<?xml version="1.0"?>
+<ESBService xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Id>37a961d2-683c-4581-a842-6635ac508e58</Id>
+  <Version>bd622ad5-1272-4879-b1d9-d0de3c5bd8d5</Version>
+  <BusinessFlows />
+  <Description>This client connector is used to receive the requests to restart the Workflows.</Description>
+  <Name>RestartWorkflow</Name>
+  <Group>General</Group>
+  <IsSystemObject>false</IsSystemObject>
+  <IsPrivate>false</IsPrivate>
+  <Bindings />
+  <Topic />
+  <Pattern>1</Pattern>
+  <Properties />
+  <MessagingPattern>Request-Reply</MessagingPattern>
+  <ProxySettings>
+    <HostConfigType>Default</HostConfigType>
+    <CredentialConfigType>NotSpecified</CredentialConfigType>
+    <Credential>&lt;Default&gt;</Credential>
+    <Host />
+    <Port>0</Port>
+    <BypassLocalAddress>false</BypassLocalAddress>
+  </ProxySettings>
+  <Zone>Enterprise</Zone>
+  <Enabled>true</Enabled>
+  <ServiceName>RestartWorkflow</ServiceName>
+  <ServiceGroup>General</ServiceGroup>
+  <Binding>REST</Binding>
+  <AvailabilityGroupId>Neuron ESB Default Host</AvailabilityGroupId>
+  <Behavior />
+  <KeepAlive>true</KeepAlive>
+  <HostNameComparisonModeIsExact>false</HostNameComparisonModeIsExact>
+  <TransactionType>None</TransactionType>
+  <MaxMessageSize>1000000</MaxMessageSize>
+  <ReliableMessaging>false</ReliableMessaging>
+  <ConfigFile />
+  <InboundPolling>false</InboundPolling>
+  <OptimizeForLargeMessages>false</OptimizeForLargeMessages>
+  <RawBody>false</RawBody>
+  <ServiceThrottles>
+    <MaxConcurrentCalls>104</MaxConcurrentCalls>
+    <MaxConcurrentInstances>100</MaxConcurrentInstances>
+    <MaxConcurrentSessions>100</MaxConcurrentSessions>
+  </ServiceThrottles>
+  <CertificateValidationMode>None</CertificateValidationMode>
+  <CertificateRevocationMode>NoCheck</CertificateRevocationMode>
+  <NegotiateServiceCredential>true</NegotiateServiceCredential>
+  <EstablishSecurityContext>true</EstablishSecurityContext>
+  <Contract />
+  <Security>None</Security>
+  <ServiceIdentityType>None</ServiceIdentityType>
+  <ServicePrincipal />
+  <ServiceType>Business</ServiceType>
+  <ClientCredentialtype>Certificate</ClientCredentialtype>
+  <Impersonation>false</Impersonation>
+  <RelayAccessToken>true</RelayAccessToken>
+  <ClientConnectorId>5c3e11ec-619c-4274-a6f0-4047b647dd83</ClientConnectorId>
+  <ClientUrl>http://localhost:8900/RestartWorkflow</ClientUrl>
+  <RouteClientTraffic>true</RouteClientTraffic>
+  <ClientTopic>Enrich_ERP_GoodsIssueReversal</ClientTopic>
+  <UpdateMetadata>true</UpdateMetadata>
+  <UseHttps>false</UseHttps>
+  <EnableClientMetadataHttpEndpoint>false</EnableClientMetadataHttpEndpoint>
+  <EnableClientMetadataHttpsEndpoint>false</EnableClientMetadataHttpsEndpoint>
+  <ClientSubscriberId>B2MML_LIMS_Publisher</ClientSubscriberId>
+  <CaptureHeaders>true</CaptureHeaders>
+  <CaptureHTTPHeaders>false</CaptureHTTPHeaders>
+  <HttpConnectionLimit>100</HttpConnectionLimit>
+  <EnableCors>false</EnableCors>
+  <ClientCertName />
+  <ACL />
+  <AccessUrl />
+  <RouteServiceTraffic>false</RouteServiceTraffic>
+  <RestoreHeaders>true</RestoreHeaders>
+  <RestoreHTTPHeaders>false</RestoreHTTPHeaders>
+  <ServiceSubscriberId />
+  <ReuseServiceConnection>true</ReuseServiceConnection>
+  <ServerCertName />
+  <ServicePolicy>Default</ServicePolicy>
+  <FailoverAddresses />
+  <FarmSingleInstance>false</FarmSingleInstance>
+  <ProcessList>
+    <ClientPipelineItem>
+      <Id>4f1d2eca-4d3a-42b4-b7de-d1f68155c8be</Id>
+      <Version>2ed61f25-4251-4263-a9fd-b884e7c4594b</Version>
+      <BusinessFlows />
+      <Description />
+      <Name>Process_RestartWorkflow</Name>
+      <IsSystemObject>false</IsSystemObject>
+      <IsPrivate>false</IsPrivate>
+      <ApplyOnPublish>true</ApplyOnPublish>
+      <ApplyOnReceive>false</ApplyOnReceive>
+      <PipelineConditions>
+        <Id>35dcb798-bb87-4e66-9b3c-3fd177d96ca4</Id>
+        <Version>392a8446-27de-4c78-ab3d-46c069b3a9b3</Version>
+        <BusinessFlows />
+        <Description />
+        <IsSystemObject>false</IsSystemObject>
+        <IsPrivate>false</IsPrivate>
+        <Condition />
+      </PipelineConditions>
+    </ClientPipelineItem>
+  </ProcessList>
+  <ProcessMode>BusinessProcess</ProcessMode>
+  <ServiceRoutes />
+  <ServiceProcessMode>false</ServiceProcessMode>
+  <ServiceServiceRateEnable>false</ServiceServiceRateEnable>
+  <ClientServiceRateEnable>false</ClientServiceRateEnable>
+</ESBService>

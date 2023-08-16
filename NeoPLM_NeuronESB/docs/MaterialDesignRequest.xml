@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MaterialDesignRequest>
+	<ERPProductionVersionID>{0}</ERPProductionVersionID>
+	<MaterialID>{1}</MaterialID>
+	<OriginalMessage>{2}</OriginalMessage>
+</MaterialDesignRequest>

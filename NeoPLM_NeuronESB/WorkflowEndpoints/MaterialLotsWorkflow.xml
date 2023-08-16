@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<EsbWorkflowHost xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Id>dfb555ba-80b0-417a-9960-265c7f3a5e09</Id>
+  <Version>a5cffa03-8f5f-4ef0-a9e9-f6d9b3f83fee</Version>
+  <BusinessFlows />
+  <Description>This workflow endpoint is used to trigger the ERP Material Lot Workflow.</Description>
+  <Name>MaterialLotsWorkflow</Name>
+  <IsSystemObject>false</IsSystemObject>
+  <IsPrivate>false</IsPrivate>
+  <Bindings />
+  <AvailabilityGroupId>Neuron ESB Default Host</AvailabilityGroupId>
+  <Category>General</Category>
+  <Conditions>
+    <Action>false</Action>
+    <Binary>false</Binary>
+    <BodyType>false</BodyType>
+    <CustomProperties />
+    <DestId>false</DestId>
+    <Duplicate>false</Duplicate>
+    <DuplicateId>false</DuplicateId>
+    <Event>false</Event>
+    <Expires>false</Expires>
+    <FaultTo>false</FaultTo>
+    <FaultType>false</FaultType>
+    <From>false</From>
+    <HttpHeaders />
+    <HttpQueryParameters />
+    <Machine>false</Machine>
+    <ParentMessageId>false</ParentMessageId>
+    <Priority>false</Priority>
+    <RegularExpressions />
+    <RelatesTo>false</RelatesTo>
+    <ReplyTo>false</ReplyTo>
+    <ReplyToMessageId>false</ReplyToMessageId>
+    <ReplyToPartyId>false</ReplyToPartyId>
+    <ReplyToSessionId>false</ReplyToSessionId>
+    <RequestHeadersToPreserve>false</RequestHeadersToPreserve>
+    <RoutingSlip>false</RoutingSlip>
+    <Semantic>false</Semantic>
+    <Session>false</Session>
+    <Sid>false</Sid>
+    <SoapHeaders />
+    <SourceId>false</SourceId>
+    <TargetId>false</TargetId>
+    <To>false</To>
+    <Topic>false</Topic>
+    <TrackingSequence>false</TrackingSequence>
+    <TransactionId>false</TransactionId>
+    <Username>false</Username>
+    <XPathExpressions />
+  </Conditions>
+  <IsEnabled>true</IsEnabled>
+  <IsStoreTrackingValues>true</IsStoreTrackingValues>
+  <IsTrackingEnabled>true</IsTrackingEnabled>
+  <MaximumConcurrentWorkflows>100</MaximumConcurrentWorkflows>
+  <MaximumVariableLength>1000</MaximumVariableLength>
+  <MessageTimeout>60</MessageTimeout>
+  <SubscriberId>NeoPLM_ERP_MaterialLot_Subscriber</SubscriberId>
+  <Topic>Enrich_ERP_MaterialLot</Topic>
+  <WorkflowDefinitionId>Enrich_ERP_Material_Lot_Workflow</WorkflowDefinitionId>
+</EsbWorkflowHost>

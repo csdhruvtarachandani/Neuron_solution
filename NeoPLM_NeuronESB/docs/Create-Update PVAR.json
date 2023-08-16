@@ -1,0 +1,10 @@
+﻿{
+  "UID": "{0}",
+  "PVARID": "{1}",
+  "BOMID": "{2}",
+  "RecipeID": "{3}",
+  "PVARXML": "{4}",
+  "Status": "{5}",
+  "PVARIDOC": "{6}",
+  "ReceivedDate": "{7}"
+}

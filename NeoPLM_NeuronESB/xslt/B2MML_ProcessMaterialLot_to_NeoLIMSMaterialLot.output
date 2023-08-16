@@ -1,0 +1,46 @@
+﻿<ns0:NeoPlmLimsMaterialLot xmlns:ns0="http://NeoPLM.LIMS.MaterialLot" xmlns:ns="http://www.mesa.org/xml/B2MML-V0600" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:fn="http://www.w3.org/2005/xpath-functions">
+  <ErpSourceSystemID>1234</ErpSourceSystemID>
+  <LimsSourceSystemID>1234</LimsSourceSystemID>
+  <TransactionDateTime>2023-01-26T16:16:52</TransactionDateTime>
+  <TransactionID>141770</TransactionID>
+  <NeoPLMLabHistories>
+    <NeoPLMLabHistory>
+      <PlantID>IE14</PlantID>
+      <MaterialID>R77311260</MaterialID>
+      <MaterialLotID>SM TR LOT 26 JAN 2023</MaterialLotID>
+      <TestTemplateID>R77311260_IE14:2</TestTemplateID>
+      <SampleStatus />
+      <LabSampleLastModified />
+      <TestTemplateDescription />
+      <TestTemplateType />
+      <TestTemplateVersion />
+      <LabSampleHistories>
+        <LabSampleHistory>
+          <SampleID />
+          <ControlPointID>RAW</ControlPointID>
+          <ControlPointDescription>2315489</ControlPointDescription>
+          <LabTestHistories>
+            <LabTestHistory>
+              <TestID>5681069</TestID>
+              <TestDescription>YetToBeMapped</TestDescription>
+              <TestMethodID>RNG_U13_6::6</TestMethodID>
+              <TestStatus>Complete</TestStatus>
+              <LabResultHistories>
+                <LabResultHistory>
+                  <TestResultID>38282586</TestResultID>
+                  <ExpectedResult />
+                  <EnteredResult>abc 123</EnteredResult>
+                  <TestResultDescription />
+                  <TestResultStatus>In Spec / In Control</TestResultStatus>
+                  <DisplayResult>abc 123</DisplayResult>
+                  <EnteredResultUOM>NONE</EnteredResultUOM>
+                  <ResultDateTime>2023-01-26T15:36:45</ResultDateTime>
+                </LabResultHistory>
+              </LabResultHistories>
+            </LabTestHistory>
+          </LabTestHistories>
+        </LabSampleHistory>
+      </LabSampleHistories>
+    </NeoPLMLabHistory>
+  </NeoPLMLabHistories>
+</ns0:NeoPlmLimsMaterialLot>

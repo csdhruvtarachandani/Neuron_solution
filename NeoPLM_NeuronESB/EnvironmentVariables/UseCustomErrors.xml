@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<NeuronVariable xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Id>b6fed100-aaf1-4cf0-b552-624fa51cb077</Id>
+  <Version>1b37c701-d76e-4acf-a06c-375fa573b519</Version>
+  <BusinessFlows />
+  <Description>This parameter is used to change the Default Error Messages to Custom Error Messages. If set 'True' Neuron will fetch the Error Messages from server and replace them with default. Set to 'False' to continue having the default Error Messages.</Description>
+  <Name>UseCustomErrors</Name>
+  <Group>General</Group>
+  <IsSystemObject>false</IsSystemObject>
+  <IsPrivate>false</IsPrivate>
+  <Mask>false</Mask>
+</NeuronVariable>

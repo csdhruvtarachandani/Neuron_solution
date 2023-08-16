@@ -1,0 +1,416 @@
+<?xml version="1.0"?>
+<ESBMessagePipelineStorage xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Id>b4c1c8f4-328e-4df1-99b9-9302e5f3f5ce</Id>
+  <Version>cff4c364-d6c6-472b-ac1f-bffbadbc5184</Version>
+  <BusinessFlows />
+  <Description />
+  <Name>Process_LIMS_MaterialLot_Enrichment_Item</Name>
+  <IsSystemObject>false</IsSystemObject>
+  <IsPrivate>false</IsPrivate>
+  <Category>General</Category>
+  <IsEncrypted>true</IsEncrypted>
+  <Path>Main Processes</Path>
+  <PipelineBlob>&lt;ESBMessagePipeline xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.neuronesb.com/pipelines/"&gt;&lt;Category&gt;General&lt;/Category&gt;&lt;Description /&gt;&lt;GlobalProperties xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" /&gt;&lt;Name&gt;Process_LIMS_MaterialLot_Enrichment_Item&lt;/Name&gt;&lt;Properties xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" /&gt;&lt;ReferencedAssemblies xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays"&gt;&lt;d2p1:string&gt;System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&lt;/d2p1:string&gt;&lt;/ReferencedAssemblies&gt;&lt;Steps&gt;&lt;ESBMessagePipelineStep i:type="ExceptionPipelineStepOfESBMessagexAPWb1W4"&gt;&lt;Bindings xmlns:d4p1="http://schemas.datacontract.org/2004/07/Neuron.ComponentModel" /&gt;&lt;BreakPoint&gt;Disable&lt;/BreakPoint&gt;&lt;Disable&gt;false&lt;/Disable&gt;&lt;Id&gt;8bb7c1a9-bffe-428c-8dd6-ec464dcf620b&lt;/Id&gt;&lt;Name&gt;Catch Exceptions&lt;/Name&gt;&lt;Uniquename&gt;a41b1370-35f5-484c-8129-de326a653b7f&lt;/Uniquename&gt;&lt;Catch&gt;&lt;Bindings xmlns:d5p1="http://schemas.datacontract.org/2004/07/Neuron.ComponentModel" /&gt;&lt;BreakPoint&gt;Disable&lt;/BreakPoint&gt;&lt;Disable&gt;false&lt;/Disable&gt;&lt;Id&gt;3a0e673c-22a2-433a-8357-a84014e64d74&lt;/Id&gt;&lt;Name&gt;Group&lt;/Name&gt;&lt;Uniquename /&gt;&lt;Children&gt;&lt;ESBMessagePipelineStep xmlns:d6p1="http://schemas.neuronesb.com/pipelines/esb/" i:type="d6p1:EsbMessagePipelineExecutionPipelineStep"&gt;&lt;Bindings xmlns:d7p1="http://schemas.datacontract.org/2004/07/Neuron.ComponentModel" /&gt;&lt;BreakPoint&gt;Disable&lt;/BreakPoint&gt;&lt;Disable&gt;false&lt;/Disable&gt;&lt;Id&gt;d2de981b-c9a0-46a0-a60e-3225017c3bf5&lt;/Id&gt;&lt;Name&gt;Exception Handler&lt;/Name&gt;&lt;Uniquename /&gt;&lt;d6p1:FileName i:nil="true" /&gt;&lt;d6p1:MaxInstances&gt;100&lt;/d6p1:MaxInstances&gt;&lt;d6p1:PipelineName&gt;Exception Handler&lt;/d6p1:PipelineName&gt;&lt;d6p1:PoolTimeout&gt;PT1M&lt;/d6p1:PoolTimeout&gt;&lt;/ESBMessagePipelineStep&gt;&lt;/Children&gt;&lt;/Catch&gt;&lt;Finally&gt;&lt;Bindings xmlns:d5p1="http://schemas.datacontract.org/2004/07/Neuron.ComponentModel" /&gt;&lt;BreakPoint&gt;Disable&lt;/BreakPoint&gt;&lt;Disable&gt;false&lt;/Disable&gt;&lt;Id&gt;c27f13d8-2f59-4586-bd30-30f3e80befa3&lt;/Id&gt;&lt;Name&gt;Group&lt;/Name&gt;&lt;Uniquename /&gt;&lt;Children&gt;&lt;ESBMessagePipelineStep xmlns:d6p1="http://schemas.neuronesb.com/pipelines/esb/" i:type="d6p1:EsbMessageCSharpCodePipelineStep"&gt;&lt;Bindings xmlns:d7p1="http://schemas.datacontract.org/2004/07/Neuron.ComponentModel" /&gt;&lt;BreakPoint&gt;Disable&lt;/BreakPoint&gt;&lt;Disable&gt;false&lt;/Disable&gt;&lt;Id&gt;f639b61f-606f-44f5-8096-1c8f5996eda1&lt;/Id&gt;&lt;Name&gt;Finally called for Finally of Process_LIMS_MaterialLot_Enrichment_Item process&lt;/Name&gt;&lt;Uniquename /&gt;&lt;BreakPointLines xmlns:d7p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" /&gt;&lt;Code&gt;context.Instance.TraceInformation("Finally called for Finally of Process_LIMS_MaterialLot_Enrichment_Item process");
+var localServiceUrl = Convert.ToString(context.Properties["LocalServiceURI"]);
+if(!String.IsNullOrWhiteSpace(localServiceUrl))
+{
+	String prefix = "workflow";
+	context.Data.SetProperty(prefix,  "LocalServiceURI", localServiceUrl);
+}&lt;/Code&gt;&lt;ReferencedAssemblies xmlns:d7p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays"&gt;&lt;d7p1:string&gt;Neuron&lt;/d7p1:string&gt;&lt;d7p1:string&gt;Neuron.Pipelines&lt;/d7p1:string&gt;&lt;d7p1:string&gt;Neuron.Esb&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.Xml.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.Data.DataSetExtensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed&lt;/d7p1:string&gt;&lt;d7p1:string&gt;Microsoft.CSharp, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&lt;/d7p1:string&gt;&lt;/ReferencedAssemblies&gt;&lt;TypeName&gt;Typebfbedcbe967467c9be740ebdbedfcf&lt;/TypeName&gt;&lt;/ESBMessagePipelineStep&gt;&lt;/Children&gt;&lt;/Finally&gt;&lt;Try&gt;&lt;Bindings xmlns:d5p1="http://schemas.datacontract.org/2004/07/Neuron.ComponentModel" /&gt;&lt;BreakPoint&gt;Disable&lt;/BreakPoint&gt;&lt;Disable&gt;false&lt;/Disable&gt;&lt;Id&gt;e1f15519-ab6f-4495-bca7-350973c328e8&lt;/Id&gt;&lt;Name&gt;Group&lt;/Name&gt;&lt;Uniquename /&gt;&lt;Children&gt;&lt;ESBMessagePipelineStep xmlns:d6p1="http://schemas.neuronesb.com/pipelines/esb/" i:type="d6p1:EsbMessagePipelineExecutionPipelineStep"&gt;&lt;Bindings xmlns:d7p1="http://schemas.datacontract.org/2004/07/Neuron.ComponentModel" /&gt;&lt;BreakPoint&gt;Disable&lt;/BreakPoint&gt;&lt;Disable&gt;false&lt;/Disable&gt;&lt;Id&gt;ad6ce07b-8b15-4d33-aedf-06a36273bb49&lt;/Id&gt;&lt;Name&gt;ReadCommonWorkflowProp&lt;/Name&gt;&lt;Uniquename /&gt;&lt;d6p1:FileName i:nil="true" /&gt;&lt;d6p1:MaxInstances&gt;100&lt;/d6p1:MaxInstances&gt;&lt;d6p1:PipelineName&gt;FUNC_ReadCommonWorkflowProp&lt;/d6p1:PipelineName&gt;&lt;d6p1:PoolTimeout&gt;PT1M&lt;/d6p1:PoolTimeout&gt;&lt;/ESBMessagePipelineStep&gt;&lt;ESBMessagePipelineStep xmlns:d6p1="http://schemas.neuronesb.com/pipelines/esb/" i:type="d6p1:EsbMessageCSharpCodePipelineStep"&gt;&lt;Bindings xmlns:d7p1="http://schemas.datacontract.org/2004/07/Neuron.ComponentModel" /&gt;&lt;BreakPoint&gt;Disable&lt;/BreakPoint&gt;&lt;Disable&gt;false&lt;/Disable&gt;&lt;Id&gt;f8ccc59b-4a18-4243-ac07-fb700a4fadc9&lt;/Id&gt;&lt;Name&gt;Init Transaction&lt;/Name&gt;&lt;Uniquename&gt;0b4e561f-1671-4a2f-985a-be75a8f0f140&lt;/Uniquename&gt;&lt;BreakPointLines xmlns:d7p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" /&gt;&lt;Code&gt;context.Instance.TraceInformation("Start of Process_LIMS_MaterialLot_Enrichment_Item_Init Transaction");
+//Save original message in case we need it later
+//context.Properties.Add("OrigMsg", context.Data.Clone(true));
+
+//Init and load transaction values
+//context.Properties.Add("ProcessTitle", "LIMS Material Lot Enrichment");
+context.Properties.Add ("OriginalMessageID", context.Data.Header.MessageId);
+
+// Add Properties for Message Header
+//context.Properties.Add("SoapAction", "");
+//context.Properties.Add("SourceSystemID", "");
+//context.Properties.Add("TransactionID", "");
+
+// Add all field values 
+//context.Properties.Add ("PlantID", "");
+context.Properties.Add ("MaterialID", "");
+context.Properties.Add ("MaterialLotID", "");
+context.Properties.Add ("InspectionLotID", "");
+context.Properties.Add ("TestTemplateID", "");
+context.Properties.Add ("TestTemplateDescription", "");
+context.Properties.Add ("TestTemplateType", "");
+context.Properties.Add("TestTemplateVersion", "");
+
+// Lookup Results
+context.Properties.Add ("FacilityUID", "");
+context.Properties.Add ("PlantCodeUID", "");
+context.Properties.Add ("MaterialMasterUID", "");
+context.Properties.Add ("NeoMaterialType", "");
+context.Properties.Add ("MaterialLotUID", "");
+context.Properties.Add ("LabHistoryUID", "");
+context.Properties.Add ("LabSampleHistoryUID", "");
+context.Properties.Add ("LabTestHistoryUID", "");
+context.Properties.Add ("LabResultHistoryUID", "");
+context.Properties.Add ("LabSampleLastModified", "");
+context.Properties.Add ("SampleStatus", "");
+context.Properties.Add ("RevaluationDateUtc", DateTime.MinValue);
+//context.Properties.Add("LocalServiceURI", "");
+
+// Create Properties to manage the loop collections
+context.Properties.Add ("NeoPLMLabHistories", "");
+context.Properties.Add ("NeoPLMLabSampleHistories", "");
+context.Properties.Add ("NeoPLMLabTestHistories", "");
+context.Properties.Add ("NeoPLMLabResultHistories", "");
+
+
+String prefix ="workflow";
+
+String propName = "";
+
+//Load the Source System ID and Transaction ID
+propName = "SourceSystemID";
+context.Properties.Add(propName,context.Data.GetProperty(prefix, propName));
+propName = "TransactionID";
+context.Properties.Add(propName,context.Data.GetProperty(prefix, propName));
+propName = "PlantID";
+context.Properties.Add(propName,context.Data.GetProperty(prefix, propName));
+
+System.Xml.XmlNode neoPLMLabHistory = (System.Xml.XmlNode)context.Properties["CurrentProcessItem"];
+context.Properties["NeoPLMLabHistory"] = neoPLMLabHistory;
+
+context.Instance.TraceInformation("End of Process_LIMS_MaterialLot_Enrichment_Item_Init Transaction");
+
+
+&lt;/Code&gt;&lt;ReferencedAssemblies xmlns:d7p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays"&gt;&lt;d7p1:string&gt;Neuron&lt;/d7p1:string&gt;&lt;d7p1:string&gt;Neuron.Pipelines&lt;/d7p1:string&gt;&lt;d7p1:string&gt;Neuron.Esb&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.Xml.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.Data.DataSetExtensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;/ReferencedAssemblies&gt;&lt;TypeName&gt;Type6f01709dad2402bb4b6571118ee560&lt;/TypeName&gt;&lt;/ESBMessagePipelineStep&gt;&lt;ESBMessagePipelineStep xmlns:d6p1="http://schemas.neuronesb.com/pipelines/esb/" i:type="d6p1:EsbMessageCSharpCodePipelineStep"&gt;&lt;Bindings xmlns:d7p1="http://schemas.datacontract.org/2004/07/Neuron.ComponentModel" /&gt;&lt;BreakPoint&gt;Disable&lt;/BreakPoint&gt;&lt;Disable&gt;false&lt;/Disable&gt;&lt;Id&gt;1d4788a8-4db6-4571-aa16-1f5ed066fdad&lt;/Id&gt;&lt;Name&gt;Init Vars&lt;/Name&gt;&lt;Uniquename&gt;9b20866d-009c-401f-97fc-b0686580dc7d&lt;/Uniquename&gt;&lt;BreakPointLines xmlns:d7p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" /&gt;&lt;Code&gt;// Initialize Loop Properties
+//context.Properties ["PlantID"] = "";
+context.Properties ["MaterialID"] = "";
+context.Properties ["MaterialLotID"] = "";
+context.Properties ["InspectionLotID"] = "";
+context.Properties ["TestTemplateID"] = "";
+context.Properties ["TestTemplateDescription"] = "";
+context.Properties ["TestTemplateType"] = "";
+context.Properties ["TestTemplateVersion"] = "";
+
+context.Properties ["FacilityUID"] = "";
+context.Properties ["PlantCodeUID"] = "";
+context.Properties ["MaterialMasterUID"] = "";
+context.Properties ["NeoMaterialType"] = "";
+context.Properties ["MaterialLotUID"] =  "";
+context.Properties ["LabHistoryUID"] = "";
+context.Properties ["LabSampleHistoryUID"] = "";
+context.Properties ["LabTestHistoryUID"] = "";
+context.Properties ["LabResultHistoryUID"] = "";
+context.Properties ["LocalServiceURI"] = "";
+
+//context.Properties ["NeoPLMLabHistories"] = "";
+
+//Load the Lab History
+var labHistory = (System.Xml.XmlNode)context.Properties["NeoPLMLabHistory"];
+
+//Plant
+foreach(System.Xml.XmlNode node in labHistory.ChildNodes) { if(node.Name == "PlantID") { context.Properties["PlantID"] = node.InnerText; break; } }
+
+// MaterialID
+foreach(System.Xml.XmlNode node in labHistory.ChildNodes) {	if(node.Name == "MaterialID") {	context.Properties["MaterialID"] = node.InnerText; break;}}
+
+//Material Lot ID
+foreach(System.Xml.XmlNode node in labHistory.ChildNodes) { if(node.Name == "MaterialLotID") { context.Properties["MaterialLotID"] = node.InnerText; break;}}
+
+//InspectionLot ID
+foreach(System.Xml.XmlNode node in labHistory.ChildNodes) { if(node.Name == "InspectionLotID") { context.Properties["InspectionLotID"] = node.InnerText; break; } }
+
+//TestTemplateID
+foreach(System.Xml.XmlNode node in labHistory.ChildNodes) { if(node.Name == "TestTemplateID") { context.Properties["TestTemplateID"] = node.InnerText; break; } }
+
+//TestTemplateDescription
+foreach(System.Xml.XmlNode node in labHistory.ChildNodes) { if(node.Name == "TestTemplateDescription") { context.Properties["TestTemplateDescription"] = node.InnerText; break; } }
+
+//TestTemplateType
+foreach(System.Xml.XmlNode node in labHistory.ChildNodes) { if(node.Name == "TestTemplateType") { context.Properties["TestTemplateType"] = node.InnerText; break; } }
+
+//TestTemplateVersion
+foreach(System.Xml.XmlNode node in labHistory.ChildNodes) { if(node.Name == "TestTemplateVersion") { context.Properties["TestTemplateVersion"] = node.InnerText; break; } }
+
+//SampleStatus
+foreach(System.Xml.XmlNode node in labHistory.ChildNodes) { if(node.Name == "SampleStatus") { context.Properties["SampleStatus"] = node.InnerText; break; } }
+
+//LabSampleLastModified
+foreach(System.Xml.XmlNode node in labHistory.ChildNodes) { if(node.Name == "LabSampleLastModified") { context.Properties["LabSampleLastModified"] = node.InnerText; break; } }
+
+////Load the lab histories nodelist for looping through
+//var labHistories = context.Data.ToXmlDocument().SelectNodes("/*[local-name()='NeoPlmLimsMaterialLot' and namespace-uri()='http://NeoPLM.LIMS.MaterialLot']/*[local-name()='NeoPLMLabHistories' and namespace-uri()='']/*[local-name()='NeoPLMLabHistory' and namespace-uri()='']");
+//context.Properties ["NeoPLMLabHistories"] = labHistories;
+&lt;/Code&gt;&lt;ReferencedAssemblies xmlns:d7p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays"&gt;&lt;d7p1:string&gt;Neuron&lt;/d7p1:string&gt;&lt;d7p1:string&gt;Neuron.Pipelines&lt;/d7p1:string&gt;&lt;d7p1:string&gt;Neuron.Esb&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.Xml.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.Data.DataSetExtensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;/ReferencedAssemblies&gt;&lt;TypeName&gt;Type71a31839f0e4065a27b5fedb808af3&lt;/TypeName&gt;&lt;/ESBMessagePipelineStep&gt;&lt;ESBMessagePipelineStep xmlns:d6p1="http://schemas.neuronesb.com/pipelines/esb/" i:type="d6p1:EsbMessageCSharpCodePipelineStep"&gt;&lt;Bindings xmlns:d7p1="http://schemas.datacontract.org/2004/07/Neuron.ComponentModel" /&gt;&lt;BreakPoint&gt;Disable&lt;/BreakPoint&gt;&lt;Disable&gt;false&lt;/Disable&gt;&lt;Id&gt;8618d8d9-e63d-4058-9667-2d4018e63469&lt;/Id&gt;&lt;Name&gt;Document Transaction&lt;/Name&gt;&lt;Uniquename /&gt;&lt;BreakPointLines xmlns:d7p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" /&gt;&lt;Code&gt;context.Instance.TraceInformation ("Process LIMS Transaction - Transaction ID: " + context.Properties["TransactionID"] +  " Plant ID: " + context.Properties["PlantID"]);
+context.Instance.TraceInformation ("Process LIMS Transaction - Transaction ID: " + context.Properties["TransactionID"] +  " Material ID: " + context.Properties["MaterialID"]);
+context.Instance.TraceInformation ("Process LIMS Transaction - Transaction ID: " + context.Properties["TransactionID"] +  " Material Lot ID: " + context.Properties["MaterialLotID"]);
+context.Instance.TraceInformation ("Process LIMS Transaction - Transaction ID: " + context.Properties["TransactionID"] +  " Inspection Lot ID: " + context.Properties["InspectionLotID"]);
+context.Instance.TraceInformation ("Process LIMS Transaction - Transaction ID: " + context.Properties["TransactionID"] +  " Test Template ID: " + context.Properties["TestTemplateID"]);
+context.Instance.TraceInformation ("Process LIMS Transaction - Transaction ID: " + context.Properties["TransactionID"] +  " TestTemplateDescription: " + context.Properties["TestTemplateDescription"]);
+context.Instance.TraceInformation ("Process LIMS Transaction - Transaction ID: " + context.Properties["TransactionID"] +  " TestTemplateType: " + context.Properties["TestTemplateType"]);
+context.Instance.TraceInformation ("Process LIMS Transaction Lot - Transaction ID: " + context.Properties["TransactionID"] +  " TestTemplateVersion: " + context.Properties["TestTemplateVersion"]);
+
+&lt;/Code&gt;&lt;ReferencedAssemblies xmlns:d7p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays"&gt;&lt;d7p1:string&gt;Neuron&lt;/d7p1:string&gt;&lt;d7p1:string&gt;Neuron.Pipelines&lt;/d7p1:string&gt;&lt;d7p1:string&gt;Neuron.Esb&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.Xml.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.Data.DataSetExtensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed&lt;/d7p1:string&gt;&lt;d7p1:string&gt;Microsoft.CSharp, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&lt;/d7p1:string&gt;&lt;/ReferencedAssemblies&gt;&lt;TypeName&gt;Type1ba610c95c14bbdb1e12dc86f8d723&lt;/TypeName&gt;&lt;/ESBMessagePipelineStep&gt;&lt;ESBMessagePipelineStep xmlns:d6p1="http://schemas.neuronesb.com/pipelines/esb/" i:type="d6p1:EsbMessageCSharpCodePipelineStep"&gt;&lt;Bindings xmlns:d7p1="http://schemas.datacontract.org/2004/07/Neuron.ComponentModel" /&gt;&lt;BreakPoint&gt;Disable&lt;/BreakPoint&gt;&lt;Disable&gt;false&lt;/Disable&gt;&lt;Id&gt;b4bc4127-1bc2-4e6c-b4c7-8b5e4059a414&lt;/Id&gt;&lt;Name&gt;Map to Material Composite&lt;/Name&gt;&lt;Uniquename /&gt;&lt;BreakPointLines xmlns:d7p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" /&gt;&lt;Code&gt;// Retrieve the response template message
+string materialMasterRequestTemplate = context.Configuration.XmlDocs["MasterMasterCompositeRequest"].Xml;
+
+System.Xml.XmlNode node = (System.Xml.XmlNode) context.Properties["NeoPLMLabHistory"];
+
+string message = System.Net.WebUtility.HtmlEncode (node.OuterXml.ToString());
+String prefix ="workflow";
+// Create the response message
+string materialMasterRequest = string.Format(materialMasterRequestTemplate, context.Properties["TransactionID"], context.Properties["SourceSystemID"], context.Properties["PlantID"], context.Properties["MaterialID"], "false", message);
+
+//Send the trace message to document the response message.
+context.Instance.TraceInformation ("LIMS Validate MaterialMaster - Message ID: " + context.Data.Header.MessageId.ToString() + " Request Message: " + materialMasterRequest);
+	
+// Set message context to the response message 	
+context.Data.Text = materialMasterRequest;&lt;/Code&gt;&lt;ReferencedAssemblies xmlns:d7p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays"&gt;&lt;d7p1:string&gt;Neuron&lt;/d7p1:string&gt;&lt;d7p1:string&gt;Neuron.Pipelines&lt;/d7p1:string&gt;&lt;d7p1:string&gt;Neuron.Esb&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.Xml.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.Data.DataSetExtensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed&lt;/d7p1:string&gt;&lt;d7p1:string&gt;Microsoft.CSharp, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&lt;/d7p1:string&gt;&lt;/ReferencedAssemblies&gt;&lt;TypeName&gt;Type37101cfe448494cb0125c813a04945&lt;/TypeName&gt;&lt;/ESBMessagePipelineStep&gt;&lt;ESBMessagePipelineStep xmlns:d6p1="http://schemas.neuronesb.com/pipelines/esb/" i:type="d6p1:EsbMessagePipelineExecutionPipelineStep"&gt;&lt;Bindings xmlns:d7p1="http://schemas.datacontract.org/2004/07/Neuron.ComponentModel" /&gt;&lt;BreakPoint&gt;Disable&lt;/BreakPoint&gt;&lt;Disable&gt;false&lt;/Disable&gt;&lt;Id&gt;33d7d706-2fda-493f-a8de-3fe8f7066ecf&lt;/Id&gt;&lt;Name&gt;Material Master Composite&lt;/Name&gt;&lt;Uniquename /&gt;&lt;d6p1:FileName i:nil="true" /&gt;&lt;d6p1:MaxInstances&gt;100&lt;/d6p1:MaxInstances&gt;&lt;d6p1:PipelineName&gt;Process_GetMaterialMasterComposite&lt;/d6p1:PipelineName&gt;&lt;d6p1:PoolTimeout&gt;PT1M&lt;/d6p1:PoolTimeout&gt;&lt;/ESBMessagePipelineStep&gt;&lt;ESBMessagePipelineStep xmlns:d6p1="http://schemas.neuronesb.com/pipelines/esb/" i:type="d6p1:EsbMessageCSharpCodePipelineStep"&gt;&lt;Bindings xmlns:d7p1="http://schemas.datacontract.org/2004/07/Neuron.ComponentModel" /&gt;&lt;BreakPoint&gt;Disable&lt;/BreakPoint&gt;&lt;Disable&gt;false&lt;/Disable&gt;&lt;Id&gt;d3e4a0ba-1bfc-481f-9f96-cabd205e0688&lt;/Id&gt;&lt;Name&gt;Map From Material Master Composite&lt;/Name&gt;&lt;Uniquename /&gt;&lt;BreakPointLines xmlns:d7p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" /&gt;&lt;Code&gt;context.Instance.TraceInformation("LIMS Validate FROM MaterialMaster. Context Data : " + context.Data.Text);
+
+//context.Instance.TraceInformation("PLANT UID : " + context.Properties ["PlantCodeUID"].ToString());
+//context.Instance.TraceInformation("MATERIAL UID : " + context.Properties ["MaterialUID"].ToString());
+//context.Instance.TraceInformation("MATERIAL MASTER UID : " + context.Properties ["MaterialMasterUID"].ToString());
+//context.Instance.TraceInformation("FACILITY UID : " + context.Properties ["FacilityUID"].ToString());
+//context.Instance.TraceInformation("Material Type : " + context.Properties ["NeoMaterialType"].ToString());&lt;/Code&gt;&lt;ReferencedAssemblies xmlns:d7p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays"&gt;&lt;d7p1:string&gt;Neuron&lt;/d7p1:string&gt;&lt;d7p1:string&gt;Neuron.Pipelines&lt;/d7p1:string&gt;&lt;d7p1:string&gt;Neuron.Esb&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.Xml.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.Data.DataSetExtensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed&lt;/d7p1:string&gt;&lt;d7p1:string&gt;Microsoft.CSharp, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&lt;/d7p1:string&gt;&lt;/ReferencedAssemblies&gt;&lt;TypeName&gt;Type33682111aa0455a8c7246274422399&lt;/TypeName&gt;&lt;/ESBMessagePipelineStep&gt;&lt;ESBMessagePipelineStep i:type="DecisionPipelineStepOfESBMessagexAPWb1W4"&gt;&lt;Bindings xmlns:d7p1="http://schemas.datacontract.org/2004/07/Neuron.ComponentModel" /&gt;&lt;BreakPoint&gt;Disable&lt;/BreakPoint&gt;&lt;Disable&gt;false&lt;/Disable&gt;&lt;Id&gt;a8da69c8-b753-4cea-a7c8-43b40c9d98a3&lt;/Id&gt;&lt;Name&gt;Decision&lt;/Name&gt;&lt;Uniquename /&gt;&lt;Branches&gt;&lt;BranchOfESBMessagexAPWb1W4&gt;&lt;BreakPoint&gt;Disable&lt;/BreakPoint&gt;&lt;Condition i:type="CodeBranchConditionOfESBMessagexAPWb1W4"&gt;&lt;Code&gt;if (context.Data.GetProperty("NeoPLM", "LookupError").ToUpper() == "TRUE")
+	return false;
+else
+	return true;&lt;/Code&gt;&lt;ReferencedAssemblies xmlns:d10p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays"&gt;&lt;d10p1:string&gt;Neuron&lt;/d10p1:string&gt;&lt;d10p1:string&gt;Neuron.Pipelines&lt;/d10p1:string&gt;&lt;d10p1:string&gt;Neuron.Esb&lt;/d10p1:string&gt;&lt;d10p1:string&gt;System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d10p1:string&gt;&lt;d10p1:string&gt;System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d10p1:string&gt;&lt;d10p1:string&gt;System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d10p1:string&gt;&lt;d10p1:string&gt;System.Xml.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d10p1:string&gt;&lt;d10p1:string&gt;System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d10p1:string&gt;&lt;d10p1:string&gt;System.Data.DataSetExtensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d10p1:string&gt;&lt;d10p1:string&gt;System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d10p1:string&gt;&lt;d10p1:string&gt;System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d10p1:string&gt;&lt;d10p1:string&gt;Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed&lt;/d10p1:string&gt;&lt;d10p1:string&gt;Microsoft.CSharp, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&lt;/d10p1:string&gt;&lt;/ReferencedAssemblies&gt;&lt;/Condition&gt;&lt;Disable&gt;false&lt;/Disable&gt;&lt;EndJoined&gt;false&lt;/EndJoined&gt;&lt;Id&gt;24feee21-c9ec-4ebc-8b7f-f24cce321d70&lt;/Id&gt;&lt;Name&gt;If&lt;/Name&gt;&lt;Steps&gt;&lt;Bindings xmlns:d10p1="http://schemas.datacontract.org/2004/07/Neuron.ComponentModel" /&gt;&lt;BreakPoint&gt;Disable&lt;/BreakPoint&gt;&lt;Disable&gt;false&lt;/Disable&gt;&lt;Id&gt;0ab601b0-6703-484c-a39b-c019febcd694&lt;/Id&gt;&lt;Name&gt;Group&lt;/Name&gt;&lt;Uniquename /&gt;&lt;Children&gt;&lt;ESBMessagePipelineStep xmlns:d11p1="http://schemas.neuronesb.com/pipelines/esb/" i:type="d11p1:EsbMessageCSharpCodePipelineStep"&gt;&lt;Bindings xmlns:d12p1="http://schemas.datacontract.org/2004/07/Neuron.ComponentModel" /&gt;&lt;BreakPoint&gt;Disable&lt;/BreakPoint&gt;&lt;Disable&gt;false&lt;/Disable&gt;&lt;Id&gt;d7067bac-2d72-49bf-b7e8-d5b8a36f8691&lt;/Id&gt;&lt;Name&gt;Map To Material Lot Save&lt;/Name&gt;&lt;Uniquename /&gt;&lt;BreakPointLines xmlns:d12p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" /&gt;&lt;Code&gt;// Retrieve the response template message
+string materialLotRequestTemplate = context.Configuration.XmlDocs["MaterialLotSave"].Xml;
+
+// This is a placeholder material Lot.  These properties are set to the default values below.
+string externalStatus = "";
+string externalStatusDescription = "";
+string lotStatus = "20";
+string potency = "100";
+string potencyLabel = "";
+string potencyUnits = System.Guid.Empty.ToString();
+string supplierID = "";
+string supplierName = "";
+string supplierLotID = "";
+string lastModified = System.DateTime.UtcNow.ToString("yyyy-MM-ddTHH:mm:ssZ");
+string sourceLastModified = System.DateTime.UtcNow.ToString("yyyy-MM-ddTHH:mm:ssZ");
+
+// Create the request message
+string materialLotRequest = string.Format(materialLotRequestTemplate, "Create", context.Properties["LocalServiceURI"], context.Properties["MaterialLotID"], context.Properties["FacilityUID"], context.Properties["PlantCodeUID"], context.Properties["MaterialMasterUID"], context.Properties["NeoMaterialType"], externalStatus, externalStatusDescription, lotStatus, potency, potencyLabel, potencyUnits, supplierID, supplierName, supplierLotID, lastModified, sourceLastModified );
+
+//Send the trace message to document the request message.
+context.Instance.TraceInformation ("Process Lab Transaction - Message ID: " + context.Data.Header.MessageId.ToString() + " Request Message: " + materialLotRequest);
+	
+// Set message context to the request message 	
+context.Data.Text = materialLotRequest;&lt;/Code&gt;&lt;ReferencedAssemblies xmlns:d12p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays"&gt;&lt;d12p1:string&gt;Neuron&lt;/d12p1:string&gt;&lt;d12p1:string&gt;Neuron.Pipelines&lt;/d12p1:string&gt;&lt;d12p1:string&gt;Neuron.Esb&lt;/d12p1:string&gt;&lt;d12p1:string&gt;System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d12p1:string&gt;&lt;d12p1:string&gt;System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d12p1:string&gt;&lt;d12p1:string&gt;System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d12p1:string&gt;&lt;d12p1:string&gt;System.Xml.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d12p1:string&gt;&lt;d12p1:string&gt;System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d12p1:string&gt;&lt;d12p1:string&gt;System.Data.DataSetExtensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d12p1:string&gt;&lt;d12p1:string&gt;System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d12p1:string&gt;&lt;d12p1:string&gt;System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d12p1:string&gt;&lt;d12p1:string&gt;Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed&lt;/d12p1:string&gt;&lt;d12p1:string&gt;Microsoft.CSharp, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&lt;/d12p1:string&gt;&lt;/ReferencedAssemblies&gt;&lt;TypeName&gt;Type7cd5810834d4b378303d3cc679cdfa&lt;/TypeName&gt;&lt;/ESBMessagePipelineStep&gt;&lt;ESBMessagePipelineStep xmlns:d11p1="http://schemas.neuronesb.com/pipelines/esb/" i:type="d11p1:EsbMessageTraceMessagePipelineStep"&gt;&lt;Bindings xmlns:d12p1="http://schemas.datacontract.org/2004/07/Neuron.ComponentModel" /&gt;&lt;BreakPoint&gt;Disable&lt;/BreakPoint&gt;&lt;Disable&gt;false&lt;/Disable&gt;&lt;Id&gt;59005f0f-1f11-45fb-a6c5-9df5842376da&lt;/Id&gt;&lt;Name&gt;TraceMessage&lt;/Name&gt;&lt;Uniquename /&gt;&lt;/ESBMessagePipelineStep&gt;&lt;ESBMessagePipelineStep xmlns:d11p1="http://schemas.neuronesb.com/pipelines/esb/" i:type="d11p1:EsbMessagePipelineExecutionPipelineStep"&gt;&lt;Bindings xmlns:d12p1="http://schemas.datacontract.org/2004/07/Neuron.ComponentModel" /&gt;&lt;BreakPoint&gt;Disable&lt;/BreakPoint&gt;&lt;Disable&gt;false&lt;/Disable&gt;&lt;Id&gt;77b331a3-2985-493a-b47b-4a5dfd93c723&lt;/Id&gt;&lt;Name&gt;Create Material Lot if Required&lt;/Name&gt;&lt;Uniquename&gt;66593041-eed0-44af-b806-b1903296bee5&lt;/Uniquename&gt;&lt;d11p1:FileName i:nil="true" /&gt;&lt;d11p1:MaxInstances&gt;100&lt;/d11p1:MaxInstances&gt;&lt;d11p1:PipelineName&gt;Process_CreateUpdateMaterialLot&lt;/d11p1:PipelineName&gt;&lt;d11p1:PoolTimeout&gt;PT1M&lt;/d11p1:PoolTimeout&gt;&lt;/ESBMessagePipelineStep&gt;&lt;ESBMessagePipelineStep xmlns:d11p1="http://schemas.neuronesb.com/pipelines/esb/" i:type="d11p1:EsbMessageCSharpCodePipelineStep"&gt;&lt;Bindings xmlns:d12p1="http://schemas.datacontract.org/2004/07/Neuron.ComponentModel" /&gt;&lt;BreakPoint&gt;Disable&lt;/BreakPoint&gt;&lt;Disable&gt;false&lt;/Disable&gt;&lt;Id&gt;e996ac0d-738d-42db-a76e-383a3df6042a&lt;/Id&gt;&lt;Name&gt;Map From Material Lot Save&lt;/Name&gt;&lt;Uniquename /&gt;&lt;BreakPointLines xmlns:d12p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" /&gt;&lt;Code&gt;string materialLotUID = context.Data.GetProperty ("NeoPLM", "MaterialLotUID");
+
+context.Properties ["MaterialLotUID"] = materialLotUID;
+
+context.Instance.TraceInformation ("Process Lab Transaction - Transaction ID: " + context.Properties["TransactionID"] + " MaterialLotUID: " + context.Properties["MaterialLotUID"]);&lt;/Code&gt;&lt;ReferencedAssemblies xmlns:d12p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays"&gt;&lt;d12p1:string&gt;Neuron&lt;/d12p1:string&gt;&lt;d12p1:string&gt;Neuron.Pipelines&lt;/d12p1:string&gt;&lt;d12p1:string&gt;Neuron.Esb&lt;/d12p1:string&gt;&lt;d12p1:string&gt;System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d12p1:string&gt;&lt;d12p1:string&gt;System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d12p1:string&gt;&lt;d12p1:string&gt;System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d12p1:string&gt;&lt;d12p1:string&gt;System.Xml.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d12p1:string&gt;&lt;d12p1:string&gt;System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d12p1:string&gt;&lt;d12p1:string&gt;System.Data.DataSetExtensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d12p1:string&gt;&lt;d12p1:string&gt;System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d12p1:string&gt;&lt;d12p1:string&gt;System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d12p1:string&gt;&lt;d12p1:string&gt;Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed&lt;/d12p1:string&gt;&lt;d12p1:string&gt;Microsoft.CSharp, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&lt;/d12p1:string&gt;&lt;/ReferencedAssemblies&gt;&lt;TypeName&gt;Type4652367cab44b28914bbc87cf93e44&lt;/TypeName&gt;&lt;/ESBMessagePipelineStep&gt;&lt;ESBMessagePipelineStep xmlns:d11p1="http://schemas.neuronesb.com/pipelines/esb/" i:type="d11p1:EsbMessageCSharpCodePipelineStep"&gt;&lt;Bindings xmlns:d12p1="http://schemas.datacontract.org/2004/07/Neuron.ComponentModel" /&gt;&lt;BreakPoint&gt;Disable&lt;/BreakPoint&gt;&lt;Disable&gt;false&lt;/Disable&gt;&lt;Id&gt;5c401374-2686-4e98-85d2-26915da1db43&lt;/Id&gt;&lt;Name&gt;Map To Create Lab History&lt;/Name&gt;&lt;Uniquename /&gt;&lt;BreakPointLines xmlns:d12p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" /&gt;&lt;Code&gt;// Retrieve the response template message
+string labHistoryRequestTemplate = context.Configuration.XmlDocs["LabHistorySaveRequest"].Xml;
+
+string sourceRecordUniqueID = context.Properties["PlantID"] + "-" + context.Properties["MaterialID"] + "-" + context.Properties ["MaterialLotID"] + "-" + context.Properties["TestTemplateID"]; 
+string lastModified = System.DateTime.UtcNow.ToString("yyyy-MM-ddTHH:mm:ssZ");
+ 
+string testTemplateDescription = System.Net.WebUtility.HtmlEncode (context.Properties["TestTemplateDescription"].ToString());
+string testTemplateID = System.Net.WebUtility.HtmlEncode (context.Properties["TestTemplateID"].ToString());
+
+// Create the request message
+string labHistoryRequest = string.Format(labHistoryRequestTemplate, "Create", 
+	                                     context.Properties["LocalServiceURI"], sourceRecordUniqueID, 
+	                                     context.Properties["MaterialLotUID"], testTemplateID, 
+	                                     context.Properties["TestTemplateVersion"], testTemplateDescription, 
+                                         context.Properties["TestTemplateType"], "",
+	                                     lastModified);
+
+//Send the trace message to document the request message.
+context.Instance.TraceInformation ("Process Lab Transaction - Message ID: " + context.Data.Header.MessageId.ToString() + " Request Message: " + labHistoryRequest);
+	
+// Set message context to the request message 	
+context.Data.Text = labHistoryRequest;&lt;/Code&gt;&lt;ReferencedAssemblies xmlns:d12p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays"&gt;&lt;d12p1:string&gt;Neuron&lt;/d12p1:string&gt;&lt;d12p1:string&gt;Neuron.Pipelines&lt;/d12p1:string&gt;&lt;d12p1:string&gt;Neuron.Esb&lt;/d12p1:string&gt;&lt;d12p1:string&gt;System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d12p1:string&gt;&lt;d12p1:string&gt;System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d12p1:string&gt;&lt;d12p1:string&gt;System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d12p1:string&gt;&lt;d12p1:string&gt;System.Xml.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d12p1:string&gt;&lt;d12p1:string&gt;System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d12p1:string&gt;&lt;d12p1:string&gt;System.Data.DataSetExtensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d12p1:string&gt;&lt;d12p1:string&gt;System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d12p1:string&gt;&lt;d12p1:string&gt;System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d12p1:string&gt;&lt;d12p1:string&gt;Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed&lt;/d12p1:string&gt;&lt;d12p1:string&gt;Microsoft.CSharp, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&lt;/d12p1:string&gt;&lt;/ReferencedAssemblies&gt;&lt;TypeName&gt;Type7cf0773e62e40f49551d4083c788b1&lt;/TypeName&gt;&lt;/ESBMessagePipelineStep&gt;&lt;ESBMessagePipelineStep xmlns:d11p1="http://schemas.neuronesb.com/pipelines/esb/" i:type="d11p1:EsbMessagePipelineExecutionPipelineStep"&gt;&lt;Bindings xmlns:d12p1="http://schemas.datacontract.org/2004/07/Neuron.ComponentModel" /&gt;&lt;BreakPoint&gt;Disable&lt;/BreakPoint&gt;&lt;Disable&gt;false&lt;/Disable&gt;&lt;Id&gt;9dbf1c8f-8731-44c2-b190-07f20550ccba&lt;/Id&gt;&lt;Name&gt;Lab History&lt;/Name&gt;&lt;Uniquename /&gt;&lt;d11p1:FileName i:nil="true" /&gt;&lt;d11p1:MaxInstances&gt;100&lt;/d11p1:MaxInstances&gt;&lt;d11p1:PipelineName&gt;Process_CreateUpdateLabHistory&lt;/d11p1:PipelineName&gt;&lt;d11p1:PoolTimeout&gt;PT1M&lt;/d11p1:PoolTimeout&gt;&lt;/ESBMessagePipelineStep&gt;&lt;ESBMessagePipelineStep xmlns:d11p1="http://schemas.neuronesb.com/pipelines/esb/" i:type="d11p1:EsbMessageCSharpCodePipelineStep"&gt;&lt;Bindings xmlns:d12p1="http://schemas.datacontract.org/2004/07/Neuron.ComponentModel" /&gt;&lt;BreakPoint&gt;Disable&lt;/BreakPoint&gt;&lt;Disable&gt;false&lt;/Disable&gt;&lt;Id&gt;da8dae02-d88d-456b-a6d9-f80f8620b614&lt;/Id&gt;&lt;Name&gt;Map From Create Lab History&lt;/Name&gt;&lt;Uniquename /&gt;&lt;BreakPointLines xmlns:d12p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" /&gt;&lt;Code&gt;string labHistoryUID = context.Data.GetProperty ("NeoPLM", "LabHistoryUID");
+
+context.Properties ["LabHistoryUID"] = labHistoryUID;
+
+context.Instance.TraceInformation ("Process Lab Transaction - Transaction ID: " + context.Properties["TransactionID"] + " LabHistoryUID: " + context.Properties["LabHistoryUID"]);&lt;/Code&gt;&lt;ReferencedAssemblies xmlns:d12p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays"&gt;&lt;d12p1:string&gt;Neuron&lt;/d12p1:string&gt;&lt;d12p1:string&gt;Neuron.Pipelines&lt;/d12p1:string&gt;&lt;d12p1:string&gt;Neuron.Esb&lt;/d12p1:string&gt;&lt;d12p1:string&gt;System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d12p1:string&gt;&lt;d12p1:string&gt;System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d12p1:string&gt;&lt;d12p1:string&gt;System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d12p1:string&gt;&lt;d12p1:string&gt;System.Xml.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d12p1:string&gt;&lt;d12p1:string&gt;System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d12p1:string&gt;&lt;d12p1:string&gt;System.Data.DataSetExtensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d12p1:string&gt;&lt;d12p1:string&gt;System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d12p1:string&gt;&lt;d12p1:string&gt;System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d12p1:string&gt;&lt;d12p1:string&gt;Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed&lt;/d12p1:string&gt;&lt;d12p1:string&gt;Microsoft.CSharp, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&lt;/d12p1:string&gt;&lt;/ReferencedAssemblies&gt;&lt;TypeName&gt;Type531f907b35a4e8ebb1eafbcfdb9665&lt;/TypeName&gt;&lt;/ESBMessagePipelineStep&gt;&lt;ESBMessagePipelineStep xmlns:d11p1="http://schemas.neuronesb.com/pipelines/esb/" i:type="d11p1:EsbMessageCSharpCodePipelineStep"&gt;&lt;Bindings xmlns:d12p1="http://schemas.datacontract.org/2004/07/Neuron.ComponentModel" /&gt;&lt;BreakPoint&gt;Disable&lt;/BreakPoint&gt;&lt;Disable&gt;false&lt;/Disable&gt;&lt;Id&gt;d6c09eed-07fa-4dff-bd55-4b4f732c6c0f&lt;/Id&gt;&lt;Name&gt;Load Lab Sample Histories&lt;/Name&gt;&lt;Uniquename /&gt;&lt;BreakPointLines xmlns:d12p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" /&gt;&lt;Code&gt;
+var labHistory = (System.Xml.XmlNode)context.Properties["NeoPLMLabHistory"];
+
+foreach(System.Xml.XmlNode xNode in labHistory.ChildNodes)
+{	
+	if(xNode.Name == "LabSampleHistories")
+	{
+		context.Properties["LabSampleHistories"] = xNode;
+		var labSampleHistories = (System.Xml.XmlNode)context.Properties["LabSampleHistories"];
+		context.Instance.TraceInformation("Lab Sample Histories Count: " + labSampleHistories.ChildNodes.Count);
+	}
+}&lt;/Code&gt;&lt;ReferencedAssemblies xmlns:d12p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays"&gt;&lt;d12p1:string&gt;Neuron&lt;/d12p1:string&gt;&lt;d12p1:string&gt;Neuron.Pipelines&lt;/d12p1:string&gt;&lt;d12p1:string&gt;Neuron.Esb&lt;/d12p1:string&gt;&lt;d12p1:string&gt;System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d12p1:string&gt;&lt;d12p1:string&gt;System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d12p1:string&gt;&lt;d12p1:string&gt;System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d12p1:string&gt;&lt;d12p1:string&gt;System.Xml.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d12p1:string&gt;&lt;d12p1:string&gt;System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d12p1:string&gt;&lt;d12p1:string&gt;System.Data.DataSetExtensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d12p1:string&gt;&lt;d12p1:string&gt;System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d12p1:string&gt;&lt;d12p1:string&gt;System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d12p1:string&gt;&lt;/ReferencedAssemblies&gt;&lt;TypeName&gt;Type68e810b86e54eb19783912c91b2732&lt;/TypeName&gt;&lt;/ESBMessagePipelineStep&gt;&lt;ESBMessagePipelineStep i:type="ForEachPipelineStepOfESBMessagexAPWb1W4"&gt;&lt;Bindings xmlns:d12p1="http://schemas.datacontract.org/2004/07/Neuron.ComponentModel" /&gt;&lt;BreakPoint&gt;Disable&lt;/BreakPoint&gt;&lt;Disable&gt;false&lt;/Disable&gt;&lt;Id&gt;3544fb15-3fb4-49c0-99ac-d9f6b55e44a1&lt;/Id&gt;&lt;Name&gt;Lab Sample History&lt;/Name&gt;&lt;Uniquename /&gt;&lt;Children&gt;&lt;ESBMessagePipelineStep xmlns:d13p1="http://schemas.neuronesb.com/pipelines/esb/" i:type="d13p1:EsbMessageCSharpCodePipelineStep"&gt;&lt;Bindings xmlns:d14p1="http://schemas.datacontract.org/2004/07/Neuron.ComponentModel" /&gt;&lt;BreakPoint&gt;Disable&lt;/BreakPoint&gt;&lt;Disable&gt;false&lt;/Disable&gt;&lt;Id&gt;77a1de30-0bff-44b4-883d-e8139e6c2397&lt;/Id&gt;&lt;Name&gt;Map To Lab Sample History&lt;/Name&gt;&lt;Uniquename /&gt;&lt;BreakPointLines xmlns:d14p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" /&gt;&lt;Code&gt;// Retrieve the response template message
+string labSampleHistoryRequestTemplate = context.Configuration.XmlDocs["LabSampleHistorySaveRequest"].Xml;
+
+var labSampleHistory = (System.Xml.XmlNode)context.Properties["LabSampleHistory"];
+var sampleId = "";
+foreach(System.Xml.XmlNode node in labSampleHistory.ChildNodes) { if(node.Name == "SampleID") { sampleId = node.InnerText; break; } }
+var controlPointId = "";
+foreach(System.Xml.XmlNode node in labSampleHistory.ChildNodes) { if(node.Name == "ControlPointID") { controlPointId = node.InnerText; break; } }
+var controlPointDescription = "";
+foreach(System.Xml.XmlNode node in labSampleHistory.ChildNodes) { if(node.Name == "ControlPointDescription") { controlPointDescription = node.InnerText; break; } }
+
+controlPointDescription = System.Net.WebUtility.HtmlEncode (controlPointDescription);
+sampleId = System.Net.WebUtility.HtmlEncode (sampleId);
+controlPointId = System.Net.WebUtility.HtmlEncode (controlPointId);
+ 
+// Create the request message
+string labSampleHistoryRequest = string.Format(labSampleHistoryRequestTemplate, "Create", 
+	                                     context.Properties["LocalServiceURI"],  
+	                                     context.Properties["LabHistoryUID"], sampleId, 
+	                                     sampleId, controlPointId, 
+                                         controlPointDescription, "", context.Properties["LabSampleLastModified"].ToString(), context.Properties["SampleStatus"].ToString());
+
+//Send the trace message to document the request message.
+context.Instance.TraceInformation ("Process Lab Transaction - Message ID: " + context.Data.Header.MessageId.ToString() + " Request Message: " + labSampleHistoryRequest);
+	
+// Set message context to the request message 	
+context.Data.Text = labSampleHistoryRequest;&lt;/Code&gt;&lt;ReferencedAssemblies xmlns:d14p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays"&gt;&lt;d14p1:string&gt;Neuron&lt;/d14p1:string&gt;&lt;d14p1:string&gt;Neuron.Pipelines&lt;/d14p1:string&gt;&lt;d14p1:string&gt;Neuron.Esb&lt;/d14p1:string&gt;&lt;d14p1:string&gt;System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d14p1:string&gt;&lt;d14p1:string&gt;System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d14p1:string&gt;&lt;d14p1:string&gt;System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d14p1:string&gt;&lt;d14p1:string&gt;System.Xml.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d14p1:string&gt;&lt;d14p1:string&gt;System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d14p1:string&gt;&lt;d14p1:string&gt;System.Data.DataSetExtensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d14p1:string&gt;&lt;d14p1:string&gt;System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d14p1:string&gt;&lt;d14p1:string&gt;System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d14p1:string&gt;&lt;d14p1:string&gt;Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed&lt;/d14p1:string&gt;&lt;d14p1:string&gt;Microsoft.CSharp, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&lt;/d14p1:string&gt;&lt;/ReferencedAssemblies&gt;&lt;TypeName&gt;Type36d4cabbda542b29eb9d7dc9a42ba1&lt;/TypeName&gt;&lt;/ESBMessagePipelineStep&gt;&lt;ESBMessagePipelineStep xmlns:d13p1="http://schemas.neuronesb.com/pipelines/esb/" i:type="d13p1:EsbMessagePipelineExecutionPipelineStep"&gt;&lt;Bindings xmlns:d14p1="http://schemas.datacontract.org/2004/07/Neuron.ComponentModel" /&gt;&lt;BreakPoint&gt;Disable&lt;/BreakPoint&gt;&lt;Disable&gt;false&lt;/Disable&gt;&lt;Id&gt;3581134e-e9e9-42b6-b4ae-98a2ce9cccd1&lt;/Id&gt;&lt;Name&gt;Lab Sample History&lt;/Name&gt;&lt;Uniquename /&gt;&lt;d13p1:FileName i:nil="true" /&gt;&lt;d13p1:MaxInstances&gt;100&lt;/d13p1:MaxInstances&gt;&lt;d13p1:PipelineName&gt;Process_CreateUpdateLabSampleHistory&lt;/d13p1:PipelineName&gt;&lt;d13p1:PoolTimeout&gt;PT1M&lt;/d13p1:PoolTimeout&gt;&lt;/ESBMessagePipelineStep&gt;&lt;ESBMessagePipelineStep xmlns:d13p1="http://schemas.neuronesb.com/pipelines/esb/" i:type="d13p1:EsbMessageCSharpCodePipelineStep"&gt;&lt;Bindings xmlns:d14p1="http://schemas.datacontract.org/2004/07/Neuron.ComponentModel" /&gt;&lt;BreakPoint&gt;Disable&lt;/BreakPoint&gt;&lt;Disable&gt;false&lt;/Disable&gt;&lt;Id&gt;ca105596-7388-4f78-bcf3-116bacaf9b20&lt;/Id&gt;&lt;Name&gt;Map From Lab Sample History&lt;/Name&gt;&lt;Uniquename /&gt;&lt;BreakPointLines xmlns:d14p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" /&gt;&lt;Code&gt;string labSampleHistoryUID = context.Data.GetProperty ("NeoPLM", "LabSampleHistoryUID");
+
+context.Properties ["LabSampleHistoryUID"] = labSampleHistoryUID;
+
+context.Instance.TraceInformation ("Process Lab Transaction - Transaction ID: " + context.Properties["TransactionID"] + " LabSampleHistoryUID: " + context.Properties["LabSampleHistoryUID"]);&lt;/Code&gt;&lt;ReferencedAssemblies xmlns:d14p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays"&gt;&lt;d14p1:string&gt;Neuron&lt;/d14p1:string&gt;&lt;d14p1:string&gt;Neuron.Pipelines&lt;/d14p1:string&gt;&lt;d14p1:string&gt;Neuron.Esb&lt;/d14p1:string&gt;&lt;d14p1:string&gt;System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d14p1:string&gt;&lt;d14p1:string&gt;System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d14p1:string&gt;&lt;d14p1:string&gt;System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d14p1:string&gt;&lt;d14p1:string&gt;System.Xml.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d14p1:string&gt;&lt;d14p1:string&gt;System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d14p1:string&gt;&lt;d14p1:string&gt;System.Data.DataSetExtensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d14p1:string&gt;&lt;d14p1:string&gt;System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d14p1:string&gt;&lt;d14p1:string&gt;System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d14p1:string&gt;&lt;d14p1:string&gt;Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed&lt;/d14p1:string&gt;&lt;d14p1:string&gt;Microsoft.CSharp, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&lt;/d14p1:string&gt;&lt;/ReferencedAssemblies&gt;&lt;TypeName&gt;Typee194c1186e6497bab9be79777d33d8&lt;/TypeName&gt;&lt;/ESBMessagePipelineStep&gt;&lt;ESBMessagePipelineStep xmlns:d13p1="http://schemas.neuronesb.com/pipelines/esb/" i:type="d13p1:EsbMessageCSharpCodePipelineStep"&gt;&lt;Bindings xmlns:d14p1="http://schemas.datacontract.org/2004/07/Neuron.ComponentModel" /&gt;&lt;BreakPoint&gt;Disable&lt;/BreakPoint&gt;&lt;Disable&gt;false&lt;/Disable&gt;&lt;Id&gt;30a1f79c-90a1-44d9-becf-3c42c24c806e&lt;/Id&gt;&lt;Name&gt;Load Lab Test History&lt;/Name&gt;&lt;Uniquename /&gt;&lt;BreakPointLines xmlns:d14p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" /&gt;&lt;Code&gt;
+var labSampleHistory = (System.Xml.XmlNode)context.Properties["LabSampleHistory"];
+
+foreach(System.Xml.XmlNode xNode in labSampleHistory.ChildNodes)
+{	
+	if(xNode.Name == "LabTestHistories")
+	{
+		context.Properties["LabTestHistories"] = xNode;
+		var labTestHistories = (System.Xml.XmlNode)context.Properties["LabTestHistories"];
+		context.Instance.TraceInformation("Lab Sample Histories Count: " + labTestHistories.ChildNodes.Count);
+	}
+}&lt;/Code&gt;&lt;ReferencedAssemblies xmlns:d14p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays"&gt;&lt;d14p1:string&gt;Neuron&lt;/d14p1:string&gt;&lt;d14p1:string&gt;Neuron.Pipelines&lt;/d14p1:string&gt;&lt;d14p1:string&gt;Neuron.Esb&lt;/d14p1:string&gt;&lt;d14p1:string&gt;System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d14p1:string&gt;&lt;d14p1:string&gt;System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d14p1:string&gt;&lt;d14p1:string&gt;System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d14p1:string&gt;&lt;d14p1:string&gt;System.Xml.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d14p1:string&gt;&lt;d14p1:string&gt;System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d14p1:string&gt;&lt;d14p1:string&gt;System.Data.DataSetExtensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d14p1:string&gt;&lt;d14p1:string&gt;System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d14p1:string&gt;&lt;d14p1:string&gt;System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d14p1:string&gt;&lt;d14p1:string&gt;Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed&lt;/d14p1:string&gt;&lt;d14p1:string&gt;Microsoft.CSharp, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&lt;/d14p1:string&gt;&lt;/ReferencedAssemblies&gt;&lt;TypeName&gt;Type9206b1e92ba4cff8551ed27a72fd30&lt;/TypeName&gt;&lt;/ESBMessagePipelineStep&gt;&lt;ESBMessagePipelineStep i:type="ForEachPipelineStepOfESBMessagexAPWb1W4"&gt;&lt;Bindings xmlns:d14p1="http://schemas.datacontract.org/2004/07/Neuron.ComponentModel" /&gt;&lt;BreakPoint&gt;Disable&lt;/BreakPoint&gt;&lt;Disable&gt;false&lt;/Disable&gt;&lt;Id&gt;60c61490-9b56-47b5-89ee-893284cfe039&lt;/Id&gt;&lt;Name&gt;Lab Test History&lt;/Name&gt;&lt;Uniquename /&gt;&lt;Children&gt;&lt;ESBMessagePipelineStep xmlns:d15p1="http://schemas.neuronesb.com/pipelines/esb/" i:type="d15p1:EsbMessageCSharpCodePipelineStep"&gt;&lt;Bindings xmlns:d16p1="http://schemas.datacontract.org/2004/07/Neuron.ComponentModel" /&gt;&lt;BreakPoint&gt;Disable&lt;/BreakPoint&gt;&lt;Disable&gt;false&lt;/Disable&gt;&lt;Id&gt;e0c962ba-1487-484b-b06f-c4fd4e8b73ec&lt;/Id&gt;&lt;Name&gt;Map To Lab Test History&lt;/Name&gt;&lt;Uniquename /&gt;&lt;BreakPointLines xmlns:d16p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" /&gt;&lt;Code&gt;// Retrieve the response template message
+string labTestHistoryRequestTemplate = context.Configuration.XmlDocs["LabTestHistorySaveRequest"].Xml;
+
+var labTestHistory = (System.Xml.XmlNode)context.Properties["LabTestHistory"];
+
+var testId = "";
+foreach(System.Xml.XmlNode node in labTestHistory.ChildNodes) { if(node.Name == "TestID") { testId = node.InnerText; break; } }
+
+var testDescription = "";
+foreach(System.Xml.XmlNode node in labTestHistory.ChildNodes) { if(node.Name == "TestDescription") { testDescription = node.InnerText; break; } }
+
+var testMethodId = "";
+foreach(System.Xml.XmlNode node in labTestHistory.ChildNodes) { if(node.Name == "TestMethodID") { testMethodId = node.InnerText; break; } }
+
+var testMethodVersion = "";
+foreach(System.Xml.XmlNode node in labTestHistory.ChildNodes) { if(node.Name == "TestMethodVersion") { testMethodVersion = node.InnerText; break; } }
+
+var testMethodDescription = "";
+foreach(System.Xml.XmlNode node in labTestHistory.ChildNodes) { if(node.Name == "TestMethodDescription") { testMethodDescription = node.InnerText; break; } }
+
+var testIsOptional = "";
+foreach(System.Xml.XmlNode node in labTestHistory.ChildNodes) { if(node.Name == "TestIsOptional") { testIsOptional = node.InnerText; break; } }
+
+//Business Rule!
+if(testIsOptional.Trim().Length == 0) { testIsOptional = "false"; }
+
+var testStatus = "";
+foreach(System.Xml.XmlNode node in labTestHistory.ChildNodes) { if(node.Name == "TestStatus") { testStatus = node.InnerText; break; } }
+
+testId = System.Net.WebUtility.HtmlEncode (testId);
+testDescription = System.Net.WebUtility.HtmlEncode (testDescription);
+testMethodId = System.Net.WebUtility.HtmlEncode (testMethodId);
+testMethodDescription = System.Net.WebUtility.HtmlEncode (testMethodDescription);
+ 
+// Create the request message
+string labTestHistoryRequest = string.Format(labTestHistoryRequestTemplate, "Create/Update", 
+	                                     context.Properties["LocalServiceURI"],  
+	                                     context.Properties["LabSampleHistoryUID"], testId, 
+	                                     testId, testDescription, 
+                                         testMethodId, testMethodVersion, testMethodDescription,
+	                                     testIsOptional, testStatus, "");
+
+//Send the trace message to document the request message.
+context.Instance.TraceInformation ("Process Lab Transaction - Message ID: " + context.Data.Header.MessageId.ToString() + " Request Message: " + labTestHistoryRequest);
+	
+// Set message context to the request message 	
+context.Data.Text = labTestHistoryRequest;&lt;/Code&gt;&lt;ReferencedAssemblies xmlns:d16p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays"&gt;&lt;d16p1:string&gt;Neuron&lt;/d16p1:string&gt;&lt;d16p1:string&gt;Neuron.Pipelines&lt;/d16p1:string&gt;&lt;d16p1:string&gt;Neuron.Esb&lt;/d16p1:string&gt;&lt;d16p1:string&gt;System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d16p1:string&gt;&lt;d16p1:string&gt;System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d16p1:string&gt;&lt;d16p1:string&gt;System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d16p1:string&gt;&lt;d16p1:string&gt;System.Xml.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d16p1:string&gt;&lt;d16p1:string&gt;System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d16p1:string&gt;&lt;d16p1:string&gt;System.Data.DataSetExtensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d16p1:string&gt;&lt;d16p1:string&gt;System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d16p1:string&gt;&lt;d16p1:string&gt;System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d16p1:string&gt;&lt;d16p1:string&gt;Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed&lt;/d16p1:string&gt;&lt;d16p1:string&gt;Microsoft.CSharp, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&lt;/d16p1:string&gt;&lt;/ReferencedAssemblies&gt;&lt;TypeName&gt;Type36d4cabbda542b29eb9d7dc9a42ba1&lt;/TypeName&gt;&lt;/ESBMessagePipelineStep&gt;&lt;ESBMessagePipelineStep xmlns:d15p1="http://schemas.neuronesb.com/pipelines/esb/" i:type="d15p1:EsbMessagePipelineExecutionPipelineStep"&gt;&lt;Bindings xmlns:d16p1="http://schemas.datacontract.org/2004/07/Neuron.ComponentModel" /&gt;&lt;BreakPoint&gt;Disable&lt;/BreakPoint&gt;&lt;Disable&gt;false&lt;/Disable&gt;&lt;Id&gt;6cadd258-a711-432c-8313-0bc94571b2e9&lt;/Id&gt;&lt;Name&gt;Lab Test History&lt;/Name&gt;&lt;Uniquename /&gt;&lt;d15p1:FileName i:nil="true" /&gt;&lt;d15p1:MaxInstances&gt;100&lt;/d15p1:MaxInstances&gt;&lt;d15p1:PipelineName&gt;Process_CreateUpdateLabTestHistory&lt;/d15p1:PipelineName&gt;&lt;d15p1:PoolTimeout&gt;PT1M&lt;/d15p1:PoolTimeout&gt;&lt;/ESBMessagePipelineStep&gt;&lt;ESBMessagePipelineStep xmlns:d15p1="http://schemas.neuronesb.com/pipelines/esb/" i:type="d15p1:EsbMessageCSharpCodePipelineStep"&gt;&lt;Bindings xmlns:d16p1="http://schemas.datacontract.org/2004/07/Neuron.ComponentModel" /&gt;&lt;BreakPoint&gt;Disable&lt;/BreakPoint&gt;&lt;Disable&gt;false&lt;/Disable&gt;&lt;Id&gt;d8b626be-baac-49a7-b3f3-cd7de790b3e3&lt;/Id&gt;&lt;Name&gt;Map From Lab Test History&lt;/Name&gt;&lt;Uniquename /&gt;&lt;BreakPointLines xmlns:d16p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" /&gt;&lt;Code&gt;string labTestHistoryUID = context.Data.GetProperty ("NeoPLM", "LabTestHistoryUID");
+
+context.Properties ["LabTestHistoryUID"] = labTestHistoryUID;
+
+context.Instance.TraceInformation ("Process Lab Transaction - Transaction ID: " + context.Properties["TransactionID"] + " LabTestHistoryUID: " + context.Properties["LabTestHistoryUID"]);&lt;/Code&gt;&lt;ReferencedAssemblies xmlns:d16p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays"&gt;&lt;d16p1:string&gt;Neuron&lt;/d16p1:string&gt;&lt;d16p1:string&gt;Neuron.Pipelines&lt;/d16p1:string&gt;&lt;d16p1:string&gt;Neuron.Esb&lt;/d16p1:string&gt;&lt;d16p1:string&gt;System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d16p1:string&gt;&lt;d16p1:string&gt;System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d16p1:string&gt;&lt;d16p1:string&gt;System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d16p1:string&gt;&lt;d16p1:string&gt;System.Xml.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d16p1:string&gt;&lt;d16p1:string&gt;System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d16p1:string&gt;&lt;d16p1:string&gt;System.Data.DataSetExtensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d16p1:string&gt;&lt;d16p1:string&gt;System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d16p1:string&gt;&lt;d16p1:string&gt;System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d16p1:string&gt;&lt;d16p1:string&gt;Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed&lt;/d16p1:string&gt;&lt;d16p1:string&gt;Microsoft.CSharp, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&lt;/d16p1:string&gt;&lt;/ReferencedAssemblies&gt;&lt;TypeName&gt;Typee194c1186e6497bab9be79777d33d8&lt;/TypeName&gt;&lt;/ESBMessagePipelineStep&gt;&lt;ESBMessagePipelineStep xmlns:d15p1="http://schemas.neuronesb.com/pipelines/esb/" i:type="d15p1:EsbMessageCSharpCodePipelineStep"&gt;&lt;Bindings xmlns:d16p1="http://schemas.datacontract.org/2004/07/Neuron.ComponentModel" /&gt;&lt;BreakPoint&gt;Disable&lt;/BreakPoint&gt;&lt;Disable&gt;false&lt;/Disable&gt;&lt;Id&gt;b5a30596-6381-4cb4-a6f1-20927a4b2801&lt;/Id&gt;&lt;Name&gt;Load Lab Result History&lt;/Name&gt;&lt;Uniquename /&gt;&lt;BreakPointLines xmlns:d16p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" /&gt;&lt;Code&gt;
+var labTestHistory = (System.Xml.XmlNode)context.Properties["LabTestHistory"];
+
+foreach(System.Xml.XmlNode xNode in labTestHistory.ChildNodes)
+{	
+	if(xNode.Name == "LabResultHistories")
+	{
+		context.Properties["LabResultHistories"] = xNode;
+		var labResultHistories = (System.Xml.XmlNode)context.Properties["LabResultHistories"];
+		context.Instance.TraceInformation("Lab Results Histories Count: " + labResultHistories.ChildNodes.Count);
+	}
+}&lt;/Code&gt;&lt;ReferencedAssemblies xmlns:d16p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays"&gt;&lt;d16p1:string&gt;Neuron&lt;/d16p1:string&gt;&lt;d16p1:string&gt;Neuron.Pipelines&lt;/d16p1:string&gt;&lt;d16p1:string&gt;Neuron.Esb&lt;/d16p1:string&gt;&lt;d16p1:string&gt;System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d16p1:string&gt;&lt;d16p1:string&gt;System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d16p1:string&gt;&lt;d16p1:string&gt;System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d16p1:string&gt;&lt;d16p1:string&gt;System.Xml.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d16p1:string&gt;&lt;d16p1:string&gt;System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d16p1:string&gt;&lt;d16p1:string&gt;System.Data.DataSetExtensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d16p1:string&gt;&lt;d16p1:string&gt;System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d16p1:string&gt;&lt;d16p1:string&gt;System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d16p1:string&gt;&lt;d16p1:string&gt;Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed&lt;/d16p1:string&gt;&lt;d16p1:string&gt;Microsoft.CSharp, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&lt;/d16p1:string&gt;&lt;/ReferencedAssemblies&gt;&lt;TypeName&gt;Type9206b1e92ba4cff8551ed27a72fd30&lt;/TypeName&gt;&lt;/ESBMessagePipelineStep&gt;&lt;ESBMessagePipelineStep i:type="ForEachPipelineStepOfESBMessagexAPWb1W4"&gt;&lt;Bindings xmlns:d16p1="http://schemas.datacontract.org/2004/07/Neuron.ComponentModel" /&gt;&lt;BreakPoint&gt;Disable&lt;/BreakPoint&gt;&lt;Disable&gt;false&lt;/Disable&gt;&lt;Id&gt;d95eb26a-0d2e-4dc1-a438-c2501ff7e904&lt;/Id&gt;&lt;Name&gt;Lab Result History&lt;/Name&gt;&lt;Uniquename /&gt;&lt;Children&gt;&lt;ESBMessagePipelineStep xmlns:d17p1="http://schemas.neuronesb.com/pipelines/esb/" i:type="d17p1:EsbMessageCSharpCodePipelineStep"&gt;&lt;Bindings xmlns:d18p1="http://schemas.datacontract.org/2004/07/Neuron.ComponentModel" /&gt;&lt;BreakPoint&gt;Disable&lt;/BreakPoint&gt;&lt;Disable&gt;false&lt;/Disable&gt;&lt;Id&gt;e006c383-5cd7-4c14-84f6-42651887cde8&lt;/Id&gt;&lt;Name&gt;Map To Lab Result History&lt;/Name&gt;&lt;Uniquename /&gt;&lt;BreakPointLines xmlns:d18p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" /&gt;&lt;Code&gt;// Retrieve the response template message
+string labResultHistoryRequestTemplate = context.Configuration.XmlDocs["LabResultHistorySaveRequest"].Xml;
+
+var labResultHistory = (System.Xml.XmlNode)context.Properties["LabResultHistory"];
+
+var testResultId = "";
+foreach(System.Xml.XmlNode node in labResultHistory.ChildNodes) { if(node.Name == "TestResultID") { testResultId = node.InnerText; break; } }
+
+var testResultDescription = "";
+foreach(System.Xml.XmlNode node in labResultHistory.ChildNodes) { if(node.Name == "TestResultDescription") { testResultDescription = node.InnerText; break; } }
+
+var testResultStatus = "";
+foreach(System.Xml.XmlNode node in labResultHistory.ChildNodes) { if(node.Name == "TestResultStatus") { testResultStatus = node.InnerText; break; } }
+
+var enteredResult = "";
+foreach(System.Xml.XmlNode node in labResultHistory.ChildNodes) { if(node.Name == "EnteredResult") { enteredResult = node.InnerText; break; } }
+enteredResult = System.Net.WebUtility.HtmlEncode (enteredResult);
+
+var displayResult = "";
+foreach(System.Xml.XmlNode node in labResultHistory.ChildNodes) { if(node.Name == "DisplayResult") { displayResult = node.InnerText; break; } }
+displayResult = System.Net.WebUtility.HtmlEncode (displayResult);
+
+var testResultEngineeringUnitLabel = "";
+foreach(System.Xml.XmlNode node in labResultHistory.ChildNodes) { if(node.Name == "EnteredResultUOM") { testResultEngineeringUnitLabel = node.InnerText; break; } }
+
+var expectedResult = "";
+foreach(System.Xml.XmlNode node in labResultHistory.ChildNodes) { if(node.Name == "ExpectedResult") { expectedResult = node.InnerText; break; } }
+expectedResult = System.Net.WebUtility.HtmlEncode (expectedResult);
+
+// Test Result Instance Number is not Mapped to any IDOC Field and it is generating a Validation Error in Create/Update Lab Result History. 
+var testResultInstanceNumber = 0;
+foreach(System.Xml.XmlNode node in labResultHistory.ChildNodes) { if(node.Name == "TestResultInstanceNumber") { testResultInstanceNumber = 0; break; } }
+
+// isFinalResult is not Mapped to any IDOC Field and it is generating a Validation Error in Create/Update Lab Result History.
+bool isFinalResult = false;
+foreach(System.Xml.XmlNode node in labResultHistory.ChildNodes) { if(node.Name == "IsFinalResult") { isFinalResult = false; break; } }
+
+var resultDateTime = "";
+foreach(System.Xml.XmlNode node in labResultHistory.ChildNodes)
+{
+	if(node.Name == "ResultDateTime")
+	{
+		System.DateTime dt;
+		if(System.DateTime.TryParse(node.InnerText, out dt))
+		{
+			if(dt.Kind != System.DateTimeKind.Unspecified)
+			{
+				resultDateTime = dt.ToUniversalTime().ToString("yyyy-MM-ddTHH:mm:ssZ");		
+			}
+			else
+			{
+				resultDateTime = System.DateTime.UtcNow.ToString ("yyyy-MM-ddTHH:mm:ssZ");
+			}
+		}
+	} 
+}
+
+testResultId = System.Net.WebUtility.HtmlEncode (testResultId);
+testResultDescription = System.Net.WebUtility.HtmlEncode (testResultDescription);
+
+// Create the request message
+string labResultHistoryRequest = string.Format(labResultHistoryRequestTemplate, "Create/Update", 
+	                                     context.Properties["LocalServiceURI"],  
+	                                     context.Properties["LabTestHistoryUID"], testResultId, 
+	                                     testResultId, testResultDescription, 
+                                         testResultStatus, enteredResult, displayResult, testResultEngineeringUnitLabel, 
+	                                     expectedResult, testResultInstanceNumber, false, resultDateTime, "");
+
+//Send the trace message to document the request message.
+context.Instance.TraceInformation ("Process Lab Transaction - Message ID: " + context.Data.Header.MessageId.ToString() + " Request Message: " + labResultHistoryRequest);
+	
+// Set message context to the request message 	
+context.Data.Text = labResultHistoryRequest;&lt;/Code&gt;&lt;ReferencedAssemblies xmlns:d18p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays"&gt;&lt;d18p1:string&gt;Neuron&lt;/d18p1:string&gt;&lt;d18p1:string&gt;Neuron.Pipelines&lt;/d18p1:string&gt;&lt;d18p1:string&gt;Neuron.Esb&lt;/d18p1:string&gt;&lt;d18p1:string&gt;System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d18p1:string&gt;&lt;d18p1:string&gt;System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d18p1:string&gt;&lt;d18p1:string&gt;System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d18p1:string&gt;&lt;d18p1:string&gt;System.Xml.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d18p1:string&gt;&lt;d18p1:string&gt;System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d18p1:string&gt;&lt;d18p1:string&gt;System.Data.DataSetExtensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d18p1:string&gt;&lt;d18p1:string&gt;System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d18p1:string&gt;&lt;d18p1:string&gt;System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d18p1:string&gt;&lt;d18p1:string&gt;Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed&lt;/d18p1:string&gt;&lt;d18p1:string&gt;Microsoft.CSharp, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&lt;/d18p1:string&gt;&lt;/ReferencedAssemblies&gt;&lt;TypeName&gt;Type36d4cabbda542b29eb9d7dc9a42ba1&lt;/TypeName&gt;&lt;/ESBMessagePipelineStep&gt;&lt;ESBMessagePipelineStep xmlns:d17p1="http://schemas.neuronesb.com/pipelines/esb/" i:type="d17p1:EsbMessagePipelineExecutionPipelineStep"&gt;&lt;Bindings xmlns:d18p1="http://schemas.datacontract.org/2004/07/Neuron.ComponentModel" /&gt;&lt;BreakPoint&gt;Disable&lt;/BreakPoint&gt;&lt;Disable&gt;false&lt;/Disable&gt;&lt;Id&gt;c63e677a-3699-4a5f-943e-8c8b2c5f7821&lt;/Id&gt;&lt;Name&gt;Lab Result History&lt;/Name&gt;&lt;Uniquename /&gt;&lt;d17p1:FileName i:nil="true" /&gt;&lt;d17p1:MaxInstances&gt;100&lt;/d17p1:MaxInstances&gt;&lt;d17p1:PipelineName&gt;Process_CreateUpdateLabResultHistory&lt;/d17p1:PipelineName&gt;&lt;d17p1:PoolTimeout&gt;PT1M&lt;/d17p1:PoolTimeout&gt;&lt;/ESBMessagePipelineStep&gt;&lt;ESBMessagePipelineStep xmlns:d17p1="http://schemas.neuronesb.com/pipelines/esb/" i:type="d17p1:EsbMessageCSharpCodePipelineStep"&gt;&lt;Bindings xmlns:d18p1="http://schemas.datacontract.org/2004/07/Neuron.ComponentModel" /&gt;&lt;BreakPoint&gt;Disable&lt;/BreakPoint&gt;&lt;Disable&gt;false&lt;/Disable&gt;&lt;Id&gt;35096591-73f7-4b12-87d5-ddab24c45422&lt;/Id&gt;&lt;Name&gt;Map From Lab Result History&lt;/Name&gt;&lt;Uniquename /&gt;&lt;BreakPointLines xmlns:d18p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" /&gt;&lt;Code&gt;string labResultHistoryUID = context.Data.GetProperty ("NeoPLM", "LabResultHistoryUID");
+
+context.Properties ["LabResultHistoryUID"] = labResultHistoryUID;
+
+context.Instance.TraceInformation ("Process Lab Transaction - Transaction ID: " + context.Properties["TransactionID"] + " LabResultHistoryUID: " + context.Properties["LabResultHistoryUID"]);&lt;/Code&gt;&lt;ReferencedAssemblies xmlns:d18p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays"&gt;&lt;d18p1:string&gt;Neuron&lt;/d18p1:string&gt;&lt;d18p1:string&gt;Neuron.Pipelines&lt;/d18p1:string&gt;&lt;d18p1:string&gt;Neuron.Esb&lt;/d18p1:string&gt;&lt;d18p1:string&gt;System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d18p1:string&gt;&lt;d18p1:string&gt;System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d18p1:string&gt;&lt;d18p1:string&gt;System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d18p1:string&gt;&lt;d18p1:string&gt;System.Xml.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d18p1:string&gt;&lt;d18p1:string&gt;System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d18p1:string&gt;&lt;d18p1:string&gt;System.Data.DataSetExtensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d18p1:string&gt;&lt;d18p1:string&gt;System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d18p1:string&gt;&lt;d18p1:string&gt;System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d18p1:string&gt;&lt;d18p1:string&gt;Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed&lt;/d18p1:string&gt;&lt;d18p1:string&gt;Microsoft.CSharp, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&lt;/d18p1:string&gt;&lt;/ReferencedAssemblies&gt;&lt;TypeName&gt;Typee194c1186e6497bab9be79777d33d8&lt;/TypeName&gt;&lt;/ESBMessagePipelineStep&gt;&lt;/Children&gt;&lt;CollectionPropertyName&gt;LabResultHistories&lt;/CollectionPropertyName&gt;&lt;ItemPropertyName&gt;LabResultHistory&lt;/ItemPropertyName&gt;&lt;TurnOffTrackExecution&gt;false&lt;/TurnOffTrackExecution&gt;&lt;/ESBMessagePipelineStep&gt;&lt;/Children&gt;&lt;CollectionPropertyName&gt;LabTestHistories&lt;/CollectionPropertyName&gt;&lt;ItemPropertyName&gt;LabTestHistory&lt;/ItemPropertyName&gt;&lt;TurnOffTrackExecution&gt;false&lt;/TurnOffTrackExecution&gt;&lt;/ESBMessagePipelineStep&gt;&lt;/Children&gt;&lt;CollectionPropertyName&gt;LabSampleHistories&lt;/CollectionPropertyName&gt;&lt;ItemPropertyName&gt;LabSampleHistory&lt;/ItemPropertyName&gt;&lt;TurnOffTrackExecution&gt;false&lt;/TurnOffTrackExecution&gt;&lt;/ESBMessagePipelineStep&gt;&lt;/Children&gt;&lt;/Steps&gt;&lt;/BranchOfESBMessagexAPWb1W4&gt;&lt;BranchOfESBMessagexAPWb1W4&gt;&lt;BreakPoint&gt;Disable&lt;/BreakPoint&gt;&lt;Condition i:type="AlwaysBranchConditionOfESBMessagexAPWb1W4" /&gt;&lt;Disable&gt;false&lt;/Disable&gt;&lt;EndJoined&gt;false&lt;/EndJoined&gt;&lt;Id&gt;4635130a-3470-4e78-8278-ca326b12e41c&lt;/Id&gt;&lt;Name&gt;Else&lt;/Name&gt;&lt;Steps&gt;&lt;Bindings xmlns:d10p1="http://schemas.datacontract.org/2004/07/Neuron.ComponentModel" /&gt;&lt;BreakPoint&gt;Disable&lt;/BreakPoint&gt;&lt;Disable&gt;false&lt;/Disable&gt;&lt;Id&gt;76909c89-dbb8-4192-bd76-b7775eb86299&lt;/Id&gt;&lt;Name&gt;Group&lt;/Name&gt;&lt;Uniquename /&gt;&lt;Children&gt;&lt;ESBMessagePipelineStep xmlns:d11p1="http://schemas.neuronesb.com/pipelines/esb/" i:type="d11p1:EsbMessageCSharpCodePipelineStep"&gt;&lt;Bindings xmlns:d12p1="http://schemas.datacontract.org/2004/07/Neuron.ComponentModel" /&gt;&lt;BreakPoint&gt;Disable&lt;/BreakPoint&gt;&lt;Disable&gt;false&lt;/Disable&gt;&lt;Id&gt;97ee610a-57e6-433d-81f5-82b782a795ae&lt;/Id&gt;&lt;Name&gt;Internal Tracing - ERP Local Service URI&lt;/Name&gt;&lt;Uniquename /&gt;&lt;BreakPointLines xmlns:d12p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" /&gt;&lt;Code&gt;context.Instance.TraceInformation ("Source System / Plant Code / Material ID couldn't resolve to a valid Neo Material Master.");&lt;/Code&gt;&lt;ReferencedAssemblies xmlns:d12p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays"&gt;&lt;d12p1:string&gt;Neuron&lt;/d12p1:string&gt;&lt;d12p1:string&gt;Neuron.Pipelines&lt;/d12p1:string&gt;&lt;d12p1:string&gt;Neuron.Esb&lt;/d12p1:string&gt;&lt;d12p1:string&gt;System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d12p1:string&gt;&lt;d12p1:string&gt;System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d12p1:string&gt;&lt;d12p1:string&gt;System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d12p1:string&gt;&lt;d12p1:string&gt;System.Xml.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d12p1:string&gt;&lt;d12p1:string&gt;System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d12p1:string&gt;&lt;d12p1:string&gt;System.Data.DataSetExtensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d12p1:string&gt;&lt;d12p1:string&gt;System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d12p1:string&gt;&lt;d12p1:string&gt;System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d12p1:string&gt;&lt;d12p1:string&gt;Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed&lt;/d12p1:string&gt;&lt;d12p1:string&gt;Microsoft.CSharp, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&lt;/d12p1:string&gt;&lt;/ReferencedAssemblies&gt;&lt;TypeName&gt;Type8116962f77a4b0aaf7edfc5654be6c&lt;/TypeName&gt;&lt;/ESBMessagePipelineStep&gt;&lt;/Children&gt;&lt;/Steps&gt;&lt;/BranchOfESBMessagexAPWb1W4&gt;&lt;/Branches&gt;&lt;/ESBMessagePipelineStep&gt;&lt;/Children&gt;&lt;/Try&gt;&lt;/ESBMessagePipelineStep&gt;&lt;/Steps&gt;&lt;/ESBMessagePipeline&gt;</PipelineBlob>
+  <IsProcessFlow>false</IsProcessFlow>
+</ESBMessagePipelineStorage>

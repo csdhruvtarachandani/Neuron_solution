@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<NeuronVariable xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Id>3eb12518-f933-45b3-b3cb-7236f68cb75a</Id>
+  <Version>1d395341-b8e3-4b89-a46d-04cc52514049</Version>
+  <BusinessFlows />
+  <Description>This is a semi colon delimited list of Process Order Types. If any of the type which is not defined here is received by Neuron then it'll reject that Process Order message without any notification.
+Note: Don't leave this field blank.</Description>
+  <Name>AllowedOrderTypes</Name>
+  <Group>General</Group>
+  <IsSystemObject>false</IsSystemObject>
+  <IsPrivate>false</IsPrivate>
+  <Mask>false</Mask>
+</NeuronVariable>
