@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <EsbWorkflowHost xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Id>96cc9448-15c7-40cc-bf1c-1509fa9f6941</Id>
-  <Version>30433bda-902f-4283-a694-666af314c302</Version>
+  <Version>ba3a2faf-6d27-4736-9831-002e15757a49</Version>
   <BusinessFlows />
   <Description>This workflow endpoint is used to trigger the Recipe Workflow.</Description>
   <Name>RecipeWorkflow</Name>

@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <ESBEndpoint xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Id>2626d1d1-529e-4867-aedd-8ac9e2b82617</Id>
-  <Version>e5032216-80d3-485b-bdc8-c3d7e2201fed</Version>
+  <Version>65c49f5c-d318-4717-bf17-fa12ab211a15</Version>
   <BusinessFlows />
   <Description>This adapter consumes the AMPS ActiveMQ queue and listens for any message. As soon as any message arrives on the queue it passes that message to ProcessInputMessage which routes it to it's appropriate enrichment process.</Description>
   <Name>ActiveMQ Neo AMPS Endpoint</Name>

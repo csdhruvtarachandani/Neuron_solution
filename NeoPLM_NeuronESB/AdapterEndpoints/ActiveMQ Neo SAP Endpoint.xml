@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <ESBEndpoint xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Id>e33f6d74-ac3c-4a58-a78c-f680e1011ca2</Id>
-  <Version>ee69457c-dfa2-42e2-b8e4-5091b7a73f91</Version>
+  <Version>ddbd6db7-240d-4a50-8398-98d5ffd0f3ca</Version>
   <BusinessFlows />
   <Description>This adapter consumes the SAP ActiveMQ queue and listens for any message. As soon as any message arrives on the queue it passes that message to ProcessInputMessage which routes it to it's appropriate enrichment process.</Description>
   <Name>ActiveMQ Neo SAP Endpoint</Name>

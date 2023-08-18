@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <EsbWorkflowHost xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Id>977c3995-0f05-47dc-9514-476a35911790</Id>
-  <Version>a6abf656-ecda-4ff5-8b83-6e195268cbf3</Version>
+  <Version>10edf5e7-feac-4e46-97e6-c0e4ad4047c2</Version>
   <BusinessFlows />
   <Description>This workflow endpoint is used to trigger the Goods Issue Reversal Workflow.</Description>
   <Name>GoodsIssueReversalsWorkflow</Name>

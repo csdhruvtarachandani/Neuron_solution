@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <EsbWorkflowDefinition xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Id>4289e270-15ac-4b37-9dd4-446f486d9cf0</Id>
-  <Version>9bfc9a95-936c-4b9f-abaa-87ba4efbf6d4</Version>
+  <Version>0b119c8e-b719-4738-97bd-9d2004ff4535</Version>
   <BusinessFlows />
   <Description />
   <Name>Enrich_ERP_Goods_Receipt_Workflow</Name>

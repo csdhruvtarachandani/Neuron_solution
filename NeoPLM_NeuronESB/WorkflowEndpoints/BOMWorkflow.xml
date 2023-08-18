@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <EsbWorkflowHost xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Id>4319e43e-2cb4-4c59-bac1-f3456e4d1a57</Id>
-  <Version>8160ce0a-6861-4d5c-a4ff-fe7f38b33ea8</Version>
+  <Version>9c6caa9f-41ab-4a73-a946-abe0cb82d35a</Version>
   <BusinessFlows />
   <Description>This workflow endpoint is used to trigger the BillOfMaterial Workflow.</Description>
   <Name>BOMWorkflow</Name>

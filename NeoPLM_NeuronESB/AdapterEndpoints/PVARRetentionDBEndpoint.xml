@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <ESBEndpoint xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Id>fdc89c38-1c9e-4a9d-8c92-ec227e149200</Id>
-  <Version>49aff71c-1e26-4f79-881f-410ba5056dd3</Version>
+  <Version>2efd5323-23d1-4f1c-81ec-73ae877de7e7</Version>
   <BusinessFlows />
   <Description>This is a polling DB endpoint which is used to check the DB regularly for PV, BOM, Recipe records to delete them if it meets the retention criteria.</Description>
   <Name>PVARRetentionDBEndpoint</Name>

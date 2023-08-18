@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <EsbWorkflowDefinition xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Id>71393743-748d-4d59-b02c-5fb517903fad</Id>
-  <Version>dd6be852-16ae-4319-b809-7880e6f5a54c</Version>
+  <Version>4d853a1e-0e5f-4208-872c-6a77ef0e266e</Version>
   <BusinessFlows />
   <Description />
   <Name>Enrich_ERP_Material_Lot_Workflow</Name>

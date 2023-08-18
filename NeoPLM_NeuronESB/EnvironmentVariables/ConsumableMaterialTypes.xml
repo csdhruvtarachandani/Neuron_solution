@@ -3,8 +3,7 @@
   <Id>916a52ba-f073-4af9-a432-48691edc4594</Id>
   <Version>26aeaebe-173d-48db-bda8-9430c6655836</Version>
   <BusinessFlows />
-  <Description>This is a semi colon delimited list of all the valid Consumable Material Types. If Neuron receives any Material Type which mathes any of the type then it'll set the Material Type as Consumable.
-Note: Don't leave this field blank.</Description>
+  <Description>This is a semi colon delimited list of all the valid Consumable Material Types. If Neuron receives any Material Type which mathes any of the type then it'll set the Material Type as Consumable.</Description>
   <Name>ConsumableMaterialTypes</Name>
   <Group>General</Group>
   <IsSystemObject>false</IsSystemObject>

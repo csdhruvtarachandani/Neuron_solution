@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <ESBTopic xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Id>9409b619-34f3-41fe-960b-be0423ecb166</Id>
-  <Version>e3e3c8fa-fcd3-4754-b53f-78f3a2c5cecb</Version>
+  <Version>c3fb5d56-d41c-41c6-82c1-ea97bc6079da</Version>
   <BusinessFlows />
   <Description>A topic to route ERP Goods Receipt Reversal Transactions from the source web service, through the business process and into Neo PLM.</Description>
   <Name>Enrich_ERP_GoodsReceiptReversal</Name>

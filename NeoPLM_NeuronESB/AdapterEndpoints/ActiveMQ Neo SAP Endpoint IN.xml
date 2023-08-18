@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <ESBEndpoint xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Id>e8212559-d6c5-43cd-9d95-3df9f72ebf85</Id>
-  <Version>bec28a44-ad35-4f14-8bb3-1e228a5af5ac</Version>
+  <Version>97a7c481-bf2d-444f-a4ea-338bc3dd1860</Version>
   <BusinessFlows />
   <Description>This adapter sends Order Step Completion messages from the business process onto the SAP ActiveMQ queue.</Description>
   <Name>ActiveMQ Neo SAP Endpoint IN</Name>

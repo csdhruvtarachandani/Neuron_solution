@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <ESBTopic xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Id>a7f663d8-d895-43ee-8b5f-98a4648c3a0a</Id>
-  <Version>b182bde4-a731-4fa1-a8bb-3e385a274450</Version>
+  <Version>e4242fdb-70b5-48ec-8d0d-dc393ccbc82c</Version>
   <BusinessFlows />
   <Description>A topic to route ERP PVAR Transactions from the source web service, through the business process and into Neo PLM.</Description>
   <Name>Enrich_ERP_PVAR</Name>
@@ -36,7 +36,7 @@
     </NameValuePair>
     <NameValuePair>
       <Name>ServicePort</Name>
-      <Value>50027</Value>
+      <Value>50026</Value>
     </NameValuePair>
     <NameValuePair>
       <Name>AllowOutputBatching</Name>

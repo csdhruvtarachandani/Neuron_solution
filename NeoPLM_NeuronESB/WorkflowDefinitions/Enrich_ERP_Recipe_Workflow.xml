@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <EsbWorkflowDefinition xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Id>ba2ae5f5-0c7a-4b6d-86ce-0467e138c9a5</Id>
-  <Version>2be66f6c-5ab9-466d-b383-19c058013157</Version>
+  <Version>2e1e49bb-8ab8-4431-922b-138fa3a614c0</Version>
   <BusinessFlows />
   <Description />
   <Name>Enrich_ERP_Recipe_Workflow</Name>

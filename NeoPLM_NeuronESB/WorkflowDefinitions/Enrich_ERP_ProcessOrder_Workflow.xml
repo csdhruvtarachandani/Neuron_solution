@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <EsbWorkflowDefinition xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Id>38156339-55f6-4758-a181-71ceedb0f43a</Id>
-  <Version>e80c33fd-763f-4bc4-8a1c-c9d4931005f5</Version>
+  <Version>49ae80e8-8f8e-4f5e-aec3-d0d768f2b489</Version>
   <BusinessFlows />
   <Description />
   <Name>Enrich_ERP_ProcessOrder_Workflow</Name>

@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <ESBTopic xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Id>4299cabe-47ac-4a14-aa99-93978bc8f900</Id>
-  <Version>3c69739c-6885-429f-92bd-a408d9e3cb59</Version>
+  <Version>9f829149-0a27-4d2c-a35c-4a9598e26fa9</Version>
   <BusinessFlows />
   <Description>A topic to route ERP Goods Issue Reversal Transactions from the source web service, through the business process and into Neo PLM.</Description>
   <Name>Enrich_ERP_GoodsIssueReversal</Name>

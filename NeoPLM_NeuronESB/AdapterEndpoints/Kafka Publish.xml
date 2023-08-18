@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <ESBEndpoint xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Id>2a6baa8b-32b3-4650-ab3a-058219500fde</Id>
-  <Version>6a8fdd0c-20b8-47eb-9aa4-605718c094ba</Version>
+  <Version>74b5183c-2f01-4a23-81bb-8f3622f1a2a1</Version>
   <BusinessFlows />
   <Description>This adapter consumes the Kafka queue to receive and pass the messages from particular Kafka topic to the Kafka Enrichment Process.</Description>
   <Name>Kafka Publish</Name>
@@ -67,7 +67,7 @@
     </NameValuePair>
     <NameValuePair>
       <Name>BootstrapServers</Name>
-      <Value>internal-a3278d4026d8543879097863d5b4a6f7-1600822103.us-east-1.elb.amazonaws.com:9092,internal-a3278d4026d8543879097863d5b4a6f7-1600822103.us-east-1.elb.amazonaws.com:9092,internal-a73da347fd8934e9999b376bc339c190-1488950522.us-east-1.elb.amazonaws.com:9092,internal-a0edecf79adb1452dad5b6fba0a23f1c-50350245.us-east-1.elb.amazonaws.com:9092</Value>
+      <Value>internal-a3278d4026d8543879097863d5b4a6f7-1600822103.us-east-1.elb.amazonaws.com:9092,internal-a73da347fd8934e9999b376bc339c190-1488950522.us-east-1.elb.amazonaws.com:9092,internal-a0edecf79adb1452dad5b6fba0a23f1c-50350245.us-east-1.elb.amazonaws.com:9092</Value>
     </NameValuePair>
     <NameValuePair>
       <Name>SecurityProtocol</Name>

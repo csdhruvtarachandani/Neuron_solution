@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <EsbWorkflowHost xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Id>1afe60ae-99c4-47df-9cb8-8e61aa760581</Id>
-  <Version>8e1ac534-45d0-4b8b-a9a0-9c4eb4bc7b5e</Version>
+  <Version>5776e16d-8ad7-4bfc-a205-083ad7bc3ffa</Version>
   <BusinessFlows />
   <Description>This workflow endpoint is used to trigger the Goods Issue Workflow.</Description>
   <Name>GoodsIssuesWorkflow</Name>

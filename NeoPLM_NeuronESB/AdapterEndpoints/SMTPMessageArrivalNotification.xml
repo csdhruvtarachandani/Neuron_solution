@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <ESBEndpoint xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Id>4cff8c3f-2326-454d-bfb0-37b02307b1e3</Id>
-  <Version>ee6e1fdd-bbc2-4ce4-aba5-530f00fd70a4</Version>
+  <Version>5c690ff3-4068-4454-ae8b-afb40d9a2d16</Version>
   <BusinessFlows />
   <Description>This adaptor endpoint is used to issue Success Report emails to users, when Processes like OrderStepCompletion, ProductionVersionApproval, etc., are successfully executed.</Description>
   <Name>SMTPMessageArrivalNotification</Name>

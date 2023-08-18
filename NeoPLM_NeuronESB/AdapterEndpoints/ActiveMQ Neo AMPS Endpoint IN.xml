@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <ESBEndpoint xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Id>4f0953ea-0a52-402c-9cbf-0511c67c96bb</Id>
-  <Version>e4722df3-3da8-45b3-8d80-13508f2b58cf</Version>
+  <Version>64d162de-2f6d-4451-be77-396d68fb28ba</Version>
   <BusinessFlows />
   <Description>This adapter sends Approved Production Version messages from the business process onto the AMPS ActiveMQ queue.</Description>
   <Name>ActiveMQ Neo AMPS Endpoint IN</Name>

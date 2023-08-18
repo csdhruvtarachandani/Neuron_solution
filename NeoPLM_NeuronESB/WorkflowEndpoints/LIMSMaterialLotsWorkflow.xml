@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <EsbWorkflowHost xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Id>cc89cd70-e31c-4668-9512-ac84155f7f90</Id>
-  <Version>164c30a0-b031-4abd-a164-89ab0de9690c</Version>
+  <Version>3d8b5b37-46ea-4aab-ac5c-aecb22d832fb</Version>
   <BusinessFlows />
   <Description>This workflow endpoint is used to trigger the LIMS Material Lot Workflow.</Description>
   <Name>LIMSMaterialLotsWorkflow</Name>

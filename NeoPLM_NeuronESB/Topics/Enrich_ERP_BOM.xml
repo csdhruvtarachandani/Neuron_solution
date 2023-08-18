@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <ESBTopic xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Id>c6819896-1ae0-4fde-b8b0-74402662ebb6</Id>
-  <Version>36ac0a21-e092-420b-921f-3e54e466e6a7</Version>
+  <Version>219fec79-cd51-4507-a9e3-f111bb302280</Version>
   <BusinessFlows />
   <Description>A topic to route ERP BOM Transactions from the source web service, through the business process and into Neo PLM.</Description>
   <Name>Enrich_ERP_BOM</Name>

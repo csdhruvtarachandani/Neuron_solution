@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <ESBMessagePipelineStorage xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Id>c7a3d699-b87d-447b-9f52-68c841cba2da</Id>
-  <Version>510ccb5c-6de6-4f86-b864-7ff87d09bff3</Version>
+  <Version>863b42dd-9b83-44b8-bc1c-8335a74b7ddf</Version>
   <BusinessFlows />
   <Description />
   <Name>Process_ERP_MaterialLot_Enrichment_Item</Name>
@@ -238,7 +238,7 @@ else
 {
 	context.Instance.TraceInformation ("Process Material LotProcess Material Lot - Transaction ID: " + context.Properties["TransactionID"] + " There are no Referenced Lot on this transaction.");
 }&lt;/Code&gt;&lt;ReferencedAssemblies xmlns:d7p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays"&gt;&lt;d7p1:string&gt;Neuron&lt;/d7p1:string&gt;&lt;d7p1:string&gt;Neuron.Pipelines&lt;/d7p1:string&gt;&lt;d7p1:string&gt;Neuron.Esb&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.Xml.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.Data.DataSetExtensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed&lt;/d7p1:string&gt;&lt;d7p1:string&gt;Microsoft.CSharp, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&lt;/d7p1:string&gt;&lt;/ReferencedAssemblies&gt;&lt;TypeName&gt;Typead44a7581894525b364db79bf01c57&lt;/TypeName&gt;&lt;/ESBMessagePipelineStep&gt;&lt;ESBMessagePipelineStep i:type="DecisionPipelineStepOfESBMessagexAPWb1W4"&gt;&lt;Bindings xmlns:d7p1="http://schemas.datacontract.org/2004/07/Neuron.ComponentModel" /&gt;&lt;BreakPoint&gt;Disable&lt;/BreakPoint&gt;&lt;Disable&gt;false&lt;/Disable&gt;&lt;Id&gt;346e2249-1c36-4793-8bb4-ed27fad5153c&lt;/Id&gt;&lt;Name&gt;Check Potency&lt;/Name&gt;&lt;Uniquename /&gt;&lt;Branches&gt;&lt;BranchOfESBMessagexAPWb1W4&gt;&lt;BreakPoint&gt;Disable&lt;/BreakPoint&gt;&lt;Condition i:type="CodeBranchConditionOfESBMessagexAPWb1W4"&gt;&lt;Code&gt;double potencyValue = Convert.ToDouble(context.Properties["Potency"].ToString());
-if (potencyValue &amp;gt; 0 &amp;amp;&amp;amp; potencyValue &amp;lt;= 100){
+if (potencyValue &amp;gt;= 0 &amp;amp;&amp;amp; potencyValue &amp;lt;= 105){
 	return true;
 }
 else {

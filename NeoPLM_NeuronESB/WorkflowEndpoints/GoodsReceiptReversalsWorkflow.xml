@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <EsbWorkflowHost xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Id>54820a6a-e2d4-481c-ac13-93aa8313d0a8</Id>
-  <Version>359f1e51-3661-4556-80d9-3cbb1e66a1b1</Version>
+  <Version>66942338-40b0-4cbb-bc4c-e5d2b2048dc3</Version>
   <BusinessFlows />
   <Description>This workflow endpoint is used to trigger the Goods Receipt Reversal Workflow.</Description>
   <Name>GoodsReceiptReversalsWorkflow</Name>

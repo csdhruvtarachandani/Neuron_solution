@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <ESBMessagePipelineStorage xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Id>ab29c6dc-b4fa-4341-a51b-4a2ba32df466</Id>
-  <Version>daae6417-9c0e-4117-bca2-c63b689fde39</Version>
+  <Version>2fdbf7ef-74da-442c-9bae-9cd5820b30c4</Version>
   <BusinessFlows />
   <Description />
   <Name>Process_GetMaterialLotUID - New</Name>

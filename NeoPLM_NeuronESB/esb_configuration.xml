@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <ESBConfiguration xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <Version>2310</Version>
-  <EnvironmentName>NEOPLM_NeuronESB_Pfizer_07282023 - Configured</EnvironmentName>
+  <Version>2229</Version>
+  <EnvironmentName>NEOPLM_NeuronESB_Pfizer_08182023 - Configured</EnvironmentName>
   <NeuronBuildVersion>3.7.5.571</NeuronBuildVersion>
   <ApplicationName>Dev</ApplicationName>
   <ApplicationId>0de8bb4a-6447-4cae-9c25-260ff5dd53aa</ApplicationId>
@@ -9,11 +9,13 @@
   <ChangeList>
     <Additions />
     <Revisions>
-      <string>Edit,*,XML Schema,EnterpriseHelper</string>
+      <string>Edit,*,pipeline,Process_ERP_MaterialLot_Enrichment_Item</string>
+      <string>Edit,*,workflow definition,Enrich_ERP_Material_Lot_Workflow</string>
+      <string>Edit,*,workflow endpoint,MaterialLotsWorkflow</string>
     </Revisions>
     <Deletions />
     <LastModifiedBy />
-    <LastModifiedDate>2023-08-16T07:31:29.6462102Z</LastModifiedDate>
+    <LastModifiedDate>2023-08-18T09:12:38.7561342Z</LastModifiedDate>
     <Comments />
   </ChangeList>
   <NeuronEnvironmentVariables />
@@ -1516,6 +1518,27 @@
           <BusinessFlows />
           <Description>This is an XML Document to capture the ERP to Neo PLM Material Type Maps, associated with a deployment of the Material Definition Interface.</Description>
           <Name>ERPToNeoPLMMaterialTypeMaps</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <IsPrivate>false</IsPrivate>
+          <Storing>false</Storing>
+          <XmlVersion />
+          <SourceUri />
+          <Xml />
+        </ESBXmlDoc>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>StepOrderCompletion</string>
+      </key>
+      <value>
+        <ESBXmlDoc>
+          <Id>ccd45983-4410-4dad-a315-5e0d64147ad3</Id>
+          <Version>927bab75-7a3b-4048-818a-51bf3343d941</Version>
+          <BusinessFlows />
+          <Description />
+          <Name>StepOrderCompletion</Name>
           <Group>General</Group>
           <IsSystemObject>false</IsSystemObject>
           <IsPrivate>false</IsPrivate>

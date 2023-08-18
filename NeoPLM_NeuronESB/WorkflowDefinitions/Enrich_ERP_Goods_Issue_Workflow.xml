@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <EsbWorkflowDefinition xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Id>031f1866-5e28-427c-b5af-ce6385030015</Id>
-  <Version>21b31518-0ec0-42dc-bea3-e1140b4cac19</Version>
+  <Version>71f47a34-dfe4-4e61-bfdf-da7c3ad18495</Version>
   <BusinessFlows />
   <Description />
   <Name>Enrich_ERP_Goods_Issue_Workflow</Name>

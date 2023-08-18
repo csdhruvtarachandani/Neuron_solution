@@ -3,7 +3,7 @@
   <Id>4a8729d2-f57e-4e04-a97f-c3e41e5806eb</Id>
   <Version>e4b7491e-d369-47ec-a733-0a146125f87e</Version>
   <BusinessFlows />
-  <Description>This is a semi colon delimited list of all the valid Material Types. If Neuron receives any Material Type other than these then it'll reject that Material. Note: Don't leave this field blank.</Description>
+  <Description>This is a semi colon delimited list of all the valid Material Types. If Neuron receives any Material Type other than these then it'll reject that Material.</Description>
   <Name>AllowedMaterialTypes</Name>
   <Group>General</Group>
   <IsSystemObject>false</IsSystemObject>

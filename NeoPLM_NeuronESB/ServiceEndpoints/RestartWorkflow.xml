@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <ESBService xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Id>37a961d2-683c-4581-a842-6635ac508e58</Id>
-  <Version>bd622ad5-1272-4879-b1d9-d0de3c5bd8d5</Version>
+  <Version>2a698ddd-562b-40f2-9fe2-e817d5443a4d</Version>
   <BusinessFlows />
   <Description>This client connector is used to receive the requests to restart the Workflows.</Description>
   <Name>RestartWorkflow</Name>

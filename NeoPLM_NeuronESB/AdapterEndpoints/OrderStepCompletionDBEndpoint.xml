@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <ESBEndpoint xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Id>3d6488b1-e55a-4115-b355-2181d380b457</Id>
-  <Version>e9e9f054-267a-4f8a-8dde-8be7bc8a6995</Version>
+  <Version>fecce209-53e6-4e8d-a3d5-f6a0953575ea</Version>
   <BusinessFlows />
   <Description>This is a polling DB endpoint which is used to check the DB regularly for any new Order Step Completion messages.</Description>
   <Name>OrderStepCompletionDBEndpoint</Name>

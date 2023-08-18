@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <EsbWorkflowHost xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Id>26e89d59-e89f-4e0d-b0bb-2c689a1a054d</Id>
-  <Version>398ba35f-bcd2-4fbe-a1e2-1c3365578bf9</Version>
+  <Version>a001832b-b66a-4d36-bf39-237bcb6f8819</Version>
   <BusinessFlows />
   <Description>This workflow endpoint is used to trigger the Material Definition Workflow.</Description>
   <Name>MaterialDefinitionsWorkflow</Name>

@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <EsbWorkflowHost xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Id>57abd97c-9ddc-4b0f-ad0a-fd3bed10348b</Id>
-  <Version>6545ae7b-a94f-40f3-b533-8d5e0337b45b</Version>
+  <Version>75d01b1f-21c5-4af7-85ba-00dbd5bee770</Version>
   <BusinessFlows />
   <Description>This workflow endpoint is used to trigger the Process Order Workflow.</Description>
   <Name>ProcessOrderWorkflow</Name>

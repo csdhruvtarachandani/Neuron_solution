@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <EsbWorkflowHost xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Id>86b01765-147e-4d11-aa3d-fad98ba8910d</Id>
-  <Version>331ac112-def9-4c83-8b29-d525102fc7c7</Version>
+  <Version>09ab111f-568d-46c3-948d-4f1a971f7d14</Version>
   <BusinessFlows />
   <Description>This workflow endpoint is used to trigger the Production Version Workflow.</Description>
   <Name>PVARWorkflow</Name>

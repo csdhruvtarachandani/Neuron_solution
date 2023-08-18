@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <ESBEndpoint xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Id>af0270f8-219a-484c-b639-17d16f315399</Id>
-  <Version>16d5bdb2-6f02-4e30-af0d-763ae8cb6f43</Version>
+  <Version>ca891a08-c690-492c-8b9b-5b6f2a2d2db5</Version>
   <BusinessFlows />
   <Description>This adaptor endpoint is used to store the System Errors to the configured Folder Path.</Description>
   <Name>System Errors</Name>

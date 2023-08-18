@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <ESBEndpoint xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Id>95f03842-3f2c-46fa-8b1b-ea8c4ccbf362</Id>
-  <Version>0e014d13-34eb-4b06-b46f-894a5c5c8d7e</Version>
+  <Version>54a5da19-9962-42c0-b9a1-6f4e6ea7ccb0</Version>
   <BusinessFlows />
   <Description>This is a polling DB endpoint which is used to check the DB regularly for any new Approved Production Version messages.</Description>
   <Name>PVApprovalDBEndpoint</Name>

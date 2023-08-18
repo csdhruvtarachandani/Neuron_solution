@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <ESBService xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Id>afd7e3f1-61d8-432b-aa89-f6df498f1d2a</Id>
-  <Version>154e6630-9cf4-4c40-b47e-adac0d264345</Version>
+  <Version>8e39bd3e-4928-4fac-8b89-72c30e090e11</Version>
   <BusinessFlows />
   <Description>This service serves as a proxy for the external service that is provided by Neo PLM, Inc.  It is here for ease of configuration only.  Nothing is ever processed by this item.</Description>
   <Name>NeoPLM Local Integration Service - Rest Transaction Proxy</Name>

@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <ESBTopic xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Id>f3d2c621-88a6-4500-a52d-eb69eb40acda</Id>
-  <Version>dab65656-b692-4f0b-b427-a04a1dc782fb</Version>
+  <Version>ffc660c4-4582-48a0-b9b7-f4a35f9d1c6b</Version>
   <BusinessFlows />
   <Description>A topic to route ERP Goods Receipt Transactions from the source web service, through the business process and into Neo PLM.</Description>
   <Name>Enrich_ERP_GoodsReceipt</Name>

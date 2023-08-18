@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <EsbWorkflowHost xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Id>dfb555ba-80b0-417a-9960-265c7f3a5e09</Id>
-  <Version>a5cffa03-8f5f-4ef0-a9e9-f6d9b3f83fee</Version>
+  <Version>d1b8196e-5988-4587-a656-95c7da5b8ef0</Version>
   <BusinessFlows />
   <Description>This workflow endpoint is used to trigger the ERP Material Lot Workflow.</Description>
   <Name>MaterialLotsWorkflow</Name>

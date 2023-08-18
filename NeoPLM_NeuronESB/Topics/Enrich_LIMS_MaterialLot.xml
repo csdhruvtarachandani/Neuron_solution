@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <ESBTopic xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Id>3c5ac84e-e2b6-4e5a-aaaf-8671d773e7a4</Id>
-  <Version>f16ceae0-631f-429a-8b07-e66b1f5f973a</Version>
+  <Version>7d6052e3-4ac0-4c80-9356-c9f095cd866a</Version>
   <BusinessFlows />
   <Description>A topic to route LIMS Result Transactions from the source web service, through the business process and into Neo PLM.</Description>
   <Name>Enrich_LIMS_MaterialLot</Name>

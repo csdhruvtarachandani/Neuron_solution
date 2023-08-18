@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <ESBTopic xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Id>fa47f276-87c4-4e55-96b0-1638f3b24571</Id>
-  <Version>97b4db49-8c08-401e-8415-aa50ec897ef3</Version>
+  <Version>20b2a521-6eb6-4f5e-941d-ec3e61afff55</Version>
   <BusinessFlows />
   <Description>A topic to route ERP Material Definition Transactions from the source web service, through the business process and into Neo PLM.</Description>
   <Name>Enrich_ERP_MaterialDefinition</Name>

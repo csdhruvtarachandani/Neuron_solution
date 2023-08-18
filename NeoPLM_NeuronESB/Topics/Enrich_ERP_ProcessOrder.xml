@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <ESBTopic xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Id>5fba0e9f-cb77-46c1-bb78-52049c68d778</Id>
-  <Version>96a6da08-937f-4475-bf2a-ddeddba74472</Version>
+  <Version>53b48ef1-6085-42e4-b82b-ceb9bb504155</Version>
   <BusinessFlows />
   <Description>A topic to route ERP Process Order Transactions from the source web service, through the business process and into Neo PLM.</Description>
   <Name>Enrich_ERP_ProcessOrder</Name>
@@ -36,7 +36,7 @@
     </NameValuePair>
     <NameValuePair>
       <Name>ServicePort</Name>
-      <Value>50025</Value>
+      <Value>50024</Value>
     </NameValuePair>
     <NameValuePair>
       <Name>AllowOutputBatching</Name>

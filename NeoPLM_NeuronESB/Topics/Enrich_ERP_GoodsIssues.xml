@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <ESBTopic xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Id>96ef9ca4-16e3-4abc-8923-c9d3ae7b8e19</Id>
-  <Version>869eabaf-6832-41f3-ad9f-6e4c9a3eeb3b</Version>
+  <Version>4d145ccb-3e51-4a3b-a127-5f7623e3c560</Version>
   <BusinessFlows />
   <Description>A topic to route ERP Goods Issue Transactions from the source web service, through the business process and into Neo PLM.</Description>
   <Name>Enrich_ERP_GoodsIssues</Name>

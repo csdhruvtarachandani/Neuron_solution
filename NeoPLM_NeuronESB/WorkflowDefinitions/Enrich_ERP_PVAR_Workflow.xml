@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <EsbWorkflowDefinition xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Id>8fa281ac-b418-4ef2-839f-9f5949a625e7</Id>
-  <Version>705258b7-4347-426d-8c7d-07f4d930414b</Version>
+  <Version>ae6bd2d9-0970-466c-8e86-250cb8f3e432</Version>
   <BusinessFlows />
   <Description />
   <Name>Enrich_ERP_PVAR_Workflow</Name>

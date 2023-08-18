@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <EsbWorkflowHost xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Id>df684041-8502-4da5-a562-7cb4f0c54a86</Id>
-  <Version>0efb856b-2e61-450f-b547-fb3eb4b4298e</Version>
+  <Version>43c1be61-1cda-4227-af54-7b56f79d9fd2</Version>
   <BusinessFlows />
   <Description>This workflow endpoint is used to trigger the Goods Receipt Workflow.</Description>
   <Name>GoodsReceiptsWorkflow</Name>

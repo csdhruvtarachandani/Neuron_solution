@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <ESBTopic xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Id>2572b6fd-6fb6-4e9b-aed5-dd603081dfd2</Id>
-  <Version>04ac2422-caa0-4c83-9367-3fee33114992</Version>
+  <Version>883fa633-d77d-4a3b-944d-118b7238fe61</Version>
   <BusinessFlows />
   <Description>A topic to route ERP Material Lot Transactions from the source web service, through the business process and into Neo PLM.</Description>
   <Name>Enrich_ERP_MaterialLot</Name>
@@ -36,7 +36,7 @@
     </NameValuePair>
     <NameValuePair>
       <Name>ServicePort</Name>
-      <Value>50024</Value>
+      <Value>50025</Value>
     </NameValuePair>
     <NameValuePair>
       <Name>AllowOutputBatching</Name>

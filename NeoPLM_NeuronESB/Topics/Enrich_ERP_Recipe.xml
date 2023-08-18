@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <ESBTopic xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Id>acb604b7-7bb7-4a4e-970e-c6aa94e4b437</Id>
-  <Version>274648d8-d514-484e-96a0-ed7a5edd3866</Version>
+  <Version>53932695-b484-47ac-b09f-c12a7dcdf49a</Version>
   <BusinessFlows />
   <Description>A topic to route ERP Recipe Transactions from the source web service, through the business process and into Neo PLM.</Description>
   <Name>Enrich_ERP_Recipe</Name>
@@ -36,7 +36,7 @@
     </NameValuePair>
     <NameValuePair>
       <Name>ServicePort</Name>
-      <Value>50026</Value>
+      <Value>50027</Value>
     </NameValuePair>
     <NameValuePair>
       <Name>AllowOutputBatching</Name>
